@@ -19839,3 +19839,7 @@ msgstr "Редактор кода"
 #: lms/templates/header/navbar-not-authenticated.html:57
 msgid "Register for free"
 msgstr "Регистрация"
+
+msgid "Discover courses"
+msgstr "Обзор курсов"
+
