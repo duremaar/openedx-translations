@@ -25,16 +25,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/github-script@v7
+      - uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         id: generate_repo_matrix
         with:
           script: |
             // Need to use a workaround until https://github.com/actions/toolkit/issues/1576 is fixed
             // const selectedRepo = core.getInput('repo');
             const selectedRepo = ${{ toJSON(github.event.inputs.repo) }} ?? '';
+            const selectedRef = ${{ toJSON(github.event.inputs.ref) }} ?? '';
 
             const allPythonRepos = [
-              'AudioXBlock',
               'completion',
               'course-discovery',
               'credentials',
@@ -46,32 +46,28 @@ jobs:
               'edx-ora2',
               'edx-platform',
               'edx-proctoring',
-              'FeedbackXBlock',
               'RecommenderXBlock',
               'platform-plugin-aspects',
               'xblock-drag-and-drop-v2',
-              'xblock-free-text-response',
               'xblock-google-drive',
               'xblock-image-explorer',
-              'xblock-image-modal',
               'xblock-lti-consumer',
-              'xblock-qualtrics-survey',
-              'xblock-sql-grader',
-              'xblock-submit-and-compare',
+            ];
+
+            // Repos that contain multiple conf/locale/en directories (one per sub-package).
+            const allPythonMonorepos = [
+              'xblocks-extra',
             ];
 
             const allJavascriptRepos = [
               'frontend-app-admin-portal',
               'frontend-app-publisher',
               'frontend-app-account',
-              'frontend-app-authn',
-              'frontend-app-catalog',
               'frontend-app-communications',
               'frontend-app-course-authoring',
               'frontend-app-discussions',
               'frontend-app-enterprise-public-catalog',
-              'frontend-app-gradebook',
-              'frontend-app-learner-dashboard',
+              'frontend-app-instructor-dashboard',
               'frontend-app-learner-record',
               'frontend-app-learning',
               'frontend-app-library-authoring',
@@ -83,10 +79,48 @@ jobs:
               'frontend-component-header',
               'frontend-lib-special-exams',
               'frontend-platform',
+              'frontend-base',
               'paragon',
               'studio-frontend',
               'frontend-app-learner-portal-enterprise',
               'frontend-enterprise',
+            ];
+
+            // Repos that exist in two parallel branches: one using the legacy MFE tooling and
+            // one using the frontend-base tooling. Strings are extracted from both branches and
+            // combined into a single resource. Branch names vary per repo, so each entry carries
+            // its own pair of refs.
+            const allDualMFEAndBaseJavascriptRepos = [
+              {
+                repo: 'frontend-app-admin-console',
+                mfe_ref: 'legacy-mfe',
+                base_ref: 'master',
+              },
+              {
+                repo: 'frontend-app-authn',
+                mfe_ref: 'legacy-mfe',
+                base_ref: 'master',
+              },
+              {
+                repo: 'frontend-app-catalog',
+                mfe_ref: 'legacy-mfe',
+                base_ref: 'master',
+              },
+              {
+                repo: 'frontend-app-gradebook',
+                mfe_ref: 'legacy-mfe',
+                base_ref: 'master',
+              },
+              {
+                repo: 'frontend-app-learner-dashboard',
+                mfe_ref: 'legacy-mfe',
+                base_ref: 'master',
+              },
+              {
+                repo: 'frontend-app-notifications',
+                mfe_ref: '2.x',
+                base_ref: 'main',
+              },
             ];
 
             const allGenericRepos = [
@@ -108,13 +142,21 @@ jobs:
               },
             ]
 
+            if (selectedRef !== '') {
+              core.warning(`Skipping dual-js repos — the ref input is not supported for repos that extract from two branches.`);
+            }
+
             core.setOutput('hasPythonRepos', true);
+            core.setOutput('hasPythonMonorepos', true);
             core.setOutput('hasJavascriptRepos', true);
+            core.setOutput('hasDualMFEAndBaseJavascriptRepos', true);
             core.setOutput('hasGenericRepos', true);
 
             if (selectedRepo === '') {
               core.setOutput('pythonRepos', allPythonRepos);
+              core.setOutput('pythonMonorepos', allPythonMonorepos);
               core.setOutput('javascriptRepos', allJavascriptRepos);
+              core.setOutput('dualMFEAndBaseJavascriptRepos', allDualMFEAndBaseJavascriptRepos);
               core.setOutput('genericRepos', allGenericRepos);
               return;
             }
@@ -126,11 +168,26 @@ jobs:
               core.setOutput('hasPythonRepos', false);
             }
 
+            if (allPythonMonorepos.includes(selectedRepo)) {
+              core.setOutput('pythonMonorepos', [selectedRepo]);
+            } else {
+              core.setOutput('pythonMonorepos', []);
+              core.setOutput('hasPythonMonorepos', false);
+            }
+
             if (allJavascriptRepos.includes(selectedRepo)) {
               core.setOutput('javascriptRepos', [selectedRepo]);
             } else {
               core.setOutput('javascriptRepos', []);
               core.setOutput('hasJavascriptRepos', false);
+            }
+
+            const dualRepoConfig = allDualMFEAndBaseJavascriptRepos.find(repoConfig => repoConfig.repo === selectedRepo);
+            if (dualRepoConfig !== undefined) {
+              core.setOutput('dualMFEAndBaseJavascriptRepos', [dualRepoConfig]);
+            } else {
+              core.setOutput('dualMFEAndBaseJavascriptRepos', []);
+              core.setOutput('hasDualMFEAndBaseJavascriptRepos', false);
             }
 
             const genericRepoConfig = allGenericRepos.find(repoConfig => repoConfig.repo === selectedRepo);
@@ -144,8 +201,12 @@ jobs:
     outputs:
       has_python_repos: ${{ steps.generate_repo_matrix.outputs.hasPythonRepos }}
       python_repos: ${{ steps.generate_repo_matrix.outputs.pythonRepos }}
+      has_python_monorepos: ${{ steps.generate_repo_matrix.outputs.hasPythonMonorepos }}
+      python_monorepos: ${{ steps.generate_repo_matrix.outputs.pythonMonorepos }}
       has_js_repos: ${{ steps.generate_repo_matrix.outputs.hasJavascriptRepos }}
       js_repos: ${{ steps.generate_repo_matrix.outputs.javascriptRepos }}
+      has_dual_js_repos: ${{ steps.generate_repo_matrix.outputs.hasDualMFEAndBaseJavascriptRepos }}
+      dual_js_repos: ${{ steps.generate_repo_matrix.outputs.dualMFEAndBaseJavascriptRepos }}
       has_generic_repos: ${{ steps.generate_repo_matrix.outputs.hasGenericRepos }}
       generic_repos: ${{ steps.generate_repo_matrix.outputs.genericRepos }}
 
@@ -164,7 +225,7 @@ jobs:
       id: date
       run: echo $BRANCH
     - name: clone openedx/openedx-translations
-      uses: actions/checkout@v6
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
     # creates the branch where all the translations will be added to
     - name: make and push a new branch
@@ -187,7 +248,7 @@ jobs:
     steps:
       # Clones the openedx-translations repo
       - name: clone openedx/openedx-translations
-        uses: actions/checkout@v6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ needs.setup-branch.outputs.branch }}
 
@@ -197,7 +258,7 @@ jobs:
 
       # Clones the  repository
       - name: clone ${{ github.repository_owner }}/${{ matrix.repo }}
-        uses: actions/checkout@v6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: ${{ github.repository_owner }}/${{ matrix.repo }}
           ref: ${{ github.event.inputs.ref }}
@@ -214,7 +275,7 @@ jobs:
 
       # Setup Python
       - name: setup python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         id: setup_python
         with:
           python-version: '3.12'
@@ -316,9 +377,115 @@ jobs:
           # push changes to branch
           git push
 
+  python-monorepo-translations:
+    # Handles repos with multiple conf/locale/en directories (one per sub-package), e.g. xblocks-extra.
+    if: ${{ !cancelled() && fromJson(needs.setup-matrix.outputs.has_python_monorepos) == true }}
+    needs: [setup-branch, setup-matrix, python-translations]
+    strategy:
+      # using max-parallel to avoid git push/pull issues when running in parallel
+      max-parallel: 1
+      matrix:
+        repo: ${{ fromJson(needs.setup-matrix.outputs.python_monorepos) }}
+
+    runs-on: ubuntu-latest
+    continue-on-error: true
+
+    steps:
+      # Clones the openedx-translations repo
+      - name: clone openedx/openedx-translations
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ needs.setup-branch.outputs.branch }}
+
+      # Installs gettext, a dependency for extracting translation source files in django
+      - name: install gettext
+        run: sudo apt install -y gettext
+
+      # Clones the  repository
+      - name: clone ${{ github.repository_owner }}/${{ matrix.repo }}
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: ${{ github.repository_owner }}/${{ matrix.repo }}
+          ref: ${{ github.event.inputs.ref }}
+          path: translations/${{ matrix.repo }}
+
+      # Setup Python
+      - name: setup python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        id: setup_python
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements/translations.txt
+
+      # Installs Python requirements from translations.txt
+      - name: install requirements
+        run: pip install -r requirements/translations.txt
+
+      # Extracts the translation source files
+      - name: extract translation source files
+        run: |
+          cd translations/${{ matrix.repo }}
+          make extract_translations
+        env:
+          IS_OPENEDX_TRANSLATIONS_WORKFLOW: yes
+
+      # Validate compilation of translation source files
+      - name: validate compilation of translation source files
+        run: |
+          cd translations/${{ matrix.repo }}
+          django-admin compilemessages --locale en
+
+      # Preparations so git adds only the translation source files, found in conf/locale/en
+      - name: add translation source files to openedx-translations
+        id: add-sources
+        run: |
+          # set identity
+          git config --global user.email "translations-bot@openedx.org"
+          git config --global user.name "edx-transifex-bot"
+          # Change directory to translations/${{ matrix.repo }}
+          cd translations/${{ matrix.repo }}
+          # remove translations/${{ matrix.repo }}/.git so we don't commit a submodule
+          rm -rf .git
+          # Find all conf/locale/en directories, excluding hidden dirs and src/ subdirectories.
+          # src/ dirs are source code inputs; the Makefile copies output to root-level package dirs.
+          mapfile -t dirs < <(find . -type d -not -path '*/.*' -not -path '*/src/*' -regex ".+conf\/locale\/en$")
+          for dir in "${dirs[@]}"; do
+            DJANGO_PATH=$(find "$dir" -name 'django.po')
+            DJANGOJS_PATH=$(find "$dir" -name 'djangojs.po')
+            ############## Special support for XBlocks
+            # if both files are not found, then it can be an XBlock (thus, text.po and textjs.po files)
+            if [ -z "$DJANGO_PATH" ] && [ -z "$DJANGOJS_PATH" ]; then
+              DJANGO_PATH=$(find "$dir" -name 'text.po')
+              DJANGOJS_PATH=$(find "$dir" -name 'textjs.po')
+              # Rename the files to django.po and djangojs.po, if exists
+              if [ -n "$DJANGO_PATH" ]; then
+                mv "$DJANGO_PATH" "$(dirname "$DJANGO_PATH")/django.po"
+                DJANGO_PATH="$(dirname "$DJANGO_PATH")/django.po"
+              fi
+              if [ -n "$DJANGOJS_PATH" ]; then
+                mv "$DJANGOJS_PATH" "$(dirname "$DJANGOJS_PATH")/djangojs.po"
+                DJANGOJS_PATH="$(dirname "$DJANGOJS_PATH")/djangojs.po"
+              fi
+            fi
+            ############## End of - Special support for XBlocks
+            [ -n "$DJANGO_PATH" ]   && git add "$DJANGO_PATH"   -f -v
+            [ -n "$DJANGOJS_PATH" ] && git add "$DJANGOJS_PATH" -f -v
+          done
+          echo "GIT_STATUS=$(git diff --cached --name-only | wc -l)" >> $GITHUB_ENV
+
+      # Attempts to commit the translation source files if there is a difference
+      - name: git commit the translation source files
+        if: "${{ env.GIT_STATUS > 0 }}"
+        run: |
+          # commit the changes
+          git commit -m "chore: add extracted translation source files from ${{ matrix.repo }}"
+          # push changes to branch
+          git push
+
   js-translations:
     if: ${{ !cancelled() && fromJson(needs.setup-matrix.outputs.has_js_repos) == true }}
-    needs: [setup-branch, setup-matrix, python-translations]
+    needs: [setup-branch, setup-matrix, python-translations, python-monorepo-translations]
     strategy:
       # using max-parallel to avoid git push/pull issues when running in parallel
       max-parallel: 1
@@ -337,13 +504,13 @@ jobs:
     steps:
       # Clones the openedx-translations repo
       - name: clone openedx/openedx-translations
-        uses: actions/checkout@v6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ needs.setup-branch.outputs.branch }}
 
       # Clones the  repository
       - name: clone ${{ github.repository_owner }}/${{ matrix.repo }}
-        uses: actions/checkout@v6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: ${{ github.repository_owner }}/${{ matrix.repo }}
           ref: ${{ github.event.inputs.ref }}
@@ -351,9 +518,9 @@ jobs:
 
       # Sets up node/npm
       - name: setup node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version: 16
+          node-version-file: '.nvmrc'
 
       # Extracts the translation source files
       - name: extract translation source files
@@ -386,12 +553,130 @@ jobs:
           # push changes to branch
           git push
 
+  dual-js-translations:
+    if: ${{ !cancelled() && fromJson(needs.setup-matrix.outputs.has_dual_js_repos) == true && github.event.inputs.ref == '' }}
+    needs: [setup-branch, setup-matrix, js-translations]
+    strategy:
+      # using max-parallel to avoid git push/pull issues when running in parallel
+      max-parallel: 1
+      matrix:
+        repository_config: ${{ fromJson(needs.setup-matrix.outputs.dual_js_repos) }}
+    runs-on: ubuntu-latest
+    continue-on-error: true
+
+    steps:
+      # Clones the openedx-translations repo
+      - name: clone openedx/openedx-translations
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ needs.setup-branch.outputs.branch }}
+          path: openedx-translations
+
+      # Clones the repository's legacy MFE branch
+      - name: clone ${{ github.repository_owner }}/${{ matrix.repository_config.repo }} (${{ matrix.repository_config.mfe_ref }})
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: ${{ github.repository_owner }}/${{ matrix.repository_config.repo }}
+          ref: ${{ matrix.repository_config.mfe_ref }}
+          path: mfe
+
+      - name: setup node (${{ matrix.repository_config.mfe_ref }})
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: 'mfe/.nvmrc'
+
+      - name: run extract_translations (${{ matrix.repository_config.mfe_ref }})
+        run: |
+          cd mfe
+          make extract_translations
+
+      # Clones the repository's frontend-base branch
+      - name: clone ${{ github.repository_owner }}/${{ matrix.repository_config.repo }} (${{ matrix.repository_config.base_ref }})
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: ${{ github.repository_owner }}/${{ matrix.repository_config.repo }}
+          ref: ${{ matrix.repository_config.base_ref }}
+          path: base
+
+      - name: setup node (${{ matrix.repository_config.base_ref }})
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: 'base/.nvmrc'
+
+      - name: run extract_translations (${{ matrix.repository_config.base_ref }})
+        run: |
+          cd base
+          make extract_translations
+
+      - name: combine extracted translations
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        with:
+          script: |
+            const fs = require('fs');
+
+            const repo = ${{ toJSON(matrix.repository_config.repo) }};
+            const mfeRef = ${{ toJSON(matrix.repository_config.mfe_ref) }};
+            const baseRef = ${{ toJSON(matrix.repository_config.base_ref) }};
+
+            const mfe = JSON.parse(fs.readFileSync('mfe/src/i18n/transifex_input.json', 'utf8'));
+            const base = JSON.parse(fs.readFileSync('base/src/i18n/transifex_input.json', 'utf8'));
+
+            // Report any keys present in both branches with different values.
+            // The frontend-base branch is treated as the source of truth for conflicts.
+            const conflicts = Object.fromEntries(
+              Object.entries(mfe)
+                .filter(([key, value]) => key in base && base[key] !== value)
+                .map(([key, value]) => [key, { mfe: value, base: base[key] }])
+            );
+            if (Object.keys(conflicts).length > 0) {
+              await core.summary
+                .addHeading(`${repo}: translation keys differ between ${mfeRef} and ${baseRef}`, 3)
+                .addRaw(`<p>The following keys exist in both the <code>${mfeRef}</code> and <code>${baseRef}</code> branches of <code>${repo}</code> with different values. Both branches are currently supported, so the <code>${baseRef}</code> value will be used.</p>`)
+                .addTable([
+                  [{data: 'Key', header: true}, {data: mfeRef, header: true}, {data: baseRef, header: true}],
+                  ...Object.entries(conflicts).map(([key, values]) => [key, values.mfe, values.base]),
+                ])
+                .write();
+            }
+
+            // Merge: legacy MFE branch first, then frontend-base (frontend-base wins on conflicts)
+            const combined = { ...mfe, ...base };
+            fs.mkdirSync('combined', { recursive: true });
+            fs.writeFileSync('combined/transifex_input.json', JSON.stringify(combined, null, 2));
+
+      # git adds only the translation source files, found in src/i18n/transifex_input.json
+      - name: git add the translation source files
+        id: add-sources
+        run: |
+          # set identity
+          git config --global user.email "translations-bot@openedx.org"
+          git config --global user.name "edx-transifex-bot"
+          # Move the combined file to openedx-translations/translations/${{ matrix.repository_config.repo }}/src/i18n/
+          # The destination won't exist yet for a repo that has no resource here
+          mkdir -p openedx-translations/translations/${{ matrix.repository_config.repo }}/src/i18n
+          mv combined/transifex_input.json openedx-translations/translations/${{ matrix.repository_config.repo }}/src/i18n
+          # enter the openedx-translations directory so git works
+          cd openedx-translations
+          # stage the combined transifex_input.json file
+          git add translations/${{ matrix.repository_config.repo }}/src/i18n/transifex_input.json -f -v
+          # Check the git status of the translation source files
+          echo "GIT_STATUS=$(git status translations/${{ matrix.repository_config.repo }}/src/i18n/transifex_input.json -s | wc -l)" >> $GITHUB_ENV
+      # Attempts to commit the translation source files if there is a difference
+      - name: git commit the translation source files
+        if: "${{ env.GIT_STATUS > 0 }}"
+        run: |
+          cd openedx-translations
+          # commit the changes
+          git commit -m "chore: add extracted translation source files from ${{ matrix.repository_config.repo }}"
+          # push changes to branch
+          git push
+
   # Non-Django, non-JS repositories with a generic extraction interface. This
   # assumes that a `extract_translations` make target exists and will create
   # a transifex_input.yaml file in the root of the site.
   generic-translations:
     if: ${{ !cancelled() && fromJson(needs.setup-matrix.outputs.has_generic_repos) == true }}
-    needs: [setup-branch, setup-matrix, js-translations]
+    needs: [setup-branch, setup-matrix, dual-js-translations]
     strategy:
       # using max-parallel to avoid git push/pull issues when running in parallel
       max-parallel: 1
@@ -404,13 +689,13 @@ jobs:
     steps:
       # Clones the openedx-translations repo
       - name: clone openedx/openedx-translations
-        uses: actions/checkout@v6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ needs.setup-branch.outputs.branch }}
 
       # Clones the  repository
       - name: clone ${{ github.repository_owner }}/${{ matrix.repository_config.repo }}
-        uses: actions/checkout@v6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: ${{ github.repository_owner }}/${{ matrix.repository_config.repo }}
           ref: ${{ github.event.inputs.ref || matrix.repository_config.ref }}
@@ -418,7 +703,7 @@ jobs:
 
       # Sets up Python
       - name: setup python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: '3.12'
 
@@ -470,12 +755,12 @@ jobs:
 
   merge-translations:
     runs-on: ubuntu-latest
-    needs: [setup-branch, python-translations, js-translations, generic-translations]
+    needs: [setup-branch, python-translations, python-monorepo-translations, js-translations, generic-translations]
 
     steps:
       # Clones the openedx-translations repo on the automated/extract-translation-source-files-# branch
       - name: clone openedx/openedx-translations
-        uses: actions/checkout@v6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ needs.setup-branch.outputs.branch }}
           fetch-depth: 0

@@ -23,27 +23,11 @@
         <item quantity="other">%1$d Detyrat e vonuara</item>
     </plurals>
 
-	<string name="downloads.downloads">Shkarkimet</string>
-	<string name="downloads.downloads_download_course">Shkarko kursin</string>
-	<string name="downloads.downloads_remove_course_downloads">Hiq shkarkimet e kurseve</string>
-	<string name="downloads.downloads_cancel_download">Anulo shkarkimin</string>
-	<string name="downloads.downloads_empty_state_title">Nuk ka kurse me përmbajtje të shkarkueshme</string>
-	<string name="downloads.downloads_empty_state_description">Aktualisht nuk keni kurse me përmbajtje të shkarkueshme.</string>
-	<string name="downloads.downloaded_downloaded_size">%1$s u shkarkua</string>
-	<string name="downloads.downloaded_available_size">%1$s në dispozicion</string>
-	<string name="downloads.downloads_accessibility_stop_downloading_course">Ndalo shkarkimin e kursit</string>
-	<string name="downloads.downloads_loading_course_structure">Struktura e kursit po ngarkohet…</string>
-
-	<string name="app.app_navigation_discovery">Zbuloni</string>
-	<string name="app.app_navigation_learn">Mësoni</string>
-	<string name="app.app_navigation_profile">Profili</string>
-	<string name="app.app_navigation_dates">Datat</string>
-	<string name="app.app_navigation_downloads">Shkarkimet</string>
-
 	<string name="auth.auth_forgot_password">Keni harruar fjalëkalimin\?</string>
 	<string name="auth.auth_email">Email</string>
 	<string name="auth.auth_invalid_email">Email i pavlefshëm</string>
 	<string name="auth.auth_invalid_password">Fjalëkalimi është shumë i shkurtër</string>
+	<string name="auth.auth_social_account_not_registered">Kjo llogari %1$s nuk është e lidhur me asnjë llogari %2$s . Ju lutemi regjistrohuni.</string>
 	<string name="auth.auth_welcome_back">Mirë se vini përsëri! Identifikohu për të hyrë në kurset tuaja.</string>
 	<string name="auth.auth_show_optional_fields">Shfaq fushat opsionale</string>
 	<string name="auth.auth_hide_optional_fields">Fshih fushat opsionale</string>
@@ -62,6 +46,11 @@
 	<string name="auth.auth_accessibility_show_password">Shfaq fjalëkalimin</string>
 	<string name="auth.auth_accessibility_hide_password">Fshih fjalëkalimin</string>
 
+	<string name="dates.dates_title">Datat</string>
+	<string name="dates.dates_empty_state_title">Pa data.</string>
+	<string name="dates.dates_empty_state_description">Aktualisht nuk keni kurse aktive me ngjarje të planifikuara. Regjistrohuni në një kurs për të parë datat dhe afatet e rëndësishme.</string>
+	<string name="dates.dates_shift_due_date_card_title">Keni humbur disa afate\?</string>
+	<string name="dates.dates_shift_due_date_card_description">Mos u shqetësoni - zhvendosni orarin tonë të sugjeruar për të përfunduar detyrat e duhura pa humbur asnjë përparim.</string>
 	<string name="profile.profile_full_profile">Profili i plotë</string>
 	<string name="profile.profile_limited_profile">Profili i kufizuar</string>
 	<string name="profile.profile_edit_profile">Redakto profilin</string>
@@ -131,10 +120,85 @@
 	<string name="profile.profile_disable_calendar_dialog_title">Çaktivizo sinkronizimin e kalendarit</string>
 	<string name="profile.profile_disable_calendar_dialog_description">Çaktivizimi i sinkronizimit të kalendarit do të fshijë kalendarin &amp;quot; %1$s &amp;quot;. Mund ta aktivizosh përsëri sinkronizimin e kalendarit në çdo kohë.</string>
 	<string name="profile.profile_disable_syncing">Çaktivizo sinkronizimin</string>
+	<string name="profile.profile_deleting_events">Duke fshirë ngjarjet, ju lutemi prisni…</string>
 	<string name="profile.profile_no_courses">Jo kurse %1$s</string>
 	<string name="profile.profile_no_sync_courses">Aktualisht asnjë kurs nuk po sinkronizohet me kalendarin tuaj.</string>
 	<string name="profile.profile_no_courses_with_current_filter">Asnjë kurs nuk përputhet me filtrin aktual.</string>
 	<string name="profile.profile_show_full_dates">Shfaq datat e plota si “ %1$s ”</string>
+	<string name="profile.profile_select_google_calendar_title">Zgjidh Google Calendar</string>
+	<string name="profile.profile_change_google_calendar_title">Ndrysho Google Calendar</string>
+	<string name="profile.profile_no_google_calendars">Nuk ka kalendarë të disponueshëm të Google</string>
+	<string name="profile.profile_select_calendar">Zgjidh kalendarin</string>
+	<string name="profile.profile_local_calendar_option">Kalendar lokal</string>
+
+	<string name="app.app_navigation_discovery">Zbuloni</string>
+	<string name="app.app_navigation_learn">Mësoni</string>
+	<string name="app.app_navigation_profile">Profili</string>
+	<string name="app.app_navigation_dates">Datat</string>
+	<string name="app.app_navigation_downloads">Shkarkimet</string>
+
+	<string name="discussion.discussion_all_posts">Të gjitha postimet</string>
+	<string name="discussion.discussion_unread">Të palexuara</string>
+	<string name="discussion.discussion_unanswered">Pa përgjigje</string>
+	<string name="discussion.discussion_posts_following">Postimet që po ndjek</string>
+	<string name="discussion.discussion_recent_activity">Aktiviteti i fundit</string>
+	<string name="discussion.discussion_most_activity">Më së shumti aktivitet</string>
+	<string name="discussion.discussion_most_votes">Më shumë vota</string>
+	<string name="discussion.discussion_create_post">Krijo diskutim</string>
+	<string name="discussion.discussion_create_question">Krijo pyetje</string>
+	<string name="discussion.discussion_add_response">Shto një përgjigje</string>
+	<string name="discussion.discussion_last_post">Postimi i fundit: %1$s</string>
+	<string name="discussion.discussion_follow">Ndiqni</string>
+	<string name="discussion.discussion_report">Raporto</string>
+	<string name="discussion.discussion_unreport">Ç\'raporto</string>
+	<string name="discussion.discussion_add_comment">Shto një koment</string>
+	<string name="discussion.discussion_comments_title">Koment</string>
+	<string name="discussion.discussion_comment_added">Komenti u shtua me sukses</string>
+	<string name="discussion.discussion_discussion">Diskutim</string>
+	<string name="discussion.discussion_question">Pyetje</string>
+	<string name="discussion.discussion_title">Titulli</string>
+	<string name="discussion.discussion_follow_discussion">Ndiqni këtë diskutim</string>
+	<string name="discussion.discussion_follow_question">Ndiqni këtë pyetje</string>
+	<string name="discussion.discussion_search_all_posts">Kërko të gjitha postimet</string>
+	<string name="discussion.discussion_main_categories">Kategoritë kryesore</string>
+	<string name="discussion.discussion_select_post_type">Zgjidhni llojin e postimit</string>
+	<string name="discussion.discussion_topic">Tema</string>
+	<string name="discussion.discussion_search_results">Rezultatet e kërkimit</string>
+	<string name="discussion.discussion_start_typing_to_find">Filloni të shkruani për të gjetur fillin</string>
+	<string name="discussion.discussion_anonymous">anonim</string>
+	<string name="discussion.discussion_no_yet">Ende nuk ka diskutime</string>
+	<string name="discussion.discussion_click_button_create_discussion">Klikoni butonin më poshtë për të krijuar diskutimin tuaj të parë.</string>
+	<string name="discussion.discussion_unnamed_subcategory">Nënkategori pa emër</string>
+	<plurals name="discussion.discussion_votes">
+        <item quantity="one">%1$d votë</item>
+        <item quantity="other">%1$d vota</item>
+    </plurals>
+	<plurals name="discussion.discussion_comments">
+        <item quantity="one">%1$d Koment</item>
+        <item quantity="other">%1$d Komente</item>
+    </plurals>
+	<plurals name="discussion.discussion_missed_posts">
+        <item quantity="one">%1$d Postimi i humbur</item>
+        <item quantity="other">%1$d Postime të humbura</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses">
+        <item quantity="one">përgjigje %1$d</item>
+        <item quantity="other">%1$d përgjigje</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses_capitalized">
+        <item quantity="one">Përgjigje %1$d</item>
+        <item quantity="other">%1$d Përgjigjet</item>
+    </plurals>
+	<plurals name="discussion.discussion_found_threads">
+        <item quantity="one">U gjet postimi %s</item>
+        <item quantity="other">U gjetën postime %s</item>
+    </plurals>
+
+	<string name="whatsnew.whats_new_title">Çfarë ka të re</string>
+	<string name="whatsnew.whats_new_navigation_previous">E mëparshme</string>
+	<string name="whatsnew.whats_new_navigation_next">Tjetra</string>
+	<string name="whatsnew.whats_new_navigation_done">U krye</string>
+
 	<string name="core.core_error_invalid_grant">Kredencialet e pavlefshme</string>
 	<string name="core.core_error_no_connection">Lidhje e ngadaltë ose pa internet</string>
 	<string name="core.core_error_unknown_error">Diçka shkoi keq</string>
@@ -274,6 +338,10 @@
 	<string name="core.core_explore_other_parts_when_reconnect_or_download">Eksploroni pjesë të tjera të këtij kursi ose shkarkoni këtë kur të rilidheni.</string>
 	<string name="core.core_authorization">Autorizimi</string>
 	<string name="core.core_authorization_request">Ju lutemi, futni sistemin për të vazhduar me regjistrimin e kursit.</string>
+	<string name="core.core_sso_sign_in">Identifikohu me SSO</string>
+	<string name="core.core_sign_in_sso_heading">Filloni sot për të ndërtuar karrierën tuaj me besim</string>
+	<string name="core.core_sign_in_sso_login_title">Identifikohu</string>
+	<string name="core.core_sign_in_sso_login_subtitle">Hyni përmes shërbimit të unifikuar kombëtar të hyrjes</string>
 
 	<string name="course.course_you_earned_certificate">Urime, ju e keni fituar këtë certifikatë kursi në &amp;quot; %s &amp;quot;.</string>
 	<string name="course.course_view_certificate">Shiko certifikatën</string>
@@ -375,7 +443,17 @@
 	<string name="course.course_videos_caught_up">Je në rregull me videot!</string>
 	<string name="course.course_assignments_caught_up">Jeni në rregull me detyrat!</string>
 
-	<string name="dates.dates_title">Datat</string>
+	<string name="downloads.downloads">Shkarkimet</string>
+	<string name="downloads.downloads_download_course">Shkarko kursin</string>
+	<string name="downloads.downloads_remove_course_downloads">Hiq shkarkimet e kurseve</string>
+	<string name="downloads.downloads_cancel_download">Anulo shkarkimin</string>
+	<string name="downloads.downloads_empty_state_title">Nuk ka kurse me përmbajtje të shkarkueshme</string>
+	<string name="downloads.downloads_empty_state_description">Aktualisht nuk keni kurse me përmbajtje të shkarkueshme.</string>
+	<string name="downloads.downloaded_downloaded_size">%1$s u shkarkua</string>
+	<string name="downloads.downloaded_available_size">%1$s në dispozicion</string>
+	<string name="downloads.downloads_accessibility_stop_downloading_course">Ndalo shkarkimin e kursit</string>
+	<string name="downloads.downloads_loading_course_structure">Struktura e kursit po ngarkohet…</string>
+
 	<string name="discovery.discovery_Discovery">Zbuloni</string>
 	<string name="discovery.discovery_discovery_new">Zbuloni të reja</string>
 	<string name="discovery.discovery_lets_find">Le të gjejmë diçka të re për ju</string>
@@ -394,66 +472,4 @@
     </plurals>
 	<!-- Accessibility -->
 	<string name="discovery.discovery_accessibility_play_video">Luaj video</string>
-
-	<string name="whatsnew.whats_new_title">Çfarë ka të re</string>
-	<string name="whatsnew.whats_new_navigation_previous">E mëparshme</string>
-	<string name="whatsnew.whats_new_navigation_next">Tjetra</string>
-	<string name="whatsnew.whats_new_navigation_done">U krye</string>
-
-	<string name="discussion.discussion_all_posts">Të gjitha postimet</string>
-	<string name="discussion.discussion_unread">Të palexuara</string>
-	<string name="discussion.discussion_unanswered">Pa përgjigje</string>
-	<string name="discussion.discussion_posts_following">Postimet që po ndjek</string>
-	<string name="discussion.discussion_recent_activity">Aktiviteti i fundit</string>
-	<string name="discussion.discussion_most_activity">Më së shumti aktivitet</string>
-	<string name="discussion.discussion_most_votes">Më shumë vota</string>
-	<string name="discussion.discussion_create_post">Krijo diskutim</string>
-	<string name="discussion.discussion_create_question">Krijo pyetje</string>
-	<string name="discussion.discussion_add_response">Shto një përgjigje</string>
-	<string name="discussion.discussion_last_post">Postimi i fundit: %1$s</string>
-	<string name="discussion.discussion_follow">Ndiqni</string>
-	<string name="discussion.discussion_report">Raporto</string>
-	<string name="discussion.discussion_unreport">Ç\'raporto</string>
-	<string name="discussion.discussion_add_comment">Shto një koment</string>
-	<string name="discussion.discussion_comments_title">Koment</string>
-	<string name="discussion.discussion_comment_added">Komenti u shtua me sukses</string>
-	<string name="discussion.discussion_discussion">Diskutim</string>
-	<string name="discussion.discussion_question">Pyetje</string>
-	<string name="discussion.discussion_title">Titulli</string>
-	<string name="discussion.discussion_follow_discussion">Ndiqni këtë diskutim</string>
-	<string name="discussion.discussion_follow_question">Ndiqni këtë pyetje</string>
-	<string name="discussion.discussion_search_all_posts">Kërko të gjitha postimet</string>
-	<string name="discussion.discussion_main_categories">Kategoritë kryesore</string>
-	<string name="discussion.discussion_select_post_type">Zgjidhni llojin e postimit</string>
-	<string name="discussion.discussion_topic">Tema</string>
-	<string name="discussion.discussion_search_results">Rezultatet e kërkimit</string>
-	<string name="discussion.discussion_start_typing_to_find">Filloni të shkruani për të gjetur fillin</string>
-	<string name="discussion.discussion_anonymous">anonim</string>
-	<string name="discussion.discussion_no_yet">Ende nuk ka diskutime</string>
-	<string name="discussion.discussion_click_button_create_discussion">Klikoni butonin më poshtë për të krijuar diskutimin tuaj të parë.</string>
-	<string name="discussion.discussion_unnamed_subcategory">Nënkategori pa emër</string>
-	<plurals name="discussion.discussion_votes">
-        <item quantity="one">%1$d votë</item>
-        <item quantity="other">%1$d vota</item>
-    </plurals>
-	<plurals name="discussion.discussion_comments">
-        <item quantity="one">%1$d Koment</item>
-        <item quantity="other">%1$d Komente</item>
-    </plurals>
-	<plurals name="discussion.discussion_missed_posts">
-        <item quantity="one">%1$d Postimi i humbur</item>
-        <item quantity="other">%1$d Postime të humbura</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses">
-        <item quantity="one">përgjigje %1$d</item>
-        <item quantity="other">%1$d përgjigje</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses_capitalized">
-        <item quantity="one">Përgjigje %1$d</item>
-        <item quantity="other">%1$d Përgjigjet</item>
-    </plurals>
-	<plurals name="discussion.discussion_found_threads">
-        <item quantity="one">U gjet postimi %s</item>
-        <item quantity="other">U gjetën postime %s</item>
-    </plurals>
 </resources>

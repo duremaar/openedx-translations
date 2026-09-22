@@ -6,15 +6,16 @@
 # Translators:
 # Translators:
 # Eden Huthmacher, 2025
-# Brian Smith, 2025
+# Gerardo Núñez, 2026
+# Brian Smith, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-12 00:35+0000\n"
+"POT-Creation-Date: 2026-05-20 01:05+0000\n"
 "PO-Revision-Date: 2023-01-26 15:39+0000\n"
-"Last-Translator: Brian Smith, 2025\n"
+"Last-Translator: Brian Smith, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/open-edx/teams/6205/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -179,7 +180,7 @@ msgid ""
 msgstr ""
 "コースの編集に失敗しました。コースのURLスラッグ「[{url_slug}]」はすでに使用されています。このフィールドを更新して、再度お試しください。"
 
-#: apps/api/views.py:58
+#: apps/api/views.py:57
 msgid "You are not permitted to access the API documentation."
 msgstr "APIドキュメントへのアクセスは許可されていません。"
 
@@ -244,6 +245,10 @@ msgstr "登録データを取得するために使用する分析APIを設定す
 #, python-brace-format
 msgid "period must be one of {period_choices}."
 msgstr "期間は{period_choices}のいずれかでなければなりません。"
+
+#: apps/core/forms.py:26
+msgid "'rate' must be in the format defined by DRF, such as '100/hour'."
+msgstr "「rate」は、DRFで定義された形式、例えば「100/hour」でなければなりません。"
 
 #: apps/core/models.py:17
 msgid "Full Name"
@@ -443,6 +448,11 @@ msgstr "修士号"
 msgid "Available now"
 msgstr "現在利用可能"
 
+#: apps/course_metadata/algolia_models.py:118
+#: apps/course_metadata/models.py:2757
+msgid "Upcoming"
+msgstr "近日公開予定"
+
 #: apps/course_metadata/algolia_models.py:120
 #: apps/course_metadata/choices.py:100 apps/course_metadata/models.py:2751
 #: apps/course_metadata/models.py:2767
@@ -567,6 +577,10 @@ msgstr "エラーあり"
 #: apps/course_metadata/choices.py:74
 msgid "Honor"
 msgstr "優等課程"
+
+#: apps/course_metadata/choices.py:75
+msgid "Credit"
+msgstr "単位"
 
 #: apps/course_metadata/choices.py:77
 msgid "Professional"
@@ -881,9 +895,17 @@ msgstr "不正な引数「{}」、UUIDは同じにできません。"
 msgid "Deleting"
 msgstr "削除中"
 
+#: apps/course_metadata/management/commands/delete_person_dups.py:85
+msgid "Would delete"
+msgstr "削除します"
+
 #: apps/course_metadata/management/commands/delete_person_dups.py:86
 msgid "Name"
 msgstr "名前"
+
+#: apps/course_metadata/management/commands/delete_person_dups.py:87
+msgid "Endorsements"
+msgstr "推薦"
 
 #: apps/course_metadata/management/commands/delete_person_dups.py:88
 msgid "Programs"
@@ -927,6 +949,10 @@ msgstr "1つ以上のコース実行が公開に失敗しました。"
 #: apps/course_metadata/management/commands/remove_redirects_from_courses.py:22
 msgid "Remove all redirects to all courses"
 msgstr "すべてのコースへのリダイレクトを削除する"
+
+#: apps/course_metadata/management/commands/remove_redirects_from_courses.py:23
+msgid "Redirects to remove"
+msgstr "削除するリダイレクト"
 
 #: apps/course_metadata/management/commands/remove_redirects_from_courses.py:25
 msgid ""
@@ -1736,9 +1762,17 @@ msgstr "締切を説明します（例：早期入学締切）"
 msgid "The date after which the deadline expires (e.g. January 1, 2019)"
 msgstr "締切が過ぎる日付（例：2019年1月1日）"
 
+#: apps/course_metadata/models.py:4352
+msgid "The time after which the deadline expires (e.g. 11:59 PM EST)."
+msgstr "締切が過ぎる時間（例：午後1時59分 JST）。"
+
 #: apps/course_metadata/models.py:4388
 msgid "Describes what the cost is for (e.g. Tuition)"
 msgstr "費用の内容を説明します（例：授業料）"
+
+#: apps/course_metadata/models.py:4392
+msgid "String-based field stating how much the cost is (e.g. $1000)."
+msgstr "コストがいくらであるかを示す文字列フィールド（例：¥1000）。"
 
 #: apps/course_metadata/models.py:4435
 msgid ""
@@ -1890,15 +1924,15 @@ msgstr "パートナー={}のクライアントなしでSalesforceへのクエ�
 msgid "Unable to associate a case for comments for {}"
 msgstr "コメントのケースを関連付けできませんでした: {}"
 
-#: apps/course_metadata/templates/admin/course_metadata/course_run.html:37
+#: apps/course_metadata/templates/admin/course_metadata/course_run.html:24
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: apps/course_metadata/templates/admin/course_metadata/course_run.html:40
+#: apps/course_metadata/templates/admin/course_metadata/course_run.html:27
 msgid "Back to Program"
 msgstr "プログラムに戻る"
 
-#: apps/course_metadata/templates/admin/course_metadata/course_run.html:42
+#: apps/course_metadata/templates/admin/course_metadata/course_run.html:29
 msgid "Save Course Run"
 msgstr "コース実行を保存"
 
@@ -1946,117 +1980,215 @@ msgid ""
 "%(time)s"
 msgstr "%(user_name)sが%(date)sの%(time)sに%(course_name)sに次のコメントをしました"
 
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:7
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:8
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:3
 #: apps/course_metadata/templates/course_metadata/email/go_live.html:9
 #: apps/course_metadata/templates/course_metadata/email/go_live.txt:3
 msgid "Hi Course Team,"
 msgstr "コースチームの皆さん、"
 
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:12
-#, python-format
-msgid ""
-"\n"
-"        This is an automated reminder that the course \"%(course_name)s\" (Course Key: %(course_key)s) is scheduled to end in %(days)s on %(course_end_date)s.\n"
-"        "
-msgstr ""
-"\n"
-"        コース「%(course_name)s」（コースキー: %(course_key)s）は、%(course_end_date)sに終了予定で、あと%(days)s日です。\n"
-"        "
-
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:16
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:16
-msgid ""
-"To ensure uninterrupted learner access and enrollment, please take one of "
-"the following actions:"
-msgstr "学習者のアクセスと登録が途切れないようにするために、次のいずれかのアクションを実行してください。"
-
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:19
-#, python-format
-msgid ""
-"\n"
-"        This is an automated reminder that the course \"%(course_name)s\" (Course Key: %(course_key)s) has officially ended as of %(course_end_date)s.\n"
-"        "
-msgstr ""
-"\n"
-"        コース「%(course_name)s」（コースキー: %(course_key)s）は%(course_end_date)sをもって正式に終了しました。\n"
-"        "
-
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:23
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:18
-msgid ""
-"If this was intentional, no action is needed. However, if this course was "
-"meant to remain available, you have two options to restore access:"
-msgstr ""
-"この操作が意図的であれば、特に対応は必要ありません。しかし、このコースを引き続き利用可能にする場合、アクセスを復元するための選択肢が2つあります。"
-
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:29
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:21
-msgid ""
-"Extend the current course run’s end date if the same course is meant to "
-"remain available."
-msgstr "現在のコースの終了日を延長して、同じコースを引き続き利用可能にしてください。"
-
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:31
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:22
-msgid ""
-"Create a new course run if you are planning to offer this course again with "
-"updated content, pacing, or a new cohort of learners."
-msgstr ""
-"新しいコースを提供する予定がある場合は、内容や進行ペースを更新したり、新しい受講者グループを対象にしたりして、新しいコースランを作成してください。"
-
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:32
-msgid "Visit the Course in Publisher"
-msgstr "コースをパブリッシャーで見る"
-
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:37
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:25
-msgid "You can review and modify the course end settings here:"
-msgstr "コース終了設定をこちらで確認および変更できます。"
-
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:41
-#, python-format
-msgid ""
-"\n"
-"        If no action is taken, the course will no longer be available for enrollment or access by learners on \n"
-"        <a href=\"%(partner_marketing_site_url)s\">%(partner_marketing_site_url)s</a> after the end date.\n"
-"        "
-msgstr ""
-"\n"
-"        何も行動を起こさない場合、コースは終了日以降、<a href=\"%(partner_marketing_site_url)s\">%(partner_marketing_site_url)s</a>で受講者が登録またはアクセスできなくなります。\n"
-"        "
-
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:47
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:34
-msgid "Thanks"
-msgstr "ありがとう"
-
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:14
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:6
 #, python-format
 msgid ""
 "\n"
-"This is an automated reminder that the course \"%(course_name)s\" (Course Key: %(course_key)s) is scheduled to end in %(days)s on %(course_end_date)s.\n"
+"This is an automated reminder that the course \"%(course_name)s\" (%(course_key)s) is scheduled to end in %(days)s on %(course_end_date)s.\n"
 msgstr ""
 "\n"
-"このメールは自動送信されています。コース「%(course_name)s」（コースキー: %(course_key)s）は、%(days)s後の%(course_end_date)sに終了予定です。\n"
+"このメールは自動送信されています。コース「%(course_name)s」（%(course_key)s）は、%(days)s後の%(course_end_date)sに終了予定です。\n"
 
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:20
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:10
-#, python-format
 msgid ""
-"\n"
-"This is an automated reminder that the course \"%(course_name)s\" (Course Key: %(course_key)s) has officially ended as of %(course_end_date)s.\n"
+"If no action is taken, the course will be automatically archived after this "
+"date. If you decide not to extend the course or create a new run at this "
+"time, please inform your dedicated Project Coordinator and share your plans."
+" This helps ensure our internal teams remain aligned and can support you "
+"effectively."
 msgstr ""
-"\n"
-"このメールは自動送信されています。コース「%(course_name)s」（コースキー: %(course_key)s）は%(course_end_date)sをもって正式に終了しました。\n"
+"この日以降、コースは自動的にアーカイブされます。この時点でコースの延長や新規開講を行わない場合は、担当のプロジェクトコーディネーターにご連絡いただき、今後の計画をお知らせください。これにより、社内チーム間の連携が保たれ、効果的なサポートを提供できます。"
 
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:29
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:24
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:12
+msgid ""
+"To ensure a smooth experience for our edX Learners, please take one of the "
+"following actions:"
+msgstr "edXの学習者の方々にスムーズな体験を提供するため、以下のいずれかの対応をお願いいたします。"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:29
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:62
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:95
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:14
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:32
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:48
+msgid "Create a New Course Run:"
+msgstr "新しいコースランを作成する:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:30
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:63
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:96
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:15
+msgid ""
+"Planning to update the content or offer the course to a new cohort? We "
+"recommend setting up a new course run in Publisher."
+msgstr ""
+"コンテンツを更新したり、新しい受講者グループにコースを提供したりする予定ですか？その場合は、Publisherで新しいコースランを設定することをおすすめします。"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:31
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:64
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:97
+msgid "You can get started"
+msgstr "始めることができます"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:32
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:39
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:65
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:72
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:98
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:105
+msgid "here"
+msgstr "こちら"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:36
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:69
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:102
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:18
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:35
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:51
+msgid "Extend the Course End Date:"
+msgstr "コース終了日の延長："
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:37
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:70
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:103
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:19
+msgid ""
+"If the content is still relevant, you can extend the course end date in "
+"Studio."
+msgstr "コンテンツがまだ関連性のあるものであれば、Studioでコースの終了日を延長できます。"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:38
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:71
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:104
+msgid "Simply visit the Schedule and Details tab"
+msgstr "「スケジュールと詳細」タブにアクセスしてください"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:46
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:24
 #, python-format
 msgid ""
 "\n"
-"If no action is taken, the course will no longer be available for enrollment or access by learners on %(partner_marketing_site_url)s after the end date.\n"
+"Our records indicate that the course \"%(course_name)s\" (Course Key: %(course_key)s) is scheduled to end in 7 days on %(course_end_date)s. Despite previous reminders, we’ve noticed that no action has been taken yet.\n"
 msgstr ""
 "\n"
-"何も行動を起こさない場合、終了日以降、%(partner_marketing_site_url)s での受講者によるコースの登録やアクセスができなくなります。\n"
+"弊社の記録によると、コース「%(course_name)s」（コースキー：%(course_key)s）は、7日後の%(course_end_date)sに終了予定です。以前にもリマインダーをお送りしましたが、まだ何も対応が取られていないようです。\n"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:52
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:85
+msgid "Important:"
+msgstr "重要:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:53
+msgid ""
+"If no action is taken, the course will be automatically archived after the "
+"current end date. If you choose not to extend or create a new course run at "
+"this time, you must inform your dedicated Project Coordinator with your "
+"reasons. This will ensure our internal teams are properly informed about "
+"your plans."
+msgstr ""
+"何も対応されない場合、コースは現在の終了日をもって自動的にアーカイブされます。この時点でコースの期間延長や新規コースの作成を行わない場合は、その理由を専任のプロジェクトコーディネーターにお知らせください。これにより、弊社の内部チームがお客様の計画を適切に把握できます。"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:57
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:30
+msgid ""
+"To prevent disruption to learner access, please choose one of the following "
+"options:"
+msgstr "学習者のアクセスが中断されないように、以下のいずれかのオプションを選択してください。"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:79
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:40
+#, python-format
+msgid ""
+"\n"
+"Our records show that the course \"%(course_name)s\" (Course Key: %(course_key)s) officially ended on %(course_end_date)s and has now entered the archived state. Despite our previous reminders, it appears no action has been taken yet.\n"
+msgstr ""
+"\n"
+"弊社の記録によると、コース「%(course_name)s」（コースキー：%(course_key)s）は%(course_end_date)sに正式に終了し、アーカイブ状態になりました。以前のリマインダーにもかかわらず、まだ何も対応されていないようです。\n"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:86
+msgid ""
+"If you decide not to extend the course or create a new course run at this "
+"time, you must inform your dedicated Project Coordinator with the reasons "
+"behind this. This will help ensure our internal teams are fully updated on "
+"your plans for the course."
+msgstr ""
+"この時点でコースの延長や新しいコースの作成を行わない場合は、その理由を専任のプロジェクトコーディネーターにお知らせください。これにより、当社の内部チームがコースに関するお客様の計画を完全に把握できるようになります。"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:90
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:46
+msgid ""
+"If you wish to keep this course active, please choose one of the following "
+"options:"
+msgstr "このコースをアクティブな状態に保つには、以下のいずれかのオプションを選択してください。"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:112
+msgid "NOTE:"
+msgstr "注:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:113
+msgid ""
+"This email address isn’t monitored for replies. If you have any questions or"
+" need assistance, please reach out to your dedicated Project Coordinator."
+msgstr "このメールアドレスは返信を監視しておりません。ご質問やサポートが必要な場合は、担当のプロジェクトコーディネーターまでご連絡ください。"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:117
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:58
+msgid "Thank you for your attention to this—looking forward to your updates!"
+msgstr "本件にご注目いただきありがとうございます。今後の更新を楽しみにしています！"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:121
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:60
+msgid "Best,"
+msgstr "よろしくお願いいたします。"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:122
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:61
+msgid "edX Operational Team"
+msgstr "edX運用チーム"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:16
+msgid "You can get started here:"
+msgstr "こちらから開始できます。"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:20
+msgid "Simply visit the Schedule and Details tab here:"
+msgstr "「スケジュールと詳細」タブはこちらです。"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:28
+msgid ""
+"Important: If no action is taken, the course will be automatically archived "
+"after the current end date. If you choose not to extend or create a new "
+"course run at this time, you must inform your dedicated Project Coordinator "
+"with your reasons. This will ensure our internal teams are properly informed"
+" about your plans."
+msgstr ""
+"重要：何も対応されない場合、コースは現在の終了日を過ぎると自動的にアーカイブされます。この時点でコースの延長または新しいコースの実行を作成しないことを選択した場合は、その理由を専任のプロジェクトコーディネーターに通知する必要があります。これにより、当社の内部チームがお客様の計画について適切に把握できます。"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:44
+msgid ""
+"Important: If you decide not to extend the course or create a new course run"
+" at this time, you must inform your dedicated Project Coordinator with the "
+"reasons behind this. This will help ensure our internal teams are fully "
+"updated on your plans for the course."
+msgstr ""
+"重要：この時点でコースの延長または新しいコースの実行を行わないと決定した場合は、その理由を専任のプロジェクトコーディネーターに必ずお知らせください。これにより、社内チームがコースに関するお客様の計画を完全に把握できるようになります。"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:56
+msgid ""
+"NOTE: This email address isn’t monitored for replies. If you have any "
+"questions or need assistance, please reach out to your dedicated Project "
+"Coordinator."
+msgstr "注：このメールアドレスは返信を監視しておりません。ご質問やサポートが必要な場合は、担当のプロジェクトコーディネーターまでご連絡ください。"
 
 #: apps/course_metadata/templates/course_metadata/email/go_live.html:17
 #: apps/course_metadata/templates/course_metadata/email/go_live.txt:7
@@ -2406,6 +2538,11 @@ msgstr "コースのおすすめ"
 #: apps/taxonomy_support/models.py:54
 msgid "Adds recommendations for all published courses"
 msgstr "すべての公開コースに推奨事項を追加します"
+
+#: apps/taxonomy_support/models.py:58
+msgid ""
+"Adds recommendations for courses created or modified in the past num days"
+msgstr "過去num日以内に作成または変更されたコースの推奨を追加します"
 
 #: apps/taxonomy_support/providers.py:198
 msgid "No partner object found!"

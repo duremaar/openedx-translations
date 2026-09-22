@@ -22,27 +22,11 @@
         <item quantity="other">%1$d逾期作业</item>
     </plurals>
 
-	<string name="downloads.downloads">下载</string>
-	<string name="downloads.downloads_download_course">下载课程</string>
-	<string name="downloads.downloads_remove_course_downloads">删除课程下载</string>
-	<string name="downloads.downloads_cancel_download">取消下载</string>
-	<string name="downloads.downloads_empty_state_title">没有可下载内容的课程</string>
-	<string name="downloads.downloads_empty_state_description">您目前没有可下载内容的课程。</string>
-	<string name="downloads.downloaded_downloaded_size">%1$s已下载</string>
-	<string name="downloads.downloaded_available_size">%1$s可用</string>
-	<string name="downloads.downloads_accessibility_stop_downloading_course">停止下载课程</string>
-	<string name="downloads.downloads_loading_course_structure">正在加载课程结构...</string>
-
-	<string name="app.app_navigation_discovery">发现</string>
-	<string name="app.app_navigation_learn">学习</string>
-	<string name="app.app_navigation_profile">个人主页</string>
-	<string name="app.app_navigation_dates">日期</string>
-	<string name="app.app_navigation_downloads">下载</string>
-
 	<string name="auth.auth_forgot_password">忘记密码？</string>
 	<string name="auth.auth_email">电子邮件</string>
 	<string name="auth.auth_invalid_email">不合规电邮</string>
 	<string name="auth.auth_invalid_password">密码长度不够，请输入更长的密码。</string>
+	<string name="auth.auth_social_account_not_registered">此%1$s账户未与任何%2$s账户关联。请注册。</string>
 	<string name="auth.auth_welcome_back">欢迎回来！登录即可访问您的课程。</string>
 	<string name="auth.auth_show_optional_fields">显示可选字段</string>
 	<string name="auth.auth_hide_optional_fields">隐藏可选字段</string>
@@ -60,6 +44,13 @@
 	<string name="auth.auth_agreement_signin_in">通过登录此应用，您同意%1$s和%2$s ，并承认%3$s和每个会员都会根据%4$s处理您的个人数据。</string>
 	<string name="auth.auth_accessibility_show_password">显示密码</string>
 	<string name="auth.auth_accessibility_hide_password">隐藏密码</string>
+
+	<string name="dates.dates_title">日期</string>
+	<string name="dates.dates_empty_state_title">无数据</string>
+	<string name="dates.dates_empty_state_description">您目前没有已安排活动的有效课程。请报名参加课程以查看重要数据和截止日期。</string>
+	<string name="dates.dates_shift_due_date_card_title">错过了一些截止日期？</string>
+	<string name="dates.dates_shift_due_date_card_description">别担心——调整我们建议的时间表，即可完成到期作业，而不会丢失任何进度。</string>
+	<string name="dates.dates_shift_due_date">调整截止日期</string>
 
 	<string name="profile.profile_full_profile">完整档案</string>
 	<string name="profile.profile_edit_profile">编辑个人资料</string>
@@ -138,6 +129,68 @@
 	<string name="profile.profile_no_google_calendars">沒有可用的 Google 日曆</string>
 	<string name="profile.profile_select_calendar">選擇日曆</string>
 	<string name="profile.profile_local_calendar_option">本地日曆</string>
+
+	<string name="app.app_navigation_discovery">发现</string>
+	<string name="app.app_navigation_learn">学习</string>
+	<string name="app.app_navigation_profile">个人主页</string>
+	<string name="app.app_navigation_dates">日期</string>
+	<string name="app.app_navigation_downloads">下载</string>
+
+	<string name="discussion.discussion_all_posts">所有帖子</string>
+	<string name="discussion.discussion_unread">未读</string>
+	<string name="discussion.discussion_unanswered">未答复</string>
+	<string name="discussion.discussion_posts_following">我关注的帖子</string>
+	<string name="discussion.discussion_recent_activity">近期活动</string>
+	<string name="discussion.discussion_most_activity">大多数活动</string>
+	<string name="discussion.discussion_most_votes">最多票数</string>
+	<string name="discussion.discussion_create_post">创建讨论</string>
+	<string name="discussion.discussion_create_question">创建问题</string>
+	<string name="discussion.discussion_add_response">添加回复</string>
+	<string name="discussion.discussion_last_post">最后发表： %1$s</string>
+	<string name="discussion.discussion_follow">关注</string>
+	<string name="discussion.discussion_report">报告</string>
+	<string name="discussion.discussion_unreport">取消举报</string>
+	<string name="discussion.discussion_add_comment">添加评论</string>
+	<string name="discussion.discussion_comments_title">评论</string>
+	<string name="discussion.discussion_comment_added">评论添加成功</string>
+	<string name="discussion.discussion_discussion">讨论</string>
+	<string name="discussion.discussion_question">问题</string>
+	<string name="discussion.discussion_title">标题</string>
+	<string name="discussion.discussion_follow_discussion">关注此讨论</string>
+	<string name="discussion.discussion_follow_question">关注这个问题</string>
+	<string name="discussion.discussion_search_all_posts">搜索所有帖子</string>
+	<string name="discussion.discussion_main_categories">主要类别</string>
+	<string name="discussion.discussion_select_post_type">选择帖子类型</string>
+	<string name="discussion.discussion_topic">话题</string>
+	<string name="discussion.discussion_search_results">搜索结果</string>
+	<string name="discussion.discussion_start_typing_to_find">开始输入以查找主题</string>
+	<string name="discussion.discussion_anonymous">匿名</string>
+	<string name="discussion.discussion_no_yet">还没有讨论</string>
+	<string name="discussion.discussion_click_button_create_discussion">点击下面的按钮创建您的第一个讨论。</string>
+	<string name="discussion.discussion_unnamed_subcategory">未命名子类别</string>
+	<plurals name="discussion.discussion_votes">
+        <item quantity="other">%1$d票</item>
+    </plurals>
+	<plurals name="discussion.discussion_comments">
+        <item quantity="other">%1$d条评论</item>
+    </plurals>
+	<plurals name="discussion.discussion_missed_posts">
+        <item quantity="other">%1$d错过的帖子</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses">
+        <item quantity="other">%1$d回复</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses_capitalized">
+        <item quantity="other">%1$d回应</item>
+    </plurals>
+	<plurals name="discussion.discussion_found_threads">
+        <item quantity="other">找到%s帖子</item>
+    </plurals>
+
+	<string name="whatsnew.whats_new_title">什么是新的</string>
+	<string name="whatsnew.whats_new_navigation_previous">上一个</string>
+	<string name="whatsnew.whats_new_navigation_next">下一步</string>
+	<string name="whatsnew.whats_new_navigation_done">完毕</string>
 
 	<string name="core.core_error_invalid_grant">无效证件</string>
 	<string name="core.core_error_no_connection">互联网连接速度慢或没有连接</string>
@@ -277,6 +330,10 @@
 	<string name="core.core_explore_other_parts_when_reconnect_or_download">探索本课程的其他部分或在重新连接时下载。</string>
 	<string name="core.core_authorization">授权</string>
 	<string name="core.core_authorization_request">请进入系统继续进行课程选修。</string>
+	<string name="core.core_sso_sign_in">使用 SSO 登录</string>
+	<string name="core.core_sign_in_sso_heading">从今天开始自信地发展你的职业生涯</string>
+	<string name="core.core_sign_in_sso_login_title">登录</string>
+	<string name="core.core_sign_in_sso_login_subtitle">通过全国统一登录服务登录</string>
 
 	<string name="course.course_you_earned_certificate">恭喜您，您已获得“%s”课程证书。</string>
 	<string name="course.course_view_certificate">查看证书</string>
@@ -378,12 +435,16 @@
 	<string name="course.course_videos_caught_up">你已經看完所有影片了！</string>
 	<string name="course.course_assignments_caught_up">你已完成所有作業！</string>
 
-	<string name="dates.dates_title">日期</string>
-	<string name="dates.dates_empty_state_title">无数据</string>
-	<string name="dates.dates_empty_state_description">您目前没有已安排活动的有效课程。请报名参加课程以查看重要数据和截止日期。</string>
-	<string name="dates.dates_shift_due_date_card_title">错过了一些截止日期？</string>
-	<string name="dates.dates_shift_due_date_card_description">别担心——调整我们建议的时间表，即可完成到期作业，而不会丢失任何进度。</string>
-	<string name="dates.dates_shift_due_date">调整截止日期</string>
+	<string name="downloads.downloads">下载</string>
+	<string name="downloads.downloads_download_course">下载课程</string>
+	<string name="downloads.downloads_remove_course_downloads">删除课程下载</string>
+	<string name="downloads.downloads_cancel_download">取消下载</string>
+	<string name="downloads.downloads_empty_state_title">没有可下载内容的课程</string>
+	<string name="downloads.downloads_empty_state_description">您目前没有可下载内容的课程。</string>
+	<string name="downloads.downloaded_downloaded_size">%1$s已下载</string>
+	<string name="downloads.downloaded_available_size">%1$s可用</string>
+	<string name="downloads.downloads_accessibility_stop_downloading_course">停止下载课程</string>
+	<string name="downloads.downloads_loading_course_structure">正在加载课程结构...</string>
 
 	<string name="discovery.discovery_Discovery">发现</string>
 	<string name="discovery.discovery_discovery_new">发现新</string>
@@ -402,60 +463,4 @@
     </plurals>
 	<!-- Accessibility -->
 	<string name="discovery.discovery_accessibility_play_video">播放视频</string>
-
-	<string name="whatsnew.whats_new_title">什么是新的</string>
-	<string name="whatsnew.whats_new_navigation_previous">上一个</string>
-	<string name="whatsnew.whats_new_navigation_next">下一步</string>
-	<string name="whatsnew.whats_new_navigation_done">完毕</string>
-
-	<string name="discussion.discussion_all_posts">所有帖子</string>
-	<string name="discussion.discussion_unread">未读</string>
-	<string name="discussion.discussion_unanswered">未答复</string>
-	<string name="discussion.discussion_posts_following">我关注的帖子</string>
-	<string name="discussion.discussion_recent_activity">近期活动</string>
-	<string name="discussion.discussion_most_activity">大多数活动</string>
-	<string name="discussion.discussion_most_votes">最多票数</string>
-	<string name="discussion.discussion_create_post">创建讨论</string>
-	<string name="discussion.discussion_create_question">创建问题</string>
-	<string name="discussion.discussion_add_response">添加回复</string>
-	<string name="discussion.discussion_last_post">最后发表： %1$s</string>
-	<string name="discussion.discussion_follow">关注</string>
-	<string name="discussion.discussion_report">报告</string>
-	<string name="discussion.discussion_unreport">取消举报</string>
-	<string name="discussion.discussion_add_comment">添加评论</string>
-	<string name="discussion.discussion_comments_title">评论</string>
-	<string name="discussion.discussion_comment_added">评论添加成功</string>
-	<string name="discussion.discussion_discussion">讨论</string>
-	<string name="discussion.discussion_question">问题</string>
-	<string name="discussion.discussion_title">标题</string>
-	<string name="discussion.discussion_follow_discussion">关注此讨论</string>
-	<string name="discussion.discussion_follow_question">关注这个问题</string>
-	<string name="discussion.discussion_search_all_posts">搜索所有帖子</string>
-	<string name="discussion.discussion_main_categories">主要类别</string>
-	<string name="discussion.discussion_select_post_type">选择帖子类型</string>
-	<string name="discussion.discussion_topic">话题</string>
-	<string name="discussion.discussion_search_results">搜索结果</string>
-	<string name="discussion.discussion_start_typing_to_find">开始输入以查找主题</string>
-	<string name="discussion.discussion_anonymous">匿名</string>
-	<string name="discussion.discussion_no_yet">还没有讨论</string>
-	<string name="discussion.discussion_click_button_create_discussion">点击下面的按钮创建您的第一个讨论。</string>
-	<string name="discussion.discussion_unnamed_subcategory">未命名子类别</string>
-	<plurals name="discussion.discussion_votes">
-        <item quantity="other">%1$d票</item>
-    </plurals>
-	<plurals name="discussion.discussion_comments">
-        <item quantity="other">%1$d条评论</item>
-    </plurals>
-	<plurals name="discussion.discussion_missed_posts">
-        <item quantity="other">%1$d错过的帖子</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses">
-        <item quantity="other">%1$d回复</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses_capitalized">
-        <item quantity="other">%1$d回应</item>
-    </plurals>
-	<plurals name="discussion.discussion_found_threads">
-        <item quantity="other">找到%s帖子</item>
-    </plurals>
 </resources>

@@ -23,27 +23,11 @@
         <item quantity="other">%1$d Süresi Geçmiş Ödev</item>
     </plurals>
 
-	<string name="downloads.downloads">İndirmeler</string>
-	<string name="downloads.downloads_download_course">Dersi indir</string>
-	<string name="downloads.downloads_remove_course_downloads">Ders indirmelerini sil</string>
-	<string name="downloads.downloads_cancel_download">İndirmeyi iptal et</string>
-	<string name="downloads.downloads_empty_state_title">İndirilebilir İçerikli Ders Yok</string>
-	<string name="downloads.downloads_empty_state_description">Şu anda indirilebilir içeriğe sahip dersiniz yok.</string>
-	<string name="downloads.downloaded_downloaded_size">%1$s indirildi</string>
-	<string name="downloads.downloaded_available_size">%1$s mevcut</string>
-	<string name="downloads.downloads_accessibility_stop_downloading_course">Dersi indirmeyi durdur</string>
-	<string name="downloads.downloads_loading_course_structure">Ders yapısı yükleniyor…</string>
-
-	<string name="app.app_navigation_discovery">Keşfet</string>
-	<string name="app.app_navigation_learn">Öğren</string>
-	<string name="app.app_navigation_profile">Profil</string>
-	<string name="app.app_navigation_dates">Tarihler</string>
-	<string name="app.app_navigation_downloads">İndirmeler</string>
-
 	<string name="auth.auth_forgot_password">Parolanızı mı unuttunuz\?</string>
 	<string name="auth.auth_email">E-posta</string>
 	<string name="auth.auth_invalid_email">Geçersiz e-posta</string>
 	<string name="auth.auth_invalid_password">Parola çok kısa</string>
+	<string name="auth.auth_social_account_not_registered">Bu %1$s hesabı herhangi bir %2$s hesabına bağlı değil. Lütfen kaydolun.</string>
 	<string name="auth.auth_welcome_back">Tekrar hoş geldiniz! Derslerinize erişmek için giriş yapın.</string>
 	<string name="auth.auth_show_optional_fields">İsteğe bağlı alanları göster</string>
 	<string name="auth.auth_hide_optional_fields">İsteğe bağlı alanları gizle</string>
@@ -61,6 +45,13 @@
 	<string name="auth.auth_agreement_signin_in">Bu uygulamada oturum açarak %1$s ve %2$s hükümlerini kabul etmiş olursunuz ve %3$s ve iş ortaklarımızın kişisel verilerinizi %4$s uyarınca işlediğini kabul etmiş olursunuz.</string>
 	<string name="auth.auth_accessibility_show_password">Parolayı göster</string>
 	<string name="auth.auth_accessibility_hide_password">Parolayı gizle</string>
+
+	<string name="dates.dates_title">Tarihler</string>
+	<string name="dates.dates_empty_state_title">Tarih Yok</string>
+	<string name="dates.dates_empty_state_description">Şu anda planlanmış etkinlikleri olan aktif bir dersiniz bulunmamaktadır. Önemli tarihleri ve son teslim tarihlerini görmek için bir derse kaydolun.</string>
+	<string name="dates.dates_shift_due_date_card_title">Bazı Son Teslim Tarihlerini mi Kaçırdınız\?</string>
+	<string name="dates.dates_shift_due_date_card_description">Endişelenmeyin; süresi gelen görevleri herhangi bir ilerleme kaybı yaşamadan tamamlamak için önerilen programımızı değiştirin.</string>
+	<string name="dates.dates_shift_due_date">Son Tarihleri Değiştir</string>
 
 	<string name="profile.profile_full_profile">Tam profil</string>
 	<string name="profile.profile_limited_profile">Sınırlı profil</string>
@@ -141,6 +132,74 @@
 	<string name="profile.profile_no_google_calendars">Google takvimleri mevcut değil</string>
 	<string name="profile.profile_select_calendar">Takvim seç</string>
 	<string name="profile.profile_local_calendar_option">Yerel takvim</string>
+
+	<string name="app.app_navigation_discovery">Keşfet</string>
+	<string name="app.app_navigation_learn">Öğren</string>
+	<string name="app.app_navigation_profile">Profil</string>
+	<string name="app.app_navigation_dates">Tarihler</string>
+	<string name="app.app_navigation_downloads">İndirmeler</string>
+
+	<string name="discussion.discussion_all_posts">Tüm Gönderiler</string>
+	<string name="discussion.discussion_unread">Okunmamış</string>
+	<string name="discussion.discussion_unanswered">Cevaplanmamış</string>
+	<string name="discussion.discussion_posts_following">Takip ettiğim gönderiler</string>
+	<string name="discussion.discussion_recent_activity">Son etkinlik</string>
+	<string name="discussion.discussion_most_activity">En çok etkinlik</string>
+	<string name="discussion.discussion_most_votes">En çok oy</string>
+	<string name="discussion.discussion_create_post">Tartışma oluştur</string>
+	<string name="discussion.discussion_create_question">Soru oluştur</string>
+	<string name="discussion.discussion_add_response">Bir cevap ekle</string>
+	<string name="discussion.discussion_last_post">Son gönderi: %1$s</string>
+	<string name="discussion.discussion_follow">Takip et</string>
+	<string name="discussion.discussion_report">Raporla</string>
+	<string name="discussion.discussion_unreport">Raporlamayı iptal et</string>
+	<string name="discussion.discussion_add_comment">Bir yorum ekleyin</string>
+	<string name="discussion.discussion_comments_title">Yorum</string>
+	<string name="discussion.discussion_comment_added">Yorum Başarıyla eklendi</string>
+	<string name="discussion.discussion_discussion">Forum</string>
+	<string name="discussion.discussion_question">Soru</string>
+	<string name="discussion.discussion_title">Başlık</string>
+	<string name="discussion.discussion_follow_discussion">Bu tartışmayı takip et</string>
+	<string name="discussion.discussion_follow_question">Bu soruyu takip et</string>
+	<string name="discussion.discussion_search_all_posts">Tüm gönderilerde ara</string>
+	<string name="discussion.discussion_main_categories">Ana kategoriler</string>
+	<string name="discussion.discussion_select_post_type">Gönderi türünü seçin</string>
+	<string name="discussion.discussion_topic">Konu</string>
+	<string name="discussion.discussion_search_results">Arama sonuçları</string>
+	<string name="discussion.discussion_start_typing_to_find">İlmeği bulmak için yazmaya başlayın</string>
+	<string name="discussion.discussion_anonymous">anonim</string>
+	<string name="discussion.discussion_no_yet">Henüz tartışma yok</string>
+	<string name="discussion.discussion_click_button_create_discussion">İlk tartışmanızı oluşturmak için aşağıdaki düğmeyi tıklayın.</string>
+	<string name="discussion.discussion_unnamed_subcategory">İsimsiz alt kategori</string>
+	<plurals name="discussion.discussion_votes">
+        <item quantity="one">%1$d oy</item>
+        <item quantity="other">%1$d oy</item>
+    </plurals>
+	<plurals name="discussion.discussion_comments">
+        <item quantity="one">%1$d Yorum</item>
+        <item quantity="other">%1$d Yorum</item>
+    </plurals>
+	<plurals name="discussion.discussion_missed_posts">
+        <item quantity="one">%1$d Kaçırılan gönderi</item>
+        <item quantity="other">%1$d Kaçırılan gönderi</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses">
+        <item quantity="one">%1$d yanıt</item>
+        <item quantity="other">%1$d yanıt</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses_capitalized">
+        <item quantity="one">%1$d Yanıt</item>
+        <item quantity="other">%1$d Yanıt</item>
+    </plurals>
+	<plurals name="discussion.discussion_found_threads">
+        <item quantity="one">%s gönderi bulundu</item>
+        <item quantity="other">%s gönderi bulundu</item>
+    </plurals>
+
+	<string name="whatsnew.whats_new_title">Yenilikler</string>
+	<string name="whatsnew.whats_new_navigation_previous">Önceki</string>
+	<string name="whatsnew.whats_new_navigation_next">Sonraki</string>
+	<string name="whatsnew.whats_new_navigation_done">Bitti</string>
 
 	<string name="core.core_error_invalid_grant">Geçersiz kimlik bilgileri</string>
 	<string name="core.core_error_no_connection">İnternet bağlantısı yok ya da yavaş</string>
@@ -281,6 +340,10 @@
 	<string name="core.core_explore_other_parts_when_reconnect_or_download">Bu dersin diğer bölümlerini keşfedin veya tekrar bağlandığınızda bunu indirin.</string>
 	<string name="core.core_authorization">Yetkilendirme</string>
 	<string name="core.core_authorization_request">Ders kaydına devam etmek için lütfen sisteme giriş yapınız.</string>
+	<string name="core.core_sso_sign_in">SSO ile oturum açın</string>
+	<string name="core.core_sign_in_sso_heading">Kariyerinizi güvenle inşa etmeye bugün başlayın</string>
+	<string name="core.core_sign_in_sso_login_title">Giriş Yap</string>
+	<string name="core.core_sign_in_sso_login_subtitle">Ulusal birleşik oturum açma hizmeti ile oturum açın</string>
 
 	<string name="course.course_you_earned_certificate">Tebrikler, \"%s\" alanındaki bu dersin sertifikasına hak kazandınız.</string>
 	<string name="course.course_view_certificate">Sertifikayı görüntüle</string>
@@ -382,12 +445,16 @@
 	<string name="course.course_videos_caught_up">Videoları izlemeyi tamamladınız!</string>
 	<string name="course.course_assignments_caught_up">Tüm görevlerde güncelsiniz!</string>
 
-	<string name="dates.dates_title">Tarihler</string>
-	<string name="dates.dates_empty_state_title">Tarih Yok</string>
-	<string name="dates.dates_empty_state_description">Şu anda planlanmış etkinlikleri olan aktif bir dersiniz bulunmamaktadır. Önemli tarihleri ve son teslim tarihlerini görmek için bir derse kaydolun.</string>
-	<string name="dates.dates_shift_due_date_card_title">Bazı Son Teslim Tarihlerini mi Kaçırdınız\?</string>
-	<string name="dates.dates_shift_due_date_card_description">Endişelenmeyin; süresi gelen görevleri herhangi bir ilerleme kaybı yaşamadan tamamlamak için önerilen programımızı değiştirin.</string>
-	<string name="dates.dates_shift_due_date">Son Tarihleri Değiştir</string>
+	<string name="downloads.downloads">İndirmeler</string>
+	<string name="downloads.downloads_download_course">Dersi indir</string>
+	<string name="downloads.downloads_remove_course_downloads">Ders indirmelerini sil</string>
+	<string name="downloads.downloads_cancel_download">İndirmeyi iptal et</string>
+	<string name="downloads.downloads_empty_state_title">İndirilebilir İçerikli Ders Yok</string>
+	<string name="downloads.downloads_empty_state_description">Şu anda indirilebilir içeriğe sahip dersiniz yok.</string>
+	<string name="downloads.downloaded_downloaded_size">%1$s indirildi</string>
+	<string name="downloads.downloaded_available_size">%1$s mevcut</string>
+	<string name="downloads.downloads_accessibility_stop_downloading_course">Dersi indirmeyi durdur</string>
+	<string name="downloads.downloads_loading_course_structure">Ders yapısı yükleniyor…</string>
 
 	<string name="discovery.discovery_Discovery">Keşfet</string>
 	<string name="discovery.discovery_discovery_new">Yeni içerikleri keşfet</string>
@@ -407,66 +474,4 @@
     </plurals>
 	<!-- Accessibility -->
 	<string name="discovery.discovery_accessibility_play_video">Videoyu oynat</string>
-
-	<string name="whatsnew.whats_new_title">Yenilikler</string>
-	<string name="whatsnew.whats_new_navigation_previous">Önceki</string>
-	<string name="whatsnew.whats_new_navigation_next">Sonraki</string>
-	<string name="whatsnew.whats_new_navigation_done">Bitti</string>
-
-	<string name="discussion.discussion_all_posts">Tüm Gönderiler</string>
-	<string name="discussion.discussion_unread">Okunmamış</string>
-	<string name="discussion.discussion_unanswered">Cevaplanmamış</string>
-	<string name="discussion.discussion_posts_following">Takip ettiğim gönderiler</string>
-	<string name="discussion.discussion_recent_activity">Son etkinlik</string>
-	<string name="discussion.discussion_most_activity">En çok etkinlik</string>
-	<string name="discussion.discussion_most_votes">En çok oy</string>
-	<string name="discussion.discussion_create_post">Tartışma oluştur</string>
-	<string name="discussion.discussion_create_question">Soru oluştur</string>
-	<string name="discussion.discussion_add_response">Bir cevap ekle</string>
-	<string name="discussion.discussion_last_post">Son gönderi: %1$s</string>
-	<string name="discussion.discussion_follow">Takip et</string>
-	<string name="discussion.discussion_report">Raporla</string>
-	<string name="discussion.discussion_unreport">Raporlamayı iptal et</string>
-	<string name="discussion.discussion_add_comment">Bir yorum ekleyin</string>
-	<string name="discussion.discussion_comments_title">Yorum</string>
-	<string name="discussion.discussion_comment_added">Yorum Başarıyla eklendi</string>
-	<string name="discussion.discussion_discussion">Forum</string>
-	<string name="discussion.discussion_question">Soru</string>
-	<string name="discussion.discussion_title">Başlık</string>
-	<string name="discussion.discussion_follow_discussion">Bu tartışmayı takip et</string>
-	<string name="discussion.discussion_follow_question">Bu soruyu takip et</string>
-	<string name="discussion.discussion_search_all_posts">Tüm gönderilerde ara</string>
-	<string name="discussion.discussion_main_categories">Ana kategoriler</string>
-	<string name="discussion.discussion_select_post_type">Gönderi türünü seçin</string>
-	<string name="discussion.discussion_topic">Konu</string>
-	<string name="discussion.discussion_search_results">Arama sonuçları</string>
-	<string name="discussion.discussion_start_typing_to_find">İlmeği bulmak için yazmaya başlayın</string>
-	<string name="discussion.discussion_anonymous">anonim</string>
-	<string name="discussion.discussion_no_yet">Henüz tartışma yok</string>
-	<string name="discussion.discussion_click_button_create_discussion">İlk tartışmanızı oluşturmak için aşağıdaki düğmeyi tıklayın.</string>
-	<string name="discussion.discussion_unnamed_subcategory">İsimsiz alt kategori</string>
-	<plurals name="discussion.discussion_votes">
-        <item quantity="one">%1$d oy</item>
-        <item quantity="other">%1$d oy</item>
-    </plurals>
-	<plurals name="discussion.discussion_comments">
-        <item quantity="one">%1$d Yorum</item>
-        <item quantity="other">%1$d Yorum</item>
-    </plurals>
-	<plurals name="discussion.discussion_missed_posts">
-        <item quantity="one">%1$d Kaçırılan gönderi</item>
-        <item quantity="other">%1$d Kaçırılan gönderi</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses">
-        <item quantity="one">%1$d yanıt</item>
-        <item quantity="other">%1$d yanıt</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses_capitalized">
-        <item quantity="one">%1$d Yanıt</item>
-        <item quantity="other">%1$d Yanıt</item>
-    </plurals>
-	<plurals name="discussion.discussion_found_threads">
-        <item quantity="one">%s gönderi bulundu</item>
-        <item quantity="other">%s gönderi bulundu</item>
-    </plurals>
 </resources>

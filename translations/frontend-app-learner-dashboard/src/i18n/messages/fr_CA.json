@@ -88,7 +88,7 @@
   "learner-dash.unenrollConfirm.confirm.reason.submit": "Se désinscrire",
   "learner-dash.unenrollConfirm.confirm.finish.heading": "Désinscription réussie",
   "learner-dash.unenrollConfirm.confirm.finish.text": "Vous avez été désinscrit du cours {courseTitle}",
-  "learner-dash.unenrollConfirm.confirm.finish.return": "D'accord",
+  "learner-dash.unenrollConfirm.confirm.finish.return": "Ok",
   "learner-dash.courseCard.actions.beginCourse": "Commencer le cours",
   "learner-dash.courseCard.actions.resume": "Continuer",
   "learner-dash.courseCard.actions.viewCourse": "Voir le cours",
@@ -102,11 +102,11 @@
   "learner-dash.courseCard.banners.passingGrade": "Note requise pour réussir le cours : {minPassingGrade} ‏%",
   "learner-dash.courseCard.banners.notEligibleForCert": "Vous n'êtes pas éligible à une attestation.",
   "learner-dash.courseCard.banners.viewGrades": "Afficher les notes.",
-  "learner-dash.courseCard.banners.certReady": "Toutes nos félicitations. Votre attestation est prêt.",
+  "learner-dash.courseCard.banners.certReady": "Toutes nos félicitations. Votre attestation est prête.",
   "learner-dash.courseCard.banners.viewCertificate": "Afficher l'attestation.",
   "learner-dash.courseCard.banners.certMinGrade": "Note requise pour une attestation : {minPassingGrade} ‏%",
   "learner-dash.courseCard.banners.downloadCertificate": "Téléchargez l'attestation.",
-  "learner-dash.courseCard.banners.gradseAndCertReadyAfter": "Votre note et votre attestation seront prêts après {availableDate} .",
+  "learner-dash.courseCard.banners.gradseAndCertReadyAfter": "Votre note et votre attestation seront prêtes après {availableDate} .",
   "learner-dash.courseCard.banners.entitlementUnavailable": "Aucune séance n'est disponible pour le moment. L'équipe du cours créera prochainement de nouvelles sessions. Si aucune session n'apparaît, veuillez contacter {emailLink} pour plus d'informations.",
   "learner-dash.courseCard.banners.entitlementExpiringSoon": "Vous devez {selectSessionButton} par {changeDeadline} pour accéder au cours.",
   "learner-dash.courseCard.banners.entitlementExpired": "Vous ne pouvez plus changer de session.",
@@ -143,5 +143,6 @@
   "learner-dash.courseCard.banners.credit.rejected": "{providerName} n'a pas approuvé votre demande de crédit de cours. Pour plus d'informations, contactez directement {linkToProviderSite} .",
   "learner-dash.courseCard.banners.credit.requestCredit": "Demande de crédit",
   "learner-dash.courseCard.banners.credit.viewCredit": "Voir les crédits",
-  "learner-dash.courseCard.banners.credit.viewDetails": "Voir les détails"
+  "learner-dash.courseCard.banners.credit.viewDetails": "Voir les détails",
+  "learner-dash.page.title": "Accueil de l'apprenant | {siteName}"
 }

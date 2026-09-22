@@ -53,5 +53,8 @@
   "catalog.home-page.subtitle": "Bu ishlaydi! Open edX® Platformasi tomonidan quvvatlanadi",
   "catalog.home-page.search-placeholder": "Kursni qidiring",
   "catalog.home-page.video-button": "Promo videoni ko'ring",
-  "catalog.home-page.video-button-alt": "qidiruv tugmasi"
+  "catalog.home-page.video-button-alt": "qidiruv tugmasi",
+  "courseAbout.page.title": "{courseName} | {siteName}",
+  "courses.page.title": "Kurslar | {siteName}",
+  "home.page.title": "Katalog | {siteName}"
 }

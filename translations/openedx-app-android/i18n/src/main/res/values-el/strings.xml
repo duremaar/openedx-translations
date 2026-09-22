@@ -23,25 +23,10 @@
         <item quantity="other">%1$d Εργασίες σε καθυστέρηση</item>
     </plurals>
 
-	<string name="downloads.downloads">Λήψεις</string>
-	<string name="downloads.downloads_download_course">Λήψη μαθήματος</string>
-	<string name="downloads.downloads_remove_course_downloads">Αφαίρεση λήψεων μαθημάτων</string>
-	<string name="downloads.downloads_cancel_download">Ακύρωση λήψης</string>
-	<string name="downloads.downloads_empty_state_title">Δεν υπάρχουν μαθήματα με δυνατότητα λήψης περιεχομένου Περιεχόμενο</string>
-	<string name="downloads.downloads_empty_state_description">Προς το παρόν δεν έχετε μαθήματα με δυνατότητα λήψης περιεχομένου.</string>
-	<string name="downloads.downloaded_downloaded_size">%1$s κατεβασμένο</string>
-	<string name="downloads.downloaded_available_size">%1$s διαθέσιμο</string>
-	<string name="downloads.downloads_accessibility_stop_downloading_course">Σταματήστε να κατεβάζετε μαθήματα</string>
-	<string name="downloads.downloads_loading_course_structure">Φόρτωση της δομής του μαθήματος...</string>
-
-	<string name="app.app_navigation_learn">Μαθαίνω</string>
-	<string name="app.app_navigation_profile">Προφίλ</string>
-	<string name="app.app_navigation_dates">Ημερομηνίες</string>
-	<string name="app.app_navigation_downloads">Λήψεις</string>
-
 	<string name="auth.auth_forgot_password">Ξεχάσατε τον κωδικό σας;</string>
 	<string name="auth.auth_invalid_email">Άκυρο email</string>
 	<string name="auth.auth_invalid_password">Ο κωδικός πρόσβασης είναι πολύ μικρός</string>
+	<string name="auth.auth_social_account_not_registered">Αυτός ο λογαριασμός %1$s δεν είναι συνδεδεμένος με κανέναν λογαριασμό %2$s . Παρακαλώ εγγραφείτε.</string>
 	<string name="auth.auth_welcome_back">Καλως ορισες πισω! Συνδεθείτε για να αποκτήσετε πρόσβαση στα μαθήματά σας.</string>
 	<string name="auth.auth_show_optional_fields">Εμφάνιση προαιρετικών πεδίων</string>
 	<string name="auth.auth_hide_optional_fields">Απόκρυψη προαιρετικών πεδίων</string>
@@ -59,6 +44,13 @@
 	<string name="auth.auth_agreement_signin_in">Με τη σύνδεση σε αυτήν την εφαρμογή, συμφωνείτε με τα %1$s και %2$s και αναγνωρίζετε ότι %3$s και κάθε Μέλος επεξεργάζεται τα προσωπικά σας δεδομένα σύμφωνα με το %4$s.</string>
 	<string name="auth.auth_accessibility_show_password">Εμφάνιση κωδικού πρόσβασης</string>
 	<string name="auth.auth_accessibility_hide_password">Απόκρυψη κωδικού πρόσβασης</string>
+
+	<string name="dates.dates_title">Ημερομηνίες</string>
+	<string name="dates.dates_empty_state_title">Χωρίς Ημερομηνίες</string>
+	<string name="dates.dates_empty_state_description">Προς το παρόν δεν έχετε ενεργά μαθήματα με προγραμματισμένες εκδηλώσεις. Εγγραφείτε σε ένα μάθημα για να δείτε σημαντικές ημερομηνίες και προθεσμίες.</string>
+	<string name="dates.dates_shift_due_date_card_title">Χάσατε κάποιες προθεσμίες;</string>
+	<string name="dates.dates_shift_due_date_card_description">Μην ανησυχείτε - αλλάξτε το προτεινόμενο πρόγραμμά μας για να ολοκληρώσετε τις εργασίες που οφείλονται χωρίς να χάσετε καμία πρόοδο.</string>
+	<string name="dates.dates_shift_due_date">Μετατόπιση Ημερομηνιών Λήξης</string>
 
 	<string name="profile.profile_full_profile">Πλήρες προφίλ</string>
 	<string name="profile.profile_limited_profile">Περιορισμένο προφίλ</string>
@@ -139,6 +131,73 @@
 	<string name="profile.profile_no_google_calendars">Δεν υπάρχουν διαθέσιμα ημερολόγια Google</string>
 	<string name="profile.profile_select_calendar">Επιλέξτε ημερολόγιο</string>
 	<string name="profile.profile_local_calendar_option">Τοπικό ημερολόγιο</string>
+
+	<string name="app.app_navigation_learn">Μαθαίνω</string>
+	<string name="app.app_navigation_profile">Προφίλ</string>
+	<string name="app.app_navigation_dates">Ημερομηνίες</string>
+	<string name="app.app_navigation_downloads">Λήψεις</string>
+
+	<string name="discussion.discussion_all_posts">Όλες οι αναρτήσεις</string>
+	<string name="discussion.discussion_unread">Μη διαβασμένες</string>
+	<string name="discussion.discussion_unanswered">Αναπάντητο</string>
+	<string name="discussion.discussion_posts_following">Αναρτήσεις που παρακολουθώ</string>
+	<string name="discussion.discussion_recent_activity">Πρόσφατη δραστηριότητα</string>
+	<string name="discussion.discussion_most_activity">Η περισσότερη δραστηριότητα</string>
+	<string name="discussion.discussion_most_votes">Οι περισσότερες ψήφοι</string>
+	<string name="discussion.discussion_create_post">Δημιουργία συζήτησης</string>
+	<string name="discussion.discussion_create_question">Δημιουργία ερώτησης</string>
+	<string name="discussion.discussion_add_response">Προσθέστε μια απάντηση</string>
+	<string name="discussion.discussion_last_post">Τελευταία ανάρτηση: %1$s</string>
+	<string name="discussion.discussion_follow">Ακολουθήστε</string>
+	<string name="discussion.discussion_report">Αναφορά</string>
+	<string name="discussion.discussion_unreport">Ακύρωση αναφοράς</string>
+	<string name="discussion.discussion_add_comment">Προσθέστε ένα σχόλιο</string>
+	<string name="discussion.discussion_comments_title">Σχόλιο</string>
+	<string name="discussion.discussion_comment_added">Το σχόλιο προστέθηκε με επιτυχία</string>
+	<string name="discussion.discussion_discussion">Συζήτηση</string>
+	<string name="discussion.discussion_question">Ερώτηση</string>
+	<string name="discussion.discussion_title">Τίτλος</string>
+	<string name="discussion.discussion_follow_discussion">Ακολουθήστε αυτή τη συζήτηση</string>
+	<string name="discussion.discussion_follow_question">Ακολουθήστε αυτήν την ερώτηση</string>
+	<string name="discussion.discussion_search_all_posts">Αναζήτηση όλων των αναρτήσεων</string>
+	<string name="discussion.discussion_main_categories">Κύριες κατηγορίες</string>
+	<string name="discussion.discussion_select_post_type">Επιλέξτε τύπο ανάρτησης</string>
+	<string name="discussion.discussion_topic">Θέμα</string>
+	<string name="discussion.discussion_search_results">Αποτελέσματα αναζήτησης</string>
+	<string name="discussion.discussion_start_typing_to_find">Ξεκινήστε να πληκτρολογείτε για να βρείτε το νήμα</string>
+	<string name="discussion.discussion_anonymous">ανώνυμος</string>
+	<string name="discussion.discussion_no_yet">Καμία συζήτηση ακόμα</string>
+	<string name="discussion.discussion_click_button_create_discussion">Κάντε κλικ στο κουμπί παρακάτω για να δημιουργήσετε την πρώτη σας συζήτηση.</string>
+	<string name="discussion.discussion_unnamed_subcategory">Ανώνυμη υποκατηγορία</string>
+	<plurals name="discussion.discussion_votes">
+        <item quantity="one">%1$d ψήφος</item>
+        <item quantity="other">%1$d ψήφοι</item>
+    </plurals>
+	<plurals name="discussion.discussion_comments">
+        <item quantity="one">%1$d Σχόλιο</item>
+        <item quantity="other">%1$d Σχόλια</item>
+    </plurals>
+	<plurals name="discussion.discussion_missed_posts">
+        <item quantity="one">%1$d Χαμένη ανάρτηση</item>
+        <item quantity="other">%1$d Αναπάντητες αναρτήσεις</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses">
+        <item quantity="one">%1$d απόκριση</item>
+        <item quantity="other">%1$d αποκρίσεις</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses_capitalized">
+        <item quantity="one">%1$d Απόκριση</item>
+        <item quantity="other">%1$d Απαντήσεις</item>
+    </plurals>
+	<plurals name="discussion.discussion_found_threads">
+        <item quantity="one">Βρέθηκε ανάρτηση %s</item>
+        <item quantity="other">Βρέθηκαν αναρτήσεις %s</item>
+    </plurals>
+
+	<string name="whatsnew.whats_new_title">Τι νέα</string>
+	<string name="whatsnew.whats_new_navigation_previous">Προηγούμενο</string>
+	<string name="whatsnew.whats_new_navigation_next">Επόμενο</string>
+	<string name="whatsnew.whats_new_navigation_done">Έγινε</string>
 
 	<string name="core.core_error_invalid_grant">Άκυρα διαπιστευτήρια</string>
 	<string name="core.core_error_no_connection">Αργή ή καθόλου σύνδεση στο Διαδίκτυο</string>
@@ -277,6 +336,10 @@
 	<string name="core.core_explore_other_parts_when_reconnect_or_download">Εξερευνήστε άλλα μέρη αυτού του μαθήματος ή κατεβάστε αυτό όταν επανασυνδεθείτε.</string>
 	<string name="core.core_authorization">Εξουσιοδότηση</string>
 	<string name="core.core_authorization_request">Παρακαλούμε μπείτε στο σύστημα για να συνεχίσετε με την εγγραφή στα μαθήματα.</string>
+	<string name="core.core_sso_sign_in">Σύνδεση με SSO</string>
+	<string name="core.core_sign_in_sso_heading">Ξεκινήστε σήμερα για να χτίσετε την καριέρα σας με αυτοπεποίθηση</string>
+	<string name="core.core_sign_in_sso_login_title">Σύνδεση</string>
+	<string name="core.core_sign_in_sso_login_subtitle">Συνδεθείτε μέσω της εθνικής υπηρεσίας ενιαίας σύνδεσης</string>
 
 	<string name="course.course_you_earned_certificate">Συγχαρητήρια, αποκτήσατε αυτό το πιστοποιητικό μαθήματος στο \"%s\".</string>
 	<string name="course.course_view_certificate">Δείτε τη Βεβαίωση</string>
@@ -379,12 +442,16 @@
 	<string name="course.course_videos_caught_up">Έχετε παρακολουθήσει όλα τα βίντεο!</string>
 	<string name="course.course_assignments_caught_up">Έχετε ολοκληρώσει όλες τις εργασίες!</string>
 
-	<string name="dates.dates_title">Ημερομηνίες</string>
-	<string name="dates.dates_empty_state_title">Χωρίς Ημερομηνίες</string>
-	<string name="dates.dates_empty_state_description">Προς το παρόν δεν έχετε ενεργά μαθήματα με προγραμματισμένες εκδηλώσεις. Εγγραφείτε σε ένα μάθημα για να δείτε σημαντικές ημερομηνίες και προθεσμίες.</string>
-	<string name="dates.dates_shift_due_date_card_title">Χάσατε κάποιες προθεσμίες;</string>
-	<string name="dates.dates_shift_due_date_card_description">Μην ανησυχείτε - αλλάξτε το προτεινόμενο πρόγραμμά μας για να ολοκληρώσετε τις εργασίες που οφείλονται χωρίς να χάσετε καμία πρόοδο.</string>
-	<string name="dates.dates_shift_due_date">Μετατόπιση Ημερομηνιών Λήξης</string>
+	<string name="downloads.downloads">Λήψεις</string>
+	<string name="downloads.downloads_download_course">Λήψη μαθήματος</string>
+	<string name="downloads.downloads_remove_course_downloads">Αφαίρεση λήψεων μαθημάτων</string>
+	<string name="downloads.downloads_cancel_download">Ακύρωση λήψης</string>
+	<string name="downloads.downloads_empty_state_title">Δεν υπάρχουν μαθήματα με δυνατότητα λήψης περιεχομένου Περιεχόμενο</string>
+	<string name="downloads.downloads_empty_state_description">Προς το παρόν δεν έχετε μαθήματα με δυνατότητα λήψης περιεχομένου.</string>
+	<string name="downloads.downloaded_downloaded_size">%1$s κατεβασμένο</string>
+	<string name="downloads.downloaded_available_size">%1$s διαθέσιμο</string>
+	<string name="downloads.downloads_accessibility_stop_downloading_course">Σταματήστε να κατεβάζετε μαθήματα</string>
+	<string name="downloads.downloads_loading_course_structure">Φόρτωση της δομής του μαθήματος...</string>
 
 	<string name="discovery.discovery_discovery_new">Ανακαλύψτε νέα</string>
 	<string name="discovery.discovery_lets_find">Ας βρούμε κάτι νέο για εσάς</string>
@@ -403,66 +470,4 @@
     </plurals>
 	<!-- Accessibility -->
 	<string name="discovery.discovery_accessibility_play_video">Αναπαραγωγή βίντεο</string>
-
-	<string name="whatsnew.whats_new_title">Τι νέα</string>
-	<string name="whatsnew.whats_new_navigation_previous">Προηγούμενο</string>
-	<string name="whatsnew.whats_new_navigation_next">Επόμενο</string>
-	<string name="whatsnew.whats_new_navigation_done">Έγινε</string>
-
-	<string name="discussion.discussion_all_posts">Όλες οι αναρτήσεις</string>
-	<string name="discussion.discussion_unread">Μη διαβασμένες</string>
-	<string name="discussion.discussion_unanswered">Αναπάντητο</string>
-	<string name="discussion.discussion_posts_following">Αναρτήσεις που παρακολουθώ</string>
-	<string name="discussion.discussion_recent_activity">Πρόσφατη δραστηριότητα</string>
-	<string name="discussion.discussion_most_activity">Η περισσότερη δραστηριότητα</string>
-	<string name="discussion.discussion_most_votes">Οι περισσότερες ψήφοι</string>
-	<string name="discussion.discussion_create_post">Δημιουργία συζήτησης</string>
-	<string name="discussion.discussion_create_question">Δημιουργία ερώτησης</string>
-	<string name="discussion.discussion_add_response">Προσθέστε μια απάντηση</string>
-	<string name="discussion.discussion_last_post">Τελευταία ανάρτηση: %1$s</string>
-	<string name="discussion.discussion_follow">Ακολουθήστε</string>
-	<string name="discussion.discussion_report">Αναφορά</string>
-	<string name="discussion.discussion_unreport">Ακύρωση αναφοράς</string>
-	<string name="discussion.discussion_add_comment">Προσθέστε ένα σχόλιο</string>
-	<string name="discussion.discussion_comments_title">Σχόλιο</string>
-	<string name="discussion.discussion_comment_added">Το σχόλιο προστέθηκε με επιτυχία</string>
-	<string name="discussion.discussion_discussion">Συζήτηση</string>
-	<string name="discussion.discussion_question">Ερώτηση</string>
-	<string name="discussion.discussion_title">Τίτλος</string>
-	<string name="discussion.discussion_follow_discussion">Ακολουθήστε αυτή τη συζήτηση</string>
-	<string name="discussion.discussion_follow_question">Ακολουθήστε αυτήν την ερώτηση</string>
-	<string name="discussion.discussion_search_all_posts">Αναζήτηση όλων των αναρτήσεων</string>
-	<string name="discussion.discussion_main_categories">Κύριες κατηγορίες</string>
-	<string name="discussion.discussion_select_post_type">Επιλέξτε τύπο ανάρτησης</string>
-	<string name="discussion.discussion_topic">Θέμα</string>
-	<string name="discussion.discussion_search_results">Αποτελέσματα αναζήτησης</string>
-	<string name="discussion.discussion_start_typing_to_find">Ξεκινήστε να πληκτρολογείτε για να βρείτε το νήμα</string>
-	<string name="discussion.discussion_anonymous">ανώνυμος</string>
-	<string name="discussion.discussion_no_yet">Καμία συζήτηση ακόμα</string>
-	<string name="discussion.discussion_click_button_create_discussion">Κάντε κλικ στο κουμπί παρακάτω για να δημιουργήσετε την πρώτη σας συζήτηση.</string>
-	<string name="discussion.discussion_unnamed_subcategory">Ανώνυμη υποκατηγορία</string>
-	<plurals name="discussion.discussion_votes">
-        <item quantity="one">%1$d ψήφος</item>
-        <item quantity="other">%1$d ψήφοι</item>
-    </plurals>
-	<plurals name="discussion.discussion_comments">
-        <item quantity="one">%1$d Σχόλιο</item>
-        <item quantity="other">%1$d Σχόλια</item>
-    </plurals>
-	<plurals name="discussion.discussion_missed_posts">
-        <item quantity="one">%1$d Χαμένη ανάρτηση</item>
-        <item quantity="other">%1$d Αναπάντητες αναρτήσεις</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses">
-        <item quantity="one">%1$d απόκριση</item>
-        <item quantity="other">%1$d αποκρίσεις</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses_capitalized">
-        <item quantity="one">%1$d Απόκριση</item>
-        <item quantity="other">%1$d Απαντήσεις</item>
-    </plurals>
-	<plurals name="discussion.discussion_found_threads">
-        <item quantity="one">Βρέθηκε ανάρτηση %s</item>
-        <item quantity="other">Βρέθηκαν αναρτήσεις %s</item>
-    </plurals>
 </resources>

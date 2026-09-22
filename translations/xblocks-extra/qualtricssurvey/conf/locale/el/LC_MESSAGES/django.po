@@ -1,0 +1,91 @@
+# edX translation file.
+# Copyright (C) 2026 EdX
+# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
+# EdX Team <info@edx.org>, 2026.
+# 
+# Translators:
+# Transifex Bot <>, 2026
+# Gerardo Núñez, 2026
+# Brian Smith, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1a\n"
+"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
+"POT-Creation-Date: 2023-06-13 08:00+0000\n"
+"PO-Revision-Date: 2026-05-15 01:50+0000\n"
+"Last-Translator: Brian Smith, 2026\n"
+"Language-Team: Greek (https://app.transifex.com/open-edx/teams/6205/el/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: models.py:23
+msgid "Display Name:"
+msgstr "Εμφανιζόμενο όνομα:"
+
+#: models.py:26
+msgid "This name appears in the horizontal navigation at the top of the page."
+msgstr ""
+"Αυτό το όνομα εμφανίζεται στην οριζόντια πλοήγηση στο επάνω μέρος της "
+"σελίδας."
+
+#: models.py:29
+msgid "Link Text:"
+msgstr "Κείμενο συνδέσμου:"
+
+#: models.py:32
+msgid "This is the text that will link to your survey."
+msgstr "Αυτό είναι το κείμενο που θα συνδέσει την έρευνά σας."
+
+#: models.py:35
+msgid "Message:"
+msgstr "Μήνυμα:"
+
+#: models.py:38
+msgid "This is the text that will be displayed above the link to your survey."
+msgstr ""
+"Αυτό είναι το κείμενο που θα εμφανιστεί πάνω από τον σύνδεσμο προς την "
+"έρευνά σας."
+
+#: models.py:41
+msgid "Extra Parameters:"
+msgstr "Επιπλέον παράμετροι:"
+
+#: models.py:45
+msgid ""
+"Additional query parameters to include in the survey URL. Format: "
+"key1=value1&key2=value2. If blank, no extra parameters are added."
+msgstr ""
+"Πρόσθετες παράμετροι ερωτήματος για συμπερίληψη στη διεύθυνση URL της "
+"έρευνας. Μορφή: key1=value1&key2=value2. Εάν είναι κενό, δεν προστίθενται "
+"επιπλέον παράμετροι."
+
+#: models.py:51
+msgid "Survey ID:"
+msgstr "Αναγνωριστικό έρευνας:"
+
+#: models.py:55
+msgid ""
+"This is the ID that Qualtrics uses for the survey, which can include numbers"
+" and letters, and should be entered in the following format: "
+"SV_###############"
+msgstr ""
+"Αυτό είναι το αναγνωριστικό που χρησιμοποιεί το Qualtrics για την έρευνα, το"
+" οποίο μπορεί να περιλαμβάνει αριθμούς και γράμματα και θα πρέπει να "
+"εισαχθεί στην ακόλουθη μορφή: SV_###############"
+
+#: models.py:61
+msgid "Your University:"
+msgstr "Το πανεπιστήμιό σας:"
+
+#: models.py:65
+msgid ""
+"The subdomain for your university's Qualtrics account "
+"(e.g.'stanforduniversity'). If left blank, the system-wide default is used."
+msgstr ""
+"Το υποπεδίο για τον λογαριασμό Qualtrics του πανεπιστημίου σας (π.χ. "
+"'stanforduniversity'). Εάν αφεθεί κενό, χρησιμοποιείται η προεπιλογή για όλο"
+" το σύστημα."

@@ -23,27 +23,11 @@
         <item quantity="other">%1$d Forfaldne opgaver</item>
     </plurals>
 
-	<string name="downloads.downloads">Downloads</string>
-	<string name="downloads.downloads_download_course">Download Kursus</string>
-	<string name="downloads.downloads_remove_course_downloads">Fjern downloads af kurser</string>
-	<string name="downloads.downloads_cancel_download">Afbryd download</string>
-	<string name="downloads.downloads_empty_state_title">Ingen kurser med indhold, der kan downloades</string>
-	<string name="downloads.downloads_empty_state_description">Du har i øjeblikket ingen kurser med indhold, der kan downloades.</string>
-	<string name="downloads.downloaded_downloaded_size">%1$s downloadet</string>
-	<string name="downloads.downloaded_available_size">%1$s tilgængelig</string>
-	<string name="downloads.downloads_accessibility_stop_downloading_course">Stop med at downloade kursus</string>
-	<string name="downloads.downloads_loading_course_structure">Indlæsning af kursusstruktur...</string>
-
-	<string name="app.app_navigation_discovery">Opdage</string>
-	<string name="app.app_navigation_learn">Lære</string>
-	<string name="app.app_navigation_profile">Profil</string>
-	<string name="app.app_navigation_dates">Datoer</string>
-	<string name="app.app_navigation_downloads">Downloads</string>
-
 	<string name="auth.auth_forgot_password">Har du glemt kodeordet\?</string>
 	<string name="auth.auth_email">E-mail</string>
 	<string name="auth.auth_invalid_email">Ugyldig email</string>
 	<string name="auth.auth_invalid_password">Adgangskoden er for kort</string>
+	<string name="auth.auth_social_account_not_registered">Denne %1$s -konto er ikke knyttet til nogen %2$s -konto. Tilmeld dig venligst.</string>
 	<string name="auth.auth_welcome_back">Velkommen tilbage! Log ind for at få adgang til dine kurser.</string>
 	<string name="auth.auth_show_optional_fields">Vis valgfrie felter</string>
 	<string name="auth.auth_hide_optional_fields">Skjul valgfrie felter</string>
@@ -61,6 +45,13 @@
 	<string name="auth.auth_agreement_signin_in">Ved at logge ind på denne app accepterer du %1$s og %2$s, og du anerkender, at %3$s og hvert medlem behandler dine personlige data i overensstemmelse med %4$s.</string>
 	<string name="auth.auth_accessibility_show_password">Vis adgangskode</string>
 	<string name="auth.auth_accessibility_hide_password">skjul Password</string>
+
+	<string name="dates.dates_title">Datoer</string>
+	<string name="dates.dates_empty_state_title">Ingen datoer</string>
+	<string name="dates.dates_empty_state_description">Du har i øjeblikket ingen aktive kurser med planlagte begivenheder. Tilmeld dig et kursus for at se vigtige datoer og deadlines.</string>
+	<string name="dates.dates_shift_due_date_card_title">Har du misset nogle deadlines\?</string>
+	<string name="dates.dates_shift_due_date_card_description">Bare rolig – flyt vores foreslåede tidsplan for at fuldføre de forfaldne opgaver uden at miste nogen fremskridt.</string>
+	<string name="dates.dates_shift_due_date">Flyt forfaldsdatoer</string>
 
 	<string name="profile.profile_full_profile">Fuldt profil</string>
 	<string name="profile.profile_limited_profile">Begrænset profil</string>
@@ -141,6 +132,74 @@
 	<string name="profile.profile_no_google_calendars">Ingen Google-kalendere tilgængelige</string>
 	<string name="profile.profile_select_calendar">Vælg kalender</string>
 	<string name="profile.profile_local_calendar_option">Lokal kalender</string>
+
+	<string name="app.app_navigation_discovery">Opdage</string>
+	<string name="app.app_navigation_learn">Lære</string>
+	<string name="app.app_navigation_profile">Profil</string>
+	<string name="app.app_navigation_dates">Datoer</string>
+	<string name="app.app_navigation_downloads">Downloads</string>
+
+	<string name="discussion.discussion_all_posts">Alle indlæg</string>
+	<string name="discussion.discussion_unread">Ulæst</string>
+	<string name="discussion.discussion_unanswered">Ubesvaret</string>
+	<string name="discussion.discussion_posts_following">Indlæg jeg følger</string>
+	<string name="discussion.discussion_recent_activity">Seneste aktivitet</string>
+	<string name="discussion.discussion_most_activity">Mest aktivitet</string>
+	<string name="discussion.discussion_most_votes">Flest stemmer</string>
+	<string name="discussion.discussion_create_post">Skab diskussion</string>
+	<string name="discussion.discussion_create_question">Opret spørgsmål</string>
+	<string name="discussion.discussion_add_response">Tilføj et svar</string>
+	<string name="discussion.discussion_last_post">Sidste indlæg: %1$s</string>
+	<string name="discussion.discussion_follow">Følge</string>
+	<string name="discussion.discussion_report">Rapport</string>
+	<string name="discussion.discussion_unreport">Urapporter</string>
+	<string name="discussion.discussion_add_comment">Tilføj en kommentar</string>
+	<string name="discussion.discussion_comments_title">Kommentar</string>
+	<string name="discussion.discussion_comment_added">Kommentar tilføjet</string>
+	<string name="discussion.discussion_discussion">Diskussion</string>
+	<string name="discussion.discussion_question">Spørgsmål</string>
+	<string name="discussion.discussion_title">Titel</string>
+	<string name="discussion.discussion_follow_discussion">Følg denne diskussion</string>
+	<string name="discussion.discussion_follow_question">Følg dette spørgsmål</string>
+	<string name="discussion.discussion_search_all_posts">Søg i alle indlæg</string>
+	<string name="discussion.discussion_main_categories">Hovedkategorier</string>
+	<string name="discussion.discussion_select_post_type">Vælg posttype</string>
+	<string name="discussion.discussion_topic">Emne</string>
+	<string name="discussion.discussion_search_results">Søgeresultater</string>
+	<string name="discussion.discussion_start_typing_to_find">Begynd at skrive for at finde tråden</string>
+	<string name="discussion.discussion_anonymous">anonymt</string>
+	<string name="discussion.discussion_no_yet">Ingen diskussioner endnu</string>
+	<string name="discussion.discussion_click_button_create_discussion">Klik på knappen nedenfor for at oprette din første diskussion.</string>
+	<string name="discussion.discussion_unnamed_subcategory">Uden navn underkategori</string>
+	<plurals name="discussion.discussion_votes">
+        <item quantity="one">%1$d stemme</item>
+        <item quantity="other">%1$d stemmer</item>
+    </plurals>
+	<plurals name="discussion.discussion_comments">
+        <item quantity="one">%1$d Kommentar</item>
+        <item quantity="other">%1$d Kommentarer</item>
+    </plurals>
+	<plurals name="discussion.discussion_missed_posts">
+        <item quantity="one">%1$d Glemt indlæg</item>
+        <item quantity="other">%1$d Ubesvarede indlæg</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses">
+        <item quantity="one">%1$d svar</item>
+        <item quantity="other">%1$d svar</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses_capitalized">
+        <item quantity="one">%1$d Svar</item>
+        <item quantity="other">%1$d Svar</item>
+    </plurals>
+	<plurals name="discussion.discussion_found_threads">
+        <item quantity="one">Fundet %s post</item>
+        <item quantity="other">Fundet %s indlæg</item>
+    </plurals>
+
+	<string name="whatsnew.whats_new_title">Hvad er nyt</string>
+	<string name="whatsnew.whats_new_navigation_previous">Tidligere</string>
+	<string name="whatsnew.whats_new_navigation_next">Næste</string>
+	<string name="whatsnew.whats_new_navigation_done">Fuldført</string>
 
 	<string name="core.core_error_invalid_grant">Ugyldige legitimationsoplysninger</string>
 	<string name="core.core_error_no_connection">Langsom eller ingen internetforbindelse</string>
@@ -280,6 +339,10 @@
 	<string name="core.core_explore_other_parts_when_reconnect_or_download">Udforsk andre dele af dette kursus, eller download det, når du får forbindelse igen.</string>
 	<string name="core.core_authorization">Godkendelse</string>
 	<string name="core.core_authorization_request">Gå venligst ind i systemet for at fortsætte med kursustilmelding.</string>
+	<string name="core.core_sso_sign_in">Log ind med SSO</string>
+	<string name="core.core_sign_in_sso_heading">Start i dag og opbyg din karriere med selvtillid</string>
+	<string name="core.core_sign_in_sso_login_title">Log ind</string>
+	<string name="core.core_sign_in_sso_login_subtitle">Log ind via det nationale unified sign-on-tjeneste</string>
 
 	<string name="course.course_you_earned_certificate">Tillykke, du har opnået dette kursuscertifikat i \"%s\".</string>
 	<string name="course.course_view_certificate">Se certifikatet</string>
@@ -381,12 +444,16 @@
 	<string name="course.course_videos_caught_up">Du er helt ajour med videoer!</string>
 	<string name="course.course_assignments_caught_up">Du er helt ajour med opgaverne!</string>
 
-	<string name="dates.dates_title">Datoer</string>
-	<string name="dates.dates_empty_state_title">Ingen datoer</string>
-	<string name="dates.dates_empty_state_description">Du har i øjeblikket ingen aktive kurser med planlagte begivenheder. Tilmeld dig et kursus for at se vigtige datoer og deadlines.</string>
-	<string name="dates.dates_shift_due_date_card_title">Har du misset nogle deadlines\?</string>
-	<string name="dates.dates_shift_due_date_card_description">Bare rolig – flyt vores foreslåede tidsplan for at fuldføre de forfaldne opgaver uden at miste nogen fremskridt.</string>
-	<string name="dates.dates_shift_due_date">Flyt forfaldsdatoer</string>
+	<string name="downloads.downloads">Downloads</string>
+	<string name="downloads.downloads_download_course">Download Kursus</string>
+	<string name="downloads.downloads_remove_course_downloads">Fjern downloads af kurser</string>
+	<string name="downloads.downloads_cancel_download">Afbryd download</string>
+	<string name="downloads.downloads_empty_state_title">Ingen kurser med indhold, der kan downloades</string>
+	<string name="downloads.downloads_empty_state_description">Du har i øjeblikket ingen kurser med indhold, der kan downloades.</string>
+	<string name="downloads.downloaded_downloaded_size">%1$s downloadet</string>
+	<string name="downloads.downloaded_available_size">%1$s tilgængelig</string>
+	<string name="downloads.downloads_accessibility_stop_downloading_course">Stop med at downloade kursus</string>
+	<string name="downloads.downloads_loading_course_structure">Indlæsning af kursusstruktur...</string>
 
 	<string name="discovery.discovery_Discovery">Opdage</string>
 	<string name="discovery.discovery_discovery_new">Opdag nyt</string>
@@ -406,66 +473,4 @@
     </plurals>
 	<!-- Accessibility -->
 	<string name="discovery.discovery_accessibility_play_video">Afspil video</string>
-
-	<string name="whatsnew.whats_new_title">Hvad er nyt</string>
-	<string name="whatsnew.whats_new_navigation_previous">Tidligere</string>
-	<string name="whatsnew.whats_new_navigation_next">Næste</string>
-	<string name="whatsnew.whats_new_navigation_done">Fuldført</string>
-
-	<string name="discussion.discussion_all_posts">Alle indlæg</string>
-	<string name="discussion.discussion_unread">Ulæst</string>
-	<string name="discussion.discussion_unanswered">Ubesvaret</string>
-	<string name="discussion.discussion_posts_following">Indlæg jeg følger</string>
-	<string name="discussion.discussion_recent_activity">Seneste aktivitet</string>
-	<string name="discussion.discussion_most_activity">Mest aktivitet</string>
-	<string name="discussion.discussion_most_votes">Flest stemmer</string>
-	<string name="discussion.discussion_create_post">Skab diskussion</string>
-	<string name="discussion.discussion_create_question">Opret spørgsmål</string>
-	<string name="discussion.discussion_add_response">Tilføj et svar</string>
-	<string name="discussion.discussion_last_post">Sidste indlæg: %1$s</string>
-	<string name="discussion.discussion_follow">Følge</string>
-	<string name="discussion.discussion_report">Rapport</string>
-	<string name="discussion.discussion_unreport">Urapporter</string>
-	<string name="discussion.discussion_add_comment">Tilføj en kommentar</string>
-	<string name="discussion.discussion_comments_title">Kommentar</string>
-	<string name="discussion.discussion_comment_added">Kommentar tilføjet</string>
-	<string name="discussion.discussion_discussion">Diskussion</string>
-	<string name="discussion.discussion_question">Spørgsmål</string>
-	<string name="discussion.discussion_title">Titel</string>
-	<string name="discussion.discussion_follow_discussion">Følg denne diskussion</string>
-	<string name="discussion.discussion_follow_question">Følg dette spørgsmål</string>
-	<string name="discussion.discussion_search_all_posts">Søg i alle indlæg</string>
-	<string name="discussion.discussion_main_categories">Hovedkategorier</string>
-	<string name="discussion.discussion_select_post_type">Vælg posttype</string>
-	<string name="discussion.discussion_topic">Emne</string>
-	<string name="discussion.discussion_search_results">Søgeresultater</string>
-	<string name="discussion.discussion_start_typing_to_find">Begynd at skrive for at finde tråden</string>
-	<string name="discussion.discussion_anonymous">anonymt</string>
-	<string name="discussion.discussion_no_yet">Ingen diskussioner endnu</string>
-	<string name="discussion.discussion_click_button_create_discussion">Klik på knappen nedenfor for at oprette din første diskussion.</string>
-	<string name="discussion.discussion_unnamed_subcategory">Uden navn underkategori</string>
-	<plurals name="discussion.discussion_votes">
-        <item quantity="one">%1$d stemme</item>
-        <item quantity="other">%1$d stemmer</item>
-    </plurals>
-	<plurals name="discussion.discussion_comments">
-        <item quantity="one">%1$d Kommentar</item>
-        <item quantity="other">%1$d Kommentarer</item>
-    </plurals>
-	<plurals name="discussion.discussion_missed_posts">
-        <item quantity="one">%1$d Glemt indlæg</item>
-        <item quantity="other">%1$d Ubesvarede indlæg</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses">
-        <item quantity="one">%1$d svar</item>
-        <item quantity="other">%1$d svar</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses_capitalized">
-        <item quantity="one">%1$d Svar</item>
-        <item quantity="other">%1$d Svar</item>
-    </plurals>
-	<plurals name="discussion.discussion_found_threads">
-        <item quantity="one">Fundet %s post</item>
-        <item quantity="other">Fundet %s indlæg</item>
-    </plurals>
 </resources>

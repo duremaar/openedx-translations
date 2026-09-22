@@ -7,18 +7,18 @@
 # Translators:
 # Alexandra Nabokina <alexandra.nabokina@raccoongang.com>, 2024
 # Nathan Robertson, 2024
-# Iryna Zaporozhets, 2025
-# Yana Lovyagina <yana.lovyagina@raccoongang.com>, 2026
 # Brian Smith, 2026
 # Gerardo Núñez, 2026
+# Yana Lovyagina <yana.lovyagina@raccoongang.com>, 2026
+# Iryna Zaporozhets, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-proctoring\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-13 00:33+0000\n"
+"POT-Creation-Date: 2026-03-23 00:50+0000\n"
 "PO-Revision-Date: 2023-05-10 00:48+0000\n"
-"Last-Translator: Gerardo Núñez, 2026\n"
+"Last-Translator: Iryna Zaporozhets, 2026\n"
 "Language-Team: Ukrainian (https://app.transifex.com/open-edx/teams/6205/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -90,7 +90,7 @@ msgstr "Додайте множник як число, більше 1"
 
 #: static/proctoring/js/views/proctored_exam_add_bulk_allowance_view.js:228
 msgid "Add Policy Exception"
-msgstr "Додати виняток Політика"
+msgstr "Додати виняток політики"
 
 #: static/proctoring/js/views/proctored_exam_add_bulk_allowance_view.js:268
 #: static/proctoring/js/views/proctored_exam_add_bulk_allowance_view.js:276
@@ -170,13 +170,29 @@ msgstr "Відхилено"
 msgid "Error"
 msgstr "Помилка"
 
+#: static/proctoring/js/views/proctored_exam_attempt_view.js:23
+msgid "Onboarding Missing"
+msgstr "Ознайомлення відсутнє"
+
 #: static/proctoring/js/views/proctored_exam_attempt_view.js:24
 msgid "Onboarding Pending"
 msgstr "Ознайомлення у запуску"
 
+#: static/proctoring/js/views/proctored_exam_attempt_view.js:25
+msgid "Onboarding Failed"
+msgstr "Ознайомлення не відбулося"
+
 #: static/proctoring/js/views/proctored_exam_attempt_view.js:26
 msgid "Onboarding Expired"
 msgstr "Термін ознайомлення сплив"
+
+#: static/proctoring/js/views/proctored_exam_attempt_view.js:179
+msgid "Practice"
+msgstr "Практика"
+
+#: static/proctoring/js/views/proctored_exam_attempt_view.js:179
+msgid "Proctored"
+msgstr "Під наглядом"
 
 #: static/proctoring/js/views/proctored_exam_attempt_view.js:181
 msgid "Timed"
@@ -297,6 +313,10 @@ msgstr "Професійний"
 #: static/proctoring/js/views/proctored_exam_onboarding_view.js:45
 msgid "No ID Professional"
 msgstr "Немає ID"
+
+#: static/proctoring/js/views/proctored_exam_onboarding_view.js:46
+msgid "Credit"
+msgstr "Залік"
 
 #: static/proctoring/js/views/proctored_exam_onboarding_view.js:47
 msgid "Master's"

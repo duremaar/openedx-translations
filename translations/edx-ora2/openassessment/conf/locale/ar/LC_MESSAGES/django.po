@@ -8,15 +8,15 @@
 # Omar Al-Ithawi <i@omardo.com>, 2023
 # edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2024
 # Menna Mamdouh <menna.mamdouh@notionwave.com>, 2024
-# Sulaiman Muthanna, 2025
+# Sulaiman Muthanna, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-ora2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-28 00:45+0000\n"
+"POT-Creation-Date: 2026-06-16 01:21+0000\n"
 "PO-Revision-Date: 2023-05-10 00:48+0000\n"
-"Last-Translator: Sulaiman Muthanna, 2025\n"
+"Last-Translator: Sulaiman Muthanna, 2026\n"
 "Language-Team: Arabic (https://app.transifex.com/open-edx/teams/6205/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1561,7 +1561,7 @@ msgid ""
 "                      "
 msgstr ""
 "\n"
-"                        سيُحفظ عملك تلقائياً، ويمكنك العودة لإكمال إجابتة فريقك في أيّ وقت قبل تاريخ الاستحقاق.\n"
+"                        سيُحفظ عملك تلقائياً، ويمكنك العودة لإكمال إجابة فريقك في أيّ وقت قبل تاريخ الاستحقاق.\n"
 "                      "
 
 #: templates/legacy/response/oa_response.html:81
@@ -1571,7 +1571,7 @@ msgid ""
 "                      "
 msgstr ""
 "\n"
-"                        سيُحفظ عملك تلقائياً، ويمكنك العودة لإكمال إجابتة فريقك في أيّ وقت.\n"
+"                        سيُحفظ عملك تلقائياً، ويمكنك العودة لإكمال إجابة فريقك في أيّ وقت.\n"
 "                      "
 
 #: templates/legacy/response/oa_response.html:86
@@ -1701,8 +1701,8 @@ msgid ""
 msgstr ""
 "\n"
 "                                      أنت الآن عضو في فريق %(team_name)s. نظراً لأنك كنت في فريق %(previous_team_name)s \n"
-"                                      عندما أرسلوا رداً على هذه المهمة، فإنك تُشاهد إجابة فريق %(previous_team_name)s وستتلقى نفس الدرجة لهذه المهمة مثل\n"
-"                                      زملائك السابقين في الفريق. لن تكون جزءاً من إرسال فريق %(team_name)s لهذه المهمة وبناءً على ذلك فلن تتلقى درجة على هذا الإرسال.\n"
+"                                      عندما أرسلوا رداً على هذا الواجب، فإنك تشاهد إجابة فريق %(previous_team_name)s وستتلقى نفس الدرجة لهذا الواجب مثل\n"
+"                                      زملائك السابقين في الفريق. لن تكون جزءاً من إرسال فريق %(team_name)s لهذا الواجب ولن تتلقى درجة بناءً عليه.\n"
 "                                  "
 
 #: templates/legacy/response/oa_response.html:224
@@ -1793,7 +1793,7 @@ msgid ""
 "                  "
 msgstr ""
 "\n"
-"                  تعرّف أكثر على واجبات الفريق هنا: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">رابط</a>)\n"
+"                  اعرف المزيد حول واجبات الفريق هنا: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">رابط</a>)\n"
 "                  "
 
 #: templates/legacy/response/oa_response.html:323
@@ -1938,9 +1938,9 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                             انضممت إلى فريق %(team_name)sبعد تقديمهم إجابة على هذه المهمة\n"
-"                            ولن تحصل على درجة تقييمهم ذاتها. كما لم تُقدِّم إجابة على هذه المهمة ضِمن فريق آخر.\n"
-"                            يرجى التواصل مع طاقم المساق لمناقشة خِياراتك لهذه المهمة.\n"
+"                             لقد انضممت إلى فريق %(team_name)sبعد تقديمهم إجابة على هذه المهمة\n"
+"                            ولن تحصل على درجة تقييمهم ذاتها. كما أنّك لم تُقدِّم إجابة على هذه المهمة ضِمن فريق آخر.\n"
+"                            يُرجى التواصل مع طاقم المساق لمناقشة خياراتك لهذه المهمة.\n"
 "                        "
 
 #: templates/legacy/self/oa_self_assessment.html:33

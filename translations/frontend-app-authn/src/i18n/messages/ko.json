@@ -141,6 +141,7 @@
   "email.invalid.format.error": "유효한 이메일 주소를 입력하세요",
   "username.validation.message": "사용자 이름은 2~30자 사이여야 합니다.",
   "name.validation.message": "유효한 이름을 입력하세요",
+  "registration.name.validation.length.message": "전체 이름은 {limit}자를 초과할 수 없습니다",
   "username.format.validation.message": "사용자 이름은 문자(A-Z, a-z), 숫자(0-9), 밑줄(_), 하이픈(-)만 포함할 수 있습니다. 사용자 이름은 공백을 포함할 수 없습니다.",
   "registration.request.failure.header": "계정을 만들 수 없습니다.",
   "registration.empty.form.submission.error": "답변을 확인하고 다시 시도해 보세요.",
@@ -178,5 +179,6 @@
   "complete.your.profile.2": "당신의 프로필",
   "register.page.terms.of.service.and.honor.code": "계정을 생성함으로써 귀하는 {tosAndHonorCode} 에 동의하며, {platformName} 및 각 회원이 귀하의 개인 데이터를 {privacyPolicy} 에 따라 처리한다는 것을 인정합니다.",
   "register.page.honor.code": "{platformName} {tosAndHonorCode} 에 동의합니다",
-  "register.page.terms.of.service": "{platformName} {termsOfService} 에 동의합니다"
+  "register.page.terms.of.service": "{platformName} {termsOfService} 에 동의합니다",
+  "error.notfound.page.title": "페이지를 찾을 수 없음 | {siteName}"
 }

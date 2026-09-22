@@ -26,7 +26,7 @@
   "category.course-about.course-intro.status-message.enrollment-closed": "Les inscriptions sont clôturées",
   "category.course-about.course-intro.enroll-now-btn": "Inscrivez-vous maintenant",
   "category.course-about.course-intro.enroll-now-btn-pending": "Inscription...",
-  "category.course-about.course-intro.status-message.enrollment-error": "Une erreur s&#39;est produite. Veuillez réessayer plus tard.",
+  "category.course-about.course-intro.status-message.enrollment-error": "Une erreur s'est produite. Veuillez réessayer plus tard.",
   "generic.course-card.start-date": "Débuts : {startDate}",
   "category.generic.loading": "Chargement...",
   "catalog.home-page.video-modal-title": "Fenêtre vidéo",
@@ -53,5 +53,8 @@
   "catalog.home-page.subtitle": "Ça fonctionne! Propulsé par la plateforme Open edX®",
   "catalog.home-page.search-placeholder": "Rechercher un cours",
   "catalog.home-page.video-button": "Regarder la vidéo promotionnelle",
-  "catalog.home-page.video-button-alt": "bouton de recherche"
+  "catalog.home-page.video-button-alt": "bouton de recherche",
+  "courseAbout.page.title": "{courseName} | {siteName}",
+  "courses.page.title": "Cours | {siteName}",
+  "home.page.title": "Catalogue | {siteName}"
 }

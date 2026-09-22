@@ -24,27 +24,11 @@
         <item quantity="other">%1$d nokavētie uzdevumi</item>
     </plurals>
 
-	<string name="downloads.downloads">Lejupielādes</string>
-	<string name="downloads.downloads_download_course">Lejupielādēt kursu</string>
-	<string name="downloads.downloads_remove_course_downloads">Kursu lejupielādes dzēšana</string>
-	<string name="downloads.downloads_cancel_download">Lejupielādi atcelt</string>
-	<string name="downloads.downloads_empty_state_title">Nav kursu ar lejupielādējamu saturu</string>
-	<string name="downloads.downloads_empty_state_description">Pašlaik jums nav kursu ar lejupielādējamu saturu.</string>
-	<string name="downloads.downloaded_downloaded_size">%1$s lejupielādēts</string>
-	<string name="downloads.downloaded_available_size">%1$s pieejams</string>
-	<string name="downloads.downloads_accessibility_stop_downloading_course">Pārtraukt lejupielādes kursu</string>
-	<string name="downloads.downloads_loading_course_structure">Iekraušanas kursa struktūra…</string>
-
-	<string name="app.app_navigation_discovery">Atklājiet</string>
-	<string name="app.app_navigation_learn">Uzziniet</string>
-	<string name="app.app_navigation_profile">Profils</string>
-	<string name="app.app_navigation_dates">Datumi</string>
-	<string name="app.app_navigation_downloads">Lejupielādes</string>
-
 	<string name="auth.auth_forgot_password">Aizmirsi paroli\?</string>
 	<string name="auth.auth_email">E-pasts</string>
 	<string name="auth.auth_invalid_email">Nepareizs e-pasts</string>
 	<string name="auth.auth_invalid_password">Parole ir pārāk īsa</string>
+	<string name="auth.auth_social_account_not_registered">Šis %1$s konts nav saistīts ne ar vienu %2$s kontu. Lūdzu reģistrēties.</string>
 	<string name="auth.auth_welcome_back">Laipni lūdzam atpakaļ! Pierakstieties, lai piekļūtu saviem kursiem.</string>
 	<string name="auth.auth_show_optional_fields">Rādīt neobligātos laukus</string>
 	<string name="auth.auth_hide_optional_fields">Slēpt neobligātos laukus</string>
@@ -62,6 +46,13 @@
 	<string name="auth.auth_agreement_signin_in">Pierakstoties šajā lietotnē, jūs piekrītat %1$s un %2$s un atzīstat, ka %3$s un katrs dalībnieks apstrādā jūsu personas datus saskaņā ar %4$s .</string>
 	<string name="auth.auth_accessibility_show_password">Rādīt paroli</string>
 	<string name="auth.auth_accessibility_hide_password">Slēpt paroli</string>
+
+	<string name="dates.dates_title">Datumi</string>
+	<string name="dates.dates_empty_state_title">Nav datumu</string>
+	<string name="dates.dates_empty_state_description">Jums pašlaik nav aktīvu kursu ar ieplānotiem pasākumiem. Reģistrējieties kursam, lai skatītu svarīgus datumus un termiņus.</string>
+	<string name="dates.dates_shift_due_date_card_title">Vai nokavējāt dažus termiņus\?</string>
+	<string name="dates.dates_shift_due_date_card_description">Neuztraucieties – mainiet mūsu ieteikto grafiku, lai pabeigtu nokavētos uzdevumus, nezaudējot progresu.</string>
+	<string name="dates.dates_shift_due_date">Pārvietot izpildes datumus</string>
 
 	<string name="profile.profile_full_profile">Pilns profils</string>
 	<string name="profile.profile_limited_profile">Ierobežots profils</string>
@@ -142,6 +133,80 @@
 	<string name="profile.profile_no_google_calendars">Nav pieejami Google kalendāri</string>
 	<string name="profile.profile_select_calendar">Izvēlieties kalendāru</string>
 	<string name="profile.profile_local_calendar_option">Vietējais kalendārs</string>
+
+	<string name="app.app_navigation_discovery">Atklājiet</string>
+	<string name="app.app_navigation_learn">Uzziniet</string>
+	<string name="app.app_navigation_profile">Profils</string>
+	<string name="app.app_navigation_dates">Datumi</string>
+	<string name="app.app_navigation_downloads">Lejupielādes</string>
+
+	<string name="discussion.discussion_all_posts">Visas ziņas</string>
+	<string name="discussion.discussion_unread">Nelasīts</string>
+	<string name="discussion.discussion_unanswered">Neatbildēts</string>
+	<string name="discussion.discussion_posts_following">Ziņas, kurām sekoju</string>
+	<string name="discussion.discussion_recent_activity">Pēdējās aktivitātes</string>
+	<string name="discussion.discussion_most_activity">Lielākā aktivitāte</string>
+	<string name="discussion.discussion_most_votes">Lielākā daļa balsu</string>
+	<string name="discussion.discussion_create_post">Izveidot diskusiju</string>
+	<string name="discussion.discussion_create_question">Izveidojiet jautājumu</string>
+	<string name="discussion.discussion_add_response">Pievienojiet atbildi</string>
+	<string name="discussion.discussion_last_post">Pēdējā ziņa: %1$s</string>
+	<string name="discussion.discussion_follow">Sekojiet</string>
+	<string name="discussion.discussion_report">Ziņot</string>
+	<string name="discussion.discussion_unreport">Neziņot</string>
+	<string name="discussion.discussion_add_comment">Pievieno komentāru</string>
+	<string name="discussion.discussion_comments_title">komentēt</string>
+	<string name="discussion.discussion_comment_added">Komentārs ir veiksmīgi pievienots</string>
+	<string name="discussion.discussion_discussion">Diskusija</string>
+	<string name="discussion.discussion_question">Jautājums</string>
+	<string name="discussion.discussion_title">Nosaukums</string>
+	<string name="discussion.discussion_follow_discussion">Sekojiet šai diskusijai</string>
+	<string name="discussion.discussion_follow_question">Sekojiet šim jautājumam</string>
+	<string name="discussion.discussion_search_all_posts">Meklēt visas ziņas</string>
+	<string name="discussion.discussion_main_categories">Galvenās kategorijas</string>
+	<string name="discussion.discussion_select_post_type">Izvēlieties ziņas veidu</string>
+	<string name="discussion.discussion_topic">Temats</string>
+	<string name="discussion.discussion_search_results">Meklēšanas rezultāti</string>
+	<string name="discussion.discussion_start_typing_to_find">Sāciet rakstīt, lai atrastu pavedienu</string>
+	<string name="discussion.discussion_anonymous">Anonīms</string>
+	<string name="discussion.discussion_no_yet">Pagaidām nav diskusiju</string>
+	<string name="discussion.discussion_click_button_create_discussion">Noklikšķiniet uz tālāk esošās pogas, lai izveidotu savu pirmo diskusiju.</string>
+	<string name="discussion.discussion_unnamed_subcategory">Nenosaukta apakškategorija</string>
+	<plurals name="discussion.discussion_votes">
+        <item quantity="zero">%1$d balsis</item>
+        <item quantity="one">%1$d balsojums</item>
+        <item quantity="other">%1$d balsis</item>
+    </plurals>
+	<plurals name="discussion.discussion_comments">
+        <item quantity="zero">%1$d Komentāri</item>
+        <item quantity="one">%1$d Komentārs</item>
+        <item quantity="other">%1$d komentāri</item>
+    </plurals>
+	<plurals name="discussion.discussion_missed_posts">
+        <item quantity="zero">%1$d Izlaistas ziņas</item>
+        <item quantity="one">%1$d Izlaista ziņa</item>
+        <item quantity="other">%1$d izlaistas ziņas</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses">
+        <item quantity="zero">%1$d atbildes</item>
+        <item quantity="one">%1$d atbilde</item>
+        <item quantity="other">%1$d atbildes</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses_capitalized">
+        <item quantity="zero">%1$d atbildes</item>
+        <item quantity="one">%1$d atbilde</item>
+        <item quantity="other">%1$d atbildes</item>
+    </plurals>
+	<plurals name="discussion.discussion_found_threads">
+        <item quantity="zero">Atrastas %s ziņas</item>
+        <item quantity="one">Atrasts %s ziņa</item>
+        <item quantity="other">Atrastas %s ziņas</item>
+    </plurals>
+
+	<string name="whatsnew.whats_new_title">Kas jauns</string>
+	<string name="whatsnew.whats_new_navigation_previous">Iepriekšējais</string>
+	<string name="whatsnew.whats_new_navigation_next">Nākamais</string>
+	<string name="whatsnew.whats_new_navigation_done">Gatavs</string>
 
 	<string name="core.core_error_invalid_grant">Nederīgi akreditācijas dati</string>
 	<string name="core.core_error_no_connection">Lēns interneta savienojums vai tā nav</string>
@@ -281,6 +346,10 @@
 	<string name="core.core_explore_other_parts_when_reconnect_or_download">Izpētiet citas šī kursa daļas vai lejupielādējiet to, kad atjaunosiet savienojumu.</string>
 	<string name="core.core_authorization">Autorizācija</string>
 	<string name="core.core_authorization_request">Lūdzu, ieejiet sistēmā, lai turpinātu kursu reģistrāciju.</string>
+	<string name="core.core_sso_sign_in">Pierakstīties, izmantojot SSO</string>
+	<string name="core.core_sign_in_sso_heading">Sāciet jau šodien, lai pārliecinoši veidotu savu karjeru</string>
+	<string name="core.core_sign_in_sso_login_title">Ielogoties</string>
+	<string name="core.core_sign_in_sso_login_subtitle">Ielogojieties, izmantojot valsts vienoto pieteikšanās pakalpojumu.</string>
 
 	<string name="course.course_you_earned_certificate">Apsveicam, jūs ieguvāt šo kursa sertifikātu &amp;quot; %s &amp;quot;.</string>
 	<string name="course.course_view_certificate">Skatīt sertifikātu</string>
@@ -383,12 +452,16 @@
 	<string name="course.course_videos_caught_up">Jūs esat noskatījies visus video!</string>
 	<string name="course.course_assignments_caught_up">Jūs esat pabeidzis visus uzdevumus!</string>
 
-	<string name="dates.dates_title">Datumi</string>
-	<string name="dates.dates_empty_state_title">Nav datumu</string>
-	<string name="dates.dates_empty_state_description">Jums pašlaik nav aktīvu kursu ar ieplānotiem pasākumiem. Reģistrējieties kursam, lai skatītu svarīgus datumus un termiņus.</string>
-	<string name="dates.dates_shift_due_date_card_title">Vai nokavējāt dažus termiņus\?</string>
-	<string name="dates.dates_shift_due_date_card_description">Neuztraucieties – mainiet mūsu ieteikto grafiku, lai pabeigtu nokavētos uzdevumus, nezaudējot progresu.</string>
-	<string name="dates.dates_shift_due_date">Pārvietot izpildes datumus</string>
+	<string name="downloads.downloads">Lejupielādes</string>
+	<string name="downloads.downloads_download_course">Lejupielādēt kursu</string>
+	<string name="downloads.downloads_remove_course_downloads">Kursu lejupielādes dzēšana</string>
+	<string name="downloads.downloads_cancel_download">Lejupielādi atcelt</string>
+	<string name="downloads.downloads_empty_state_title">Nav kursu ar lejupielādējamu saturu</string>
+	<string name="downloads.downloads_empty_state_description">Pašlaik jums nav kursu ar lejupielādējamu saturu.</string>
+	<string name="downloads.downloaded_downloaded_size">%1$s lejupielādēts</string>
+	<string name="downloads.downloaded_available_size">%1$s pieejams</string>
+	<string name="downloads.downloads_accessibility_stop_downloading_course">Pārtraukt lejupielādes kursu</string>
+	<string name="downloads.downloads_loading_course_structure">Iekraušanas kursa struktūra…</string>
 
 	<string name="discovery.discovery_Discovery">Atklājiet</string>
 	<string name="discovery.discovery_discovery_new">Atklājiet jaunu</string>
@@ -409,72 +482,4 @@
     </plurals>
 	<!-- Accessibility -->
 	<string name="discovery.discovery_accessibility_play_video">Atskaņot video</string>
-
-	<string name="whatsnew.whats_new_title">Kas jauns</string>
-	<string name="whatsnew.whats_new_navigation_previous">Iepriekšējais</string>
-	<string name="whatsnew.whats_new_navigation_next">Nākamais</string>
-	<string name="whatsnew.whats_new_navigation_done">Gatavs</string>
-
-	<string name="discussion.discussion_all_posts">Visas ziņas</string>
-	<string name="discussion.discussion_unread">Nelasīts</string>
-	<string name="discussion.discussion_unanswered">Neatbildēts</string>
-	<string name="discussion.discussion_posts_following">Ziņas, kurām sekoju</string>
-	<string name="discussion.discussion_recent_activity">Pēdējās aktivitātes</string>
-	<string name="discussion.discussion_most_activity">Lielākā aktivitāte</string>
-	<string name="discussion.discussion_most_votes">Lielākā daļa balsu</string>
-	<string name="discussion.discussion_create_post">Izveidot diskusiju</string>
-	<string name="discussion.discussion_create_question">Izveidojiet jautājumu</string>
-	<string name="discussion.discussion_add_response">Pievienojiet atbildi</string>
-	<string name="discussion.discussion_last_post">Pēdējā ziņa: %1$s</string>
-	<string name="discussion.discussion_follow">Sekojiet</string>
-	<string name="discussion.discussion_report">Ziņot</string>
-	<string name="discussion.discussion_unreport">Neziņot</string>
-	<string name="discussion.discussion_add_comment">Pievieno komentāru</string>
-	<string name="discussion.discussion_comments_title">komentēt</string>
-	<string name="discussion.discussion_comment_added">Komentārs ir veiksmīgi pievienots</string>
-	<string name="discussion.discussion_discussion">Diskusija</string>
-	<string name="discussion.discussion_question">Jautājums</string>
-	<string name="discussion.discussion_title">Nosaukums</string>
-	<string name="discussion.discussion_follow_discussion">Sekojiet šai diskusijai</string>
-	<string name="discussion.discussion_follow_question">Sekojiet šim jautājumam</string>
-	<string name="discussion.discussion_search_all_posts">Meklēt visas ziņas</string>
-	<string name="discussion.discussion_main_categories">Galvenās kategorijas</string>
-	<string name="discussion.discussion_select_post_type">Izvēlieties ziņas veidu</string>
-	<string name="discussion.discussion_topic">Temats</string>
-	<string name="discussion.discussion_search_results">Meklēšanas rezultāti</string>
-	<string name="discussion.discussion_start_typing_to_find">Sāciet rakstīt, lai atrastu pavedienu</string>
-	<string name="discussion.discussion_anonymous">Anonīms</string>
-	<string name="discussion.discussion_no_yet">Pagaidām nav diskusiju</string>
-	<string name="discussion.discussion_click_button_create_discussion">Noklikšķiniet uz tālāk esošās pogas, lai izveidotu savu pirmo diskusiju.</string>
-	<string name="discussion.discussion_unnamed_subcategory">Nenosaukta apakškategorija</string>
-	<plurals name="discussion.discussion_votes">
-        <item quantity="zero">%1$d balsis</item>
-        <item quantity="one">%1$d balsojums</item>
-        <item quantity="other">%1$d balsis</item>
-    </plurals>
-	<plurals name="discussion.discussion_comments">
-        <item quantity="zero">%1$d Komentāri</item>
-        <item quantity="one">%1$d Komentārs</item>
-        <item quantity="other">%1$d komentāri</item>
-    </plurals>
-	<plurals name="discussion.discussion_missed_posts">
-        <item quantity="zero">%1$d Izlaistas ziņas</item>
-        <item quantity="one">%1$d Izlaista ziņa</item>
-        <item quantity="other">%1$d izlaistas ziņas</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses">
-        <item quantity="zero">%1$d atbildes</item>
-        <item quantity="one">%1$d atbilde</item>
-        <item quantity="other">%1$d atbildes</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses_capitalized">
-        <item quantity="zero">%1$d atbildes</item>
-        <item quantity="one">%1$d atbilde</item>
-        <item quantity="other">%1$d atbildes</item>
-    </plurals>
-	<plurals name="discussion.discussion_found_threads">
-        <item quantity="zero">Atrastas %s ziņas</item>
-        <item quantity="one">Atrasts %s ziņa</item>
-        <item quantity="other">Atrastas %s ziņas</item>
-    </plurals>
 </resources>

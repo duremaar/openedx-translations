@@ -22,27 +22,11 @@
         <item quantity="other">%1$d 期限切れの課題</item>
     </plurals>
 
-	<string name="downloads.downloads">ダウンロード</string>
-	<string name="downloads.downloads_download_course">コースをダウンロード</string>
-	<string name="downloads.downloads_remove_course_downloads">コースのダウンロードを削除</string>
-	<string name="downloads.downloads_cancel_download">ダウンロードをキャンセル</string>
-	<string name="downloads.downloads_empty_state_title">ダウンロード可能なコンテンツがあるコースはありません</string>
-	<string name="downloads.downloads_empty_state_description">ダウンロード可能なコンテンツがあるコースは現在ありません。</string>
-	<string name="downloads.downloaded_downloaded_size">%1$s がダウンロードされました</string>
-	<string name="downloads.downloaded_available_size">%1$s 利用可能</string>
-	<string name="downloads.downloads_accessibility_stop_downloading_course">コースのダウンロードを停止</string>
-	<string name="downloads.downloads_loading_course_structure">コース構造を読み込んでいます…</string>
-
-	<string name="app.app_navigation_discovery">発見する</string>
-	<string name="app.app_navigation_learn">学ぶ</string>
-	<string name="app.app_navigation_profile">プロフィール</string>
-	<string name="app.app_navigation_dates">日付</string>
-	<string name="app.app_navigation_downloads">ダウンロード</string>
-
 	<string name="auth.auth_forgot_password">パスワードをお忘れですか</string>
 	<string name="auth.auth_email">メール</string>
 	<string name="auth.auth_invalid_email">無効なメールアドレス</string>
 	<string name="auth.auth_invalid_password">パスワードが短すぎます</string>
+	<string name="auth.auth_social_account_not_registered">この%1$sアカウントは、いかなる%2$sアカウントともリンクされていません。登録してください。</string>
 	<string name="auth.auth_welcome_back">お帰りなさい！コースにアクセスするにはサインインしてください。</string>
 	<string name="auth.auth_show_optional_fields">オプションフィールドを表示</string>
 	<string name="auth.auth_hide_optional_fields">任意フィールドを非表示にする</string>
@@ -60,6 +44,13 @@
 	<string name="auth.auth_agreement_signin_in">このアプリにサインインすることにより、%1$s と %2$s に同意し、%3$s および各メンバーが %4$s に従ってあなたの個人データを処理することを認めます。</string>
 	<string name="auth.auth_accessibility_show_password">パスワードを表示</string>
 	<string name="auth.auth_accessibility_hide_password">パスワードを非表示</string>
+
+	<string name="dates.dates_title">日付</string>
+	<string name="dates.dates_empty_state_title">日付なし</string>
+	<string name="dates.dates_empty_state_description">現在、イベントが予定されているアクティブなコースはありません。重要な日付と締め切りを表示するには、コースに登録してください。</string>
+	<string name="dates.dates_shift_due_date_card_title">締切を逃してしまいましたか？</string>
+	<string name="dates.dates_shift_due_date_card_description">ご安心ください。進捗を失うことなく、期日を過ぎた課題を完了するために、提案されたスケジュールを調整してください。</string>
+	<string name="dates.dates_shift_due_date">締切日を変更</string>
 
 	<string name="profile.profile_full_profile">完全なプロフィール</string>
 	<string name="profile.profile_limited_profile">限定プロフィール</string>
@@ -140,6 +131,68 @@
 	<string name="profile.profile_no_google_calendars">Google カレンダーが利用できません</string>
 	<string name="profile.profile_select_calendar">カレンダーを選択</string>
 	<string name="profile.profile_local_calendar_option">ローカルカレンダー</string>
+
+	<string name="app.app_navigation_discovery">発見する</string>
+	<string name="app.app_navigation_learn">学ぶ</string>
+	<string name="app.app_navigation_profile">プロフィール</string>
+	<string name="app.app_navigation_dates">日付</string>
+	<string name="app.app_navigation_downloads">ダウンロード</string>
+
+	<string name="discussion.discussion_all_posts">すべての投稿</string>
+	<string name="discussion.discussion_unread">未読</string>
+	<string name="discussion.discussion_unanswered">未回答</string>
+	<string name="discussion.discussion_posts_following">フォロー中の投稿</string>
+	<string name="discussion.discussion_recent_activity">最近の活動</string>
+	<string name="discussion.discussion_most_activity">最も活動的</string>
+	<string name="discussion.discussion_most_votes">最多投票</string>
+	<string name="discussion.discussion_create_post">ディスカッションを作成</string>
+	<string name="discussion.discussion_create_question">質問を作成</string>
+	<string name="discussion.discussion_add_response">応答を追加</string>
+	<string name="discussion.discussion_last_post">最終投稿: %1$s</string>
+	<string name="discussion.discussion_follow">フォロー</string>
+	<string name="discussion.discussion_report">報告</string>
+	<string name="discussion.discussion_unreport">報告を取り消す</string>
+	<string name="discussion.discussion_add_comment">コメントを追加</string>
+	<string name="discussion.discussion_comments_title">コメント</string>
+	<string name="discussion.discussion_comment_added">コメントが正常に追加されました</string>
+	<string name="discussion.discussion_discussion">ディスカッション</string>
+	<string name="discussion.discussion_question">質問</string>
+	<string name="discussion.discussion_title">タイトル</string>
+	<string name="discussion.discussion_follow_discussion">このディスカッションをフォローする</string>
+	<string name="discussion.discussion_follow_question">この質問をフォローする</string>
+	<string name="discussion.discussion_search_all_posts">すべての投稿を検索</string>
+	<string name="discussion.discussion_main_categories">主要カテゴリ</string>
+	<string name="discussion.discussion_select_post_type">投稿タイプを選択</string>
+	<string name="discussion.discussion_topic">トピック</string>
+	<string name="discussion.discussion_search_results">検索結果</string>
+	<string name="discussion.discussion_start_typing_to_find">スレッドを見つけるために入力を開始してください</string>
+	<string name="discussion.discussion_anonymous">匿名</string>
+	<string name="discussion.discussion_no_yet">まだディスカッションはありません</string>
+	<string name="discussion.discussion_click_button_create_discussion">以下のボタンをクリックして、最初のディスカッションを作成してください。</string>
+	<string name="discussion.discussion_unnamed_subcategory">名前のないサブカテゴリー</string>
+	<plurals name="discussion.discussion_votes">
+        <item quantity="other">%1$d 票</item>
+    </plurals>
+	<plurals name="discussion.discussion_comments">
+        <item quantity="other">%1$d件のコメント</item>
+    </plurals>
+	<plurals name="discussion.discussion_missed_posts">
+        <item quantity="other">%1$d 件の見逃した投稿</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses">
+        <item quantity="other">%1$d 件の回答</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses_capitalized">
+        <item quantity="other">%1$d 件の回答</item>
+    </plurals>
+	<plurals name="discussion.discussion_found_threads">
+        <item quantity="other">%s件の投稿が見つかりました</item>
+    </plurals>
+
+	<string name="whatsnew.whats_new_title">新着情報</string>
+	<string name="whatsnew.whats_new_navigation_previous">前へ</string>
+	<string name="whatsnew.whats_new_navigation_next">次へ</string>
+	<string name="whatsnew.whats_new_navigation_done">完了</string>
 
 	<string name="core.core_error_invalid_grant">無効な資格情報</string>
 	<string name="core.core_error_no_connection">インターネット接続が遅い、または接続できない</string>
@@ -280,6 +333,10 @@
 	<string name="core.core_explore_other_parts_when_reconnect_or_download">このコースの他の部分を探索するか、再接続したときにこれをダウンロードしてください。</string>
 	<string name="core.core_authorization">認証</string>
 	<string name="core.core_authorization_request">システムにログインして、コース登録を続行してください。</string>
+	<string name="core.core_sso_sign_in">SSOでサインイン</string>
+	<string name="core.core_sign_in_sso_heading">今日から自信を持ってキャリアを築きましょう</string>
+	<string name="core.core_sign_in_sso_login_title">サインイン</string>
+	<string name="core.core_sign_in_sso_login_subtitle">全国統一シングルサインオンサービスを通じてサインインしてください</string>
 
 	<string name="course.course_you_earned_certificate">おめでとうございます。「%s」のコース証明書を取得しました。</string>
 	<string name="course.course_view_certificate">証明書を表示</string>
@@ -382,12 +439,16 @@
 	<string name="course.course_videos_caught_up">動画はすべて見終わりました！</string>
 	<string name="course.course_assignments_caught_up">すべての課題が完了しました！</string>
 
-	<string name="dates.dates_title">日付</string>
-	<string name="dates.dates_empty_state_title">日付なし</string>
-	<string name="dates.dates_empty_state_description">現在、イベントが予定されているアクティブなコースはありません。重要な日付と締め切りを表示するには、コースに登録してください。</string>
-	<string name="dates.dates_shift_due_date_card_title">締切を逃してしまいましたか？</string>
-	<string name="dates.dates_shift_due_date_card_description">ご安心ください。進捗を失うことなく、期日を過ぎた課題を完了するために、提案されたスケジュールを調整してください。</string>
-	<string name="dates.dates_shift_due_date">締切日を変更</string>
+	<string name="downloads.downloads">ダウンロード</string>
+	<string name="downloads.downloads_download_course">コースをダウンロード</string>
+	<string name="downloads.downloads_remove_course_downloads">コースのダウンロードを削除</string>
+	<string name="downloads.downloads_cancel_download">ダウンロードをキャンセル</string>
+	<string name="downloads.downloads_empty_state_title">ダウンロード可能なコンテンツがあるコースはありません</string>
+	<string name="downloads.downloads_empty_state_description">ダウンロード可能なコンテンツがあるコースは現在ありません。</string>
+	<string name="downloads.downloaded_downloaded_size">%1$s がダウンロードされました</string>
+	<string name="downloads.downloaded_available_size">%1$s 利用可能</string>
+	<string name="downloads.downloads_accessibility_stop_downloading_course">コースのダウンロードを停止</string>
+	<string name="downloads.downloads_loading_course_structure">コース構造を読み込んでいます…</string>
 
 	<string name="discovery.discovery_Discovery">発見する</string>
 	<string name="discovery.discovery_discovery_new">新しいものを発見する</string>
@@ -406,60 +467,4 @@
     </plurals>
 	<!-- Accessibility -->
 	<string name="discovery.discovery_accessibility_play_video">ビデオを再生</string>
-
-	<string name="whatsnew.whats_new_title">新着情報</string>
-	<string name="whatsnew.whats_new_navigation_previous">前へ</string>
-	<string name="whatsnew.whats_new_navigation_next">次へ</string>
-	<string name="whatsnew.whats_new_navigation_done">完了</string>
-
-	<string name="discussion.discussion_all_posts">すべての投稿</string>
-	<string name="discussion.discussion_unread">未読</string>
-	<string name="discussion.discussion_unanswered">未回答</string>
-	<string name="discussion.discussion_posts_following">フォロー中の投稿</string>
-	<string name="discussion.discussion_recent_activity">最近の活動</string>
-	<string name="discussion.discussion_most_activity">最も活動的</string>
-	<string name="discussion.discussion_most_votes">最多投票</string>
-	<string name="discussion.discussion_create_post">ディスカッションを作成</string>
-	<string name="discussion.discussion_create_question">質問を作成</string>
-	<string name="discussion.discussion_add_response">応答を追加</string>
-	<string name="discussion.discussion_last_post">最終投稿: %1$s</string>
-	<string name="discussion.discussion_follow">フォロー</string>
-	<string name="discussion.discussion_report">報告</string>
-	<string name="discussion.discussion_unreport">報告を取り消す</string>
-	<string name="discussion.discussion_add_comment">コメントを追加</string>
-	<string name="discussion.discussion_comments_title">コメント</string>
-	<string name="discussion.discussion_comment_added">コメントが正常に追加されました</string>
-	<string name="discussion.discussion_discussion">ディスカッション</string>
-	<string name="discussion.discussion_question">質問</string>
-	<string name="discussion.discussion_title">タイトル</string>
-	<string name="discussion.discussion_follow_discussion">このディスカッションをフォローする</string>
-	<string name="discussion.discussion_follow_question">この質問をフォローする</string>
-	<string name="discussion.discussion_search_all_posts">すべての投稿を検索</string>
-	<string name="discussion.discussion_main_categories">主要カテゴリ</string>
-	<string name="discussion.discussion_select_post_type">投稿タイプを選択</string>
-	<string name="discussion.discussion_topic">トピック</string>
-	<string name="discussion.discussion_search_results">検索結果</string>
-	<string name="discussion.discussion_start_typing_to_find">スレッドを見つけるために入力を開始してください</string>
-	<string name="discussion.discussion_anonymous">匿名</string>
-	<string name="discussion.discussion_no_yet">まだディスカッションはありません</string>
-	<string name="discussion.discussion_click_button_create_discussion">以下のボタンをクリックして、最初のディスカッションを作成してください。</string>
-	<string name="discussion.discussion_unnamed_subcategory">名前のないサブカテゴリー</string>
-	<plurals name="discussion.discussion_votes">
-        <item quantity="other">%1$d 票</item>
-    </plurals>
-	<plurals name="discussion.discussion_comments">
-        <item quantity="other">%1$d件のコメント</item>
-    </plurals>
-	<plurals name="discussion.discussion_missed_posts">
-        <item quantity="other">%1$d 件の見逃した投稿</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses">
-        <item quantity="other">%1$d 件の回答</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses_capitalized">
-        <item quantity="other">%1$d 件の回答</item>
-    </plurals>
-	<plurals name="discussion.discussion_found_threads">
-        <item quantity="other">%s件の投稿が見つかりました</item>
-    </plurals>
 </resources>

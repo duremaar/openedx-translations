@@ -23,27 +23,11 @@
         <item quantity="other">%1$d lejárt határidejű feladatok</item>
     </plurals>
 
-	<string name="downloads.downloads">Letöltések</string>
-	<string name="downloads.downloads_download_course">Tanfolyam letöltése</string>
-	<string name="downloads.downloads_remove_course_downloads">Távolítsa el a kurzus letöltéseit</string>
-	<string name="downloads.downloads_cancel_download">Letöltés megszakít</string>
-	<string name="downloads.downloads_empty_state_title">Nincsenek letölthető tartalmú kurzusok</string>
-	<string name="downloads.downloads_empty_state_description">Jelenleg nincsenek letölthető tartalommal rendelkező kurzusai.</string>
-	<string name="downloads.downloaded_downloaded_size">%1$s letöltve</string>
-	<string name="downloads.downloaded_available_size">%1$s elérhető</string>
-	<string name="downloads.downloads_accessibility_stop_downloading_course">Állítsa le a kurzus letöltését</string>
-	<string name="downloads.downloads_loading_course_structure">Tanfolyam szerkezetének betöltése…</string>
-
-	<string name="app.app_navigation_discovery">Fedezze fel</string>
-	<string name="app.app_navigation_learn">Tanulás</string>
-	<string name="app.app_navigation_profile">Profil</string>
-	<string name="app.app_navigation_dates">Dátumok</string>
-	<string name="app.app_navigation_downloads">Letöltések</string>
-
 	<string name="auth.auth_forgot_password">Elfelejtetted a jelszavad\?</string>
 	<string name="auth.auth_email">e-mail</string>
 	<string name="auth.auth_invalid_email">Érvénytelen e-mail-cím</string>
 	<string name="auth.auth_invalid_password">A jelszó túl rövid.</string>
+	<string name="auth.auth_social_account_not_registered">Ez a %1$s fiók nincs összekapcsolva egyetlen %2$s fiókkal sem. Kérjük, regisztráljon.</string>
 	<string name="auth.auth_welcome_back">Üdvözöljük újra! Jelentkezzen be a kurzusaihoz való hozzáféréshez.</string>
 	<string name="auth.auth_show_optional_fields">Mutassa az opcionális mezőket</string>
 	<string name="auth.auth_hide_optional_fields">Rejtsd el az opcionális mezőket</string>
@@ -61,6 +45,13 @@
 	<string name="auth.auth_agreement_signin_in">Azzal, hogy bejelentkezik ebbe az appba, elfogadja a %1$s és a %2$s, és tudomásul veszi, hogy %3$s és minden Tag az Ön személyes adatait a %4$s szerint kezeli.</string>
 	<string name="auth.auth_accessibility_show_password">Jelszó megjelenítése</string>
 	<string name="auth.auth_accessibility_hide_password">Jelszó elrejtése</string>
+
+	<string name="dates.dates_title">Dátumok</string>
+	<string name="dates.dates_empty_state_title">Nincs dátum</string>
+	<string name="dates.dates_empty_state_description">Jelenleg nincsenek aktív kurzusaid ütemezett eseményekkel. Iratkozz be egy kurzusra, hogy megtekinthesd a fontos dátumokat és határidőket.</string>
+	<string name="dates.dates_shift_due_date_card_title">Lekésted néhány határidőt\?</string>
+	<string name="dates.dates_shift_due_date_card_description">Ne aggódj – módosítsd a javasolt ütemtervünket, hogy befejezd az esedékes feladatokat anélkül, hogy elveszítenéd a haladásodat.</string>
+	<string name="dates.dates_shift_due_date">Esedékességi dátumok eltolása</string>
 
 	<string name="profile.profile_full_profile">Teljes profil</string>
 	<string name="profile.profile_limited_profile">Korlátozott profil</string>
@@ -141,6 +132,74 @@
 	<string name="profile.profile_no_google_calendars">Nincsenek elérhető Google-naptárak</string>
 	<string name="profile.profile_select_calendar">Naptár kiválasztása</string>
 	<string name="profile.profile_local_calendar_option">Helyi naptár</string>
+
+	<string name="app.app_navigation_discovery">Fedezze fel</string>
+	<string name="app.app_navigation_learn">Tanulás</string>
+	<string name="app.app_navigation_profile">Profil</string>
+	<string name="app.app_navigation_dates">Dátumok</string>
+	<string name="app.app_navigation_downloads">Letöltések</string>
+
+	<string name="discussion.discussion_all_posts">Minden bejegyzés</string>
+	<string name="discussion.discussion_unread">Olvasatlan</string>
+	<string name="discussion.discussion_unanswered">megválaszolatlan</string>
+	<string name="discussion.discussion_posts_following">Követett bejegyzések</string>
+	<string name="discussion.discussion_recent_activity">Legutóbbi tevékenységek</string>
+	<string name="discussion.discussion_most_activity">Legtöbb tevékenység</string>
+	<string name="discussion.discussion_most_votes">Legtöbb szavazat</string>
+	<string name="discussion.discussion_create_post">Hozzon létre vitát</string>
+	<string name="discussion.discussion_create_question">Kérdés létrehozása</string>
+	<string name="discussion.discussion_add_response">Válasz hozzáadása</string>
+	<string name="discussion.discussion_last_post">Utolsó bejegyzés: %1$s</string>
+	<string name="discussion.discussion_follow">Követés</string>
+	<string name="discussion.discussion_report">Jelentés</string>
+	<string name="discussion.discussion_unreport">Jelentés visszavonása</string>
+	<string name="discussion.discussion_add_comment">Megjegyzés hozzáadása</string>
+	<string name="discussion.discussion_comments_title">Megjegyzés</string>
+	<string name="discussion.discussion_comment_added">Hozzászólás sikeresen hozzáadva</string>
+	<string name="discussion.discussion_discussion">Vitafórum</string>
+	<string name="discussion.discussion_question">Kérdés</string>
+	<string name="discussion.discussion_title">Cím</string>
+	<string name="discussion.discussion_follow_discussion">Kövesse ezt a beszélgetést</string>
+	<string name="discussion.discussion_follow_question">Kövesse ezt a kérdést</string>
+	<string name="discussion.discussion_search_all_posts">Keresés az üzenetekben</string>
+	<string name="discussion.discussion_main_categories">Fő kategóriák</string>
+	<string name="discussion.discussion_select_post_type">Válassza ki a bejegyzés típusát</string>
+	<string name="discussion.discussion_topic">Téma</string>
+	<string name="discussion.discussion_search_results">Keresési eredmények</string>
+	<string name="discussion.discussion_start_typing_to_find">Kezdje el gépelni a szál megtalálásához</string>
+	<string name="discussion.discussion_anonymous">névtelen</string>
+	<string name="discussion.discussion_no_yet">Még nincsenek megbeszélések</string>
+	<string name="discussion.discussion_click_button_create_discussion">Kattintson az alábbi gombra az első vita létrehozásához.</string>
+	<string name="discussion.discussion_unnamed_subcategory">Névtelen alkategória</string>
+	<plurals name="discussion.discussion_votes">
+        <item quantity="one">%1$d szavazat</item>
+        <item quantity="other">%1$d szavazat</item>
+    </plurals>
+	<plurals name="discussion.discussion_comments">
+        <item quantity="one">%1$d hozzászólás</item>
+        <item quantity="other">%1$d hozzászólás</item>
+    </plurals>
+	<plurals name="discussion.discussion_missed_posts">
+        <item quantity="one">%1$d Kihagyott bejegyzés</item>
+        <item quantity="other">%1$d Kihagyott bejegyzés</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses">
+        <item quantity="one">%1$d válasz</item>
+        <item quantity="other">%1$d egyéb válasz</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses_capitalized">
+        <item quantity="one">%1$d válasz</item>
+        <item quantity="other">%1$d egyéb válasz</item>
+    </plurals>
+	<plurals name="discussion.discussion_found_threads">
+        <item quantity="one">Talált %s bejegyzést</item>
+        <item quantity="other">Talált %s bejegyzést</item>
+    </plurals>
+
+	<string name="whatsnew.whats_new_title">Mi újság\?</string>
+	<string name="whatsnew.whats_new_navigation_previous">Előző</string>
+	<string name="whatsnew.whats_new_navigation_next">Következő</string>
+	<string name="whatsnew.whats_new_navigation_done">Kész.</string>
 
 	<string name="core.core_error_invalid_grant">Érvénytelen hitelesítő adatok</string>
 	<string name="core.core_error_no_connection">Lassú vagy nincs internetkapcsolat</string>
@@ -281,6 +340,10 @@
 	<string name="core.core_explore_other_parts_when_reconnect_or_download">Fedezze fel a kurzus más részeit, vagy töltse le ezt, amikor újra csatlakozik.</string>
 	<string name="core.core_authorization">Hitelesítés</string>
 	<string name="core.core_authorization_request">Kérjük, lépjen be a rendszerbe a tanfolyamra való beiratkozás folytatásához.</string>
+	<string name="core.core_sso_sign_in">Jelentkezzen be SSO-val</string>
+	<string name="core.core_sign_in_sso_heading">Kezdje el még ma, hogy magabiztosan építse karrierjét</string>
+	<string name="core.core_sign_in_sso_login_title">Bejelentkezés</string>
+	<string name="core.core_sign_in_sso_login_subtitle">Jelentkezzen be a nemzeti egységes bejelentkezési szolgáltatáson keresztül</string>
 
 	<string name="course.course_you_earned_certificate">Gratulálunk, megszerezte a bizonyítványt a(z) \"%s\" kurzuson.</string>
 	<string name="course.course_view_certificate">Bizonyítvány megtekintése</string>
@@ -383,12 +446,16 @@
 	<string name="course.course_videos_caught_up">Mindennel naprakész vagy a videók terén!</string>
 	<string name="course.course_assignments_caught_up">Minden feladatot elvégeztél!</string>
 
-	<string name="dates.dates_title">Dátumok</string>
-	<string name="dates.dates_empty_state_title">Nincs dátum</string>
-	<string name="dates.dates_empty_state_description">Jelenleg nincsenek aktív kurzusaid ütemezett eseményekkel. Iratkozz be egy kurzusra, hogy megtekinthesd a fontos dátumokat és határidőket.</string>
-	<string name="dates.dates_shift_due_date_card_title">Lekésted néhány határidőt\?</string>
-	<string name="dates.dates_shift_due_date_card_description">Ne aggódj – módosítsd a javasolt ütemtervünket, hogy befejezd az esedékes feladatokat anélkül, hogy elveszítenéd a haladásodat.</string>
-	<string name="dates.dates_shift_due_date">Esedékességi dátumok eltolása</string>
+	<string name="downloads.downloads">Letöltések</string>
+	<string name="downloads.downloads_download_course">Tanfolyam letöltése</string>
+	<string name="downloads.downloads_remove_course_downloads">Távolítsa el a kurzus letöltéseit</string>
+	<string name="downloads.downloads_cancel_download">Letöltés megszakít</string>
+	<string name="downloads.downloads_empty_state_title">Nincsenek letölthető tartalmú kurzusok</string>
+	<string name="downloads.downloads_empty_state_description">Jelenleg nincsenek letölthető tartalommal rendelkező kurzusai.</string>
+	<string name="downloads.downloaded_downloaded_size">%1$s letöltve</string>
+	<string name="downloads.downloaded_available_size">%1$s elérhető</string>
+	<string name="downloads.downloads_accessibility_stop_downloading_course">Állítsa le a kurzus letöltését</string>
+	<string name="downloads.downloads_loading_course_structure">Tanfolyam szerkezetének betöltése…</string>
 
 	<string name="discovery.discovery_Discovery">Fedezze fel</string>
 	<string name="discovery.discovery_discovery_new">Fedezzen fel újdonságokat</string>
@@ -408,66 +475,4 @@
     </plurals>
 	<!-- Accessibility -->
 	<string name="discovery.discovery_accessibility_play_video">Videó lejátszása</string>
-
-	<string name="whatsnew.whats_new_title">Mi újság\?</string>
-	<string name="whatsnew.whats_new_navigation_previous">Előző</string>
-	<string name="whatsnew.whats_new_navigation_next">Következő</string>
-	<string name="whatsnew.whats_new_navigation_done">Kész.</string>
-
-	<string name="discussion.discussion_all_posts">Minden bejegyzés</string>
-	<string name="discussion.discussion_unread">Olvasatlan</string>
-	<string name="discussion.discussion_unanswered">megválaszolatlan</string>
-	<string name="discussion.discussion_posts_following">Követett bejegyzések</string>
-	<string name="discussion.discussion_recent_activity">Legutóbbi tevékenységek</string>
-	<string name="discussion.discussion_most_activity">Legtöbb tevékenység</string>
-	<string name="discussion.discussion_most_votes">Legtöbb szavazat</string>
-	<string name="discussion.discussion_create_post">Hozzon létre vitát</string>
-	<string name="discussion.discussion_create_question">Kérdés létrehozása</string>
-	<string name="discussion.discussion_add_response">Válasz hozzáadása</string>
-	<string name="discussion.discussion_last_post">Utolsó bejegyzés: %1$s</string>
-	<string name="discussion.discussion_follow">Követés</string>
-	<string name="discussion.discussion_report">Jelentés</string>
-	<string name="discussion.discussion_unreport">Jelentés visszavonása</string>
-	<string name="discussion.discussion_add_comment">Megjegyzés hozzáadása</string>
-	<string name="discussion.discussion_comments_title">Megjegyzés</string>
-	<string name="discussion.discussion_comment_added">Hozzászólás sikeresen hozzáadva</string>
-	<string name="discussion.discussion_discussion">Vitafórum</string>
-	<string name="discussion.discussion_question">Kérdés</string>
-	<string name="discussion.discussion_title">Cím</string>
-	<string name="discussion.discussion_follow_discussion">Kövesse ezt a beszélgetést</string>
-	<string name="discussion.discussion_follow_question">Kövesse ezt a kérdést</string>
-	<string name="discussion.discussion_search_all_posts">Keresés az üzenetekben</string>
-	<string name="discussion.discussion_main_categories">Fő kategóriák</string>
-	<string name="discussion.discussion_select_post_type">Válassza ki a bejegyzés típusát</string>
-	<string name="discussion.discussion_topic">Téma</string>
-	<string name="discussion.discussion_search_results">Keresési eredmények</string>
-	<string name="discussion.discussion_start_typing_to_find">Kezdje el gépelni a szál megtalálásához</string>
-	<string name="discussion.discussion_anonymous">névtelen</string>
-	<string name="discussion.discussion_no_yet">Még nincsenek megbeszélések</string>
-	<string name="discussion.discussion_click_button_create_discussion">Kattintson az alábbi gombra az első vita létrehozásához.</string>
-	<string name="discussion.discussion_unnamed_subcategory">Névtelen alkategória</string>
-	<plurals name="discussion.discussion_votes">
-        <item quantity="one">%1$d szavazat</item>
-        <item quantity="other">%1$d szavazat</item>
-    </plurals>
-	<plurals name="discussion.discussion_comments">
-        <item quantity="one">%1$d hozzászólás</item>
-        <item quantity="other">%1$d hozzászólás</item>
-    </plurals>
-	<plurals name="discussion.discussion_missed_posts">
-        <item quantity="one">%1$d Kihagyott bejegyzés</item>
-        <item quantity="other">%1$d Kihagyott bejegyzés</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses">
-        <item quantity="one">%1$d válasz</item>
-        <item quantity="other">%1$d egyéb válasz</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses_capitalized">
-        <item quantity="one">%1$d válasz</item>
-        <item quantity="other">%1$d egyéb válasz</item>
-    </plurals>
-	<plurals name="discussion.discussion_found_threads">
-        <item quantity="one">Talált %s bejegyzést</item>
-        <item quantity="other">Talált %s bejegyzést</item>
-    </plurals>
 </resources>

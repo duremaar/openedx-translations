@@ -23,27 +23,11 @@
         <item quantity="other">%1$d पिछले देय असाइनमेंट</item>
     </plurals>
 
-	<string name="downloads.downloads">डाउनलोड</string>
-	<string name="downloads.downloads_download_course">पाठ्यक्रम डाउनलोड करें</string>
-	<string name="downloads.downloads_remove_course_downloads">पाठ्यक्रम डाउनलोड हटाएं</string>
-	<string name="downloads.downloads_cancel_download">डाउनलोड रद्द करें</string>
-	<string name="downloads.downloads_empty_state_title">डाउनलोड योग्य सामग्री वाला कोई पाठ्यक्रम नहीं</string>
-	<string name="downloads.downloads_empty_state_description">वर्तमान में आपके पास डाउनलोड योग्य सामग्री वाला कोई पाठ्यक्रम नहीं है।</string>
-	<string name="downloads.downloaded_downloaded_size">%1$s डाउनलोड किया गया</string>
-	<string name="downloads.downloaded_available_size">%1$s उपलब्ध</string>
-	<string name="downloads.downloads_accessibility_stop_downloading_course">पाठ्यक्रम डाउनलोड करना बंद करें</string>
-	<string name="downloads.downloads_loading_course_structure">पाठ्यक्रम संरचना लोड हो रही है…</string>
-
-	<string name="app.app_navigation_discovery">खोज करना</string>
-	<string name="app.app_navigation_learn">सीखना</string>
-	<string name="app.app_navigation_profile">प्रोफाइल</string>
-	<string name="app.app_navigation_dates">तिथियां</string>
-	<string name="app.app_navigation_downloads">डाउनलोड</string>
-
 	<string name="auth.auth_forgot_password">पासवर्ड भूल गए\?</string>
 	<string name="auth.auth_email">ईमेल</string>
 	<string name="auth.auth_invalid_email">अमान्य ईमेल</string>
 	<string name="auth.auth_invalid_password">पासवर्ड बहुत छोटा है</string>
+	<string name="auth.auth_social_account_not_registered">यह %1$s खाता किसी भी %2$s खाते से जुड़ा नहीं है। कृपया रजिस्टर करें।</string>
 	<string name="auth.auth_welcome_back">आपका स्वागत है! अपने पाठ्यक्रमों तक पहुँचने के लिए साइन इन करें।</string>
 	<string name="auth.auth_show_optional_fields">वैकल्पिक फ़ील्ड दिखाएँ</string>
 	<string name="auth.auth_hide_optional_fields">वैकल्पिक फ़ील्ड छिपाएँ</string>
@@ -61,6 +45,13 @@
 	<string name="auth.auth_agreement_signin_in">इस ऐप में साइन इन करके, आप %1$s और %2$s से सहमत होते हैं और आप स्वीकार करते हैं कि %3$s और प्रत्येक सदस्य आपके व्यक्तिगत डेटा को %4$s के अनुसार संसाधित करते हैं।</string>
 	<string name="auth.auth_accessibility_show_password">पासवर्ड दिखाए</string>
 	<string name="auth.auth_accessibility_hide_password">पासवर्ड छुपाएँ</string>
+
+	<string name="dates.dates_title">तिथियां</string>
+	<string name="dates.dates_empty_state_title">कोई तारीख नहीं</string>
+	<string name="dates.dates_empty_state_description">आपके पास वर्तमान में निर्धारित इवेंट्स वाले कोई सक्रिय कोर्स नहीं हैं। महत्वपूर्ण तिथियां और समय-सीमा देखने के लिए किसी कोर्स में नामांकन करें।</string>
+	<string name="dates.dates_shift_due_date_card_title">कुछ समय सीमाएं चूक गए\?</string>
+	<string name="dates.dates_shift_due_date_card_description">चिंता न करें - किसी प्रगति को खोए बिना देय असाइनमेंट को पूरा करने के लिए हमारे सुझाए गए शेड्यूल में बदलाव करें।</string>
+	<string name="dates.dates_shift_due_date">नियत तारीखें बदलें</string>
 
 	<string name="profile.profile_full_profile">पूर्ण प्रोफ़ाइल</string>
 	<string name="profile.profile_limited_profile">सीमित प्रोफ़ाइल</string>
@@ -140,6 +131,74 @@
 	<string name="profile.profile_no_google_calendars">कोई Google कैलेंडर उपलब्ध नहीं है</string>
 	<string name="profile.profile_select_calendar">कैलेंडर चुनें</string>
 	<string name="profile.profile_local_calendar_option">स्थानीय कैलेंडर</string>
+
+	<string name="app.app_navigation_discovery">खोज करना</string>
+	<string name="app.app_navigation_learn">सीखना</string>
+	<string name="app.app_navigation_profile">प्रोफाइल</string>
+	<string name="app.app_navigation_dates">तिथियां</string>
+	<string name="app.app_navigation_downloads">डाउनलोड</string>
+
+	<string name="discussion.discussion_all_posts">सभी पोस्ट</string>
+	<string name="discussion.discussion_unread">अपठित</string>
+	<string name="discussion.discussion_unanswered">अनुत्तरित</string>
+	<string name="discussion.discussion_posts_following">पोस्ट जिनका मैं अनुसरण कर रहा हूँ</string>
+	<string name="discussion.discussion_recent_activity">हाल की गतिविधि</string>
+	<string name="discussion.discussion_most_activity">सर्वाधिक गतिविधि</string>
+	<string name="discussion.discussion_most_votes">सर्वाधिक वोट</string>
+	<string name="discussion.discussion_create_post">चर्चा बनाएं</string>
+	<string name="discussion.discussion_create_question">प्रश्न बनाएं</string>
+	<string name="discussion.discussion_add_response">प्रतिक्रिया जोड़ें</string>
+	<string name="discussion.discussion_last_post">अंतिम पोस्ट: %1$s</string>
+	<string name="discussion.discussion_follow">फ़ॉलो</string>
+	<string name="discussion.discussion_report">रिपोर्ट</string>
+	<string name="discussion.discussion_unreport">अनरिपोर्ट</string>
+	<string name="discussion.discussion_add_comment">टिप्पणी जोड़ें</string>
+	<string name="discussion.discussion_comments_title">टिप्पणी</string>
+	<string name="discussion.discussion_comment_added">टिप्पणी सफलतापूर्वक जोड़ी गई</string>
+	<string name="discussion.discussion_discussion">चर्चा</string>
+	<string name="discussion.discussion_question">सवाल</string>
+	<string name="discussion.discussion_title">शीर्षक</string>
+	<string name="discussion.discussion_follow_discussion">इस चर्चा का आप अनुसरण करें</string>
+	<string name="discussion.discussion_follow_question">इस प्रश्न का पालन करें</string>
+	<string name="discussion.discussion_search_all_posts">सभी पोस्ट खोजें</string>
+	<string name="discussion.discussion_main_categories">मुख्य कैटेगरी</string>
+	<string name="discussion.discussion_select_post_type">पोस्ट का प्रकार चुनें</string>
+	<string name="discussion.discussion_topic">विषय</string>
+	<string name="discussion.discussion_search_results">खोज के परिणाम</string>
+	<string name="discussion.discussion_start_typing_to_find">आप धागा खोजने के लिए टाइप करना शुरू करें</string>
+	<string name="discussion.discussion_anonymous">गुमनाम</string>
+	<string name="discussion.discussion_no_yet">अभी तक कोई चर्चा नहीं</string>
+	<string name="discussion.discussion_click_button_create_discussion">अपनी पहली चर्चा बनाने के लिए नीचे दिए गए बटन पर क्लिक करें।</string>
+	<string name="discussion.discussion_unnamed_subcategory">अनाम उपश्रेणी</string>
+	<plurals name="discussion.discussion_votes">
+        <item quantity="one">%1$d वोट</item>
+        <item quantity="other">%1$d वोट</item>
+    </plurals>
+	<plurals name="discussion.discussion_comments">
+        <item quantity="one">%1$d टिप्पणी</item>
+        <item quantity="other">%1$d टिप्पणियाँ</item>
+    </plurals>
+	<plurals name="discussion.discussion_missed_posts">
+        <item quantity="one">%1$d छूटी हुई पोस्ट</item>
+        <item quantity="other">%1$d छूटी हुई पोस्ट</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses">
+        <item quantity="one">%1$d प्रतिक्रिया</item>
+        <item quantity="other">%1$d प्रतिक्रियाएँ</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses_capitalized">
+        <item quantity="one">%1$d प्रतिक्रिया</item>
+        <item quantity="other">%1$d प्रतिक्रियाएँ</item>
+    </plurals>
+	<plurals name="discussion.discussion_found_threads">
+        <item quantity="one">%s पोस्ट मिला</item>
+        <item quantity="other">%s पोस्ट मिले</item>
+    </plurals>
+
+	<string name="whatsnew.whats_new_title">नया क्या है</string>
+	<string name="whatsnew.whats_new_navigation_previous">पिछला</string>
+	<string name="whatsnew.whats_new_navigation_next">अगला</string>
+	<string name="whatsnew.whats_new_navigation_done">हो गया</string>
 
 	<string name="core.core_error_invalid_grant">अवैध प्रत्यय पत्र</string>
 	<string name="core.core_error_no_connection">धीमा या कोई इंटरनेट कनेक्शन नहीं है</string>
@@ -279,6 +338,10 @@
 	<string name="core.core_explore_other_parts_when_reconnect_or_download">इस पाठ्यक्रम के अन्य भागों का अन्वेषण करें या जब आप पुनः जुड़ें तो इसे डाउनलोड करें।</string>
 	<string name="core.core_authorization">प्राधिकार</string>
 	<string name="core.core_authorization_request">कृपया पाठ्यक्रम नामांकन जारी रखने के लिए सिस्टम में प्रवेश करें।</string>
+	<string name="core.core_sso_sign_in">SSO के साथ साइन इन करें</string>
+	<string name="core.core_sign_in_sso_heading">आत्मविश्वास के साथ अपना करियर बनाने के लिए आज से ही शुरुआत करें</string>
+	<string name="core.core_sign_in_sso_login_title">साइन इन करें</string>
+	<string name="core.core_sign_in_sso_login_subtitle">राष्ट्रीय एकीकृत साइन-ऑन सेवा के माध्यम से साइन इन करें</string>
 
 	<string name="course.course_you_earned_certificate">बधाई हो, आपने \"%s\" में यह पाठ्यक्रम प्रमाणपत्र अर्जित कर लिया है।</string>
 	<string name="course.course_view_certificate">प्रमाणपत्र देखें</string>
@@ -380,12 +443,16 @@
 	<string name="course.course_videos_caught_up">आपने सभी वीडियो देख लिए हैं!</string>
 	<string name="course.course_assignments_caught_up">आपने सभी असाइनमेंट्स पूरे कर लिए हैं!</string>
 
-	<string name="dates.dates_title">तिथियां</string>
-	<string name="dates.dates_empty_state_title">कोई तारीख नहीं</string>
-	<string name="dates.dates_empty_state_description">आपके पास वर्तमान में निर्धारित इवेंट्स वाले कोई सक्रिय कोर्स नहीं हैं। महत्वपूर्ण तिथियां और समय-सीमा देखने के लिए किसी कोर्स में नामांकन करें।</string>
-	<string name="dates.dates_shift_due_date_card_title">कुछ समय सीमाएं चूक गए\?</string>
-	<string name="dates.dates_shift_due_date_card_description">चिंता न करें - किसी प्रगति को खोए बिना देय असाइनमेंट को पूरा करने के लिए हमारे सुझाए गए शेड्यूल में बदलाव करें।</string>
-	<string name="dates.dates_shift_due_date">नियत तारीखें बदलें</string>
+	<string name="downloads.downloads">डाउनलोड</string>
+	<string name="downloads.downloads_download_course">पाठ्यक्रम डाउनलोड करें</string>
+	<string name="downloads.downloads_remove_course_downloads">पाठ्यक्रम डाउनलोड हटाएं</string>
+	<string name="downloads.downloads_cancel_download">डाउनलोड रद्द करें</string>
+	<string name="downloads.downloads_empty_state_title">डाउनलोड योग्य सामग्री वाला कोई पाठ्यक्रम नहीं</string>
+	<string name="downloads.downloads_empty_state_description">वर्तमान में आपके पास डाउनलोड योग्य सामग्री वाला कोई पाठ्यक्रम नहीं है।</string>
+	<string name="downloads.downloaded_downloaded_size">%1$s डाउनलोड किया गया</string>
+	<string name="downloads.downloaded_available_size">%1$s उपलब्ध</string>
+	<string name="downloads.downloads_accessibility_stop_downloading_course">पाठ्यक्रम डाउनलोड करना बंद करें</string>
+	<string name="downloads.downloads_loading_course_structure">पाठ्यक्रम संरचना लोड हो रही है…</string>
 
 	<string name="discovery.discovery_Discovery">खोज करना</string>
 	<string name="discovery.discovery_discovery_new">नया खोजने का प्रयास करें</string>
@@ -405,66 +472,4 @@
     </plurals>
 	<!-- Accessibility -->
 	<string name="discovery.discovery_accessibility_play_video">वीडियो चलाएं</string>
-
-	<string name="whatsnew.whats_new_title">नया क्या है</string>
-	<string name="whatsnew.whats_new_navigation_previous">पिछला</string>
-	<string name="whatsnew.whats_new_navigation_next">अगला</string>
-	<string name="whatsnew.whats_new_navigation_done">हो गया</string>
-
-	<string name="discussion.discussion_all_posts">सभी पोस्ट</string>
-	<string name="discussion.discussion_unread">अपठित</string>
-	<string name="discussion.discussion_unanswered">अनुत्तरित</string>
-	<string name="discussion.discussion_posts_following">पोस्ट जिनका मैं अनुसरण कर रहा हूँ</string>
-	<string name="discussion.discussion_recent_activity">हाल की गतिविधि</string>
-	<string name="discussion.discussion_most_activity">सर्वाधिक गतिविधि</string>
-	<string name="discussion.discussion_most_votes">सर्वाधिक वोट</string>
-	<string name="discussion.discussion_create_post">चर्चा बनाएं</string>
-	<string name="discussion.discussion_create_question">प्रश्न बनाएं</string>
-	<string name="discussion.discussion_add_response">प्रतिक्रिया जोड़ें</string>
-	<string name="discussion.discussion_last_post">अंतिम पोस्ट: %1$s</string>
-	<string name="discussion.discussion_follow">फ़ॉलो</string>
-	<string name="discussion.discussion_report">रिपोर्ट</string>
-	<string name="discussion.discussion_unreport">अनरिपोर्ट</string>
-	<string name="discussion.discussion_add_comment">टिप्पणी जोड़ें</string>
-	<string name="discussion.discussion_comments_title">टिप्पणी</string>
-	<string name="discussion.discussion_comment_added">टिप्पणी सफलतापूर्वक जोड़ी गई</string>
-	<string name="discussion.discussion_discussion">चर्चा</string>
-	<string name="discussion.discussion_question">सवाल</string>
-	<string name="discussion.discussion_title">शीर्षक</string>
-	<string name="discussion.discussion_follow_discussion">इस चर्चा का आप अनुसरण करें</string>
-	<string name="discussion.discussion_follow_question">इस प्रश्न का पालन करें</string>
-	<string name="discussion.discussion_search_all_posts">सभी पोस्ट खोजें</string>
-	<string name="discussion.discussion_main_categories">मुख्य कैटेगरी</string>
-	<string name="discussion.discussion_select_post_type">पोस्ट का प्रकार चुनें</string>
-	<string name="discussion.discussion_topic">विषय</string>
-	<string name="discussion.discussion_search_results">खोज के परिणाम</string>
-	<string name="discussion.discussion_start_typing_to_find">आप धागा खोजने के लिए टाइप करना शुरू करें</string>
-	<string name="discussion.discussion_anonymous">गुमनाम</string>
-	<string name="discussion.discussion_no_yet">अभी तक कोई चर्चा नहीं</string>
-	<string name="discussion.discussion_click_button_create_discussion">अपनी पहली चर्चा बनाने के लिए नीचे दिए गए बटन पर क्लिक करें।</string>
-	<string name="discussion.discussion_unnamed_subcategory">अनाम उपश्रेणी</string>
-	<plurals name="discussion.discussion_votes">
-        <item quantity="one">%1$d वोट</item>
-        <item quantity="other">%1$d वोट</item>
-    </plurals>
-	<plurals name="discussion.discussion_comments">
-        <item quantity="one">%1$d टिप्पणी</item>
-        <item quantity="other">%1$d टिप्पणियाँ</item>
-    </plurals>
-	<plurals name="discussion.discussion_missed_posts">
-        <item quantity="one">%1$d छूटी हुई पोस्ट</item>
-        <item quantity="other">%1$d छूटी हुई पोस्ट</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses">
-        <item quantity="one">%1$d प्रतिक्रिया</item>
-        <item quantity="other">%1$d प्रतिक्रियाएँ</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses_capitalized">
-        <item quantity="one">%1$d प्रतिक्रिया</item>
-        <item quantity="other">%1$d प्रतिक्रियाएँ</item>
-    </plurals>
-	<plurals name="discussion.discussion_found_threads">
-        <item quantity="one">%s पोस्ट मिला</item>
-        <item quantity="other">%s पोस्ट मिले</item>
-    </plurals>
 </resources>

@@ -22,27 +22,11 @@
         <item quantity="other">%1$d تکالیف گذشته</item>
     </plurals>
 
-	<string name="downloads.downloads">دانلودها</string>
-	<string name="downloads.downloads_download_course">دانلود دوره</string>
-	<string name="downloads.downloads_remove_course_downloads">دانلودهای دوره را حذف کنید</string>
-	<string name="downloads.downloads_cancel_download">لغو دانلود</string>
-	<string name="downloads.downloads_empty_state_title">هیچ دوره‌ای با محتوای قابل دانلود موجود نیست</string>
-	<string name="downloads.downloads_empty_state_description">شما در حال حاضر هیچ دوره ای با محتوای قابل دانلود ندارید.</string>
-	<string name="downloads.downloaded_downloaded_size">%1$s دانلود شد</string>
-	<string name="downloads.downloaded_available_size">%1$s موجود است</string>
-	<string name="downloads.downloads_accessibility_stop_downloading_course">دانلود دوره را متوقف کنید</string>
-	<string name="downloads.downloads_loading_course_structure">در حال بارگیری ساختار دوره…</string>
-
-	<string name="app.app_navigation_discovery">كشف</string>
-	<string name="app.app_navigation_learn">فراگیری</string>
-	<string name="app.app_navigation_profile">پروندۀ شخصی</string>
-	<string name="app.app_navigation_dates">تاریخ‌ها</string>
-	<string name="app.app_navigation_downloads">دانلودها</string>
-
 	<string name="auth.auth_forgot_password">گذرواژه را فراموش کرده‌اید؟</string>
 	<string name="auth.auth_email">پست الکترونیک</string>
 	<string name="auth.auth_invalid_email">پست الکترونیک نامعتبر</string>
 	<string name="auth.auth_invalid_password">گذرواژه بسیار کوتاه است</string>
+	<string name="auth.auth_social_account_not_registered">این حساب کاربری %1$s با هیچ حساب کاربری %2$s مرتبط نیست. لطفاً ثبت‌نام کنید.</string>
 	<string name="auth.auth_welcome_back">خوش برگشتی! برای دسترسی به دوره‌های خود وارد شوید.</string>
 	<string name="auth.auth_show_optional_fields">نمایش بخش‌های اختیاری</string>
 	<string name="auth.auth_hide_optional_fields">پنهان‌سازی بخش‌های اختیاری</string>
@@ -60,6 +44,13 @@
 	<string name="auth.auth_agreement_signin_in">با ورود به این برنامه، با %1$s و %2$s موافقت کرده و تصدیق می‌کنید که %3$s و هر عضو داده‌های شخصی شما را مطابق با %4$s پردازش می‌کند.</string>
 	<string name="auth.auth_accessibility_show_password">نمایش گذرواژه</string>
 	<string name="auth.auth_accessibility_hide_password">پنهان‌سازی گذرواژه</string>
+
+	<string name="dates.dates_title">تاریخ‌ها</string>
+	<string name="dates.dates_empty_state_title">بدون تاریخ</string>
+	<string name="dates.dates_empty_state_description">در حال حاضر هیچ دوره فعالی با رویدادهای برنامه‌ریزی شده ندارید. برای مشاهده تاریخ‌ها و مهلت‌های مهم، در یک دوره ثبت‌نام کنید.</string>
+	<string name="dates.dates_shift_due_date_card_title">برخی از مهلت‌ها را از دست داده‌اید؟</string>
+	<string name="dates.dates_shift_due_date_card_description">نگران نباشید - برنامۀ پیشنهادی ما را برای تکمیل تکالیف سررسید شده، بدون از دست‌دادن هیچ پیشرفتی تغییر دهید.</string>
+	<string name="dates.dates_shift_due_date">تغییر تاریخ‌های سررسید</string>
 
 	<string name="profile.profile_full_profile">مشخصات کامل</string>
 	<string name="profile.profile_limited_profile">پروندۀ شخصی محدود</string>
@@ -140,6 +131,74 @@
 	<string name="profile.profile_no_google_calendars">تقویم‌های گوگل در دسترس نیستند</string>
 	<string name="profile.profile_select_calendar">انتخاب تقویم</string>
 	<string name="profile.profile_local_calendar_option">تقویم محلی</string>
+
+	<string name="app.app_navigation_discovery">كشف</string>
+	<string name="app.app_navigation_learn">فراگیری</string>
+	<string name="app.app_navigation_profile">پروندۀ شخصی</string>
+	<string name="app.app_navigation_dates">تاریخ‌ها</string>
+	<string name="app.app_navigation_downloads">دانلودها</string>
+
+	<string name="discussion.discussion_all_posts">همۀ پست‌ها</string>
+	<string name="discussion.discussion_unread">خوانده‌نشده</string>
+	<string name="discussion.discussion_unanswered">بی‌پاسخ</string>
+	<string name="discussion.discussion_posts_following">پست‌هایی که دنبال می‌کنم</string>
+	<string name="discussion.discussion_recent_activity">فعالیت اخیر</string>
+	<string name="discussion.discussion_most_activity">بیش‌ترین فعالیت</string>
+	<string name="discussion.discussion_most_votes">بیشترین آرا</string>
+	<string name="discussion.discussion_create_post">ایجاد گفت‌وگو</string>
+	<string name="discussion.discussion_create_question">ایجاد سوال</string>
+	<string name="discussion.discussion_add_response">افزودن پاسخ</string>
+	<string name="discussion.discussion_last_post">آخرین پست: %1$s</string>
+	<string name="discussion.discussion_follow">دنبال‌کردن</string>
+	<string name="discussion.discussion_report">گزارش</string>
+	<string name="discussion.discussion_unreport">بدون گزارش</string>
+	<string name="discussion.discussion_add_comment">نظردهی</string>
+	<string name="discussion.discussion_comments_title">اظهارنظر</string>
+	<string name="discussion.discussion_comment_added">نظر با موفقیت اضافه شد</string>
+	<string name="discussion.discussion_discussion">گفت‌وگو</string>
+	<string name="discussion.discussion_question">سوال</string>
+	<string name="discussion.discussion_title">عنوان</string>
+	<string name="discussion.discussion_follow_discussion">این بحث را دنبال کنید</string>
+	<string name="discussion.discussion_follow_question">این سوال را دنبال کنید</string>
+	<string name="discussion.discussion_search_all_posts">جست‌وجو در همۀ مطالب</string>
+	<string name="discussion.discussion_main_categories">دسته‌بندی‌های اصلی</string>
+	<string name="discussion.discussion_select_post_type">انتخاب نوع پست </string>
+	<string name="discussion.discussion_topic">موضوع</string>
+	<string name="discussion.discussion_search_results">نتایج جستجو</string>
+	<string name="discussion.discussion_start_typing_to_find">برای یافتن موضوع، شروع به تایپ کنید</string>
+	<string name="discussion.discussion_anonymous">ناشناس</string>
+	<string name="discussion.discussion_no_yet">هنوز هیچ گفت‌وگویی وجود ندارد</string>
+	<string name="discussion.discussion_click_button_create_discussion">برای ایجاد اولین گفت‌وگوی خود روی دکمۀ زیر کلیک کنید.</string>
+	<string name="discussion.discussion_unnamed_subcategory">زیرمجموعۀ بی‌نام</string>
+	<plurals name="discussion.discussion_votes">
+        <item quantity="one">%1$d رای</item>
+        <item quantity="other">%1$d رای</item>
+    </plurals>
+	<plurals name="discussion.discussion_comments">
+        <item quantity="one">%1$d نظر دهید</item>
+        <item quantity="other">%1$d نظر</item>
+    </plurals>
+	<plurals name="discussion.discussion_missed_posts">
+        <item quantity="one">%1$d پست از دست رفته</item>
+        <item quantity="other">%1$d پست‌های ازدست‌رفته</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses">
+        <item quantity="one">پاسخ %1$d</item>
+        <item quantity="other">%1$d پاسخ</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses_capitalized">
+        <item quantity="one">پاسخ %1$d</item>
+        <item quantity="other">%1$d پاسخ</item>
+    </plurals>
+	<plurals name="discussion.discussion_found_threads">
+        <item quantity="one">پست %s پیدا شد</item>
+        <item quantity="other"> %s پست پیدا شد</item>
+    </plurals>
+
+	<string name="whatsnew.whats_new_title">چه خبر</string>
+	<string name="whatsnew.whats_new_navigation_previous">قبلی</string>
+	<string name="whatsnew.whats_new_navigation_next">بعدی</string>
+	<string name="whatsnew.whats_new_navigation_done">تکمیل‌شد</string>
 
 	<string name="core.core_error_invalid_grant">گواهی‌نامه نامعتبر</string>
 	<string name="core.core_error_no_connection">اتصال به اینترنت کند یا بدون اتصال</string>
@@ -279,6 +338,10 @@
 	<string name="core.core_explore_other_parts_when_reconnect_or_download">بخش‌های دیگر این دوره را کاوش کنید یا پس از اتصال مجدد، آن را دانلود کنید.</string>
 	<string name="core.core_authorization">مجوز</string>
 	<string name="core.core_authorization_request">لطفا برای ادامه ثبت نام دوره وارد سامانه شوید.</string>
+	<string name="core.core_sso_sign_in">با SSO وارد شوید</string>
+	<string name="core.core_sign_in_sso_heading">از امروز شروع کنید تا حرفه خود را با اعتماد به نفس بسازید</string>
+	<string name="core.core_sign_in_sso_login_title">ورود</string>
+	<string name="core.core_sign_in_sso_login_subtitle">از طریق سرویس ورود یکپارچه ملی وارد شوید</string>
 
 	<string name="course.course_you_earned_certificate">تبریک می گوییم، شما مدرک این دوره را در \" %s \" دریافت کردید.</string>
 	<string name="course.course_view_certificate">مشاهدۀ گواهی </string>
@@ -381,12 +444,16 @@
 	<string name="course.course_videos_caught_up">همه ویدیوها را تماشا کرده‌اید!</string>
 	<string name="course.course_assignments_caught_up">شما تمام تکالیف را انجام داده‌اید!</string>
 
-	<string name="dates.dates_title">تاریخ‌ها</string>
-	<string name="dates.dates_empty_state_title">بدون تاریخ</string>
-	<string name="dates.dates_empty_state_description">در حال حاضر هیچ دوره فعالی با رویدادهای برنامه‌ریزی شده ندارید. برای مشاهده تاریخ‌ها و مهلت‌های مهم، در یک دوره ثبت‌نام کنید.</string>
-	<string name="dates.dates_shift_due_date_card_title">برخی از مهلت‌ها را از دست داده‌اید؟</string>
-	<string name="dates.dates_shift_due_date_card_description">نگران نباشید - برنامۀ پیشنهادی ما را برای تکمیل تکالیف سررسید شده، بدون از دست‌دادن هیچ پیشرفتی تغییر دهید.</string>
-	<string name="dates.dates_shift_due_date">تغییر تاریخ‌های سررسید</string>
+	<string name="downloads.downloads">دانلودها</string>
+	<string name="downloads.downloads_download_course">دانلود دوره</string>
+	<string name="downloads.downloads_remove_course_downloads">دانلودهای دوره را حذف کنید</string>
+	<string name="downloads.downloads_cancel_download">لغو دانلود</string>
+	<string name="downloads.downloads_empty_state_title">هیچ دوره‌ای با محتوای قابل دانلود موجود نیست</string>
+	<string name="downloads.downloads_empty_state_description">شما در حال حاضر هیچ دوره ای با محتوای قابل دانلود ندارید.</string>
+	<string name="downloads.downloaded_downloaded_size">%1$s دانلود شد</string>
+	<string name="downloads.downloaded_available_size">%1$s موجود است</string>
+	<string name="downloads.downloads_accessibility_stop_downloading_course">دانلود دوره را متوقف کنید</string>
+	<string name="downloads.downloads_loading_course_structure">در حال بارگیری ساختار دوره…</string>
 
 	<string name="discovery.discovery_Discovery">كشف</string>
 	<string name="discovery.discovery_discovery_new">کشف جدید</string>
@@ -406,66 +473,4 @@
     </plurals>
 	<!-- Accessibility -->
 	<string name="discovery.discovery_accessibility_play_video">پخش ویدیو</string>
-
-	<string name="whatsnew.whats_new_title">چه خبر</string>
-	<string name="whatsnew.whats_new_navigation_previous">قبلی</string>
-	<string name="whatsnew.whats_new_navigation_next">بعدی</string>
-	<string name="whatsnew.whats_new_navigation_done">تکمیل‌شد</string>
-
-	<string name="discussion.discussion_all_posts">همۀ پست‌ها</string>
-	<string name="discussion.discussion_unread">خوانده‌نشده</string>
-	<string name="discussion.discussion_unanswered">بی‌پاسخ</string>
-	<string name="discussion.discussion_posts_following">پست‌هایی که دنبال می‌کنم</string>
-	<string name="discussion.discussion_recent_activity">فعالیت اخیر</string>
-	<string name="discussion.discussion_most_activity">بیش‌ترین فعالیت</string>
-	<string name="discussion.discussion_most_votes">بیشترین آرا</string>
-	<string name="discussion.discussion_create_post">ایجاد گفت‌وگو</string>
-	<string name="discussion.discussion_create_question">ایجاد سوال</string>
-	<string name="discussion.discussion_add_response">افزودن پاسخ</string>
-	<string name="discussion.discussion_last_post">آخرین پست: %1$s</string>
-	<string name="discussion.discussion_follow">دنبال‌کردن</string>
-	<string name="discussion.discussion_report">گزارش</string>
-	<string name="discussion.discussion_unreport">بدون گزارش</string>
-	<string name="discussion.discussion_add_comment">نظردهی</string>
-	<string name="discussion.discussion_comments_title">اظهارنظر</string>
-	<string name="discussion.discussion_comment_added">نظر با موفقیت اضافه شد</string>
-	<string name="discussion.discussion_discussion">گفت‌وگو</string>
-	<string name="discussion.discussion_question">سوال</string>
-	<string name="discussion.discussion_title">عنوان</string>
-	<string name="discussion.discussion_follow_discussion">این بحث را دنبال کنید</string>
-	<string name="discussion.discussion_follow_question">این سوال را دنبال کنید</string>
-	<string name="discussion.discussion_search_all_posts">جست‌وجو در همۀ مطالب</string>
-	<string name="discussion.discussion_main_categories">دسته‌بندی‌های اصلی</string>
-	<string name="discussion.discussion_select_post_type">انتخاب نوع پست </string>
-	<string name="discussion.discussion_topic">موضوع</string>
-	<string name="discussion.discussion_search_results">نتایج جستجو</string>
-	<string name="discussion.discussion_start_typing_to_find">برای یافتن موضوع، شروع به تایپ کنید</string>
-	<string name="discussion.discussion_anonymous">ناشناس</string>
-	<string name="discussion.discussion_no_yet">هنوز هیچ گفت‌وگویی وجود ندارد</string>
-	<string name="discussion.discussion_click_button_create_discussion">برای ایجاد اولین گفت‌وگوی خود روی دکمۀ زیر کلیک کنید.</string>
-	<string name="discussion.discussion_unnamed_subcategory">زیرمجموعۀ بی‌نام</string>
-	<plurals name="discussion.discussion_votes">
-        <item quantity="one">%1$d رای</item>
-        <item quantity="other">%1$d رای</item>
-    </plurals>
-	<plurals name="discussion.discussion_comments">
-        <item quantity="one">%1$d نظر دهید</item>
-        <item quantity="other">%1$d نظر</item>
-    </plurals>
-	<plurals name="discussion.discussion_missed_posts">
-        <item quantity="one">%1$d پست از دست رفته</item>
-        <item quantity="other">%1$d پست‌های ازدست‌رفته</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses">
-        <item quantity="one">پاسخ %1$d</item>
-        <item quantity="other">%1$d پاسخ</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses_capitalized">
-        <item quantity="one">پاسخ %1$d</item>
-        <item quantity="other">%1$d پاسخ</item>
-    </plurals>
-	<plurals name="discussion.discussion_found_threads">
-        <item quantity="one">پست %s پیدا شد</item>
-        <item quantity="other"> %s پست پیدا شد</item>
-    </plurals>
 </resources>

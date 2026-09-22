@@ -23,26 +23,11 @@
         <item quantity="other">%1$d Kazi Zinazostahili Kupita</item>
     </plurals>
 
-	<string name="downloads.downloads">Vipakuliwa</string>
-	<string name="downloads.downloads_download_course">Pakua kozi</string>
-	<string name="downloads.downloads_remove_course_downloads">Ondoa vipakuliwa vya kozi</string>
-	<string name="downloads.downloads_cancel_download">Ghairi upakuaji</string>
-	<string name="downloads.downloads_empty_state_title">Hakuna Kozi zenye Maudhui Yanayopakuliwa</string>
-	<string name="downloads.downloads_empty_state_description">Kwa sasa huna kozi zilizo na maudhui ya kupakuliwa.</string>
-	<string name="downloads.downloaded_downloaded_size">%1$s imepakuliwa</string>
-	<string name="downloads.downloaded_available_size">%1$s inapatikana</string>
-	<string name="downloads.downloads_accessibility_stop_downloading_course">Acha kupakua kozi</string>
-	<string name="downloads.downloads_loading_course_structure">Inapakia muundo wa kozi...</string>
-
-	<string name="app.app_navigation_discovery">Gundua</string>
-	<string name="app.app_navigation_learn">Jifunze</string>
-	<string name="app.app_navigation_profile">Wasifu</string>
-	<string name="app.app_navigation_downloads">Vipakuliwa</string>
-
 	<string name="auth.auth_forgot_password">Umesahau nywila\?</string>
 	<string name="auth.auth_email">Barua pepe</string>
 	<string name="auth.auth_invalid_email">Barua pepe si sahihi</string>
 	<string name="auth.auth_invalid_password">Nenosiri ni fupi mno</string>
+	<string name="auth.auth_social_account_not_registered">Akaunti hii ya %1$s haijaunganishwa na akaunti yoyote ya %2$s . Tafadhali jiandikishe.</string>
 	<string name="auth.auth_welcome_back">Karibu tena! Ingia ili kufikia kozi zako.</string>
 	<string name="auth.auth_show_optional_fields">Onyesha sehemu za hiari</string>
 	<string name="auth.auth_hide_optional_fields">Ficha sehemu za hiari</string>
@@ -60,6 +45,12 @@
 	<string name="auth.auth_agreement_signin_in">Kwa kuingia katika programu hii, unakubali %1$s na %2$s na unakubali kwamba %3$s na kila Mwanachama huchakata data yako ya kibinafsi kwa mujibu wa %4$s .</string>
 	<string name="auth.auth_accessibility_show_password">Onyesha nenosiri</string>
 	<string name="auth.auth_accessibility_hide_password">Ficha nenosiri</string>
+
+	<string name="dates.dates_title">Tarehe</string>
+	<string name="dates.dates_empty_state_title">Hakuna Tarehe</string>
+	<string name="dates.dates_empty_state_description">Kwa sasa huna kozi zozote zinazoendelea zenye matukio yaliyopangwa. Jiandikishe katika kozi ili kuona tarehe muhimu na makataa.</string>
+	<string name="dates.dates_shift_due_date_card_description">Usiwe na wasiwasi - badilisha ratiba yetu iliyopendekezwa ili ukamilishe kazi zinazohitajika bila kupoteza maendeleo yoyote.</string>
+	<string name="dates.dates_shift_due_date">Badilisha Tarehe za Kukamilisha</string>
 
 	<string name="profile.profile_full_profile">Wasifu kamili</string>
 	<string name="profile.profile_limited_profile">Wasifu mdogo</string>
@@ -140,6 +131,74 @@
 	<string name="profile.profile_no_google_calendars">Hakuna kalenda za Google zinazopatikana</string>
 	<string name="profile.profile_select_calendar">Chagua kalenda</string>
 	<string name="profile.profile_local_calendar_option">Kalenda ya ndani</string>
+
+	<string name="app.app_navigation_discovery">Gundua</string>
+	<string name="app.app_navigation_learn">Jifunze</string>
+	<string name="app.app_navigation_profile">Wasifu</string>
+	<string name="app.app_navigation_dates">Tarehe</string>
+	<string name="app.app_navigation_downloads">Vipakuliwa</string>
+
+	<string name="discussion.discussion_all_posts">Machapisho Yote</string>
+	<string name="discussion.discussion_unread">Haijasomwa</string>
+	<string name="discussion.discussion_unanswered">Haijajibiwa</string>
+	<string name="discussion.discussion_posts_following">Machapisho ninayofuata</string>
+	<string name="discussion.discussion_recent_activity">Shughuli ya hivi majuzi</string>
+	<string name="discussion.discussion_most_activity">Shughuli nyingi</string>
+	<string name="discussion.discussion_most_votes">Kura nyingi</string>
+	<string name="discussion.discussion_create_post">Unda majadiliano</string>
+	<string name="discussion.discussion_create_question">Unda swali</string>
+	<string name="discussion.discussion_add_response">Ongeza jibu</string>
+	<string name="discussion.discussion_last_post">Chapisho la mwisho: %1$s</string>
+	<string name="discussion.discussion_follow">Fuata</string>
+	<string name="discussion.discussion_report">Ripoti</string>
+	<string name="discussion.discussion_unreport">Acha kuripoti</string>
+	<string name="discussion.discussion_add_comment">Ongeza maoni</string>
+	<string name="discussion.discussion_comments_title">Maoni</string>
+	<string name="discussion.discussion_comment_added">Maoni yameongezwa</string>
+	<string name="discussion.discussion_discussion">Majadiliano</string>
+	<string name="discussion.discussion_question">Swali</string>
+	<string name="discussion.discussion_title">Kichwa</string>
+	<string name="discussion.discussion_follow_discussion">Fuatilia mjadala huu</string>
+	<string name="discussion.discussion_follow_question">Fuata swali hili</string>
+	<string name="discussion.discussion_search_all_posts">Tafuta machapisho yote</string>
+	<string name="discussion.discussion_main_categories">Makundi kuu</string>
+	<string name="discussion.discussion_select_post_type">Chagua aina ya chapisho</string>
+	<string name="discussion.discussion_topic">Mada</string>
+	<string name="discussion.discussion_search_results">Matokeo ya utafutaji</string>
+	<string name="discussion.discussion_start_typing_to_find">Anza kuandika ili kupata thread</string>
+	<string name="discussion.discussion_anonymous">bila kujulikana</string>
+	<string name="discussion.discussion_no_yet">Hakuna majadiliano bado</string>
+	<string name="discussion.discussion_click_button_create_discussion">Bofya kitufe kilichoko hapa chini ili kuunda mjadala wako wa kwanza.</string>
+	<string name="discussion.discussion_unnamed_subcategory">Kitengo kidogo kisicho na jina</string>
+	<plurals name="discussion.discussion_votes">
+        <item quantity="one">%1$d kura</item>
+        <item quantity="other">%1$d kura</item>
+    </plurals>
+	<plurals name="discussion.discussion_comments">
+        <item quantity="one">%1$d Maoni</item>
+        <item quantity="other">%1$d Maoni</item>
+    </plurals>
+	<plurals name="discussion.discussion_missed_posts">
+        <item quantity="one">%1$d Chapisho lililokosa</item>
+        <item quantity="other">%1$d Machapisho yaliyokosa</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses">
+        <item quantity="one">%1$d majibu</item>
+        <item quantity="other">%1$d majibu</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses_capitalized">
+        <item quantity="one">Jibu %1$d</item>
+        <item quantity="other">%1$d Majibu</item>
+    </plurals>
+	<plurals name="discussion.discussion_found_threads">
+        <item quantity="one">Imepatikana %s chapisho</item>
+        <item quantity="other">Tumepata machapisho ya %s</item>
+    </plurals>
+
+	<string name="whatsnew.whats_new_title">Nini mpya</string>
+	<string name="whatsnew.whats_new_navigation_previous">Iliyotangulia</string>
+	<string name="whatsnew.whats_new_navigation_next">Inayofuata</string>
+	<string name="whatsnew.whats_new_navigation_done">Imekamilika</string>
 
 	<string name="core.core_error_invalid_grant">Vitambulisho batili</string>
 	<string name="core.core_error_no_connection">Muunganisho wa intaneti polepole au hakuna</string>
@@ -278,6 +337,10 @@
 	<string name="core.core_explore_other_parts_when_reconnect_or_download">Gundua sehemu zingine za kozi hii au pakua hii unapounganisha tena.</string>
 	<string name="core.core_authorization">Uidhinishaji</string>
 	<string name="core.core_authorization_request">Tafadhali ingiza mfumo ili kuendelea na uandikishaji wa kozi.</string>
+	<string name="core.core_sso_sign_in">Ingia na SSO</string>
+	<string name="core.core_sign_in_sso_heading">Anza leo kujenga taaluma yako kwa kujiamini</string>
+	<string name="core.core_sign_in_sso_login_title">Ingia</string>
+	<string name="core.core_sign_in_sso_login_subtitle">Ingia kupitia huduma ya kitaifa ya kuingia katika akaunti kwa umoja</string>
 
 	<string name="course.course_you_earned_certificate">Hongera, umepata cheti cha kozi hii katika \"%s\".</string>
 	<string name="course.course_view_certificate">Tazama cheti</string>
@@ -380,7 +443,17 @@
 	<string name="course.course_videos_caught_up">Umeangalia video zote!</string>
 	<string name="course.course_assignments_caught_up">Umefanikiwa kumaliza kazi zote!</string>
 
-	<string name="dates.dates_title">Tarehe</string>
+	<string name="downloads.downloads">Vipakuliwa</string>
+	<string name="downloads.downloads_download_course">Pakua kozi</string>
+	<string name="downloads.downloads_remove_course_downloads">Ondoa vipakuliwa vya kozi</string>
+	<string name="downloads.downloads_cancel_download">Ghairi upakuaji</string>
+	<string name="downloads.downloads_empty_state_title">Hakuna Kozi zenye Maudhui Yanayopakuliwa</string>
+	<string name="downloads.downloads_empty_state_description">Kwa sasa huna kozi zilizo na maudhui ya kupakuliwa.</string>
+	<string name="downloads.downloaded_downloaded_size">%1$s imepakuliwa</string>
+	<string name="downloads.downloaded_available_size">%1$s inapatikana</string>
+	<string name="downloads.downloads_accessibility_stop_downloading_course">Acha kupakua kozi</string>
+	<string name="downloads.downloads_loading_course_structure">Inapakia muundo wa kozi...</string>
+
 	<string name="discovery.discovery_Discovery">Gundua</string>
 	<string name="discovery.discovery_discovery_new">Gundua mpya</string>
 	<string name="discovery.discovery_lets_find">Hebu tutafutie kitu kipya</string>
@@ -399,66 +472,4 @@
     </plurals>
 	<!-- Accessibility -->
 	<string name="discovery.discovery_accessibility_play_video">Cheza video</string>
-
-	<string name="whatsnew.whats_new_title">Nini mpya</string>
-	<string name="whatsnew.whats_new_navigation_previous">Iliyotangulia</string>
-	<string name="whatsnew.whats_new_navigation_next">Inayofuata</string>
-	<string name="whatsnew.whats_new_navigation_done">Imekamilika</string>
-
-	<string name="discussion.discussion_all_posts">Machapisho Yote</string>
-	<string name="discussion.discussion_unread">Haijasomwa</string>
-	<string name="discussion.discussion_unanswered">Haijajibiwa</string>
-	<string name="discussion.discussion_posts_following">Machapisho ninayofuata</string>
-	<string name="discussion.discussion_recent_activity">Shughuli ya hivi majuzi</string>
-	<string name="discussion.discussion_most_activity">Shughuli nyingi</string>
-	<string name="discussion.discussion_most_votes">Kura nyingi</string>
-	<string name="discussion.discussion_create_post">Unda majadiliano</string>
-	<string name="discussion.discussion_create_question">Unda swali</string>
-	<string name="discussion.discussion_add_response">Ongeza jibu</string>
-	<string name="discussion.discussion_last_post">Chapisho la mwisho: %1$s</string>
-	<string name="discussion.discussion_follow">Fuata</string>
-	<string name="discussion.discussion_report">Ripoti</string>
-	<string name="discussion.discussion_unreport">Acha kuripoti</string>
-	<string name="discussion.discussion_add_comment">Ongeza maoni</string>
-	<string name="discussion.discussion_comments_title">Maoni</string>
-	<string name="discussion.discussion_comment_added">Maoni yameongezwa</string>
-	<string name="discussion.discussion_discussion">Majadiliano</string>
-	<string name="discussion.discussion_question">Swali</string>
-	<string name="discussion.discussion_title">Kichwa</string>
-	<string name="discussion.discussion_follow_discussion">Fuatilia mjadala huu</string>
-	<string name="discussion.discussion_follow_question">Fuata swali hili</string>
-	<string name="discussion.discussion_search_all_posts">Tafuta machapisho yote</string>
-	<string name="discussion.discussion_main_categories">Makundi kuu</string>
-	<string name="discussion.discussion_select_post_type">Chagua aina ya chapisho</string>
-	<string name="discussion.discussion_topic">Mada</string>
-	<string name="discussion.discussion_search_results">Matokeo ya utafutaji</string>
-	<string name="discussion.discussion_start_typing_to_find">Anza kuandika ili kupata thread</string>
-	<string name="discussion.discussion_anonymous">bila kujulikana</string>
-	<string name="discussion.discussion_no_yet">Hakuna majadiliano bado</string>
-	<string name="discussion.discussion_click_button_create_discussion">Bofya kitufe kilichoko hapa chini ili kuunda mjadala wako wa kwanza.</string>
-	<string name="discussion.discussion_unnamed_subcategory">Kitengo kidogo kisicho na jina</string>
-	<plurals name="discussion.discussion_votes">
-        <item quantity="one">%1$d kura</item>
-        <item quantity="other">%1$d kura</item>
-    </plurals>
-	<plurals name="discussion.discussion_comments">
-        <item quantity="one">%1$d Maoni</item>
-        <item quantity="other">%1$d Maoni</item>
-    </plurals>
-	<plurals name="discussion.discussion_missed_posts">
-        <item quantity="one">%1$d Chapisho lililokosa</item>
-        <item quantity="other">%1$d Machapisho yaliyokosa</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses">
-        <item quantity="one">%1$d majibu</item>
-        <item quantity="other">%1$d majibu</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses_capitalized">
-        <item quantity="one">Jibu %1$d</item>
-        <item quantity="other">%1$d Majibu</item>
-    </plurals>
-	<plurals name="discussion.discussion_found_threads">
-        <item quantity="one">Imepatikana %s chapisho</item>
-        <item quantity="other">Tumepata machapisho ya %s</item>
-    </plurals>
 </resources>

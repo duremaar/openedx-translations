@@ -16,7 +16,7 @@
   "password.sr.only.helping.text": "La password deve contenere almeno 8 caratteri, almeno una lettera e almeno un numero",
   "tpa.alert.heading": "Quasi fatto!",
   "login.third.party.auth.account.not.linked": "Hai correttamente effettuato l'accesso in {currentProvider}, ma il tuo account {currentProvider} non ha un account {platformName} ad esso abbinato. Per collegare i tuoi account accesi utilizzando la password {platformName}. ",
-  "register.third.party.auth.account.not.linked": "Hai eseguito correttamente l&#39;accesso a {a03f0f8cfb85cz0}! Abbiamo solo bisogno di un po&#39; più di informazioni prima di iniziare a imparare con {platformName}.",
+  "register.third.party.auth.account.not.linked": "Hai eseguito correttamente l&#39;accesso a {currentProvider}! Abbiamo solo bisogno di un po&#39; più di informazioni prima di iniziare a imparare con {platformName}.",
   "registration.using.tpa.form.heading": "Completa la creazione del tuo account",
   "zendesk.supportTitle": "Supporto edX",
   "zendesk.selectTicketForm": "Per favore, scegli il tipo di richiesta:",
@@ -114,7 +114,7 @@
   "recommendation.product-card.pill-text.professional-certificate": "Certificato professionale",
   "recommendation.product-card.pill-text.emeritus": "Offerto da Emerito",
   "recommendation.product-card.pill-text.shorelight": "Offerto tramite Shorelight",
-  "recommendation.product-card.footer-text.number-of-courses": "{length} <span class='notranslate'>{label}</span>",
+  "recommendation.product-card.footer-text.number-of-courses": "{length} {label}",
   "recommendation.product-card.footer-text.subscription": "Sottoscrizione",
   "recommendation.product-card.launch-icon.sr-text": "Apri un collegamento in una nuova scheda",
   "register.page.title": "Registrazione | {siteName}",
@@ -141,6 +141,7 @@
   "email.invalid.format.error": "Inserisci un indirizzo email valido",
   "username.validation.message": "Il nome utente deve essere compreso tra 2 e 30 caratteri",
   "name.validation.message": "Inserisci un nome valido",
+  "registration.name.validation.length.message": "Il nome completo non può superare i {limit} caratteri",
   "username.format.validation.message": "I nomi utente possono contenere solo lettere (AZ, az), numeri (0-9), trattini bassi (_) e trattini (-). I nomi utente non possono contenere spazi",
   "registration.request.failure.header": "Impossibile creare il tuo account.",
   "registration.empty.form.submission.error": "Controlla le tue risposte e riprova.",
@@ -178,5 +179,6 @@
   "complete.your.profile.2": "Il tuo profilo",
   "register.page.terms.of.service.and.honor.code": "Creando un account, accetti il {tosAndHonorCode} e riconosci che {platformName} e ciascun Membro trattano i tuoi dati personali in conformità con il {privacyPolicy}.",
   "register.page.honor.code": "Accetto il {platformName}&nbsp;{tosAndHonorCode}",
-  "register.page.terms.of.service": "Accetto il {platformName}&nbsp;{termsOfService}"
+  "register.page.terms.of.service": "Accetto il {platformName}&nbsp;{termsOfService}",
+  "error.notfound.page.title": "Pagina non trovata | {siteName}"
 }

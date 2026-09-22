@@ -25,27 +25,11 @@
         <item quantity="other">%1$d Просроченные задания</item>
     </plurals>
 
-	<string name="downloads.downloads">Загрузки</string>
-	<string name="downloads.downloads_download_course">скачать курс</string>
-	<string name="downloads.downloads_remove_course_downloads">Удалить скачать курсы</string>
-	<string name="downloads.downloads_cancel_download">Отменить скачивание</string>
-	<string name="downloads.downloads_empty_state_title">Нет курсов с возможностью скачивания Контента</string>
-	<string name="downloads.downloads_empty_state_description">В настоящее время у вас нет курсов с возможностью скачать контент.</string>
-	<string name="downloads.downloaded_downloaded_size">%1$s скачано</string>
-	<string name="downloads.downloaded_available_size">%1$s доступно</string>
-	<string name="downloads.downloads_accessibility_stop_downloading_course">Остановить скачивание курса</string>
-	<string name="downloads.downloads_loading_course_structure">Загрузка структуры курса...</string>
-
-	<string name="app.app_navigation_discovery">Узнать</string>
-	<string name="app.app_navigation_learn">Учиться</string>
-	<string name="app.app_navigation_profile">Профиль</string>
-	<string name="app.app_navigation_dates">Даты</string>
-	<string name="app.app_navigation_downloads">Загрузки</string>
-
 	<string name="auth.auth_forgot_password">Забыли пароль\?</string>
 	<string name="auth.auth_email">Электронная почта</string>
 	<string name="auth.auth_invalid_email">Неверный адрес электронной почты</string>
 	<string name="auth.auth_invalid_password">Пароль слишком короткий</string>
+	<string name="auth.auth_social_account_not_registered">Эта учётная запись %1$s не связана ни с одной учётной записью %2$s. Пожалуйста, зарегистрируйтесь.</string>
 	<string name="auth.auth_welcome_back">Добро пожаловать! Войдите, чтобы получить доступ к своим курсам.</string>
 	<string name="auth.auth_show_optional_fields">Показать необязательные поля</string>
 	<string name="auth.auth_hide_optional_fields">Скрыть необязательные поля</string>
@@ -63,6 +47,13 @@
 	<string name="auth.auth_agreement_signin_in">Выполняя вход в это приложение, вы соглашаетесь с %1$s и %2$s и подтверждаете, что %3$s и каждый участник обрабатывают ваши персональные данные в соответствии с %4$s.</string>
 	<string name="auth.auth_accessibility_show_password">Показать пароль</string>
 	<string name="auth.auth_accessibility_hide_password">Скрыть пароль</string>
+
+	<string name="dates.dates_title">Даты</string>
+	<string name="dates.dates_empty_state_title">Нет Дат</string>
+	<string name="dates.dates_empty_state_description">У вас пока нет активных курсов с запланированными мероприятиями. Запишитесь на курс, чтобы просмотреть важные даты и сроки.</string>
+	<string name="dates.dates_shift_due_date_card_title">Пропустили сроки\?</string>
+	<string name="dates.dates_shift_due_date_card_description">Не волнуйтесь — измените предложенный график, чтобы выполнить просроченные задания без потери прогресса.</string>
+	<string name="dates.dates_shift_due_date">Сдвинуть Срок Сдачи</string>
 
 	<string name="profile.profile_full_profile">Полный профиль</string>
 	<string name="profile.profile_limited_profile">Ограниченный профиль</string>
@@ -142,6 +133,84 @@
 	<string name="profile.profile_no_google_calendars">Нет доступных календарей Google</string>
 	<string name="profile.profile_select_calendar">Выберите календарь</string>
 	<string name="profile.profile_local_calendar_option">Локальный календарь</string>
+
+	<string name="app.app_navigation_discovery">Узнать</string>
+	<string name="app.app_navigation_learn">Учиться</string>
+	<string name="app.app_navigation_profile">Профиль</string>
+	<string name="app.app_navigation_dates">Даты</string>
+	<string name="app.app_navigation_downloads">Загрузки</string>
+
+	<string name="discussion.discussion_all_posts">Все записи</string>
+	<string name="discussion.discussion_unread">Непрочитанные</string>
+	<string name="discussion.discussion_unanswered">Без ответа</string>
+	<string name="discussion.discussion_posts_following">Сообщения, на которые я подписан</string>
+	<string name="discussion.discussion_recent_activity">Недавняя активность</string>
+	<string name="discussion.discussion_most_activity">Большая активность</string>
+	<string name="discussion.discussion_most_votes">Большинство голосов</string>
+	<string name="discussion.discussion_create_post">Создать обсуждение</string>
+	<string name="discussion.discussion_create_question">Создать вопрос</string>
+	<string name="discussion.discussion_add_response">Добавить ответ</string>
+	<string name="discussion.discussion_last_post">Chapisho la mwisho: %1$s</string>
+	<string name="discussion.discussion_follow">Отслеживать</string>
+	<string name="discussion.discussion_unreport">Отозвать жалобу</string>
+	<string name="discussion.discussion_add_comment">Добавить комментарий</string>
+	<string name="discussion.discussion_comments_title">Комментарий</string>
+	<string name="discussion.discussion_comment_added">Комментарий успешно добавлен</string>
+	<string name="discussion.discussion_discussion">Обсуждение</string>
+	<string name="discussion.discussion_question">Вопрос</string>
+	<string name="discussion.discussion_title">Заголовок (статьи)</string>
+	<string name="discussion.discussion_follow_discussion">Следите за данным обсуждением</string>
+	<string name="discussion.discussion_follow_question">Следуйте за этим вопросом</string>
+	<string name="discussion.discussion_search_all_posts">Искать все сообщения</string>
+	<string name="discussion.discussion_main_categories">Основные категории</string>
+	<string name="discussion.discussion_select_post_type">Выберите тип сообщения</string>
+	<string name="discussion.discussion_topic">Тема</string>
+	<string name="discussion.discussion_search_results">Результаты поиска</string>
+	<string name="discussion.discussion_start_typing_to_find">Начните вводить текст, чтобы найти сообщение</string>
+	<string name="discussion.discussion_anonymous">аноним</string>
+	<string name="discussion.discussion_no_yet">Пока нет обсуждений</string>
+	<string name="discussion.discussion_click_button_create_discussion">Нажмите кнопку ниже, чтобы создать первое обсуждение.</string>
+	<string name="discussion.discussion_unnamed_subcategory">Безымянная подкатегория</string>
+	<plurals name="discussion.discussion_votes">
+        <item quantity="one">%1$d голос</item>
+        <item quantity="few">%1$d голосов</item>
+        <item quantity="many">%1$d голосов</item>
+        <item quantity="other">%1$d голосов</item>
+    </plurals>
+	<plurals name="discussion.discussion_comments">
+        <item quantity="one">%1$d комментарий</item>
+        <item quantity="few">%1$d комментариев</item>
+        <item quantity="many">%1$d комментариев</item>
+        <item quantity="other">%1$d комментариев</item>
+    </plurals>
+	<plurals name="discussion.discussion_missed_posts">
+        <item quantity="one">%1$d Пропущенный пост</item>
+        <item quantity="few">%1$d Пропущенные сообщения</item>
+        <item quantity="many">%1$d Пропущенные сообщения</item>
+        <item quantity="other">%1$d Пропущенные сообщения</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses">
+        <item quantity="one">%1$d ответ</item>
+        <item quantity="few">%1$d ответов</item>
+        <item quantity="many">%1$d ответов</item>
+        <item quantity="other">%1$d ответов</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses_capitalized">
+        <item quantity="one">%1$d Ответ</item>
+        <item quantity="few">%1$d Ответы</item>
+        <item quantity="many">%1$d Ответы</item>
+        <item quantity="other">%1$d Ответы</item>
+    </plurals>
+	<plurals name="discussion.discussion_found_threads">
+        <item quantity="one">Сообщение %s найдено</item>
+        <item quantity="few">Найдено сообщений %s</item>
+        <item quantity="many">Найдено сообщений %s</item>
+        <item quantity="other">Найдено сообщений %s</item>
+    </plurals>
+
+	<string name="whatsnew.whats_new_title">Что нового</string>
+	<string name="whatsnew.whats_new_navigation_next">Следующий</string>
+	<string name="whatsnew.whats_new_navigation_done">Готово</string>
 
 	<string name="core.core_error_invalid_grant">Неверные учетные данные</string>
 	<string name="core.core_error_no_connection">Медленное или отсутствие подключения к Интернету</string>
@@ -279,6 +348,10 @@
 	<string name="core.core_explore_other_parts_when_reconnect_or_download">Изучите другие части этого курса или скачайте это, когда подключитесь.</string>
 	<string name="core.core_authorization">Авторизация</string>
 	<string name="core.core_authorization_request">Пожалуйста, войдите в систему, чтобы продолжить зачисление на курс.</string>
+	<string name="core.core_sso_sign_in">Войдите в систему с помощью SSO</string>
+	<string name="core.core_sign_in_sso_heading">Начните сегодня, чтобы уверенно строить свою карьеру</string>
+	<string name="core.core_sign_in_sso_login_title">Войти</string>
+	<string name="core.core_sign_in_sso_login_subtitle">Войдите через национальную службу единой регистрации</string>
 
 	<string name="course.course_you_earned_certificate">Поздравляем, вы получили сертификат курса «%s».</string>
 	<string name="course.course_view_certificate">Посмотреть сертификат</string>
@@ -380,12 +453,16 @@
 	<string name="course.course_videos_caught_up">Вы посмотрели все Видео!</string>
 	<string name="course.course_assignments_caught_up">Вы выполнили все задания!</string>
 
-	<string name="dates.dates_title">Даты</string>
-	<string name="dates.dates_empty_state_title">Нет Дат</string>
-	<string name="dates.dates_empty_state_description">У вас пока нет активных курсов с запланированными мероприятиями. Запишитесь на курс, чтобы просмотреть важные даты и сроки.</string>
-	<string name="dates.dates_shift_due_date_card_title">Пропустили сроки\?</string>
-	<string name="dates.dates_shift_due_date_card_description">Не волнуйтесь — измените предложенный график, чтобы выполнить просроченные задания без потери прогресса.</string>
-	<string name="dates.dates_shift_due_date">Сдвинуть Срок Сдачи</string>
+	<string name="downloads.downloads">Загрузки</string>
+	<string name="downloads.downloads_download_course">скачать курс</string>
+	<string name="downloads.downloads_remove_course_downloads">Удалить скачать курсы</string>
+	<string name="downloads.downloads_cancel_download">Отменить скачивание</string>
+	<string name="downloads.downloads_empty_state_title">Нет курсов с возможностью скачивания Контента</string>
+	<string name="downloads.downloads_empty_state_description">В настоящее время у вас нет курсов с возможностью скачать контент.</string>
+	<string name="downloads.downloaded_downloaded_size">%1$s скачано</string>
+	<string name="downloads.downloaded_available_size">%1$s доступно</string>
+	<string name="downloads.downloads_accessibility_stop_downloading_course">Остановить скачивание курса</string>
+	<string name="downloads.downloads_loading_course_structure">Загрузка структуры курса...</string>
 
 	<string name="discovery.discovery_Discovery">Узнать</string>
 	<string name="discovery.discovery_discovery_new">Откройте для себя новое</string>
@@ -407,76 +484,4 @@
     </plurals>
 	<!-- Accessibility -->
 	<string name="discovery.discovery_accessibility_play_video">Просмотреть видео</string>
-
-	<string name="whatsnew.whats_new_title">Что нового</string>
-	<string name="whatsnew.whats_new_navigation_next">Следующий</string>
-	<string name="whatsnew.whats_new_navigation_done">Готово</string>
-
-	<string name="discussion.discussion_all_posts">Все записи</string>
-	<string name="discussion.discussion_unread">Непрочитанные</string>
-	<string name="discussion.discussion_unanswered">Без ответа</string>
-	<string name="discussion.discussion_posts_following">Сообщения, на которые я подписан</string>
-	<string name="discussion.discussion_recent_activity">Недавняя активность</string>
-	<string name="discussion.discussion_most_activity">Большая активность</string>
-	<string name="discussion.discussion_most_votes">Большинство голосов</string>
-	<string name="discussion.discussion_create_post">Создать обсуждение</string>
-	<string name="discussion.discussion_create_question">Создать вопрос</string>
-	<string name="discussion.discussion_add_response">Добавить ответ</string>
-	<string name="discussion.discussion_last_post">Chapisho la mwisho: %1$s</string>
-	<string name="discussion.discussion_follow">Отслеживать</string>
-	<string name="discussion.discussion_unreport">Отозвать жалобу</string>
-	<string name="discussion.discussion_add_comment">Добавить комментарий</string>
-	<string name="discussion.discussion_comments_title">Комментарий</string>
-	<string name="discussion.discussion_comment_added">Комментарий успешно добавлен</string>
-	<string name="discussion.discussion_discussion">Обсуждение</string>
-	<string name="discussion.discussion_question">Вопрос</string>
-	<string name="discussion.discussion_title">Заголовок (статьи)</string>
-	<string name="discussion.discussion_follow_discussion">Следите за данным обсуждением</string>
-	<string name="discussion.discussion_follow_question">Следуйте за этим вопросом</string>
-	<string name="discussion.discussion_search_all_posts">Искать все сообщения</string>
-	<string name="discussion.discussion_main_categories">Основные категории</string>
-	<string name="discussion.discussion_select_post_type">Выберите тип сообщения</string>
-	<string name="discussion.discussion_topic">Тема</string>
-	<string name="discussion.discussion_search_results">Результаты поиска</string>
-	<string name="discussion.discussion_start_typing_to_find">Начните вводить текст, чтобы найти сообщение</string>
-	<string name="discussion.discussion_anonymous">аноним</string>
-	<string name="discussion.discussion_no_yet">Пока нет обсуждений</string>
-	<string name="discussion.discussion_click_button_create_discussion">Нажмите кнопку ниже, чтобы создать первое обсуждение.</string>
-	<string name="discussion.discussion_unnamed_subcategory">Безымянная подкатегория</string>
-	<plurals name="discussion.discussion_votes">
-        <item quantity="one">%1$d голос</item>
-        <item quantity="few">%1$d голосов</item>
-        <item quantity="many">%1$d голосов</item>
-        <item quantity="other">%1$d голосов</item>
-    </plurals>
-	<plurals name="discussion.discussion_comments">
-        <item quantity="one">%1$d комментарий</item>
-        <item quantity="few">%1$d комментариев</item>
-        <item quantity="many">%1$d комментариев</item>
-        <item quantity="other">%1$d комментариев</item>
-    </plurals>
-	<plurals name="discussion.discussion_missed_posts">
-        <item quantity="one">%1$d Пропущенный пост</item>
-        <item quantity="few">%1$d Пропущенные сообщения</item>
-        <item quantity="many">%1$d Пропущенные сообщения</item>
-        <item quantity="other">%1$d Пропущенные сообщения</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses">
-        <item quantity="one">%1$d ответ</item>
-        <item quantity="few">%1$d ответов</item>
-        <item quantity="many">%1$d ответов</item>
-        <item quantity="other">%1$d ответов</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses_capitalized">
-        <item quantity="one">%1$d Ответ</item>
-        <item quantity="few">%1$d Ответы</item>
-        <item quantity="many">%1$d Ответы</item>
-        <item quantity="other">%1$d Ответы</item>
-    </plurals>
-	<plurals name="discussion.discussion_found_threads">
-        <item quantity="one">Сообщение %s найдено</item>
-        <item quantity="few">Найдено сообщений %s</item>
-        <item quantity="many">Найдено сообщений %s</item>
-        <item quantity="other">Найдено сообщений %s</item>
-    </plurals>
 </resources>

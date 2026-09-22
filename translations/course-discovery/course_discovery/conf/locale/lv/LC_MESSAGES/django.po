@@ -5,16 +5,17 @@
 # 
 # Translators:
 # Translators:
-# Elita Leilande, 2024
-# Brian Smith, 2025
+# Elita Leilande, 2026
+# Gerardo Núñez, 2026
+# Brian Smith, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-12 00:35+0000\n"
+"POT-Creation-Date: 2026-05-20 01:05+0000\n"
 "PO-Revision-Date: 2023-01-26 15:39+0000\n"
-"Last-Translator: Brian Smith, 2025\n"
+"Last-Translator: Brian Smith, 2026\n"
 "Language-Team: Latvian (https://app.transifex.com/open-edx/teams/6205/lv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -126,6 +127,15 @@ msgstr "Neizdevās iestatīt kursa izpildes datus: {}"
 msgid "Can only update status, ofac restrictions, and ofac comment"
 msgstr "Var atjaunināt tikai statusu, ofac ierobežojumus un ofac komentārus"
 
+#: apps/api/v1/views/course_runs.py:363
+#, python-brace-format
+msgid ""
+"The course run type '{course_run_type}' is not valid for this course type "
+"'{course_type}'."
+msgstr ""
+"Kursa izpildes veids '{course_run_type}' nav derīgs šim kursa veidam "
+"'{course_type}'."
+
 #: apps/api/v1/views/course_runs.py:381
 msgid "Course run is in review. Editing disabled."
 msgstr "Kursa norise tiek pārskatīta. Rediģēšana ir atspējota."
@@ -184,7 +194,7 @@ msgstr ""
 "Kursa rediģēšana bija neveiksmīga. Kursa URL pāradrese ‘[{url_slug}]’ jau "
 "tiek izmantota. Lūdzu, atjauniniet šo lauku un mēģiniet vēlreiz."
 
-#: apps/api/views.py:58
+#: apps/api/views.py:57
 msgid "You are not permitted to access the API documentation."
 msgstr "Jums nav atļauts piekļūt API dokumentācijai."
 
@@ -545,9 +555,49 @@ msgstr "demo"
 msgid "other"
 msgstr "cits"
 
+#: apps/course_metadata/choices.py:54
+msgid "Course Create"
+msgstr "Kursa izveide"
+
+#: apps/course_metadata/choices.py:55
+msgid "Partial Update"
+msgstr "Daļējs atjauninājums"
+
+#: apps/course_metadata/choices.py:56
+msgid "Course Rerun"
+msgstr "Kursa atkārtojums"
+
+#: apps/course_metadata/choices.py:57
+msgid "Course Editor Update"
+msgstr "Kursu redaktora atjauninājums"
+
+#: apps/course_metadata/choices.py:64
+msgid "Pending"
+msgstr "Gaida"
+
 #: apps/course_metadata/choices.py:65 apps/course_metadata/choices.py:76
 msgid "Verified"
 msgstr "Verificēts"
+
+#: apps/course_metadata/choices.py:66
+msgid "Processing"
+msgstr "Apstrāde"
+
+#: apps/course_metadata/choices.py:67
+msgid "Completed"
+msgstr "Pabeigts"
+
+#: apps/course_metadata/choices.py:68
+msgid "Failed"
+msgstr "Neizdevās"
+
+#: apps/course_metadata/choices.py:69
+msgid "Partially Completed"
+msgstr "Daļēji pabeigts"
+
+#: apps/course_metadata/choices.py:70
+msgid "Errored"
+msgstr "Kļūdas"
 
 #: apps/course_metadata/choices.py:74
 msgid "Honor"
@@ -1416,6 +1466,16 @@ msgstr ""
 msgid "Estimated number of weeks needed to complete this course run."
 msgstr "Aptuvenais nedēļu skaits, kas nepieciešams šī kursa pabeigšanai."
 
+#: apps/course_metadata/models.py:2329
+msgid ""
+"A JSON dict detailing the available translations and transcriptions for this"
+" run. The dict has two keys: translation_languages and "
+"transcription_languages."
+msgstr ""
+"JSON diktāts ar detalizētu informāciju par pieejamajiem tulkojumiem un "
+"transkripcijām šim darbam. Dict ir divas atslēgas: translation_languages un "
+"transcription_languages."
+
 #: apps/course_metadata/models.py:2336
 msgid "Total number of learners who have enrolled in this course run"
 msgstr "Kopējais kursa dalībnieku skaits, kuri ir reģistrējušies šajā kursā"
@@ -1910,6 +1970,10 @@ msgstr ""
 msgid "It expects the data will be provided in a csv file format "
 msgstr "Tā paredz, ka dati tiks sniegti csv faila formātā "
 
+#: apps/course_metadata/models.py:4738
+msgid "A csv file containing uuid of the courses to be archived"
+msgstr "CSV fails, kas satur arhivējamo kursu uuid."
+
 #: apps/course_metadata/models.py:4752 apps/course_metadata/models.py:4765
 #: apps/course_metadata/models.py:4778 apps/course_metadata/models.py:4813
 #: apps/course_metadata/models.py:4826 apps/course_metadata/models.py:4845
@@ -1966,6 +2030,34 @@ msgstr "Pievienojiet novirzīšanas no visiām publicētajām kursa URL pāradre
 msgid "Course uuids"
 msgstr "Kursa uuids"
 
+#: apps/course_metadata/models.py:5044
+msgid "User who uploaded the file"
+msgstr "Lietotājs, kas augšupielādējis failu"
+
+#: apps/course_metadata/models.py:5049
+msgid "Summary of the task"
+msgstr "Uzdevuma kopsavilkums"
+
+#: apps/course_metadata/models.py:5052
+msgid "Task Type"
+msgstr "Uzdevuma veids"
+
+#: apps/course_metadata/models.py:5055
+msgid "Type of Bulk Task to be performed"
+msgstr "Veicamā liela apjoma uzdevuma veids"
+
+#: apps/course_metadata/models.py:5058
+msgid "Status"
+msgstr "Status"
+
+#: apps/course_metadata/models.py:5061
+msgid "Status of the Bulk Task"
+msgstr "Lielapjoma uzdevuma statuss"
+
+#: apps/course_metadata/models.py:5069
+msgid "Identifier of the celery task associated with this bulk task"
+msgstr "Ar šo lielapjoma uzdevumu saistītā selerijas uzdevuma identifikators"
+
 #: apps/course_metadata/salesforce.py:78
 msgid "Attempted to query Salesforce with no client for partner={}"
 msgstr "Mēģināja vaicāt Salesforce bez klienta partnerim={}"
@@ -1974,15 +2066,15 @@ msgstr "Mēģināja vaicāt Salesforce bez klienta partnerim={}"
 msgid "Unable to associate a case for comments for {}"
 msgstr "Nevar saistīt lietu {} komentāriem"
 
-#: apps/course_metadata/templates/admin/course_metadata/course_run.html:37
+#: apps/course_metadata/templates/admin/course_metadata/course_run.html:24
 msgid "Cancel"
 msgstr "Atcelt"
 
-#: apps/course_metadata/templates/admin/course_metadata/course_run.html:40
+#: apps/course_metadata/templates/admin/course_metadata/course_run.html:27
 msgid "Back to Program"
 msgstr "Atpakaļ uz programmu"
 
-#: apps/course_metadata/templates/admin/course_metadata/course_run.html:42
+#: apps/course_metadata/templates/admin/course_metadata/course_run.html:29
 msgid "Save Course Run"
 msgstr "Saglabāt kursa norisi"
 
@@ -2033,6 +2125,216 @@ msgid ""
 msgstr ""
 "%(user_name)s vietnē %(time)s sniedza šādu komentāru par %(course_name)s "
 "%(date)s"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:8
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:3
+#: apps/course_metadata/templates/course_metadata/email/go_live.html:9
+#: apps/course_metadata/templates/course_metadata/email/go_live.txt:3
+msgid "Hi Course Team,"
+msgstr "Sveiki, kursa komanda,"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:14
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:6
+#, python-format
+msgid ""
+"\n"
+"This is an automated reminder that the course \"%(course_name)s\" (%(course_key)s) is scheduled to end in %(days)s on %(course_end_date)s.\n"
+msgstr ""
+"\n"
+"Šis ir automātisks atgādinājums, ka kursa \"%(course_name)s\" (%(course_key)s) beigas ir plānotas uz %(days)s, %(course_end_date)s.\n"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:20
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:10
+msgid ""
+"If no action is taken, the course will be automatically archived after this "
+"date. If you decide not to extend the course or create a new run at this "
+"time, please inform your dedicated Project Coordinator and share your plans."
+" This helps ensure our internal teams remain aligned and can support you "
+"effectively."
+msgstr ""
+"Ja netiks veikta nekāda darbība, kurss pēc šī datuma tiks automātiski "
+"arhivēts. Ja šobrīd nolemjat kursu nepagarināt vai neveidot jaunu kursa "
+"norisi, lūdzu, informējiet savu projektu koordinatoru un dalieties ar saviem"
+" plāniem. Tas palīdz nodrošināt, ka mūsu iekšējās komandas ir saskaņotas un "
+"var jūs efektīvi atbalstīt."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:24
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:12
+msgid ""
+"To ensure a smooth experience for our edX Learners, please take one of the "
+"following actions:"
+msgstr ""
+"Lai nodrošinātu ērtu pieredzi mūsu edX izglītojamajiem, lūdzu, veiciet vienu"
+" no šīm darbībām:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:29
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:62
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:95
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:14
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:32
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:48
+msgid "Create a New Course Run:"
+msgstr "Izveidot jaunu kursa norisi:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:31
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:64
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:97
+msgid "You can get started"
+msgstr "Jūs varat sākt"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:32
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:39
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:65
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:72
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:98
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:105
+msgid "here"
+msgstr "šeit"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:36
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:69
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:102
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:18
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:35
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:51
+msgid "Extend the Course End Date:"
+msgstr "Pagarināt kursa beigu datumu:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:37
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:70
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:103
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:19
+msgid ""
+"If the content is still relevant, you can extend the course end date in "
+"Studio."
+msgstr ""
+"Ja saturs joprojām ir aktuāls, kursa beigu datumu varat pagarināt Studio."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:38
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:71
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:104
+msgid "Simply visit the Schedule and Details tab"
+msgstr "Vienkārši apmeklējiet cilni Grafiks un detaļas"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:52
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:85
+msgid "Important:"
+msgstr "Svarīgi:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:53
+msgid ""
+"If no action is taken, the course will be automatically archived after the "
+"current end date. If you choose not to extend or create a new course run at "
+"this time, you must inform your dedicated Project Coordinator with your "
+"reasons. This will ensure our internal teams are properly informed about "
+"your plans."
+msgstr ""
+"Ja netiks veikta nekāda darbība, kurss tiks automātiski arhivēts pēc "
+"pašreizējā beigu datuma. Ja izvēlaties nepagarināt vai neizveidot jaunu "
+"kursa norisi šajā laikā, jums ir jāinformē savs projekta koordinators par "
+"iemesliem. Tas nodrošinās, ka mūsu iekšējās komandas ir pienācīgi informētas"
+" par jūsu plāniem."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:57
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:30
+msgid ""
+"To prevent disruption to learner access, please choose one of the following "
+"options:"
+msgstr ""
+"Lai novērstu traucējumus izglītojamo piekļuvei, lūdzu, izvēlieties vienu no "
+"šīm iespējām:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:86
+msgid ""
+"If you decide not to extend the course or create a new course run at this "
+"time, you must inform your dedicated Project Coordinator with the reasons "
+"behind this. This will help ensure our internal teams are fully updated on "
+"your plans for the course."
+msgstr ""
+"Ja šobrīd nolemjat nepagarināt kursu vai neizveidot jaunu kursa norisi, jums"
+" par to ir jāinformē savs projekta koordinators, norādot iemeslus. Tas "
+"palīdzēs nodrošināt, ka mūsu iekšējās komandas ir pilnībā informētas par "
+"jūsu plāniem attiecībā uz kursu."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:90
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:46
+msgid ""
+"If you wish to keep this course active, please choose one of the following "
+"options:"
+msgstr ""
+"Ja vēlaties saglabāt šo kursu aktīvu, lūdzu, izvēlieties vienu no šīm "
+"iespējām:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:112
+msgid "NOTE:"
+msgstr "PIEZĪME:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:113
+msgid ""
+"This email address isn’t monitored for replies. If you have any questions or"
+" need assistance, please reach out to your dedicated Project Coordinator."
+msgstr ""
+"Šī e-pasta adrese netiek uzraudzīta atbildēm. Ja jums ir kādi jautājumi vai "
+"nepieciešama palīdzība, lūdzu, sazinieties ar savu projektu koordinatoru."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:117
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:58
+msgid "Thank you for your attention to this—looking forward to your updates!"
+msgstr "Paldies par jūsu uzmanību — gaidīsim jūsu jaunumus!"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:121
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:60
+msgid "Best,"
+msgstr "Labākais,"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:122
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:61
+msgid "edX Operational Team"
+msgstr "edX Operatīvā komanda"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:16
+msgid "You can get started here:"
+msgstr "Sākt varat šeit:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:20
+msgid "Simply visit the Schedule and Details tab here:"
+msgstr "Vienkārši apmeklējiet cilni \"Grafiks un detaļas\" šeit:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:28
+msgid ""
+"Important: If no action is taken, the course will be automatically archived "
+"after the current end date. If you choose not to extend or create a new "
+"course run at this time, you must inform your dedicated Project Coordinator "
+"with your reasons. This will ensure our internal teams are properly informed"
+" about your plans."
+msgstr ""
+"Svarīgi! Ja netiks veikta nekāda darbība, kurss tiks automātiski arhivēts "
+"pēc pašreizējā beigu datuma. Ja izvēlaties nepagarināt vai neizveidot jaunu "
+"kursa norisi šajā laikā, jums ir jāinformē savs projekta koordinators par "
+"iemesliem. Tas nodrošinās, ka mūsu iekšējās komandas ir pienācīgi informētas"
+" par jūsu plāniem."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:44
+msgid ""
+"Important: If you decide not to extend the course or create a new course run"
+" at this time, you must inform your dedicated Project Coordinator with the "
+"reasons behind this. This will help ensure our internal teams are fully "
+"updated on your plans for the course."
+msgstr ""
+"Svarīgi: Ja šobrīd nolemjat nepagarināt kursu vai neizveidot jaunu kursa "
+"norisi, jums ir jāinformē savs projekta koordinators par iemesliem. Tas "
+"palīdzēs nodrošināt, ka mūsu iekšējās komandas ir pilnībā informētas par "
+"jūsu plāniem attiecībā uz kursu."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:56
+msgid ""
+"NOTE: This email address isn’t monitored for replies. If you have any "
+"questions or need assistance, please reach out to your dedicated Project "
+"Coordinator."
+msgstr ""
+"PIEZĪME: Uz šo e-pasta adresi netiek uzraudzītas atbildes. Ja jums ir "
+"jautājumi vai nepieciešama palīdzība, lūdzu, sazinieties ar savu projektu "
+"koordinatoru."
 
 #: apps/course_metadata/templates/course_metadata/email/go_live.html:17
 #: apps/course_metadata/templates/course_metadata/email/go_live.txt:7

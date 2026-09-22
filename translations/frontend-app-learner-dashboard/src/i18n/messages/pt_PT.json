@@ -43,8 +43,8 @@
   "header.menu.new.label": "Novo",
   "MasqueradeBar.ViewAs": "Ver como:",
   "MasqueradeBar.ViewingAs": "Visualizando como:",
-  "MasqueradeBar.SubmitButton": "Submeter",
-  "MasqueradeBar.StudentNameInput": "Nome de utilizador ou e-mail",
+  "MasqueradeBar.SubmitButton": "",
+  "MasqueradeBar.StudentNameInput": "",
   "MasqueradeBar.NoStudentFound": "Nenhum estudante com este nome de utilizador ou e-mail foi encontrado",
   "MasqueradeBar.UnknownError": "Ocorreu um erro desconhecido",
   "learner-dash.relatedPrograms.header": "Programas relacionados",
@@ -143,5 +143,6 @@
   "learner-dash.courseCard.banners.credit.rejected": "{providerName} não aprovou o seu pedido de crédito de curso. Para mais informações, contacte diretamente {linkToProviderSite}.",
   "learner-dash.courseCard.banners.credit.requestCredit": "Solicitar Crédito",
   "learner-dash.courseCard.banners.credit.viewCredit": "Ver Crédito",
-  "learner-dash.courseCard.banners.credit.viewDetails": "Ver Detalhes"
+  "learner-dash.courseCard.banners.credit.viewDetails": "Ver Detalhes",
+  "learner-dash.page.title": "Página inicial do Estudante | {siteName}"
 }

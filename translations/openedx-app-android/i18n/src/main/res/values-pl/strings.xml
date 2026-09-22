@@ -25,27 +25,11 @@
         <item quantity="other">%1$d Zaległe zadania</item>
     </plurals>
 
-	<string name="downloads.downloads">Pliki do pobrania</string>
-	<string name="downloads.downloads_download_course">Pobierz kurs</string>
-	<string name="downloads.downloads_remove_course_downloads">Usuwanie pobranych kursów</string>
-	<string name="downloads.downloads_cancel_download">Anuluj pobieranie</string>
-	<string name="downloads.downloads_empty_state_title">Brak kursów z możliwością pobrania zawartości.</string>
-	<string name="downloads.downloads_empty_state_description">Obecnie nie masz kursów z możliwością pobrania zawartości.</string>
-	<string name="downloads.downloaded_downloaded_size">%1$s pobrany</string>
-	<string name="downloads.downloaded_available_size">%1$s dostępny</string>
-	<string name="downloads.downloads_accessibility_stop_downloading_course">Zatrzymaj pobieranie kursu</string>
-	<string name="downloads.downloads_loading_course_structure">Ładowanie struktury kursu...</string>
-
-	<string name="app.app_navigation_discovery">Odkryć</string>
-	<string name="app.app_navigation_learn">Ucz się</string>
-	<string name="app.app_navigation_profile">Profil</string>
-	<string name="app.app_navigation_dates">Daty</string>
-	<string name="app.app_navigation_downloads">Pliki do pobrania</string>
-
 	<string name="auth.auth_forgot_password">Zapomniałeś hasła\?</string>
 	<string name="auth.auth_email">E-mail</string>
 	<string name="auth.auth_invalid_email">Niepoprawny email</string>
 	<string name="auth.auth_invalid_password">Hasło jest za krótkie</string>
+	<string name="auth.auth_social_account_not_registered">To konto %1$s nie jest powiązane z żadnym kontem %2$s. Proszę się zarejestrować.</string>
 	<string name="auth.auth_welcome_back">Witamy spowrotem! Zaloguj się, aby uzyskać dostęp do swoich kursów.</string>
 	<string name="auth.auth_show_optional_fields">Pokaż pola opcjonalne</string>
 	<string name="auth.auth_hide_optional_fields">Ukryj pola opcjonalne</string>
@@ -63,6 +47,13 @@
 	<string name="auth.auth_agreement_signin_in">Logując się do tej aplikacji, wyrażasz zgodę na %1$s i %2$s i potwierdzasz, że %3$s i każdy Członek przetwarzają Twoje dane osobowe zgodnie z %4$s.</string>
 	<string name="auth.auth_accessibility_show_password">Pokaż hasło</string>
 	<string name="auth.auth_accessibility_hide_password">Ukryj hasło</string>
+
+	<string name="dates.dates_title">Daty</string>
+	<string name="dates.dates_empty_state_title">Brak dat</string>
+	<string name="dates.dates_empty_state_description">Nie masz obecnie aktywnych kursów z zaplanowanymi wydarzeniami. Zapisz się na kurs, aby zobaczyć ważne daty i terminy.</string>
+	<string name="dates.dates_shift_due_date_card_title">Przegapiłeś jakieś terminy\?</string>
+	<string name="dates.dates_shift_due_date_card_description">Nie martw się – zmień nasz sugerowany harmonogram, aby ukończyć zaległe zadania bez utraty postępów.</string>
+	<string name="dates.dates_shift_due_date">Przesuń terminy</string>
 
 	<string name="profile.profile_full_profile">Pełny profil</string>
 	<string name="profile.profile_limited_profile">Ograniczony profil</string>
@@ -87,6 +78,7 @@
 	<string name="profile.profile_select_from_gallery">Wybierz z galerii</string>
 	<string name="profile.profile_remove_photo">Usuń zdjęcie</string>
 	<string name="profile.profile_leave_profile">Wyjść bez zapisywania\?</string>
+	<string name="profile.profile_leave">Opuść</string>
 	<string name="profile.profile_keep_editing">Edytuj dalej</string>
 	<string name="profile.profile_changes_you_made">Wprowadzone zmiany zostaną odrzucone.</string>
 	<string name="profile.profile_logout">Wyloguj się</string>
@@ -143,6 +135,86 @@
 	<string name="profile.profile_select_calendar">Wybierz kalendarz</string>
 	<string name="profile.profile_local_calendar_option">Kalendarz lokalny</string>
 
+	<string name="app.app_navigation_discovery">Odkryć</string>
+	<string name="app.app_navigation_learn">Ucz się</string>
+	<string name="app.app_navigation_profile">Profil</string>
+	<string name="app.app_navigation_dates">Daty</string>
+	<string name="app.app_navigation_downloads">Pliki do pobrania</string>
+
+	<string name="discussion.discussion_all_posts">Wszystkie posty</string>
+	<string name="discussion.discussion_unread">nieprzeczytane</string>
+	<string name="discussion.discussion_unanswered">Bez odpowiedzi</string>
+	<string name="discussion.discussion_posts_following">Posty, które obserwuję</string>
+	<string name="discussion.discussion_recent_activity">Ostatnia aktywność</string>
+	<string name="discussion.discussion_most_activity">Najwięcej aktywności</string>
+	<string name="discussion.discussion_most_votes">Najwięcej głosów</string>
+	<string name="discussion.discussion_create_post">Utwórz dyskusję</string>
+	<string name="discussion.discussion_create_question">Utwórz pytanie</string>
+	<string name="discussion.discussion_add_response">Proszę dodać odpowiedź</string>
+	<string name="discussion.discussion_last_post">Ostatni post: %1$s</string>
+	<string name="discussion.discussion_follow">Obserwuj</string>
+	<string name="discussion.discussion_report">Raport</string>
+	<string name="discussion.discussion_unreport">Cofnij zgłoszenie</string>
+	<string name="discussion.discussion_add_comment">Dodaj komentarz</string>
+	<string name="discussion.discussion_comments_title">Komentarz</string>
+	<string name="discussion.discussion_comment_added">Komentarz dodano pomyślnie</string>
+	<string name="discussion.discussion_discussion">Dyskusja</string>
+	<string name="discussion.discussion_question">Pytanie</string>
+	<string name="discussion.discussion_title">Tytuł</string>
+	<string name="discussion.discussion_follow_discussion">Śledź tę dyskusję</string>
+	<string name="discussion.discussion_follow_question">Śledź to pytanie</string>
+	<string name="discussion.discussion_search_all_posts">Przeszukaj wszystkie posty</string>
+	<string name="discussion.discussion_main_categories">Główne kategorie</string>
+	<string name="discussion.discussion_select_post_type">Wybierz typ wpisu</string>
+	<string name="discussion.discussion_topic">Temat</string>
+	<string name="discussion.discussion_search_results">Wyniki wyszukiwania</string>
+	<string name="discussion.discussion_start_typing_to_find">Zacznij pisać, aby znaleźć wątek</string>
+	<string name="discussion.discussion_anonymous">anonimowy</string>
+	<string name="discussion.discussion_no_yet">Nie ma jeszcze dyskusji</string>
+	<string name="discussion.discussion_click_button_create_discussion">Kliknij poniższy przycisk, aby utworzyć pierwszą dyskusję.</string>
+	<string name="discussion.discussion_unnamed_subcategory">Podkategoria bez nazwy</string>
+	<plurals name="discussion.discussion_votes">
+        <item quantity="one">%1$d głos</item>
+        <item quantity="few">%1$d głosów</item>
+        <item quantity="many">%1$d głosów</item>
+        <item quantity="other">%1$d głosów</item>
+    </plurals>
+	<plurals name="discussion.discussion_comments">
+        <item quantity="one">%1$d Komentarz</item>
+        <item quantity="few">%1$d Komentarze</item>
+        <item quantity="many">%1$d Komentarze</item>
+        <item quantity="other">%1$d Komentarze</item>
+    </plurals>
+	<plurals name="discussion.discussion_missed_posts">
+        <item quantity="one">%1$d Przeoczony post</item>
+        <item quantity="few">%1$d Przegapione posty</item>
+        <item quantity="many">%1$d Przegapione posty</item>
+        <item quantity="other">%1$d Przegapione posty</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses">
+        <item quantity="one">%1$d odpowiedź</item>
+        <item quantity="few">%1$d odpowiedzi</item>
+        <item quantity="many">%1$d odpowiedzi</item>
+        <item quantity="other">%1$d odpowiedzi</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses_capitalized">
+        <item quantity="one">%1$d Odpowiedź</item>
+        <item quantity="few">%1$d Odpowiedzi</item>
+        <item quantity="many">%1$d Odpowiedzi</item>
+        <item quantity="other">%1$d Odpowiedzi</item>
+    </plurals>
+	<plurals name="discussion.discussion_found_threads">
+        <item quantity="one">Znaleziono post %s</item>
+        <item quantity="few">Znaleziono %s posty</item>
+        <item quantity="many">Znaleziono %s posty</item>
+        <item quantity="other">Znaleziono %s posty</item>
+    </plurals>
+
+	<string name="whatsnew.whats_new_title">Co nowego\?</string>
+	<string name="whatsnew.whats_new_navigation_previous">Poprzedni</string>
+	<string name="whatsnew.whats_new_navigation_next">Następny</string>
+	<string name="whatsnew.whats_new_navigation_done">Zrobione</string>
+
 	<string name="core.core_error_invalid_grant">Nieprawidłowe dane uwierzytelniające</string>
 	<string name="core.core_error_no_connection">Wolne połączenie internetowe lub jego brak</string>
 	<string name="core.core_error_unknown_error">Coś poszło nie tak</string>
@@ -161,6 +233,7 @@
 	<string name="core.core_label_expired_on">Wygasł w dniu %1$s</string>
 	<string name="core.core_password">Hasło</string>
 	<string name="core.core_assessment_soon">Wkrótce</string>
+	<string name="core.core_offline">Nieaktywny</string>
 	<string name="core.core_warning">Ostrzeżenie</string>
 	<string name="core.core_delete">Usuń</string>
 	<string name="core.core_confirm">Potwierdź</string>
@@ -174,6 +247,7 @@
 	<string name="core.core_user_not_active">Konto użytkownika nie zostało aktywowane. Najpierw aktywuj swoje konto.</string>
 	<string name="core.core_email_chooser_header">Wyślij e-mail za pomocą…</string>
 	<string name="core.core_email_client_not_present">Brak zainstalowanych klientów poczty e-mail</string>
+	<string name="core.core_date_format_MMM_dd_yyyy">dd.MM.yyyy</string>
 	<string name="core.core_full_date_with_time">dd MMM yyyy hh:mm aaa</string>
 	<string name="core.core_app_upgrade_title">Aktualizacja aplikacji</string>
 	<string name="core.core_app_upgrade_dialog_description">Zalecamy aktualizację do najnowszej wersji. Uaktualnij teraz, aby otrzymać najnowsze funkcje i poprawki.</string>
@@ -280,6 +354,10 @@
 	<string name="core.core_explore_other_parts_when_reconnect_or_download">Zapoznaj się z innymi częściami tego kursu lub pobierz go po ponownym połączeniu.</string>
 	<string name="core.core_authorization">Autoryzacja</string>
 	<string name="core.core_authorization_request">Wejdź do systemu, aby kontynuować rejestrację na kurs.</string>
+	<string name="core.core_sso_sign_in">Zaloguj się za pomocą SSO</string>
+	<string name="core.core_sign_in_sso_heading">Zacznij już dziś, aby pewnie budować swoją karierę</string>
+	<string name="core.core_sign_in_sso_login_title">Zaloguj się</string>
+	<string name="core.core_sign_in_sso_login_subtitle">Zaloguj się za pośrednictwem krajowej usługi ujednoliconego logowania</string>
 
 	<string name="course.course_you_earned_certificate">Gratulacje, zdobyłeś ten certyfikat kursu w \"%s\".</string>
 	<string name="course.course_view_certificate">Wyświetl certyfikat</string>
@@ -382,12 +460,16 @@
 	<string name="course.course_videos_caught_up">Jesteś na bieżąco z filmami!</string>
 	<string name="course.course_assignments_caught_up">Jesteś na bieżąco z zadaniami!</string>
 
-	<string name="dates.dates_title">Daty</string>
-	<string name="dates.dates_empty_state_title">Brak dat</string>
-	<string name="dates.dates_empty_state_description">Nie masz obecnie aktywnych kursów z zaplanowanymi wydarzeniami. Zapisz się na kurs, aby zobaczyć ważne daty i terminy.</string>
-	<string name="dates.dates_shift_due_date_card_title">Przegapiłeś jakieś terminy\?</string>
-	<string name="dates.dates_shift_due_date_card_description">Nie martw się – zmień nasz sugerowany harmonogram, aby ukończyć zaległe zadania bez utraty postępów.</string>
-	<string name="dates.dates_shift_due_date">Przesuń terminy</string>
+	<string name="downloads.downloads">Pliki do pobrania</string>
+	<string name="downloads.downloads_download_course">Pobierz kurs</string>
+	<string name="downloads.downloads_remove_course_downloads">Usuwanie pobranych kursów</string>
+	<string name="downloads.downloads_cancel_download">Anuluj pobieranie</string>
+	<string name="downloads.downloads_empty_state_title">Brak kursów z możliwością pobrania zawartości.</string>
+	<string name="downloads.downloads_empty_state_description">Obecnie nie masz kursów z możliwością pobrania zawartości.</string>
+	<string name="downloads.downloaded_downloaded_size">%1$s pobrany</string>
+	<string name="downloads.downloaded_available_size">%1$s dostępny</string>
+	<string name="downloads.downloads_accessibility_stop_downloading_course">Zatrzymaj pobieranie kursu</string>
+	<string name="downloads.downloads_loading_course_structure">Ładowanie struktury kursu...</string>
 
 	<string name="discovery.discovery_Discovery">Odkryć</string>
 	<string name="discovery.discovery_discovery_new">Odkryj nowe</string>
@@ -409,78 +491,4 @@
     </plurals>
 	<!-- Accessibility -->
 	<string name="discovery.discovery_accessibility_play_video">Odtwórz wideo</string>
-
-	<string name="whatsnew.whats_new_title">Co nowego\?</string>
-	<string name="whatsnew.whats_new_navigation_previous">Poprzedni</string>
-	<string name="whatsnew.whats_new_navigation_next">Następny</string>
-	<string name="whatsnew.whats_new_navigation_done">Zrobione</string>
-
-	<string name="discussion.discussion_all_posts">Wszystkie posty</string>
-	<string name="discussion.discussion_unread">nieprzeczytane</string>
-	<string name="discussion.discussion_unanswered">Bez odpowiedzi</string>
-	<string name="discussion.discussion_posts_following">Posty, które obserwuję</string>
-	<string name="discussion.discussion_recent_activity">Ostatnia aktywność</string>
-	<string name="discussion.discussion_most_activity">Najwięcej aktywności</string>
-	<string name="discussion.discussion_most_votes">Najwięcej głosów</string>
-	<string name="discussion.discussion_create_post">Utwórz dyskusję</string>
-	<string name="discussion.discussion_create_question">Utwórz pytanie</string>
-	<string name="discussion.discussion_add_response">Proszę dodać odpowiedź</string>
-	<string name="discussion.discussion_last_post">Ostatni post: %1$s</string>
-	<string name="discussion.discussion_follow">Obserwuj</string>
-	<string name="discussion.discussion_report">Raport</string>
-	<string name="discussion.discussion_unreport">Cofnij zgłoszenie</string>
-	<string name="discussion.discussion_add_comment">Dodaj komentarz</string>
-	<string name="discussion.discussion_comments_title">Komentarz</string>
-	<string name="discussion.discussion_comment_added">Komentarz dodano pomyślnie</string>
-	<string name="discussion.discussion_discussion">Dyskusja</string>
-	<string name="discussion.discussion_question">Pytanie</string>
-	<string name="discussion.discussion_title">Tytuł</string>
-	<string name="discussion.discussion_follow_discussion">Śledź tę dyskusję</string>
-	<string name="discussion.discussion_follow_question">Śledź to pytanie</string>
-	<string name="discussion.discussion_search_all_posts">Przeszukaj wszystkie posty</string>
-	<string name="discussion.discussion_main_categories">Główne kategorie</string>
-	<string name="discussion.discussion_select_post_type">Wybierz typ wpisu</string>
-	<string name="discussion.discussion_topic">Temat</string>
-	<string name="discussion.discussion_search_results">Wyniki wyszukiwania</string>
-	<string name="discussion.discussion_start_typing_to_find">Zacznij pisać, aby znaleźć wątek</string>
-	<string name="discussion.discussion_anonymous">anonimowy</string>
-	<string name="discussion.discussion_no_yet">Nie ma jeszcze dyskusji</string>
-	<string name="discussion.discussion_click_button_create_discussion">Kliknij poniższy przycisk, aby utworzyć pierwszą dyskusję.</string>
-	<string name="discussion.discussion_unnamed_subcategory">Podkategoria bez nazwy</string>
-	<plurals name="discussion.discussion_votes">
-        <item quantity="one">%1$d głos</item>
-        <item quantity="few">%1$d głosów</item>
-        <item quantity="many">%1$d głosów</item>
-        <item quantity="other">%1$d głosów</item>
-    </plurals>
-	<plurals name="discussion.discussion_comments">
-        <item quantity="one">%1$d Komentarz</item>
-        <item quantity="few">%1$d Komentarze</item>
-        <item quantity="many">%1$d Komentarze</item>
-        <item quantity="other">%1$d Komentarze</item>
-    </plurals>
-	<plurals name="discussion.discussion_missed_posts">
-        <item quantity="one">%1$d Przeoczony post</item>
-        <item quantity="few">%1$d Przegapione posty</item>
-        <item quantity="many">%1$d Przegapione posty</item>
-        <item quantity="other">%1$d Przegapione posty</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses">
-        <item quantity="one">%1$d odpowiedź</item>
-        <item quantity="few">%1$d odpowiedzi</item>
-        <item quantity="many">%1$d odpowiedzi</item>
-        <item quantity="other">%1$d odpowiedzi</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses_capitalized">
-        <item quantity="one">%1$d Odpowiedź</item>
-        <item quantity="few">%1$d Odpowiedzi</item>
-        <item quantity="many">%1$d Odpowiedzi</item>
-        <item quantity="other">%1$d Odpowiedzi</item>
-    </plurals>
-	<plurals name="discussion.discussion_found_threads">
-        <item quantity="one">Znaleziono post %s</item>
-        <item quantity="few">Znaleziono %s posty</item>
-        <item quantity="many">Znaleziono %s posty</item>
-        <item quantity="other">Znaleziono %s posty</item>
-    </plurals>
 </resources>

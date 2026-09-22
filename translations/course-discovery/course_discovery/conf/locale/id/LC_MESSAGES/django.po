@@ -5,16 +5,17 @@
 # 
 # Translators:
 # Translators:
-# Brian Smith, 2025
-# Eden Huthmacher, 2025
+# Gerardo Núñez, 2026
+# Eden Huthmacher, 2026
+# Brian Smith, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-12 00:35+0000\n"
+"POT-Creation-Date: 2026-05-20 01:05+0000\n"
 "PO-Revision-Date: 2023-01-26 15:39+0000\n"
-"Last-Translator: Eden Huthmacher, 2025\n"
+"Last-Translator: Brian Smith, 2026\n"
 "Language-Team: Indonesian (https://app.transifex.com/open-edx/teams/6205/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -70,6 +71,10 @@ msgstr "Minimum effort dan Maximum effort tidak boleh sama"
 #: apps/api/serializers.py:1205
 msgid "Dictionary mapping course run IDs to boolean values"
 msgstr "Kamus pemetaan kursus mengubah ID menjadi nilai boolean"
+
+#: apps/api/serializers.py:1309
+msgid "Restriction Type cannot be empty"
+msgstr "Restriction Type cannot be empty"
 
 #: apps/api/serializers.py:1775
 msgid "Dictionary mapping course IDs to boolean values"
@@ -185,13 +190,17 @@ msgstr ""
 "Gagal melakukan perubahan kursus. URL slug ‘[{url_slug}]’ sudah digunakan. "
 "Mohon ubah bagian ini dan coba lagi."
 
-#: apps/api/views.py:58
+#: apps/api/views.py:57
 msgid "You are not permitted to access the API documentation."
 msgstr "Anda tidak diperkenankan mengakses dokumentasi API."
 
 #: apps/catalogs/models.py:17
 msgid "Catalog name"
 msgstr "Nama katalog"
+
+#: apps/catalogs/models.py:18
+msgid "Query to retrieve Course Run catalog contents"
+msgstr "Query to retrieve Course Run catalog contents"
 
 #: apps/catalogs/models.py:25
 msgid "Include archived courses"
@@ -412,6 +421,10 @@ msgstr "Termasuk kursus berjalan"
 msgid "Edit link"
 msgstr "Edit link"
 
+#: apps/course_metadata/admin.py:897
+msgid "Edit course run exclusions"
+msgstr "Edit course run exclusions"
+
 #: apps/course_metadata/admin.py:899
 msgid "(save and continue editing to create a link)"
 msgstr "(save and continue editing to create a link)"
@@ -465,6 +478,10 @@ msgstr "Belum diterbitkan"
 #: apps/course_metadata/choices.py:7
 msgid "Awaiting Review from Legal"
 msgstr "Awaiting Review from Legal"
+
+#: apps/course_metadata/choices.py:8
+msgid "Awaiting Internal Review"
+msgstr "Awaiting Internal Review"
 
 #: apps/course_metadata/choices.py:10 apps/course_metadata/choices.py:23
 #: apps/course_metadata/choices.py:101
@@ -779,6 +796,10 @@ msgstr ""
 "Use arguments from the TagCourseUUIDsConfig model instead of the command "
 "line."
 
+#: apps/course_metadata/management/commands/add_tag_to_courses.py:27
+msgid "Missing required arguments"
+msgstr "Missing required arguments"
+
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:10
 msgid "Backpopulate new-style CourseType and CourseRunType where possible."
 msgstr "Backpopulate new-style CourseType and CourseRunType where possible."
@@ -786,6 +807,11 @@ msgstr "Backpopulate new-style CourseType and CourseRunType where possible."
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:15
 msgid "CODE"
 msgstr "CODE"
+
+#: apps/course_metadata/management/commands/backpopulate_course_type.py:16
+#: apps/course_metadata/management/commands/delete_person_dups.py:33
+msgid "Short code for a partner."
+msgstr "Short code for a partner."
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:20
 #: apps/course_metadata/models.py:238 apps/course_metadata/models.py:493
@@ -887,6 +913,10 @@ msgstr ""
 msgid "Malformed argument \"{}\", should be in form of UUID:TARGET_UUID"
 msgstr "Malformed argument \"{}\", should be in form of UUID:TARGET_UUID"
 
+#: apps/course_metadata/management/commands/delete_person_dups.py:62
+msgid "Malformed argument \"{}\", UUIDs cannot be equal"
+msgstr "Malformed argument \"{}\", UUIDs cannot be equal"
+
 #: apps/course_metadata/management/commands/delete_person_dups.py:85
 msgid "Deleting"
 msgstr "Menghapus"
@@ -924,6 +954,11 @@ msgstr "Anda harus menentukan setidaknya satu orang"
 msgid "Publishing course run {key}"
 msgstr "Publishing course run {key}"
 
+#: apps/course_metadata/management/commands/publish_live_course_runs.py:28
+#, python-brace-format
+msgid "Failed to publish {key}"
+msgstr "Failed to publish {key}"
+
 #: apps/course_metadata/management/commands/publish_live_course_runs.py:31
 #, python-brace-format
 msgid "Successfully published {key}"
@@ -936,6 +971,10 @@ msgstr "Satu atau lebih sesi kursus gagal dipublikasikan."
 #: apps/course_metadata/management/commands/remove_redirects_from_courses.py:22
 msgid "Remove all redirects to all courses"
 msgstr "Remove all redirects to all courses"
+
+#: apps/course_metadata/management/commands/remove_redirects_from_courses.py:23
+msgid "Redirects to remove"
+msgstr "Redirects to remove"
 
 #: apps/course_metadata/management/commands/remove_redirects_from_courses.py:25
 msgid ""
@@ -959,6 +998,10 @@ msgstr "Path /course/{url_slug} not in use, nothing to delete"
 #, python-brace-format
 msgid "Path {url_path} not in use, nothing to delete"
 msgstr "Path {url_path} not in use, nothing to delete"
+
+#: apps/course_metadata/management/commands/unpublish_inactive_runs.py:44
+msgid "One or more courses failed to unpublish."
+msgstr "One or more courses failed to unpublish."
 
 #: apps/course_metadata/management/commands/unpublish_inactive_runs.py:50
 #, python-brace-format
@@ -1223,6 +1266,10 @@ msgstr "Nilai internasional per klik dalam dolar AS."
 msgid "Latitude"
 msgstr "Latitude"
 
+#: apps/course_metadata/models.py:1366
+msgid "Longitude"
+msgstr "Garis bujur"
+
 #: apps/course_metadata/models.py:1409
 msgid "Allowlist"
 msgstr "Allowlist"
@@ -1258,6 +1305,14 @@ msgstr "FAQ"
 #: apps/course_metadata/models.py:1504
 msgid "Total number of learners who have enrolled in this course"
 msgstr "Jumlah total peserta yang telah mendaftar di kursus ini"
+
+#: apps/course_metadata/models.py:1509
+msgid ""
+"Total number of learners who have enrolled in this course in the last 6 "
+"months"
+msgstr ""
+"Jumlah total peserta yang telah mendaftar di kursus ini dalam 6 bulan "
+"terakhir"
 
 #: apps/course_metadata/models.py:1523
 msgid "Course number format e.g CS002x, BIO1.1x, BIO1.2x"
@@ -1311,6 +1366,14 @@ msgstr "Past"
 #: apps/course_metadata/models.py:2276 apps/course_metadata/models.py:3369
 msgid "Blocked"
 msgstr "Blocked"
+
+#: apps/course_metadata/models.py:2298
+msgid ""
+"Title specific for this run of a course. Leave this value blank to default "
+"to the parent course's title."
+msgstr ""
+"Title specific for this run of a course. Leave this value blank to default "
+"to the parent course's title."
 
 #: apps/course_metadata/models.py:2307
 msgid ""
@@ -1445,6 +1508,10 @@ msgstr "The user-facing display title for this Program."
 msgid "A brief, descriptive subtitle for the Program."
 msgstr "Sebuah subjudul singkat dan deskriptif untuk Program ini."
 
+#: apps/course_metadata/models.py:3378
+msgid "A brief hook for the marketing website"
+msgstr "A brief hook for the marketing website"
+
 #: apps/course_metadata/models.py:3381
 msgid "The lifecycle status of this Program."
 msgstr "The lifecycle status of this Program."
@@ -1456,6 +1523,14 @@ msgid ""
 msgstr ""
 "If this box is not checked, courses will be ordered as in the courses select"
 " box above."
+
+#: apps/course_metadata/models.py:3408
+msgid ""
+"This field is now deprecated (ECOM-6021).Estimated number of weeks needed to"
+" complete a course run belonging to this program."
+msgstr ""
+"This field is now deprecated (ECOM-6021).Estimated number of weeks needed to"
+" complete a course run belonging to this program."
 
 #: apps/course_metadata/models.py:3434
 msgid "DEPRECATED: Use the card image field"
@@ -1475,6 +1550,10 @@ msgstr ""
 #: apps/course_metadata/models.py:3457
 msgid "Allow courses in this program to be purchased in a single transaction"
 msgstr "Izinkan kursus dalam program ini dibeli dalam satu transaksi"
+
+#: apps/course_metadata/models.py:3464
+msgid "Total number of learners who have enrolled in courses this program"
+msgstr "Jumlah total peserta yang telah mendaftar dalam kursus program ini"
 
 #: apps/course_metadata/models.py:3469
 msgid ""
@@ -1687,6 +1766,10 @@ msgstr "Info"
 msgid "Sitemap"
 msgstr "Sitemap"
 
+#: apps/course_metadata/models.py:4295
+msgid "User"
+msgstr "Pengguna"
+
 #: apps/course_metadata/models.py:4296
 msgid "Dollar"
 msgstr "Dollar"
@@ -1710,6 +1793,10 @@ msgstr "Trophy"
 #: apps/course_metadata/models.py:4304
 msgid "Icon FA class"
 msgstr "Icon FA class"
+
+#: apps/course_metadata/models.py:4305
+msgid "Paired text"
+msgstr "Paired text"
 
 #: apps/course_metadata/models.py:4344
 msgid "Describes the deadline (e.g. Early Admission Deadline)"
@@ -1884,15 +1971,15 @@ msgstr "Attempted to query Salesforce with no client for partner={}"
 msgid "Unable to associate a case for comments for {}"
 msgstr "Unable to associate a case for comments for {}"
 
-#: apps/course_metadata/templates/admin/course_metadata/course_run.html:37
+#: apps/course_metadata/templates/admin/course_metadata/course_run.html:24
 msgid "Cancel"
 msgstr "Batalkan"
 
-#: apps/course_metadata/templates/admin/course_metadata/course_run.html:40
+#: apps/course_metadata/templates/admin/course_metadata/course_run.html:27
 msgid "Back to Program"
 msgstr "Back to Program"
 
-#: apps/course_metadata/templates/admin/course_metadata/course_run.html:42
+#: apps/course_metadata/templates/admin/course_metadata/course_run.html:29
 msgid "Save Course Run"
 msgstr "Save Course Run"
 
@@ -1944,100 +2031,239 @@ msgstr ""
 "%(user_name)s membuat komentar berikut pada %(course_name)s %(date)s pukul "
 "%(time)s"
 
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:7
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:8
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:3
 #: apps/course_metadata/templates/course_metadata/email/go_live.html:9
 #: apps/course_metadata/templates/course_metadata/email/go_live.txt:3
 msgid "Hi Course Team,"
 msgstr "Hai Tim Kursus,"
 
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:16
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:16
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:20
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:10
 msgid ""
-"To ensure uninterrupted learner access and enrollment, please take one of "
-"the following actions:"
+"If no action is taken, the course will be automatically archived after this "
+"date. If you decide not to extend the course or create a new run at this "
+"time, please inform your dedicated Project Coordinator and share your plans."
+" This helps ensure our internal teams remain aligned and can support you "
+"effectively."
 msgstr ""
-"Untuk memastikan akses dan pendaftaran pelajar tidak terganggu, harap "
+"Jika tidak ada tindakan yang diambil, kursus akan otomatis diarsipkan "
+"setelah tanggal ini. Jika Anda memutuskan untuk tidak memperpanjang kursus "
+"atau membuat sesi baru saat ini, harap informasikan kepada Koordinator "
+"Proyek khusus Anda dan bagikan rencana Anda. Ini membantu memastikan tim "
+"internal kami tetap selaras dan dapat mendukung Anda secara efektif."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:24
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:12
+msgid ""
+"To ensure a smooth experience for our edX Learners, please take one of the "
+"following actions:"
+msgstr ""
+"Untuk memastikan pengalaman yang lancar bagi Pembelajar edX kami, harap "
 "lakukan salah satu tindakan berikut:"
 
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:23
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:18
-msgid ""
-"If this was intentional, no action is needed. However, if this course was "
-"meant to remain available, you have two options to restore access:"
-msgstr ""
-"Jika ini memang disengaja, tidak ada tindakan yang diperlukan. Namun, jika "
-"kursus ini memang dimaksudkan untuk tetap tersedia, Anda memiliki dua opsi "
-"untuk memulihkan akses:"
-
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:29
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:21
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:62
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:95
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:14
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:32
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:48
+msgid "Create a New Course Run:"
+msgstr "Buat Jalankan Kursus Baru:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:30
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:63
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:96
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:15
 msgid ""
-"Extend the current course run’s end date if the same course is meant to "
-"remain available."
+"Planning to update the content or offer the course to a new cohort? We "
+"recommend setting up a new course run in Publisher."
 msgstr ""
-"Perpanjang tanggal berakhirnya kursus saat ini jika kursus yang sama "
-"dimaksudkan untuk tetap tersedia."
+"Berencana untuk memperbarui konten atau menawarkan kursus kepada angkatan "
+"baru? Kami merekomendasikan untuk menjalankan kursus baru di Publisher."
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:31
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:22
-msgid ""
-"Create a new course run if you are planning to offer this course again with "
-"updated content, pacing, or a new cohort of learners."
-msgstr ""
-"Buat kursus baru jika Anda berencana menawarkan kursus ini lagi dengan "
-"konten yang diperbarui, kecepatan, atau kelompok pelajar baru."
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:64
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:97
+msgid "You can get started"
+msgstr "Anda bisa memulai"
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:32
-msgid "Visit the Course in Publisher"
-msgstr "Kunjungi Kursus di Publisher"
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:39
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:65
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:72
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:98
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:105
+msgid "here"
+msgstr "here"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:36
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:69
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:102
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:18
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:35
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:51
+msgid "Extend the Course End Date:"
+msgstr "Perpanjang Tanggal Akhir Kursus:"
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:37
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:25
-msgid "You can review and modify the course end settings here:"
-msgstr "Anda dapat meninjau dan mengubah pengaturan akhir kursus di sini:"
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:70
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:103
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:19
+msgid ""
+"If the content is still relevant, you can extend the course end date in "
+"Studio."
+msgstr ""
+"Jika konten masih relevan, Anda dapat memperpanjang tanggal berakhir kursus "
+"di Studio."
 
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:47
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:34
-msgid "Thanks"
-msgstr "Terima kasih"
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:38
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:71
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:104
+msgid "Simply visit the Schedule and Details tab"
+msgstr "Cukup kunjungi tab Jadwal dan Detail"
 
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:6
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:46
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:24
 #, python-format
 msgid ""
 "\n"
-"This is an automated reminder that the course \"%(course_name)s\" (Course Key: %(course_key)s) is scheduled to end in %(days)s on %(course_end_date)s.\n"
+"Our records indicate that the course \"%(course_name)s\" (Course Key: %(course_key)s) is scheduled to end in 7 days on %(course_end_date)s. Despite previous reminders, we’ve noticed that no action has been taken yet.\n"
 msgstr ""
 "\n"
-"```\n"
-"Ini adalah pengingat otomatis bahwa kursus \"%(course_name)s\" (Kunci Kursus: %(course_key)s) dijadwalkan berakhir dalam %(days)s pada %(course_end_date)s.\n"
-"```\n"
+"Catatan kami menunjukkan bahwa kursus \"%(course_name)s\" (Kunci Kursus: %(course_key)s) dijadwalkan berakhir dalam 7 hari pada %(course_end_date)s. Meskipun sudah ada pengingat sebelumnya, kami melihat bahwa belum ada tindakan yang diambil.\n"
 
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:10
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:52
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:85
+msgid "Important:"
+msgstr "Penting:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:53
+msgid ""
+"If no action is taken, the course will be automatically archived after the "
+"current end date. If you choose not to extend or create a new course run at "
+"this time, you must inform your dedicated Project Coordinator with your "
+"reasons. This will ensure our internal teams are properly informed about "
+"your plans."
+msgstr ""
+"Jika tidak ada tindakan yang diambil, kursus akan otomatis diarsipkan "
+"setelah tanggal berakhir saat ini. Jika Anda memilih untuk tidak "
+"memperpanjang atau membuat kursus baru saat ini, Anda harus memberi tahu "
+"Koordinator Proyek khusus Anda beserta alasannya. Ini akan memastikan tim "
+"internal kami mendapatkan informasi yang tepat mengenai rencana Anda."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:57
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:30
+msgid ""
+"To prevent disruption to learner access, please choose one of the following "
+"options:"
+msgstr ""
+"Untuk mencegah gangguan akses bagi peserta didik, silakan pilih salah satu "
+"opsi berikut:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:79
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:40
 #, python-format
 msgid ""
 "\n"
-"This is an automated reminder that the course \"%(course_name)s\" (Course Key: %(course_key)s) has officially ended as of %(course_end_date)s.\n"
+"Our records show that the course \"%(course_name)s\" (Course Key: %(course_key)s) officially ended on %(course_end_date)s and has now entered the archived state. Despite our previous reminders, it appears no action has been taken yet.\n"
 msgstr ""
 "\n"
-"```\n"
-"Ini adalah pengingat otomatis bahwa kursus \"%(course_name)s\" (Kunci Kursus: %(course_key)s) telah resmi berakhir pada %(course_end_date)s.\n"
-"```\n"
+"Catatan kami menunjukkan bahwa kursus \"%(course_name)s\" (Kunci Kursus: %(course_key)s) secara resmi berakhir pada %(course_end_date)s dan kini telah memasuki status arsip. Meskipun kami telah memberikan pengingat sebelumnya, tampaknya belum ada tindakan yang diambil.\n"
 
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:23
-msgid "Visit the Course in Publisher:"
-msgstr "Kunjungi Kursus di Publisher:"
-
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:29
-#, python-format
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:86
 msgid ""
-"\n"
-"If no action is taken, the course will no longer be available for enrollment or access by learners on %(partner_marketing_site_url)s after the end date.\n"
+"If you decide not to extend the course or create a new course run at this "
+"time, you must inform your dedicated Project Coordinator with the reasons "
+"behind this. This will help ensure our internal teams are fully updated on "
+"your plans for the course."
 msgstr ""
-"\n"
-"\n"
-"Jika tidak ada tindakan yang diambil, kursus tidak akan lagi tersedia untuk pendaftaran atau akses oleh peserta didik di %(partner_marketing_site_url)s setelah tanggal berakhir.\n"
-"\n"
+"Jika Anda memutuskan untuk tidak memperpanjang kursus atau membuat "
+"pelaksanaan kursus baru saat ini, Anda harus memberi tahu Koordinator Proyek"
+" khusus Anda beserta alasannya. Ini akan membantu memastikan tim internal "
+"kami sepenuhnya mengetahui rencana Anda untuk kursus tersebut."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:90
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:46
+msgid ""
+"If you wish to keep this course active, please choose one of the following "
+"options:"
+msgstr ""
+"Jika Anda ingin kursus ini tetap aktif, silakan pilih salah satu opsi "
+"berikut:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:112
+msgid "NOTE:"
+msgstr "NOTE:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:113
+msgid ""
+"This email address isn’t monitored for replies. If you have any questions or"
+" need assistance, please reach out to your dedicated Project Coordinator."
+msgstr ""
+"Alamat email ini tidak dipantau untuk balasan. Jika Anda memiliki pertanyaan"
+" atau membutuhkan bantuan, silakan hubungi Koordinator Proyek khusus Anda."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:117
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:58
+msgid "Thank you for your attention to this—looking forward to your updates!"
+msgstr ""
+"Terima kasih atas perhatian Anda—kami menantikan kabar terbaru dari Anda!"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:121
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:60
+msgid "Best,"
+msgstr "Terbaik,"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:122
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:61
+msgid "edX Operational Team"
+msgstr "Tim Operasional edX"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:16
+msgid "You can get started here:"
+msgstr "Anda bisa memulai di sini:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:20
+msgid "Simply visit the Schedule and Details tab here:"
+msgstr "Cukup kunjungi tab Jadwal dan Detail di sini:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:28
+msgid ""
+"Important: If no action is taken, the course will be automatically archived "
+"after the current end date. If you choose not to extend or create a new "
+"course run at this time, you must inform your dedicated Project Coordinator "
+"with your reasons. This will ensure our internal teams are properly informed"
+" about your plans."
+msgstr ""
+"Penting: Jika tidak ada tindakan yang diambil, kursus akan otomatis "
+"diarsipkan setelah tanggal berakhir saat ini. Jika Anda memilih untuk tidak "
+"memperpanjang atau membuat pelaksanaan kursus baru saat ini, Anda harus "
+"memberitahukan alasan Anda kepada Koordinator Proyek khusus Anda. Ini akan "
+"memastikan tim internal kami mendapatkan informasi yang benar tentang "
+"rencana Anda."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:44
+msgid ""
+"Important: If you decide not to extend the course or create a new course run"
+" at this time, you must inform your dedicated Project Coordinator with the "
+"reasons behind this. This will help ensure our internal teams are fully "
+"updated on your plans for the course."
+msgstr ""
+"Penting: Jika Anda memutuskan untuk tidak memperpanjang kursus atau membuat "
+"pelaksanaan kursus baru saat ini, Anda harus memberi tahu Koordinator Proyek"
+" khusus Anda beserta alasannya. Ini akan membantu memastikan tim internal "
+"kami sepenuhnya mengetahui rencana Anda untuk kursus tersebut."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:56
+msgid ""
+"NOTE: This email address isn’t monitored for replies. If you have any "
+"questions or need assistance, please reach out to your dedicated Project "
+"Coordinator."
+msgstr ""
+"CATATAN: Alamat email ini tidak dipantau untuk balasan. Jika Anda memiliki "
+"pertanyaan atau membutuhkan bantuan, silakan hubungi Koordinator Proyek "
+"khusus Anda."
 
 #: apps/course_metadata/templates/course_metadata/email/go_live.html:17
 #: apps/course_metadata/templates/course_metadata/email/go_live.txt:7
@@ -2159,6 +2385,17 @@ msgstr ""
 "Note: Alamat email ini tidak menerima balasan. Untuk pertanyaan atau "
 "komentar, silakan hubungi Koordinator Proyek Anda:"
 
+#: apps/course_metadata/templates/course_metadata/email/reviewed.html:15
+#, python-brace-format
+msgid ""
+"The {link_start}{course_page_url}{link_middle}{course_run_number} course "
+"run{link_end} of {course_name} has been reviewed and approved by "
+"{platform_name}."
+msgstr ""
+"The {link_start}{course_page_url}{link_middle}{course_run_number} course "
+"run{link_end} of {course_name} has been reviewed and approved by "
+"{platform_name}."
+
 #: apps/course_metadata/templates/course_metadata/email/reviewed.html:22
 #: apps/course_metadata/templates/course_metadata/email/reviewed.txt:12
 #, python-format
@@ -2254,6 +2491,10 @@ msgstr "{0} tag is not allowed"
 #, python-brace-format
 msgid "{0} attribute is not allowed on the {1} tag"
 msgstr "{0} attribute is not allowed on the {1} tag"
+
+#: apps/course_metadata/views.py:38
+msgid "Update excluded course runs"
+msgstr "Update excluded course runs"
 
 #: apps/course_metadata/views.py:45
 msgid "The program was changed successfully."

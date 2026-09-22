@@ -22,27 +22,11 @@
         <item quantity="other">%1$d Tugas yang Telah Jatuh Tempo</item>
     </plurals>
 
-	<string name="downloads.downloads">Unduhan</string>
-	<string name="downloads.downloads_download_course">Unduh kursus</string>
-	<string name="downloads.downloads_remove_course_downloads">Hapus unduhan kursus</string>
-	<string name="downloads.downloads_cancel_download">Batal unduh</string>
-	<string name="downloads.downloads_empty_state_title">Tidak Ada Kursus dengan Konten yang Dapat Diunduh</string>
-	<string name="downloads.downloads_empty_state_description">Saat ini Anda tidak memiliki kursus dengan konten yang dapat diunduh.</string>
-	<string name="downloads.downloaded_downloaded_size">%1$s telah diunduh</string>
-	<string name="downloads.downloaded_available_size">%1$s tersedia</string>
-	<string name="downloads.downloads_accessibility_stop_downloading_course">Berhenti mengunduh kursus</string>
-	<string name="downloads.downloads_loading_course_structure">Memuat struktur kursus…</string>
-
-	<string name="app.app_navigation_discovery">Menemukan</string>
-	<string name="app.app_navigation_learn">Mempelajari</string>
-	<string name="app.app_navigation_profile">Profil</string>
-	<string name="app.app_navigation_dates">Tanggal</string>
-	<string name="app.app_navigation_downloads">Unduhan</string>
-
 	<string name="auth.auth_forgot_password">Lupa sandi\?</string>
 	<string name="auth.auth_email">Email</string>
 	<string name="auth.auth_invalid_email">Email tidak valid</string>
 	<string name="auth.auth_invalid_password">Sandi terlalu pendek</string>
+	<string name="auth.auth_social_account_not_registered">Akun %1$s ini tidak terhubung dengan akun %2$s mana pun. Silakan mendaftar.</string>
 	<string name="auth.auth_welcome_back">Selamat Datang kembali! Masuk untuk mengakses kursus Anda.</string>
 	<string name="auth.auth_show_optional_fields">Tampilkan bidang opsional</string>
 	<string name="auth.auth_hide_optional_fields">Sembunyikan bidang opsional</string>
@@ -60,6 +44,13 @@
 	<string name="auth.auth_agreement_signin_in">Dengan masuk ke aplikasi ini, Anda menyetujui %1$s dan %2$s dan Anda mengakui bahwa %3$s dan setiap Anggota memproses data pribadi Anda sesuai dengan %4$s.</string>
 	<string name="auth.auth_accessibility_show_password">Tampilkan sandi</string>
 	<string name="auth.auth_accessibility_hide_password">Sembunyikan sandi</string>
+
+	<string name="dates.dates_title">Tanggal</string>
+	<string name="dates.dates_empty_state_title">Tanpa Tanggal</string>
+	<string name="dates.dates_empty_state_description">Anda saat ini tidak memiliki kursus aktif dengan jadwal acara. Daftarlah ke kursus untuk melihat tanggal dan tenggat waktu penting.</string>
+	<string name="dates.dates_shift_due_date_card_title">Melewatkan Beberapa Tenggat Waktu\?</string>
+	<string name="dates.dates_shift_due_date_card_description">Jangan khawatir - geser jadwal yang kami sarankan untuk menyelesaikan tugas yang sudah jatuh tempo tanpa kehilangan kemajuan apa pun.</string>
+	<string name="dates.dates_shift_due_date">Geser Tanggal Jatuh Tempo</string>
 
 	<string name="profile.profile_full_profile">Profil lengkap</string>
 	<string name="profile.profile_limited_profile">Profil terbatas</string>
@@ -139,6 +130,68 @@
 	<string name="profile.profile_no_google_calendars">Tidak ada kalender Google yang tersedia</string>
 	<string name="profile.profile_select_calendar">Pilih kalender</string>
 	<string name="profile.profile_local_calendar_option">Kalender lokal</string>
+
+	<string name="app.app_navigation_discovery">Menemukan</string>
+	<string name="app.app_navigation_learn">Mempelajari</string>
+	<string name="app.app_navigation_profile">Profil</string>
+	<string name="app.app_navigation_dates">Tanggal</string>
+	<string name="app.app_navigation_downloads">Unduhan</string>
+
+	<string name="discussion.discussion_all_posts">Semua Postingan</string>
+	<string name="discussion.discussion_unread">Belum dibaca</string>
+	<string name="discussion.discussion_unanswered">Tidak terjawab</string>
+	<string name="discussion.discussion_posts_following">Pos yang saya ikuti</string>
+	<string name="discussion.discussion_recent_activity">Aktivitas Terbaru</string>
+	<string name="discussion.discussion_most_activity">Aktivitas Terbanyak</string>
+	<string name="discussion.discussion_most_votes">Suara terbanyak</string>
+	<string name="discussion.discussion_create_post">Buat diskusi</string>
+	<string name="discussion.discussion_create_question">Buat pertanyaan</string>
+	<string name="discussion.discussion_add_response">Tambahkan tanggapan</string>
+	<string name="discussion.discussion_last_post">Postingan terakhir: %1$s</string>
+	<string name="discussion.discussion_follow">Ikuti</string>
+	<string name="discussion.discussion_report">Laporan</string>
+	<string name="discussion.discussion_unreport">Batalkan laporan</string>
+	<string name="discussion.discussion_add_comment">Tambahkan komentar</string>
+	<string name="discussion.discussion_comments_title">Komentar</string>
+	<string name="discussion.discussion_comment_added">Komentar berhasil ditambahkan</string>
+	<string name="discussion.discussion_discussion">Diskusi</string>
+	<string name="discussion.discussion_question">Pertanyaan</string>
+	<string name="discussion.discussion_title">Judul</string>
+	<string name="discussion.discussion_follow_discussion">Ikuti diskusi ini</string>
+	<string name="discussion.discussion_follow_question">Ikuti pertanyaan ini</string>
+	<string name="discussion.discussion_search_all_posts">Cari semua postingan</string>
+	<string name="discussion.discussion_main_categories">Kategori utama</string>
+	<string name="discussion.discussion_select_post_type">Pilih jenis posting</string>
+	<string name="discussion.discussion_topic">Topik</string>
+	<string name="discussion.discussion_search_results">Hasil Pencarian</string>
+	<string name="discussion.discussion_start_typing_to_find">Mulailah mengetik untuk menemukan topiknya</string>
+	<string name="discussion.discussion_anonymous">anonim</string>
+	<string name="discussion.discussion_no_yet">Belum ada diskusi</string>
+	<string name="discussion.discussion_click_button_create_discussion">Klik tombol di bawah untuk membuat diskusi pertama kamu.</string>
+	<string name="discussion.discussion_unnamed_subcategory">Subkategori tanpa nama</string>
+	<plurals name="discussion.discussion_votes">
+        <item quantity="other">%1$d suara</item>
+    </plurals>
+	<plurals name="discussion.discussion_comments">
+        <item quantity="other">%1$d Komentar</item>
+    </plurals>
+	<plurals name="discussion.discussion_missed_posts">
+        <item quantity="other">%1$d Postingan yang terlewat</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses">
+        <item quantity="other">%1$d respons</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses_capitalized">
+        <item quantity="other">%1$d Tanggapan</item>
+    </plurals>
+	<plurals name="discussion.discussion_found_threads">
+        <item quantity="other">Ditemukan postingan %s</item>
+    </plurals>
+
+	<string name="whatsnew.whats_new_title">Apa yang baru</string>
+	<string name="whatsnew.whats_new_navigation_previous">Sebelumnya</string>
+	<string name="whatsnew.whats_new_navigation_next">Selanjutnya</string>
+	<string name="whatsnew.whats_new_navigation_done">Selesai</string>
 
 	<string name="core.core_error_invalid_grant">Kredensial tidak valid</string>
 	<string name="core.core_error_no_connection">Koneksi internet lambat atau tidak ada sama sekali</string>
@@ -279,6 +332,10 @@
 	<string name="core.core_explore_other_parts_when_reconnect_or_download">Jelajahi bagian lain dari kursus ini atau unduh ini saat Anda terhubung kembali.</string>
 	<string name="core.core_authorization">Otorisasi</string>
 	<string name="core.core_authorization_request">Silakan masuk ke sistem untuk melanjutkan pendaftaran kursus.</string>
+	<string name="core.core_sso_sign_in">Masuk dengan SSO</string>
+	<string name="core.core_sign_in_sso_heading">Mulailah hari ini untuk membangun karier Anda dengan percaya diri</string>
+	<string name="core.core_sign_in_sso_login_title">Masuk</string>
+	<string name="core.core_sign_in_sso_login_subtitle">Masuk melalui layanan satu pintu nasional</string>
 
 	<string name="course.course_you_earned_certificate">Selamat, Anda telah mendapatkan sertifikat kursus ini di \"%s\".</string>
 	<string name="course.course_view_certificate">Lihat sertifikat</string>
@@ -380,12 +437,16 @@
 	<string name="course.course_videos_caught_up">Anda sudah menonton semua video!</string>
 	<string name="course.course_assignments_caught_up">Anda sudah menyelesaikan semua tugas!</string>
 
-	<string name="dates.dates_title">Tanggal</string>
-	<string name="dates.dates_empty_state_title">Tanpa Tanggal</string>
-	<string name="dates.dates_empty_state_description">Anda saat ini tidak memiliki kursus aktif dengan jadwal acara. Daftarlah ke kursus untuk melihat tanggal dan tenggat waktu penting.</string>
-	<string name="dates.dates_shift_due_date_card_title">Melewatkan Beberapa Tenggat Waktu\?</string>
-	<string name="dates.dates_shift_due_date_card_description">Jangan khawatir - geser jadwal yang kami sarankan untuk menyelesaikan tugas yang sudah jatuh tempo tanpa kehilangan kemajuan apa pun.</string>
-	<string name="dates.dates_shift_due_date">Geser Tanggal Jatuh Tempo</string>
+	<string name="downloads.downloads">Unduhan</string>
+	<string name="downloads.downloads_download_course">Unduh kursus</string>
+	<string name="downloads.downloads_remove_course_downloads">Hapus unduhan kursus</string>
+	<string name="downloads.downloads_cancel_download">Batal unduh</string>
+	<string name="downloads.downloads_empty_state_title">Tidak Ada Kursus dengan Konten yang Dapat Diunduh</string>
+	<string name="downloads.downloads_empty_state_description">Saat ini Anda tidak memiliki kursus dengan konten yang dapat diunduh.</string>
+	<string name="downloads.downloaded_downloaded_size">%1$s telah diunduh</string>
+	<string name="downloads.downloaded_available_size">%1$s tersedia</string>
+	<string name="downloads.downloads_accessibility_stop_downloading_course">Berhenti mengunduh kursus</string>
+	<string name="downloads.downloads_loading_course_structure">Memuat struktur kursus…</string>
 
 	<string name="discovery.discovery_Discovery">Menemukan</string>
 	<string name="discovery.discovery_discovery_new">Temukan yang baru</string>
@@ -404,60 +465,4 @@
     </plurals>
 	<!-- Accessibility -->
 	<string name="discovery.discovery_accessibility_play_video">Putar video</string>
-
-	<string name="whatsnew.whats_new_title">Apa yang baru</string>
-	<string name="whatsnew.whats_new_navigation_previous">Sebelumnya</string>
-	<string name="whatsnew.whats_new_navigation_next">Selanjutnya</string>
-	<string name="whatsnew.whats_new_navigation_done">Selesai</string>
-
-	<string name="discussion.discussion_all_posts">Semua Postingan</string>
-	<string name="discussion.discussion_unread">Belum dibaca</string>
-	<string name="discussion.discussion_unanswered">Tidak terjawab</string>
-	<string name="discussion.discussion_posts_following">Pos yang saya ikuti</string>
-	<string name="discussion.discussion_recent_activity">Aktivitas Terbaru</string>
-	<string name="discussion.discussion_most_activity">Aktivitas Terbanyak</string>
-	<string name="discussion.discussion_most_votes">Suara terbanyak</string>
-	<string name="discussion.discussion_create_post">Buat diskusi</string>
-	<string name="discussion.discussion_create_question">Buat pertanyaan</string>
-	<string name="discussion.discussion_add_response">Tambahkan tanggapan</string>
-	<string name="discussion.discussion_last_post">Postingan terakhir: %1$s</string>
-	<string name="discussion.discussion_follow">Ikuti</string>
-	<string name="discussion.discussion_report">Laporan</string>
-	<string name="discussion.discussion_unreport">Batalkan laporan</string>
-	<string name="discussion.discussion_add_comment">Tambahkan komentar</string>
-	<string name="discussion.discussion_comments_title">Komentar</string>
-	<string name="discussion.discussion_comment_added">Komentar berhasil ditambahkan</string>
-	<string name="discussion.discussion_discussion">Diskusi</string>
-	<string name="discussion.discussion_question">Pertanyaan</string>
-	<string name="discussion.discussion_title">Judul</string>
-	<string name="discussion.discussion_follow_discussion">Ikuti diskusi ini</string>
-	<string name="discussion.discussion_follow_question">Ikuti pertanyaan ini</string>
-	<string name="discussion.discussion_search_all_posts">Cari semua postingan</string>
-	<string name="discussion.discussion_main_categories">Kategori utama</string>
-	<string name="discussion.discussion_select_post_type">Pilih jenis posting</string>
-	<string name="discussion.discussion_topic">Topik</string>
-	<string name="discussion.discussion_search_results">Hasil Pencarian</string>
-	<string name="discussion.discussion_start_typing_to_find">Mulailah mengetik untuk menemukan topiknya</string>
-	<string name="discussion.discussion_anonymous">anonim</string>
-	<string name="discussion.discussion_no_yet">Belum ada diskusi</string>
-	<string name="discussion.discussion_click_button_create_discussion">Klik tombol di bawah untuk membuat diskusi pertama kamu.</string>
-	<string name="discussion.discussion_unnamed_subcategory">Subkategori tanpa nama</string>
-	<plurals name="discussion.discussion_votes">
-        <item quantity="other">%1$d suara</item>
-    </plurals>
-	<plurals name="discussion.discussion_comments">
-        <item quantity="other">%1$d Komentar</item>
-    </plurals>
-	<plurals name="discussion.discussion_missed_posts">
-        <item quantity="other">%1$d Postingan yang terlewat</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses">
-        <item quantity="other">%1$d respons</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses_capitalized">
-        <item quantity="other">%1$d Tanggapan</item>
-    </plurals>
-	<plurals name="discussion.discussion_found_threads">
-        <item quantity="other">Ditemukan postingan %s</item>
-    </plurals>
 </resources>

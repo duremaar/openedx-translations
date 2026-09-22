@@ -158,12 +158,12 @@
   "frontend-app-ora.Actions.confirmDescription.deleteFile": "Це не можна скасувати",
   "frontend-app-ora.Actions.viewStep.self": "себе",
   "frontend-app-ora.Actions.viewStep.peer": "однокурсник",
-  "frontend-app-ora.Actions.viewStep.studentTraining": "",
+  "frontend-app-ora.Actions.viewStep.studentTraining": "практика",
   "frontend-app-ora.selfAssessmentView.header": "Самостійне оцінювання",
   "frontend-app-ora.peerAssessmentView.header": "Оцінюйте своїх однокурсників",
   "frontend-app-ora.studentTrainingView.header": "Тренувальне оцінювання",
   "frontend-app-ora.selfAssessmentView.responseHeader": "Ваша відповідь",
-  "frontend-app-ora.peerAssessmentView.responseHeader": "",
+  "frontend-app-ora.peerAssessmentView.responseHeader": "Відповідь однокрусника",
   "frontend-app-ora.studentTrainingView.responseHeader": "Приклад відповіді",
   "frontend-app-ora.aboutYourGrade": "Про твою оцінку:",
   "frontend-app-ora.yourFinalGrade": "Твоя остаточна оцінка: {earned}/{possible}",
@@ -236,7 +236,7 @@
   "frontend-app-ora.xblock-studio-view.schedule.startLabel": "Починай:",
   "frontend-app-ora.xblock-studio-view.schedule.dueLabel": "настала черга:",
   "frontend-app-ora.xblock-studio-view.schedule.notSetLabel": "Не встановлено",
-  "frontend-app-ora.xblock-studio-view.assessmentStepsHeader": "",
+  "frontend-app-ora.xblock-studio-view.assessmentStepsHeader": "Кроки оцінювання",
   "frontend-app-ora.xblock-studio-view.stepLabel": "Крок",
   "frontend-app-ora.xblock-studio-view.settingsHeader": "Налаштування",
   "frontend-app-ora.xblock-studio-view.textResponseLabel": "Текстова відповідь:",
@@ -277,5 +277,5 @@
   "frontend-app-ora.XBlockView.DueDateMessage.responseDue": "{step} має бути виконано на {dueDate}",
   "frontend-app-ora.XBlockView.DueDateMessage.responseWasDue": "{step} мав відбутися на {dueDate}",
   "frontend-app-ora.XBlockView.StatusRow.notReady": "Ще не готовий.",
-  "frontend-app-ora.XBlockView.StatusRow.waiting": ""
+  "frontend-app-ora.XBlockView.StatusRow.waiting": "Я чекаю."
 }

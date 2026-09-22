@@ -23,27 +23,11 @@
         <item quantity="other">%1$d Achterstallige opdrachten</item>
     </plurals>
 
-	<string name="downloads.downloads">Downloads</string>
-	<string name="downloads.downloads_download_course">Cursus downloaden</string>
-	<string name="downloads.downloads_remove_course_downloads">Downloads van cursussen verwijderen</string>
-	<string name="downloads.downloads_cancel_download">Download annuleren</string>
-	<string name="downloads.downloads_empty_state_title">Geen cursussen met downloadbare inhoud</string>
-	<string name="downloads.downloads_empty_state_description">Je hebt momenteel geen cursussen met downloadbare inhoud.</string>
-	<string name="downloads.downloaded_downloaded_size">%1$s gedownload</string>
-	<string name="downloads.downloaded_available_size">%1$s beschikbaar</string>
-	<string name="downloads.downloads_accessibility_stop_downloading_course">Stop met het downloaden van de cursus</string>
-	<string name="downloads.downloads_loading_course_structure">Cursusstructuur laden...</string>
-
-	<string name="app.app_navigation_discovery">Ontdekken</string>
-	<string name="app.app_navigation_learn">Leren</string>
-	<string name="app.app_navigation_profile">Profiel</string>
-	<string name="app.app_navigation_dates">Datums</string>
-	<string name="app.app_navigation_downloads">Downloads</string>
-
 	<string name="auth.auth_forgot_password">Wachtwoord vergeten\?</string>
 	<string name="auth.auth_email">E-mail</string>
 	<string name="auth.auth_invalid_email">Ongeldig e-mailadres</string>
 	<string name="auth.auth_invalid_password">Wachtwoord is te kort</string>
+	<string name="auth.auth_social_account_not_registered">Dit %1$s -account is aan geen enkel %2$s -account gekoppeld. Registreer alsjeblieft.</string>
 	<string name="auth.auth_welcome_back">Welkom terug! Meld u aan om toegang te krijgen tot uw cursussen.</string>
 	<string name="auth.auth_show_optional_fields">Toon optionele velden</string>
 	<string name="auth.auth_hide_optional_fields">Optionele velden verbergen</string>
@@ -61,6 +45,13 @@
 	<string name="auth.auth_agreement_signin_in">Door u aan te melden bij deze app, gaat u akkoord met de %1$s en %2$s en erkent u dat %3$s en elk lid uw persoonlijke gegevens verwerken in overeenstemming met de %4$s.</string>
 	<string name="auth.auth_accessibility_show_password">Laat wachtwoord zien</string>
 	<string name="auth.auth_accessibility_hide_password">Verberg wachtwoord</string>
+
+	<string name="dates.dates_title">Datums</string>
+	<string name="dates.dates_empty_state_title">Geen datums</string>
+	<string name="dates.dates_empty_state_description">Je hebt momenteel geen actieve cursussen met geplande evenementen. Schrijf je in voor een cursus om belangrijke datums en deadlines te bekijken.</string>
+	<string name="dates.dates_shift_due_date_card_title">Heb je deadlines gemist\?</string>
+	<string name="dates.dates_shift_due_date_card_description">Maak je geen zorgen: verschuif ons voorgestelde schema om de openstaande opdrachten te voltooien zonder enige voortgang te verliezen.</string>
+	<string name="dates.dates_shift_due_date">Verschuif vervaldatums</string>
 
 	<string name="profile.profile_full_profile">Volledig profiel</string>
 	<string name="profile.profile_limited_profile">Beperkt profiel</string>
@@ -141,6 +132,74 @@
 	<string name="profile.profile_no_google_calendars">Geen Google-agenda\'s beschikbaar</string>
 	<string name="profile.profile_select_calendar">Selecteer agenda</string>
 	<string name="profile.profile_local_calendar_option">Lokale agenda</string>
+
+	<string name="app.app_navigation_discovery">Ontdekken</string>
+	<string name="app.app_navigation_learn">Leren</string>
+	<string name="app.app_navigation_profile">Profiel</string>
+	<string name="app.app_navigation_dates">Datums</string>
+	<string name="app.app_navigation_downloads">Downloads</string>
+
+	<string name="discussion.discussion_all_posts">Alle berichten</string>
+	<string name="discussion.discussion_unread">Ongelezen</string>
+	<string name="discussion.discussion_unanswered">Onbeantwoord</string>
+	<string name="discussion.discussion_posts_following">Berichten die ik volg</string>
+	<string name="discussion.discussion_recent_activity">Recente activiteiten</string>
+	<string name="discussion.discussion_most_activity">De meeste activiteit</string>
+	<string name="discussion.discussion_most_votes">De meeste stemmen</string>
+	<string name="discussion.discussion_create_post">Creëer discussie</string>
+	<string name="discussion.discussion_create_question">Vraag maken</string>
+	<string name="discussion.discussion_add_response">Voeg een reactie toe</string>
+	<string name="discussion.discussion_last_post">Laatste bericht: %1$s</string>
+	<string name="discussion.discussion_follow">Volgen</string>
+	<string name="discussion.discussion_report">Rapport</string>
+	<string name="discussion.discussion_unreport">Melding ongedaan maken</string>
+	<string name="discussion.discussion_add_comment">Voeg een reactie toe</string>
+	<string name="discussion.discussion_comments_title">Opmerking</string>
+	<string name="discussion.discussion_comment_added">Reactie succesvol toegevoegd</string>
+	<string name="discussion.discussion_discussion">Discussie</string>
+	<string name="discussion.discussion_question">Vraag</string>
+	<string name="discussion.discussion_title">Titel</string>
+	<string name="discussion.discussion_follow_discussion">Volg deze discussie</string>
+	<string name="discussion.discussion_follow_question">Volg deze vraag</string>
+	<string name="discussion.discussion_search_all_posts">Zoek in alle berichten</string>
+	<string name="discussion.discussion_main_categories">Hoofdcategorieën</string>
+	<string name="discussion.discussion_select_post_type">Selecteer berichttype</string>
+	<string name="discussion.discussion_topic">Onderwerp</string>
+	<string name="discussion.discussion_search_results">Zoekresultaten</string>
+	<string name="discussion.discussion_start_typing_to_find">Begin met het typen om de thread te vinden</string>
+	<string name="discussion.discussion_anonymous">anoniem</string>
+	<string name="discussion.discussion_no_yet">Nog geen discussies</string>
+	<string name="discussion.discussion_click_button_create_discussion">Klik op de onderstaande knop om uw eerste discussie aan te maken.</string>
+	<string name="discussion.discussion_unnamed_subcategory">Naamloze subcategorie</string>
+	<plurals name="discussion.discussion_votes">
+        <item quantity="one">%1$d stem</item>
+        <item quantity="other">%1$d stemmen</item>
+    </plurals>
+	<plurals name="discussion.discussion_comments">
+        <item quantity="one">%1$d Reactie</item>
+        <item quantity="other">%1$d Opmerkingen</item>
+    </plurals>
+	<plurals name="discussion.discussion_missed_posts">
+        <item quantity="one">%1$d Bericht gemist</item>
+        <item quantity="other">%1$d Gemiste berichten</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses">
+        <item quantity="one">%1$d reactie</item>
+        <item quantity="other">%1$d reacties</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses_capitalized">
+        <item quantity="one">%1$d Reactie</item>
+        <item quantity="other">%1$d Reacties</item>
+    </plurals>
+	<plurals name="discussion.discussion_found_threads">
+        <item quantity="one">%s bericht gevonden</item>
+        <item quantity="other">%s berichten gevonden</item>
+    </plurals>
+
+	<string name="whatsnew.whats_new_title">Wat is er nieuw</string>
+	<string name="whatsnew.whats_new_navigation_previous">Vorig</string>
+	<string name="whatsnew.whats_new_navigation_next">Volgende</string>
+	<string name="whatsnew.whats_new_navigation_done">Klaar</string>
 
 	<string name="core.core_error_invalid_grant">Ongeldige inloggegevens</string>
 	<string name="core.core_error_no_connection">Trage of geen internetverbinding</string>
@@ -279,6 +338,10 @@
 	<string name="core.core_explore_other_parts_when_reconnect_or_download">Verken andere delen van deze cursus of download dit wanneer je weer verbinding maakt.</string>
 	<string name="core.core_authorization">Autorisatie</string>
 	<string name="core.core_authorization_request">Voer het systeem in om verder te gaan met de cursusinschrijving.</string>
+	<string name="core.core_sso_sign_in">Aanmelden met SSO</string>
+	<string name="core.core_sign_in_sso_heading">Begin vandaag om vol vertrouwen aan je carrière te bouwen</string>
+	<string name="core.core_sign_in_sso_login_title">Aanmelden</string>
+	<string name="core.core_sign_in_sso_login_subtitle">Meld je aan via de nationale uniforme aanmeldservice</string>
 
 	<string name="course.course_you_earned_certificate">Gefeliciteerd, je hebt dit cursuscertificaat behaald in \"%s\".</string>
 	<string name="course.course_view_certificate">Bekijk certificaat</string>
@@ -381,12 +444,16 @@
 	<string name="course.course_videos_caught_up">Je bent helemaal bij met video\'s!</string>
 	<string name="course.course_assignments_caught_up">Je bent helemaal bij met je opdrachten!</string>
 
-	<string name="dates.dates_title">Datums</string>
-	<string name="dates.dates_empty_state_title">Geen datums</string>
-	<string name="dates.dates_empty_state_description">Je hebt momenteel geen actieve cursussen met geplande evenementen. Schrijf je in voor een cursus om belangrijke datums en deadlines te bekijken.</string>
-	<string name="dates.dates_shift_due_date_card_title">Heb je deadlines gemist\?</string>
-	<string name="dates.dates_shift_due_date_card_description">Maak je geen zorgen: verschuif ons voorgestelde schema om de openstaande opdrachten te voltooien zonder enige voortgang te verliezen.</string>
-	<string name="dates.dates_shift_due_date">Verschuif vervaldatums</string>
+	<string name="downloads.downloads">Downloads</string>
+	<string name="downloads.downloads_download_course">Cursus downloaden</string>
+	<string name="downloads.downloads_remove_course_downloads">Downloads van cursussen verwijderen</string>
+	<string name="downloads.downloads_cancel_download">Download annuleren</string>
+	<string name="downloads.downloads_empty_state_title">Geen cursussen met downloadbare inhoud</string>
+	<string name="downloads.downloads_empty_state_description">Je hebt momenteel geen cursussen met downloadbare inhoud.</string>
+	<string name="downloads.downloaded_downloaded_size">%1$s gedownload</string>
+	<string name="downloads.downloaded_available_size">%1$s beschikbaar</string>
+	<string name="downloads.downloads_accessibility_stop_downloading_course">Stop met het downloaden van de cursus</string>
+	<string name="downloads.downloads_loading_course_structure">Cursusstructuur laden...</string>
 
 	<string name="discovery.discovery_Discovery">Ontdekken</string>
 	<string name="discovery.discovery_discovery_new">Ontdek nieuw</string>
@@ -406,66 +473,4 @@
     </plurals>
 	<!-- Accessibility -->
 	<string name="discovery.discovery_accessibility_play_video">Video afspelen</string>
-
-	<string name="whatsnew.whats_new_title">Wat is er nieuw</string>
-	<string name="whatsnew.whats_new_navigation_previous">Vorig</string>
-	<string name="whatsnew.whats_new_navigation_next">Volgende</string>
-	<string name="whatsnew.whats_new_navigation_done">Klaar</string>
-
-	<string name="discussion.discussion_all_posts">Alle berichten</string>
-	<string name="discussion.discussion_unread">Ongelezen</string>
-	<string name="discussion.discussion_unanswered">Onbeantwoord</string>
-	<string name="discussion.discussion_posts_following">Berichten die ik volg</string>
-	<string name="discussion.discussion_recent_activity">Recente activiteiten</string>
-	<string name="discussion.discussion_most_activity">De meeste activiteit</string>
-	<string name="discussion.discussion_most_votes">De meeste stemmen</string>
-	<string name="discussion.discussion_create_post">Creëer discussie</string>
-	<string name="discussion.discussion_create_question">Vraag maken</string>
-	<string name="discussion.discussion_add_response">Voeg een reactie toe</string>
-	<string name="discussion.discussion_last_post">Laatste bericht: %1$s</string>
-	<string name="discussion.discussion_follow">Volgen</string>
-	<string name="discussion.discussion_report">Rapport</string>
-	<string name="discussion.discussion_unreport">Melding ongedaan maken</string>
-	<string name="discussion.discussion_add_comment">Voeg een reactie toe</string>
-	<string name="discussion.discussion_comments_title">Opmerking</string>
-	<string name="discussion.discussion_comment_added">Reactie succesvol toegevoegd</string>
-	<string name="discussion.discussion_discussion">Discussie</string>
-	<string name="discussion.discussion_question">Vraag</string>
-	<string name="discussion.discussion_title">Titel</string>
-	<string name="discussion.discussion_follow_discussion">Volg deze discussie</string>
-	<string name="discussion.discussion_follow_question">Volg deze vraag</string>
-	<string name="discussion.discussion_search_all_posts">Zoek in alle berichten</string>
-	<string name="discussion.discussion_main_categories">Hoofdcategorieën</string>
-	<string name="discussion.discussion_select_post_type">Selecteer berichttype</string>
-	<string name="discussion.discussion_topic">Onderwerp</string>
-	<string name="discussion.discussion_search_results">Zoekresultaten</string>
-	<string name="discussion.discussion_start_typing_to_find">Begin met het typen om de thread te vinden</string>
-	<string name="discussion.discussion_anonymous">anoniem</string>
-	<string name="discussion.discussion_no_yet">Nog geen discussies</string>
-	<string name="discussion.discussion_click_button_create_discussion">Klik op de onderstaande knop om uw eerste discussie aan te maken.</string>
-	<string name="discussion.discussion_unnamed_subcategory">Naamloze subcategorie</string>
-	<plurals name="discussion.discussion_votes">
-        <item quantity="one">%1$d stem</item>
-        <item quantity="other">%1$d stemmen</item>
-    </plurals>
-	<plurals name="discussion.discussion_comments">
-        <item quantity="one">%1$d Reactie</item>
-        <item quantity="other">%1$d Opmerkingen</item>
-    </plurals>
-	<plurals name="discussion.discussion_missed_posts">
-        <item quantity="one">%1$d Bericht gemist</item>
-        <item quantity="other">%1$d Gemiste berichten</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses">
-        <item quantity="one">%1$d reactie</item>
-        <item quantity="other">%1$d reacties</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses_capitalized">
-        <item quantity="one">%1$d Reactie</item>
-        <item quantity="other">%1$d Reacties</item>
-    </plurals>
-	<plurals name="discussion.discussion_found_threads">
-        <item quantity="one">%s bericht gevonden</item>
-        <item quantity="other">%s berichten gevonden</item>
-    </plurals>
 </resources>

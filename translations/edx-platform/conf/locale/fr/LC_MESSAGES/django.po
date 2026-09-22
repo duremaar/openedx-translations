@@ -5,12 +5,13 @@
 # 
 # Translators:
 # moocit-france <contact@moocit.fr>, 2025
-# Transifex Bot <>, 2025
 # Omar Al-Ithawi <i@omardo.com>, 2025
 # edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2026
 # Gerardo Núñez, 2026
 # Eden Huthmacher, 2026
 # Brian Smith, 2026
+# Maxime Boissonneault, 2026
+# Transifex Bot <>, 2026
 # 
 msgid ""
 msgstr ""
@@ -18,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
 "PO-Revision-Date: 2023-11-20 11:35+0000\n"
-"Last-Translator: Brian Smith, 2026\n"
+"Last-Translator: Transifex Bot <>, 2026\n"
 "Language-Team: French (https://app.transifex.com/open-edx/teams/6205/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1742,18 +1743,24 @@ msgstr "Autre formation"
 #: common/djangoapps/student/models/user.py:1365
 #, python-brace-format
 msgid "{platform_name} Honor Code Certificate for {course_name}"
-msgstr "{platform_name} Certificat code d'honneur pour {course_name}"
+msgstr ""
+"Certificat code d'honneur de la plateforme {platform_name} pour le cours "
+"{course_name}"
 
 #: common/djangoapps/student/models/user.py:1366
 #, python-brace-format
 msgid "{platform_name} Verified Certificate for {course_name}"
-msgstr "{platform_name} Certificat vérifié pour {course_name}"
+msgstr ""
+"Certificat vérifié de la plateforme  {platform_name}  pour le cours "
+"{course_name}"
 
 #: common/djangoapps/student/models/user.py:1367
 #: common/djangoapps/student/models/user.py:1368
 #, python-brace-format
 msgid "{platform_name} Professional Certificate for {course_name}"
-msgstr "{platform_name} Certificat professionnel pour {course_name}"
+msgstr ""
+"Certificat professionnel de la plateforme  {platform_name}  pour le cours  "
+"{course_name}"
 
 #: common/djangoapps/student/models/user.py:1374
 msgid ""
@@ -1768,7 +1775,8 @@ msgstr ""
 #: common/djangoapps/student/models/user.py:1447
 #, python-brace-format
 msgid "{platform_name} Certificate for {course_name}"
-msgstr "{platform_name} Certificat pour {course_name}"
+msgstr ""
+"Certificat de la plateforme {platform_name} pour le cours {course_name}"
 
 #: common/djangoapps/student/models/user.py:1540
 #: common/djangoapps/student/models/user.py:1572
@@ -3306,7 +3314,7 @@ msgstr "Politique d&#39;accessibilité"
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:331
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:1082
 msgid "Terms of Service"
-msgstr "Conditions d&#39;utilisation"
+msgstr "Conditions d'utilisation"
 
 #: lms/djangoapps/branding/api.py:334 lms/djangoapps/branding/api.py:409
 msgid "Sitemap"
@@ -3637,8 +3645,9 @@ msgid ""
 "successfully completed, received a passing grade, and was awarded this "
 "{platform_name} {certificate_type} Certificate of Completion in "
 msgstr ""
-"bien terminé, a reçu une note de passage et a obtenu ce {platform_name} "
-"{certificate_type} Certificat d&#39;achèvement en "
+"a complété avec succès, a reçu une note de passage, et a reçu une "
+"attestation de complétion de type {certificate_type}sur la "
+"plateforme{platform_name} "
 
 #. Translators: This text describes the purpose (and therefore, value) of a
 #. course certificate
@@ -3694,7 +3703,7 @@ msgstr "Publié le:"
 #. each individual certificate
 #: lms/djangoapps/certificates/views/webview.py:204
 msgid "Certificate ID Number"
-msgstr "Numéro d'identité du certificat"
+msgstr "Numéro du certificat"
 
 #: lms/djangoapps/certificates/views/webview.py:206
 #, python-brace-format
@@ -3763,7 +3772,7 @@ msgstr "Contactez {platform_name}"
 #: lms/djangoapps/certificates/views/webview.py:238
 #, python-brace-format
 msgid "{platform_name} acknowledges the following student accomplishment"
-msgstr "{platform_name} reconnaissent la réalisation suivante des apprenants"
+msgstr "{platform_name} reconnaît la réalisation suivante des apprenants"
 
 #. Translators:  This text represents the description of course
 #: lms/djangoapps/certificates/views/webview.py:256
@@ -3772,14 +3781,14 @@ msgid ""
 "a course of study offered by {partner_short_name}, an online learning "
 "initiative of {partner_long_name}."
 msgstr ""
-"un programme d'études proposé par {partner_short_name}, une initiative "
-"d'apprentissage en ligne de {partner_long_name}."
+"un cours offert par {partner_short_name}, une initiative de cours en ligne "
+"de {partner_long_name}."
 
 #. Translators:  This text represents the description of course
 #: lms/djangoapps/certificates/views/webview.py:264
 #, python-brace-format
 msgid "a course of study offered by {partner_short_name}."
-msgstr "un programme d&#39;études proposé par {partner_short_name}."
+msgstr "un cours offert par {partner_short_name}."
 
 #: lms/djangoapps/certificates/views/webview.py:279
 #, python-brace-format
@@ -5238,7 +5247,7 @@ msgstr "Nom D'utilisateur"
 #: openedx/core/djangoapps/user_authn/views/password_reset.py:90
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:506
 msgid "Email"
-msgstr "E-mail"
+msgstr "Courriel"
 
 #: lms/djangoapps/instructor/views/api.py:1500
 msgid "Language"
@@ -5826,10 +5835,6 @@ msgid_plural "{num_emails} failed"
 msgstr[0] "{num_emails} a échoué"
 msgstr[1] "{num_emails} a échoué"
 msgstr[2] "{num_emails} a échoué"
-
-#: lms/djangoapps/instructor/views/instructor_task_helpers.py:140
-msgid "Complete"
-msgstr "Complet"
 
 #: lms/djangoapps/instructor/views/instructor_task_helpers.py:140
 msgid "Incomplete"
@@ -10676,7 +10681,7 @@ msgstr "L'e-mail ne peut pas contenir plus de %(limit_value)s caractères."
 
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:193
 msgid "You must accept the terms of service."
-msgstr "Vous devez accepter les conditions de service."
+msgstr "Vous devez accepter les conditions d'utilisation."
 
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:197
 msgid "A level of education is required"
@@ -10806,7 +10811,8 @@ msgstr ""
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:1098
 #, python-brace-format
 msgid "You must agree to the {platform_name} {terms_of_service}"
-msgstr "Vous devez accepter les {terms_of_service} de {platform_name}"
+msgstr ""
+"Vous devez accepter les {terms_of_service} de la plateforme {platform_name}"
 
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:1045
 #, python-brace-format
@@ -11601,7 +11607,7 @@ msgstr "Incorrect:"
 #: xmodule/capa/responsetypes.py:410 xmodule/capa_block.py:760
 #: xmodule/capa_block.py:777
 msgid "Answer"
-msgstr "Répondre"
+msgstr "Réponse"
 
 #: xmodule/capa/responsetypes.py:491
 #, python-brace-format

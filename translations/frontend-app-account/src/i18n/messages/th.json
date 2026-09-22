@@ -1,5 +1,4 @@
 {
-  "account.settings.message.duplicate.tpa.provider": "บัญชีผู้ใช้ {provider} ที่คุณเลือกถูกเชื่อมโยงเข้ากับบัญชีผู้ใช้อื่นของ {siteName}",
   "account.settings.message.managed.settings": "การตั้งค่าโปรไฟล์ของคุณถูกจัดการโดย {managerTitle} กรุณาติดต่อผู้ดูแล {support} เพื่อขอความช่วยเหลือ",
   "account.settings.message.managed.settings.support": "สนับสนุน",
   "account.settings.page.heading": "การตั้งค่าบัญชีผู้ใช้",
@@ -254,7 +253,7 @@
   "id.verification.context.loading.state": "กำลังโหลดสถานะการตรวจสอบ",
   "notification.preference.heading": "การแจ้งเตือน",
   "notification.preference.app.title": "",
-  "notification.preference.title": "{ text, select, groupedNotification {การแจ้งเตือนกิจกรรม} newDiscussionPost {โพสต์การสนทนาใหม่} newQuestionPost {โพสต์คำถามใหม่} contentReported {เนื้อหาที่รายงาน} courseUpdates {การอัปเดตหลักสูตร} oraStaffNotifications {การส่ง ORA ใหม่สำหรับการให้คะแนนพนักงาน} oraGradeAssigned {ได้รับเกรดการมอบหมายเรียงความ} newInstructorAllLearnersPost {โพสต์ใหม่จากผู้สอน} other {{text}} }",
+  "notification.preference.title": "",
   "notification.preference.channel": "",
   "notification.preference.emailCadence": "{ ข้อความ เลือก รายวัน {Daily} รายสัปดาห์ {Weekly} ทันที {Immediately} อื่นๆ {{text}} }",
   "notification.preference.type.label": "ประเภท",
@@ -264,7 +263,7 @@
   "notification.preference.load.more.courses": "โหลดหลักสูตรเพิ่มเติม",
   "notification.preference.guide.link": "ตามรายละเอียดที่นี่",
   "notification.preference.guide.body": "การแจ้งเตือนสำหรับกิจกรรมบางอย่างจะเปิดใช้งานตามค่าเริ่มต้น",
-  "notification.cadence.description": "การแจ้งเตือนทางอีเมลรายวันจะถูกส่งในเวลา {dailyTime} การแจ้งเตือนทางอีเมลรายสัปดาห์จะถูกส่งทุกวันอาทิตย์ในเวลา {weeklyTime}",
+  "notification.cadence.description": "",
   "notification.default.info": "การแจ้งเตือนสำหรับกิจกรรมบางอย่างจะเปิดใช้งานตามค่าเริ่มต้น ดังรายละเอียดที่นี่",
   "notification.dropdown.label": "เลือกการแจ้งเตือนสำหรับ",
   "notification.dropdown.applies": "ใช้ได้กับทุกหลักสูตร",

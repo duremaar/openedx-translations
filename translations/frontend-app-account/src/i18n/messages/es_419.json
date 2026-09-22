@@ -1,5 +1,4 @@
 {
-  "account.settings.message.duplicate.tpa.provider": "La cuenta de {provider} seleccionada ya está vinculada con otra cuenta de {siteName}. ",
   "account.settings.message.managed.settings": "Los ajustes en el perfil son administrados por {managerTitle}. Contacte su administrador o {support} para obtener ayuda.",
   "account.settings.message.managed.settings.support": "soporte",
   "account.settings.page.heading": "Configuración de cuenta",
@@ -254,7 +253,7 @@
   "id.verification.context.loading.state": "Cargando estado de verificación",
   "notification.preference.heading": "Notificaciones",
   "notification.preference.app.title": "{ key, select, discussion {Discussions} coursework {Course Work} updates {Updates} grading {Grading} other {{key}} }",
-  "notification.preference.title": "{ text, select, groupedNotification {Notificaciones de actividad} newDiscussionPost {Nuevas publicaciones de discusiones} newQuestionPost {Nuevas publicaciones de preguntas} contentReported {Contenido reportado} courseUpdates {Actualizaciones del curso} oraStaffNotifications {Nueva entrega de ORA para calificación del personal} oraGradeAssigned {Calificación recibida de la asignación de ensayo} newInstructorAllLearnersPost {Nuevas publicaciones de instructores} other {{text}} }",
+  "notification.preference.title": "{ text, select, groupedNotification {Notificaciones de actividad} newDiscussionPost {Nuevas publicaciones de discusiones} newQuestionPost {Nuevas publicaciones de preguntas} contentReported {Contenido reportado} courseUpdates {Actualizaciones del curso} oraStaffNotifications {Nueva entrega de ORA para calificación del personal} oraGradeAssigned {Calificación recibida de la asignación de ensayo} newInstructorAllLearnersPost {Nuevas publicaciones de instructores} oraReminder {Recordatorios de asignación de ensayo} other {{text}} }",
   "notification.preference.channel": "{ text, select, web {Web} email {Email} push {Push} other {{text}} }",
   "notification.preference.emailCadence": "{ text, select, Daily {Daily} Weekly {Weekly} Immediately {Immediately} other {{text}} }",
   "notification.preference.type.label": "Tipo",
@@ -264,7 +263,7 @@
   "notification.preference.load.more.courses": "Cargar más cursos",
   "notification.preference.guide.link": "como se detalla aquí",
   "notification.preference.guide.body": "Las notificaciones para determinadas actividades están habilitadas de forma predeterminada,",
-  "notification.cadence.description": "Las notificaciones diarias por correo electrónico se envían a las {dailyTime}. Las notificaciones semanales por correo electrónico se envían todos los domingos a las {weeklyTime}.",
+  "notification.cadence.description": "",
   "notification.default.info": "Las notificaciones para ciertas actividades están habilitadas por defecto, como se detalla aquí",
   "notification.dropdown.label": "Seleccionar notificaciones para",
   "notification.dropdown.applies": "Aplica a todos los cursos",

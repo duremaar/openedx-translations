@@ -24,27 +24,11 @@
         <item quantity="other">%1$d מטלות שעברו</item>
     </plurals>
 
-	<string name="downloads.downloads">הורדות</string>
-	<string name="downloads.downloads_download_course">להוריד קורס</string>
-	<string name="downloads.downloads_remove_course_downloads">הסר הורדות קורס</string>
-	<string name="downloads.downloads_cancel_download">ביטול להוריד</string>
-	<string name="downloads.downloads_empty_state_title">אין קורסים עם תוכן להורדה</string>
-	<string name="downloads.downloads_empty_state_description">כרגע אין לך קורסים עם תוכן להורדה.</string>
-	<string name="downloads.downloaded_downloaded_size">%1$s הורד</string>
-	<string name="downloads.downloaded_available_size">%1$s זמין</string>
-	<string name="downloads.downloads_accessibility_stop_downloading_course">הפסק להוריד את הקורס</string>
-	<string name="downloads.downloads_loading_course_structure">טוען מבנה הקורס...</string>
-
-	<string name="app.app_navigation_discovery">לְגַלוֹת</string>
-	<string name="app.app_navigation_learn">לִלמוֹד</string>
-	<string name="app.app_navigation_profile">פרופיל</string>
-	<string name="app.app_navigation_dates">תאריכים</string>
-	<string name="app.app_navigation_downloads">הורדות</string>
-
 	<string name="auth.auth_forgot_password">שכחת סיסמה\?</string>
 	<string name="auth.auth_email">דוא\"ל</string>
 	<string name="auth.auth_invalid_email">אימייל שגוי</string>
 	<string name="auth.auth_invalid_password">הסיסמה קצרה מדי</string>
+	<string name="auth.auth_social_account_not_registered">חשבון %1$s זה אינו מקושר לשום חשבון %2$s . נא להירשם.</string>
 	<string name="auth.auth_welcome_back">ברוך בואך! כניסה כדי לגשת לקורסים שלך.</string>
 	<string name="auth.auth_show_optional_fields">הצג שדות אופציונליים</string>
 	<string name="auth.auth_hide_optional_fields">הסתר שדות אופציונליים</string>
@@ -62,6 +46,13 @@
 	<string name="auth.auth_agreement_signin_in">על ידי כניסה לאפליקציה זו, אתה מסכים ל- %1$s ו- %2$s ואתה מאשר ש- %3$s וכל חבר מעבד את הנתונים האישיים שלך בהתאם ל- %4$s .</string>
 	<string name="auth.auth_accessibility_show_password">הצג סיסמה</string>
 	<string name="auth.auth_accessibility_hide_password">הסתר סיסמא</string>
+
+	<string name="dates.dates_title">תאריכים</string>
+	<string name="dates.dates_empty_state_title">אין תאריכים</string>
+	<string name="dates.dates_empty_state_description">אין לך כרגע קורסים פעילים עם אירועים מתוזמנים. הירשם לקורס כדי לצפות בתאריכים ובמועדים חשובים.</string>
+	<string name="dates.dates_shift_due_date_card_title">פספסת כמה מועדים\?</string>
+	<string name="dates.dates_shift_due_date_card_description">אל דאגה - הזיזו את לוח הזמנים המוצע שלנו כדי להשלים את המטלות שבפיגור מבלי לאבד כל התקדמות.</string>
+	<string name="dates.dates_shift_due_date">שינוי תאריך יעד</string>
 
 	<string name="profile.profile_full_profile">פרופיל מלא</string>
 	<string name="profile.profile_limited_profile">פרופיל מוגבל</string>
@@ -142,6 +133,80 @@
 	<string name="profile.profile_no_google_calendars">אין לוחות שנה של Google זמינים</string>
 	<string name="profile.profile_select_calendar">בחר לוח שנה</string>
 	<string name="profile.profile_local_calendar_option">לוח שנה מקומי</string>
+
+	<string name="app.app_navigation_discovery">לְגַלוֹת</string>
+	<string name="app.app_navigation_learn">לִלמוֹד</string>
+	<string name="app.app_navigation_profile">פרופיל</string>
+	<string name="app.app_navigation_dates">תאריכים</string>
+	<string name="app.app_navigation_downloads">הורדות</string>
+
+	<string name="discussion.discussion_all_posts">כל הפוסטים</string>
+	<string name="discussion.discussion_unread">לא נקרא</string>
+	<string name="discussion.discussion_unanswered">לא נענה</string>
+	<string name="discussion.discussion_posts_following">פוסטים שאני עוקבת אחריהם</string>
+	<string name="discussion.discussion_recent_activity">פעילות אחרונה</string>
+	<string name="discussion.discussion_most_activity">הכי הרבה פעילות</string>
+	<string name="discussion.discussion_most_votes">רוב ההצבעות</string>
+	<string name="discussion.discussion_create_post">צור דיונים</string>
+	<string name="discussion.discussion_create_question">צור שאלה</string>
+	<string name="discussion.discussion_add_response">הוסף תגובה</string>
+	<string name="discussion.discussion_last_post">הודעה אחרונה: %1$s</string>
+	<string name="discussion.discussion_follow">עקוב</string>
+	<string name="discussion.discussion_report">דווח</string>
+	<string name="discussion.discussion_unreport">בטל דיווח</string>
+	<string name="discussion.discussion_add_comment">הוסף הערה</string>
+	<string name="discussion.discussion_comments_title">הערה</string>
+	<string name="discussion.discussion_comment_added">הערה נוספה בהצלחה</string>
+	<string name="discussion.discussion_discussion">דיונים</string>
+	<string name="discussion.discussion_question">שאלה</string>
+	<string name="discussion.discussion_title">כותרת</string>
+	<string name="discussion.discussion_follow_discussion">עקבו אחר הדיונים הזה</string>
+	<string name="discussion.discussion_follow_question">עקוב אחר זה השאלה הזו</string>
+	<string name="discussion.discussion_search_all_posts">חפש בכל הפוסטים</string>
+	<string name="discussion.discussion_main_categories">קטגוריות ראשיות</string>
+	<string name="discussion.discussion_select_post_type">בחר סוג פוסט</string>
+	<string name="discussion.discussion_topic">נושא</string>
+	<string name="discussion.discussion_search_results">תוצאות חיפוש</string>
+	<string name="discussion.discussion_start_typing_to_find">התחל להקליד כדי למצוא את אשכול הדיון</string>
+	<string name="discussion.discussion_anonymous">אנונימי</string>
+	<string name="discussion.discussion_no_yet">עדיין אין דיונים</string>
+	<string name="discussion.discussion_click_button_create_discussion">לחץ על הכפתור למטה כדי ליצור את הדיון הראשון שלך.</string>
+	<string name="discussion.discussion_unnamed_subcategory">קטגוריית משנה ללא שם</string>
+	<plurals name="discussion.discussion_votes">
+        <item quantity="one">%1$d הצבע</item>
+        <item quantity="two">%1$d הצבעות</item>
+        <item quantity="other">%1$d הצבעות</item>
+    </plurals>
+	<plurals name="discussion.discussion_comments">
+        <item quantity="one">%1$d הערה</item>
+        <item quantity="two">%1$d הערות</item>
+        <item quantity="other">%1$d הערות</item>
+    </plurals>
+	<plurals name="discussion.discussion_missed_posts">
+        <item quantity="one">%1$d פוסט שפוספס</item>
+        <item quantity="two">%1$d פוסטים שלא נענו</item>
+        <item quantity="other">%1$d פוסטים שלא נענו</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses">
+        <item quantity="one">תגובת %1$d</item>
+        <item quantity="two">%1$d תגובות</item>
+        <item quantity="other">%1$d תגובות</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses_capitalized">
+        <item quantity="one">%1$d תגובה</item>
+        <item quantity="two">%1$d תגובות</item>
+        <item quantity="other">%1$d תגובות</item>
+    </plurals>
+	<plurals name="discussion.discussion_found_threads">
+        <item quantity="one">נמצא פוסט %s</item>
+        <item quantity="two">נמצאו הודעות %s</item>
+        <item quantity="other">נמצאו הודעות %s</item>
+    </plurals>
+
+	<string name="whatsnew.whats_new_title">מה חדש</string>
+	<string name="whatsnew.whats_new_navigation_previous">הקודם</string>
+	<string name="whatsnew.whats_new_navigation_next">הבא</string>
+	<string name="whatsnew.whats_new_navigation_done">בוצע</string>
 
 	<string name="core.core_error_invalid_grant">אישורים לא חוקיים</string>
 	<string name="core.core_error_no_connection">חיבור לאינטרנט איטי או לא</string>
@@ -282,6 +347,10 @@
 	<string name="core.core_explore_other_parts_when_reconnect_or_download">גלה חלקים אחרים של הקורס הזה או כשתתחבר שוב, הורד את זה.</string>
 	<string name="core.core_authorization">אישור</string>
 	<string name="core.core_authorization_request">אנא היכנס למערכת כדי להמשיך בהרשמה לקורס.</string>
+	<string name="core.core_sso_sign_in">כניסה עם SSO</string>
+	<string name="core.core_sign_in_sso_heading">התחל עוד היום לבנות את הקריירה שלך בביטחון</string>
+	<string name="core.core_sign_in_sso_login_title">כניסה</string>
+	<string name="core.core_sign_in_sso_login_subtitle">כניסה דרך שירות הכניסה המאוחד הארצי</string>
 
 	<string name="course.course_you_earned_certificate">מזל טוב, זכית בתעודת הקורס הזה ב- \"%s\".</string>
 	<string name="course.course_view_certificate">צפה בתעודה</string>
@@ -384,12 +453,16 @@
 	<string name="course.course_videos_caught_up">סיימת לצפות בכל הווידאוים!</string>
 	<string name="course.course_assignments_caught_up">סיימת את כל המטלות!</string>
 
-	<string name="dates.dates_title">תאריכים</string>
-	<string name="dates.dates_empty_state_title">אין תאריכים</string>
-	<string name="dates.dates_empty_state_description">אין לך כרגע קורסים פעילים עם אירועים מתוזמנים. הירשם לקורס כדי לצפות בתאריכים ובמועדים חשובים.</string>
-	<string name="dates.dates_shift_due_date_card_title">פספסת כמה מועדים\?</string>
-	<string name="dates.dates_shift_due_date_card_description">אל דאגה - הזיזו את לוח הזמנים המוצע שלנו כדי להשלים את המטלות שבפיגור מבלי לאבד כל התקדמות.</string>
-	<string name="dates.dates_shift_due_date">שינוי תאריך יעד</string>
+	<string name="downloads.downloads">הורדות</string>
+	<string name="downloads.downloads_download_course">להוריד קורס</string>
+	<string name="downloads.downloads_remove_course_downloads">הסר הורדות קורס</string>
+	<string name="downloads.downloads_cancel_download">ביטול להוריד</string>
+	<string name="downloads.downloads_empty_state_title">אין קורסים עם תוכן להורדה</string>
+	<string name="downloads.downloads_empty_state_description">כרגע אין לך קורסים עם תוכן להורדה.</string>
+	<string name="downloads.downloaded_downloaded_size">%1$s הורד</string>
+	<string name="downloads.downloaded_available_size">%1$s זמין</string>
+	<string name="downloads.downloads_accessibility_stop_downloading_course">הפסק להוריד את הקורס</string>
+	<string name="downloads.downloads_loading_course_structure">טוען מבנה הקורס...</string>
 
 	<string name="discovery.discovery_Discovery">לְגַלוֹת</string>
 	<string name="discovery.discovery_discovery_new">גלה חדש</string>
@@ -410,72 +483,4 @@
     </plurals>
 	<!-- Accessibility -->
 	<string name="discovery.discovery_accessibility_play_video">הפעל וידאו</string>
-
-	<string name="whatsnew.whats_new_title">מה חדש</string>
-	<string name="whatsnew.whats_new_navigation_previous">הקודם</string>
-	<string name="whatsnew.whats_new_navigation_next">הבא</string>
-	<string name="whatsnew.whats_new_navigation_done">בוצע</string>
-
-	<string name="discussion.discussion_all_posts">כל הפוסטים</string>
-	<string name="discussion.discussion_unread">לא נקרא</string>
-	<string name="discussion.discussion_unanswered">לא נענה</string>
-	<string name="discussion.discussion_posts_following">פוסטים שאני עוקבת אחריהם</string>
-	<string name="discussion.discussion_recent_activity">פעילות אחרונה</string>
-	<string name="discussion.discussion_most_activity">הכי הרבה פעילות</string>
-	<string name="discussion.discussion_most_votes">רוב ההצבעות</string>
-	<string name="discussion.discussion_create_post">צור דיונים</string>
-	<string name="discussion.discussion_create_question">צור שאלה</string>
-	<string name="discussion.discussion_add_response">הוסף תגובה</string>
-	<string name="discussion.discussion_last_post">הודעה אחרונה: %1$s</string>
-	<string name="discussion.discussion_follow">עקוב</string>
-	<string name="discussion.discussion_report">דווח</string>
-	<string name="discussion.discussion_unreport">בטל דיווח</string>
-	<string name="discussion.discussion_add_comment">הוסף הערה</string>
-	<string name="discussion.discussion_comments_title">הערה</string>
-	<string name="discussion.discussion_comment_added">הערה נוספה בהצלחה</string>
-	<string name="discussion.discussion_discussion">דיונים</string>
-	<string name="discussion.discussion_question">שאלה</string>
-	<string name="discussion.discussion_title">כותרת</string>
-	<string name="discussion.discussion_follow_discussion">עקבו אחר הדיונים הזה</string>
-	<string name="discussion.discussion_follow_question">עקוב אחר זה השאלה הזו</string>
-	<string name="discussion.discussion_search_all_posts">חפש בכל הפוסטים</string>
-	<string name="discussion.discussion_main_categories">קטגוריות ראשיות</string>
-	<string name="discussion.discussion_select_post_type">בחר סוג פוסט</string>
-	<string name="discussion.discussion_topic">נושא</string>
-	<string name="discussion.discussion_search_results">תוצאות חיפוש</string>
-	<string name="discussion.discussion_start_typing_to_find">התחל להקליד כדי למצוא את אשכול הדיון</string>
-	<string name="discussion.discussion_anonymous">אנונימי</string>
-	<string name="discussion.discussion_no_yet">עדיין אין דיונים</string>
-	<string name="discussion.discussion_click_button_create_discussion">לחץ על הכפתור למטה כדי ליצור את הדיון הראשון שלך.</string>
-	<string name="discussion.discussion_unnamed_subcategory">קטגוריית משנה ללא שם</string>
-	<plurals name="discussion.discussion_votes">
-        <item quantity="one">%1$d הצבע</item>
-        <item quantity="two">%1$d הצבעות</item>
-        <item quantity="other">%1$d הצבעות</item>
-    </plurals>
-	<plurals name="discussion.discussion_comments">
-        <item quantity="one">%1$d הערה</item>
-        <item quantity="two">%1$d הערות</item>
-        <item quantity="other">%1$d הערות</item>
-    </plurals>
-	<plurals name="discussion.discussion_missed_posts">
-        <item quantity="one">%1$d פוסט שפוספס</item>
-        <item quantity="two">%1$d פוסטים שלא נענו</item>
-        <item quantity="other">%1$d פוסטים שלא נענו</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses">
-        <item quantity="one">תגובת %1$d</item>
-        <item quantity="two">%1$d תגובות</item>
-        <item quantity="other">%1$d תגובות</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses_capitalized">
-        <item quantity="one">%1$d תגובה</item>
-        <item quantity="two">%1$d תגובות</item>
-        <item quantity="other">%1$d תגובות</item>
-    </plurals>
-	<plurals name="discussion.discussion_found_threads">
-        <item quantity="one">נמצא פוסט %s</item>
-        <item quantity="two">נמצאו הודעות %s</item>
-        <item quantity="other">נמצאו הודעות %s</item>
-    </plurals>
 </resources>

@@ -24,27 +24,11 @@
         <item quantity="other">%1$d Tareas vencidas</item>
     </plurals>
 
-	<string name="downloads.downloads">Descargas</string>
-	<string name="downloads.downloads_download_course">Descargar curso</string>
-	<string name="downloads.downloads_remove_course_downloads">Eliminar descargas de cursos</string>
-	<string name="downloads.downloads_cancel_download">Cancelar descargar</string>
-	<string name="downloads.downloads_empty_state_title">No hay cursos con contenido descargable</string>
-	<string name="downloads.downloads_empty_state_description">Actualmente no tienes cursos con contenido descargable.</string>
-	<string name="downloads.downloaded_downloaded_size">%1$s descargado</string>
-	<string name="downloads.downloaded_available_size">%1$s disponible</string>
-	<string name="downloads.downloads_accessibility_stop_downloading_course">Detén descargar el curso</string>
-	<string name="downloads.downloads_loading_course_structure">Cargando estructura del curso…</string>
-
-	<string name="app.app_navigation_discovery">Descubrir</string>
-	<string name="app.app_navigation_learn">Aprender</string>
-	<string name="app.app_navigation_profile">Perfil</string>
-	<string name="app.app_navigation_dates">Fechas</string>
-	<string name="app.app_navigation_downloads">Descargas</string>
-
 	<string name="auth.auth_forgot_password">¿Olvidaste tu contraseña\?</string>
 	<string name="auth.auth_email">Correo electrónico</string>
 	<string name="auth.auth_invalid_email">Email inválido</string>
 	<string name="auth.auth_invalid_password">La contraseña es demasiado corta</string>
+	<string name="auth.auth_social_account_not_registered">Esta cuenta %1$s no está vinculada con ninguna cuenta %2$s. Por favor regístrese.</string>
 	<string name="auth.auth_welcome_back">¡Bienvenido de nuevo! Inicia sesión para acceder a tus cursos.</string>
 	<string name="auth.auth_show_optional_fields">Mostrar campos opcionales</string>
 	<string name="auth.auth_hide_optional_fields">Ocultar campos opcionales</string>
@@ -62,6 +46,13 @@
 	<string name="auth.auth_agreement_signin_in">Por iniciar sesión en esta aplicación, acepta %1$s y %2$s y reconoce que %3$s y cada Miembro procesan sus datos personales de acuerdo con %4$s.</string>
 	<string name="auth.auth_accessibility_show_password">Mostrar contraseña</string>
 	<string name="auth.auth_accessibility_hide_password">Ocultar contraseña</string>
+
+	<string name="dates.dates_title">Fechas</string>
+	<string name="dates.dates_empty_state_title">Sin Fechas</string>
+	<string name="dates.dates_empty_state_description">Actualmente no tienes cursos activos con eventos programados. Inscríbete en un curso para ver las fechas y plazos importantes.</string>
+	<string name="dates.dates_shift_due_date_card_title">¿Perdiste algunas fechas límite\?</string>
+	<string name="dates.dates_shift_due_date_card_description">No te preocupes, cambia nuestro cronograma sugerido para completar las asignaciones pendientes sin perder ningún progreso.</string>
+	<string name="dates.dates_shift_due_date">Cambiar Fecha Límite</string>
 
 	<string name="profile.profile_full_profile">Perfil completo</string>
 	<string name="profile.profile_limited_profile">Perfil limitado</string>
@@ -142,6 +133,80 @@
 	<string name="profile.profile_no_google_calendars">No hay calendarios de Google disponibles</string>
 	<string name="profile.profile_select_calendar">Selecciona calendario</string>
 	<string name="profile.profile_local_calendar_option">Calendario local</string>
+
+	<string name="app.app_navigation_discovery">Descubrir</string>
+	<string name="app.app_navigation_learn">Aprender</string>
+	<string name="app.app_navigation_profile">Perfil</string>
+	<string name="app.app_navigation_dates">Fechas</string>
+	<string name="app.app_navigation_downloads">Descargas</string>
+
+	<string name="discussion.discussion_all_posts">Todos los mensajes</string>
+	<string name="discussion.discussion_unread">No leído</string>
+	<string name="discussion.discussion_unanswered">Sin respuesta</string>
+	<string name="discussion.discussion_posts_following">Publicaciones que sigo</string>
+	<string name="discussion.discussion_recent_activity">Actividad reciente</string>
+	<string name="discussion.discussion_most_activity">La mayoría de la actividad</string>
+	<string name="discussion.discussion_most_votes">La mayoría de los votos</string>
+	<string name="discussion.discussion_create_post">Crear foro</string>
+	<string name="discussion.discussion_create_question">Crear pregunta</string>
+	<string name="discussion.discussion_add_response">Añade una respuesta</string>
+	<string name="discussion.discussion_last_post">Último mensaje: %1$s</string>
+	<string name="discussion.discussion_follow">Seguir</string>
+	<string name="discussion.discussion_report">Informe</string>
+	<string name="discussion.discussion_unreport">No informar</string>
+	<string name="discussion.discussion_add_comment">Añadir un comentario</string>
+	<string name="discussion.discussion_comments_title">Comentario</string>
+	<string name="discussion.discussion_comment_added">Comentario agregado exitosamente</string>
+	<string name="discussion.discussion_discussion">Foro</string>
+	<string name="discussion.discussion_question">Pregunta</string>
+	<string name="discussion.discussion_title">Título</string>
+	<string name="discussion.discussion_follow_discussion">Sigue este foro</string>
+	<string name="discussion.discussion_follow_question">Sigue esta pregunta</string>
+	<string name="discussion.discussion_search_all_posts">Buscar todas las publicaciones</string>
+	<string name="discussion.discussion_main_categories">Categorías principales</string>
+	<string name="discussion.discussion_select_post_type">Seleccionar tipo de publicación</string>
+	<string name="discussion.discussion_topic">Tema</string>
+	<string name="discussion.discussion_search_results">Resultados de la búsqueda</string>
+	<string name="discussion.discussion_start_typing_to_find">Empieza a escribir para encontrar el hilo.</string>
+	<string name="discussion.discussion_anonymous">anónimo</string>
+	<string name="discussion.discussion_no_yet">Aún no hay foros</string>
+	<string name="discussion.discussion_click_button_create_discussion">Pulsa el botón a continuación para crear tu primer foro.</string>
+	<string name="discussion.discussion_unnamed_subcategory">Subcategoría sin nombre</string>
+	<plurals name="discussion.discussion_votes">
+        <item quantity="one">%1$d voto</item>
+        <item quantity="many">%1$d votos</item>
+        <item quantity="other">%1$d votos</item>
+    </plurals>
+	<plurals name="discussion.discussion_comments">
+        <item quantity="one">%1$d Comentario</item>
+        <item quantity="many">%1$d Comentarios</item>
+        <item quantity="other">%1$d Comentarios</item>
+    </plurals>
+	<plurals name="discussion.discussion_missed_posts">
+        <item quantity="one">%1$d Publicación perdida</item>
+        <item quantity="many">%1$d Publicaciones perdidas</item>
+        <item quantity="other">%1$d Publicaciones perdidas</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses">
+        <item quantity="one">%1$d respuesta</item>
+        <item quantity="many">%1$d respuestas</item>
+        <item quantity="other">%1$d respuestas</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses_capitalized">
+        <item quantity="one">%1$d Respuesta</item>
+        <item quantity="many">%1$d Respuestas</item>
+        <item quantity="other">%1$d Respuestas</item>
+    </plurals>
+	<plurals name="discussion.discussion_found_threads">
+        <item quantity="one">Se encontró la publicación %s .</item>
+        <item quantity="many">Publicaciones encontradas %s</item>
+        <item quantity="other">Publicaciones encontradas %s</item>
+    </plurals>
+
+	<string name="whatsnew.whats_new_title">Qué hay de nuevo</string>
+	<string name="whatsnew.whats_new_navigation_previous">Anterior</string>
+	<string name="whatsnew.whats_new_navigation_next">Siguiente</string>
+	<string name="whatsnew.whats_new_navigation_done">Hecho</string>
 
 	<string name="core.core_error_invalid_grant">Credenciales no válidas</string>
 	<string name="core.core_error_no_connection">Conexión a Internet lenta o nula</string>
@@ -280,6 +345,10 @@
 	<string name="core.core_explore_other_parts_when_reconnect_or_download">Explora otras partes de este curso o descarga esto cuando te vuelvas a conectar.</string>
 	<string name="core.core_authorization">Autorización</string>
 	<string name="core.core_authorization_request">Por favor ingrese al sistema para continuar con inscripción en el curso.</string>
+	<string name="core.core_sso_sign_in">Iniciar sesión con SSO</string>
+	<string name="core.core_sign_in_sso_heading">Empieza hoy a construir tu carrera con confianza</string>
+	<string name="core.core_sign_in_sso_login_title">Iniciar sesión</string>
+	<string name="core.core_sign_in_sso_login_subtitle">Inicia sesión a través del servicio de inicio de sesión unificado nacional</string>
 
 	<string name="course.course_you_earned_certificate">Felicitaciones, ha obtenido el certificado de este curso en &amp;quot;%s&amp;quot;.</string>
 	<string name="course.course_view_certificate">Ver certificado</string>
@@ -382,11 +451,16 @@
 	<string name="course.course_videos_caught_up">¡Estás al día con los videos!</string>
 	<string name="course.course_assignments_caught_up">¡Has completado todas las asignaciones!</string>
 
-	<string name="dates.dates_title">Fechas</string>
-	<string name="dates.dates_empty_state_title">Sin Fechas</string>
-	<string name="dates.dates_shift_due_date_card_title">¿Perdiste algunas fechas límite\?</string>
-	<string name="dates.dates_shift_due_date_card_description">No te preocupes, cambia nuestro cronograma sugerido para completar las asignaciones pendientes sin perder ningún progreso.</string>
-	<string name="dates.dates_shift_due_date">Cambiar Fecha Límite</string>
+	<string name="downloads.downloads">Descargas</string>
+	<string name="downloads.downloads_download_course">Descargar curso</string>
+	<string name="downloads.downloads_remove_course_downloads">Eliminar descargas de cursos</string>
+	<string name="downloads.downloads_cancel_download">Cancelar descargar</string>
+	<string name="downloads.downloads_empty_state_title">No hay cursos con contenido descargable</string>
+	<string name="downloads.downloads_empty_state_description">Actualmente no tienes cursos con contenido descargable.</string>
+	<string name="downloads.downloaded_downloaded_size">%1$s descargado</string>
+	<string name="downloads.downloaded_available_size">%1$s disponible</string>
+	<string name="downloads.downloads_accessibility_stop_downloading_course">Detén descargar el curso</string>
+	<string name="downloads.downloads_loading_course_structure">Cargando estructura del curso…</string>
 
 	<string name="discovery.discovery_Discovery">Descubrir</string>
 	<string name="discovery.discovery_discovery_new">Descubre algo nuevo</string>
@@ -407,72 +481,4 @@
     </plurals>
 	<!-- Accessibility -->
 	<string name="discovery.discovery_accessibility_play_video">Ver vídeo</string>
-
-	<string name="whatsnew.whats_new_title">Qué hay de nuevo</string>
-	<string name="whatsnew.whats_new_navigation_previous">Anterior</string>
-	<string name="whatsnew.whats_new_navigation_next">Siguiente</string>
-	<string name="whatsnew.whats_new_navigation_done">Hecho</string>
-
-	<string name="discussion.discussion_all_posts">Todos los mensajes</string>
-	<string name="discussion.discussion_unread">No leído</string>
-	<string name="discussion.discussion_unanswered">Sin respuesta</string>
-	<string name="discussion.discussion_posts_following">Publicaciones que sigo</string>
-	<string name="discussion.discussion_recent_activity">Actividad reciente</string>
-	<string name="discussion.discussion_most_activity">La mayoría de la actividad</string>
-	<string name="discussion.discussion_most_votes">La mayoría de los votos</string>
-	<string name="discussion.discussion_create_post">Crear foro</string>
-	<string name="discussion.discussion_create_question">Crear pregunta</string>
-	<string name="discussion.discussion_add_response">Añade una respuesta</string>
-	<string name="discussion.discussion_last_post">Último mensaje: %1$s</string>
-	<string name="discussion.discussion_follow">Seguir</string>
-	<string name="discussion.discussion_report">Informe</string>
-	<string name="discussion.discussion_unreport">No informar</string>
-	<string name="discussion.discussion_add_comment">Añadir un comentario</string>
-	<string name="discussion.discussion_comments_title">Comentario</string>
-	<string name="discussion.discussion_comment_added">Comentario agregado exitosamente</string>
-	<string name="discussion.discussion_discussion">Foro</string>
-	<string name="discussion.discussion_question">Pregunta</string>
-	<string name="discussion.discussion_title">Título</string>
-	<string name="discussion.discussion_follow_discussion">Sigue este foro</string>
-	<string name="discussion.discussion_follow_question">Sigue esta pregunta</string>
-	<string name="discussion.discussion_search_all_posts">Buscar todas las publicaciones</string>
-	<string name="discussion.discussion_main_categories">Categorías principales</string>
-	<string name="discussion.discussion_select_post_type">Seleccionar tipo de publicación</string>
-	<string name="discussion.discussion_topic">Tema</string>
-	<string name="discussion.discussion_search_results">Resultados de la búsqueda</string>
-	<string name="discussion.discussion_start_typing_to_find">Empieza a escribir para encontrar el hilo.</string>
-	<string name="discussion.discussion_anonymous">anónimo</string>
-	<string name="discussion.discussion_no_yet">Aún no hay foros</string>
-	<string name="discussion.discussion_click_button_create_discussion">Pulsa el botón a continuación para crear tu primer foro.</string>
-	<string name="discussion.discussion_unnamed_subcategory">Subcategoría sin nombre</string>
-	<plurals name="discussion.discussion_votes">
-        <item quantity="one">%1$d voto</item>
-        <item quantity="many">%1$d votos</item>
-        <item quantity="other">%1$d votos</item>
-    </plurals>
-	<plurals name="discussion.discussion_comments">
-        <item quantity="one">%1$d Comentario</item>
-        <item quantity="many">%1$d Comentarios</item>
-        <item quantity="other">%1$d Comentarios</item>
-    </plurals>
-	<plurals name="discussion.discussion_missed_posts">
-        <item quantity="one">%1$d Publicación perdida</item>
-        <item quantity="many">%1$d Publicaciones perdidas</item>
-        <item quantity="other">%1$d Publicaciones perdidas</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses">
-        <item quantity="one">%1$d respuesta</item>
-        <item quantity="many">%1$d respuestas</item>
-        <item quantity="other">%1$d respuestas</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses_capitalized">
-        <item quantity="one">%1$d Respuesta</item>
-        <item quantity="many">%1$d Respuestas</item>
-        <item quantity="other">%1$d Respuestas</item>
-    </plurals>
-	<plurals name="discussion.discussion_found_threads">
-        <item quantity="one">Se encontró la publicación %s .</item>
-        <item quantity="many">Publicaciones encontradas %s</item>
-        <item quantity="other">Publicaciones encontradas %s</item>
-    </plurals>
 </resources>

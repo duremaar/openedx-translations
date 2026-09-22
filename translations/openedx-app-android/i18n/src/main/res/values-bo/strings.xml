@@ -22,27 +22,11 @@
         <item quantity="other">%1$d འདས་ཟིན་པའི་ལས་འགན།</item>
     </plurals>
 
-	<string name="downloads.downloads">ཕབ་ལེན།</string>
-	<string name="downloads.downloads_download_course">སློབ་ཚན་ཕབ་ལེན།</string>
-	<string name="downloads.downloads_remove_course_downloads">སློབ་ཚན་གྱི་ཕབ་ལེན་བཏོན་གཏང་།</string>
-	<string name="downloads.downloads_cancel_download">ཕབ་ལེན་ཕྱིར་འཐེན།</string>
-	<string name="downloads.downloads_empty_state_title">ད་ལྟོ་སློབ་ཚན་ཡོད་པའི་སློབ་ཚན་མེད།</string>
-	<string name="downloads.downloads_empty_state_description">ཁྱེད་རང་ལ་ད་ལྟ་སློབ་ཚན་གྱི་ནང་དུ་ཕབ་ལེན་གྱི་དོན་ལུགས་ཀྱི་སློབ་ཚན་མེད།.</string>
-	<string name="downloads.downloaded_downloaded_size">%1$s ཕབ་ལེན་འབད་ཡོད་པས།</string>
-	<string name="downloads.downloaded_available_size">%1$s ཐོབ་ཐང་།</string>
-	<string name="downloads.downloads_accessibility_stop_downloading_course">སློབ་ཚན་ཕབ་ལེན་བརྡར་བཞག</string>
-	<string name="downloads.downloads_loading_course_structure">སློབ་ཚན་གྱི་གཞི་རིམ་འདྲེན་བྱེད་དོ་…</string>
-
-	<string name="app.app_navigation_discovery">གསལ་སྟོན།</string>
-	<string name="app.app_navigation_learn">སློབ་གཉེར།</string>
-	<string name="app.app_navigation_profile">གནས་ཚུལ།</string>
-	<string name="app.app_navigation_dates">ཟླ་ཚེས།</string>
-	<string name="app.app_navigation_downloads">ཕབ་ལེན།</string>
-
 	<string name="auth.auth_forgot_password">གསང་ཚིག་བརྗེད་སོང་ངམ།</string>
 	<string name="auth.auth_email">ཡིག་ཟམ</string>
 	<string name="auth.auth_invalid_email">ཡིག་ཟམ་ཚུལ་མཐུན་མིན།</string>
 	<string name="auth.auth_invalid_password">གསང་ཚིག་ཐུང་དྲགས་འདུག</string>
+	<string name="auth.auth_social_account_not_registered">གློག་འཕྲིན་ %1$s འདི་ནི་ཁ་བྱང་གཞན་གང་ལ་ཡང་སྦྲེལ་མཐུད་ %2$s བྱས་མི་འདུག ཐོ་འགོད་བྱེད་རོགས།</string>
 	<string name="auth.auth_welcome_back">ཕྱིར་ཕེབས་པར་དགའ་བསུ་ཞུ། སློབ་ཚན་ལ་གཟིགས་ཕྱིར་ནང་འཛུལ་བྱོས།</string>
 	<string name="auth.auth_show_optional_fields">གདམ་ཀ་ཅན་གྱི་སྡེ་ཚན་རྣམས་སྟོན།</string>
 	<string name="auth.auth_hide_optional_fields">གདམ་ཀ་ཅན་གྱི་ཚན་པ་རྣམས་སྦེད།</string>
@@ -59,6 +43,13 @@
 	<string name="auth.auth_create_new_account">དེ་རིང་གི་སློབ་གཉེར་འགོ་རྩོམ་པ་ལ་ཁ་བྱང་ཞིག་བཟོས།</string>
 	<string name="auth.auth_accessibility_show_password">གསང་གྲངས་སྟོན།</string>
 	<string name="auth.auth_accessibility_hide_password">གསང་ཚིག་སྦས།</string>
+
+	<string name="dates.dates_title">ཟླ་ཚེས།</string>
+	<string name="dates.dates_empty_state_title">དུས་ཚོད་མེད།</string>
+	<string name="dates.dates_empty_state_description">ཁྱེད་ལ་ད་ལྟ་དུས་ཚོད་གཏན་འབེབས་བྱས་པའི་སློབ་ཚན་གང་ཡང་མེད། དུས་ཚོད་གལ་ཆེན་དང་དུས་བཀག་མཐོང་བར་སློབ་ཚན་ཞིག་ལ་ཞུགས་པར་མཛོད།</string>
+	<string name="dates.dates_shift_due_date_card_title">དུས་བཀག་རེ་ཟུང་ཤོར་སོང་ངམ།</string>
+	<string name="dates.dates_shift_due_date_card_description">སེམས་ཁྲལ་མ་བྱེད། ང་ཚོས་འཆར་གཞི་བཀོད་པའི་དུས་ཚོད་རེའུ་མིག་དེ་སྒྱུར་བཅོས་བྱས་ནས་དུས་བཅད་ནང་ཚར་དགོས་པའི་ལས་འགན་རྣམས་ཚར་བར་བྱེད་ཆོག དེ་ལྟར་བྱས་ན་ཁྱེད་ཀྱི་སྦྱང་འབྲས་གང་ཡང་མི་བརླག</string>
+	<string name="dates.dates_shift_due_date">དུས་བཀག་བརྗེ་སྤོ་བྱོས།</string>
 
 	<string name="profile.profile_full_profile">ངོ་སྤྲོད་སྙིང་བསྡུས་ཆ་ཚང་།</string>
 	<string name="profile.profile_limited_profile">ཚད་བཀག་བྱས་པའི་ངོ་སྤྲོད་སྙིང་བསྡུས།</string>
@@ -135,6 +126,63 @@
 	<string name="profile.profile_select_google_calendar_title">Google Calendar གདམ་ཁ།</string>
 	<string name="profile.profile_change_google_calendar_title">Google Calendar བསྒྱུར་བཅོས།</string>
 	<string name="profile.profile_local_calendar_option">ས་གནས་ཀྱི་ལོ་ཐོ།</string>
+
+	<string name="app.app_navigation_discovery">གསལ་སྟོན།</string>
+	<string name="app.app_navigation_learn">སློབ་གཉེར།</string>
+	<string name="app.app_navigation_profile">གནས་ཚུལ།</string>
+	<string name="app.app_navigation_dates">ཟླ་ཚེས།</string>
+	<string name="app.app_navigation_downloads">ཕབ་ལེན།</string>
+
+	<string name="discussion.discussion_all_posts">རྩོམ་ཡིག་ཆ་ཚང་།</string>
+	<string name="discussion.discussion_unread">བཀླགས་མེད་པ།</string>
+	<string name="discussion.discussion_unanswered">ལན་བཏབ་མེད་པ།</string>
+	<string name="discussion.discussion_posts_following">ངས་རྗེས་འཇུག་བྱེད་བཞིན་པའི་རྩོམ་ཡིག་ཁག</string>
+	<string name="discussion.discussion_recent_activity">ཉེ་ཆར་གྱི་བྱེད་སྒོ།</string>
+	<string name="discussion.discussion_most_activity">མང་ཤོས་ཀྱི་བྱེད་སྒོ།</string>
+	<string name="discussion.discussion_most_votes">འོས་མང་ཤོས།</string>
+	<string name="discussion.discussion_create_post">བགྲོ་གླེང་གསར་བཟོ།</string>
+	<string name="discussion.discussion_create_question">དྲི་བ་གསར་བཟོ།</string>
+	<string name="discussion.discussion_last_post">རྩོམ་སྤེལ་གསར་ཤོས་ནི་ %1$s</string>
+	<string name="discussion.discussion_follow">རྗེས་འཇུག</string>
+	<string name="discussion.discussion_report">སྙན་བསྡོམས།</string>
+	<string name="discussion.discussion_unreport">ཡར་ཞུ་མི་བྱེད།</string>
+	<string name="discussion.discussion_comments_title">མཆན།</string>
+	<string name="discussion.discussion_comment_added">མཆན་བཏབ་ཟིན།</string>
+	<string name="discussion.discussion_discussion">བགྲོ་གླེང་།</string>
+	<string name="discussion.discussion_question">དྲི་བ།</string>
+	<string name="discussion.discussion_title">མཚན་བྱང་།</string>
+	<string name="discussion.discussion_follow_discussion">བགྲོ་གླེང་འདིར་རྗེས་འཇུག་བྱེད།</string>
+	<string name="discussion.discussion_follow_question">དྲི་བ་འདིར་རྗེས་འཇུག་བྱོས།</string>
+	<string name="discussion.discussion_search_all_posts">རྩོམ་ཡིག་ཆ་ཚང་འཚོལ།</string>
+	<string name="discussion.discussion_main_categories">རྩ་བའི་རིགས་དབྱེ་ཁག</string>
+	<string name="discussion.discussion_select_post_type">རྩོམ་ཡིག་གི་རིགས་དབྱེ་འདེམས།</string>
+	<string name="discussion.discussion_topic">བརྗོད་གཞི།</string>
+	<string name="discussion.discussion_search_results">བཙལ་འབྲས།</string>
+	<string name="discussion.discussion_start_typing_to_find">འབྲེལ་ཡོད་བགྲོ་གླེང་དེ་འཚོལ་བྱེད་ཀྱི་མིང་ཕྲིས།</string>
+	<string name="discussion.discussion_anonymous">ངོས་འཛིན་མེད་པ།</string>
+	<string name="discussion.discussion_no_yet">ད་སྔ་བགྲོ་གླེང་མི་འདུག</string>
+	<string name="discussion.discussion_click_button_create_discussion">ཁྱེད་ཀྱི་ཆེས་ཐོག་མའི་བགྲོ་གླེང་གསར་བཟོ་དགོས་ན་གཤམ་གྱི་གནོན་ཐེབས་སྣུན།</string>
+	<string name="discussion.discussion_unnamed_subcategory">མིང་བཏགས་མེད་པའི་ནང་གསེས་རིགས་དབྱེ།</string>
+	<plurals name="discussion.discussion_votes">
+        <item quantity="other">%1$d འོས།</item>
+    </plurals>
+	<plurals name="discussion.discussion_missed_posts">
+        <item quantity="other">ཤོར་ཟིན་པའི་རྩོམ་ཡིག %1$d</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses">
+        <item quantity="other">%1$d ལན་འདེབས།</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses_capitalized">
+        <item quantity="other">%1$d ལན་འདེབས་རྣམས།</item>
+    </plurals>
+	<plurals name="discussion.discussion_found_threads">
+        <item quantity="other">རྙེད་ཟིན་པའི་ %s རྩོམ་ཡིག</item>
+    </plurals>
+
+	<string name="whatsnew.whats_new_title">གསར་བ་གང་བྱུང་།</string>
+	<string name="whatsnew.whats_new_navigation_previous">སྔོན་མ།</string>
+	<string name="whatsnew.whats_new_navigation_next">རྗེས་མ།</string>
+	<string name="whatsnew.whats_new_navigation_done">བྱས་ཟིན།</string>
 
 	<string name="core.core_error_invalid_grant">དཔང་ལྡན་མི་འདུག</string>
 	<string name="core.core_error_no_connection">དྲ་རྒྱ་ལ་མཐུད་མེད་པ་འམ་ཡང་ན་དལ་པོ་རེད་འདུག</string>
@@ -267,7 +315,9 @@
 	<string name="core.core_explore_other_parts_when_reconnect_or_download">སློབ་ཚན་འདིའི་ཆ་ཤས་གཞན་དང་འབྲེལ་ཡོད་པ་ཡང་ན་འབྲེལ་ཡོད་དུས་འདི་ཕབ་ལེན་འབད།.</string>
 	<string name="core.core_authorization">ཆོག་མཆན་</string>
 	<string name="core.core_authorization_request">བསྡུར་བཞིན་སློབ་ཚན་ཐོ་འགོད་གི་དོན་ལུ་མ་གཏོགས་སྤྱོད་ལམ་ནང་འཛུལ་དགོས།</string>
-
+	<string name="core.core_sso_sign_in">SSO ལྟོས་ནས་ཐོ་འཇུག་བྱོས།</string>
+	<string name="core.core_sign_in_sso_heading">དེ་རིང་ནས་འགོ་བཙུགས་ནས་ཁྱེད་ཀྱི་ལས་རིགས་ལ་དགའ་སྐྣེལ་བྱེད་པ།</string>
+	<string name="core.core_sign_in_sso_login_title">ནང་འཛུལ།</string>
 	<string name="course.course_you_earned_certificate">རྟེན་འབྲེལ་ཞུ། ཁྱེད་ཀྱིས་ \"%s\" འདི་ནས་སློབ་ཚན་འདིའི་ལག་ཁྱེར་ལོན་འདུག</string>
 	<string name="course.course_view_certificate">ལག་འཁྱེར་སྟོན།</string>
 	<string name="course.course_navigation_prev">སྔོན་ལྟ།</string>
@@ -369,12 +419,16 @@
 	<string name="course.course_videos_caught_up">ཁྱེད་རང་གིས་བརྙན་རིས་ཚུ་གང་འདུག་སྒྲིག་ཡོད།</string>
 	<string name="course.course_assignments_caught_up">ཁྱེད་རང་གིས་ལས་འགན་ཚུགས་ཚར་ཡོད་!</string>
 
-	<string name="dates.dates_title">ཟླ་ཚེས།</string>
-	<string name="dates.dates_empty_state_title">དུས་ཚོད་མེད།</string>
-	<string name="dates.dates_empty_state_description">ཁྱེད་ལ་ད་ལྟ་དུས་ཚོད་གཏན་འབེབས་བྱས་པའི་སློབ་ཚན་གང་ཡང་མེད། དུས་ཚོད་གལ་ཆེན་དང་དུས་བཀག་མཐོང་བར་སློབ་ཚན་ཞིག་ལ་ཞུགས་པར་མཛོད།</string>
-	<string name="dates.dates_shift_due_date_card_title">དུས་བཀག་རེ་ཟུང་ཤོར་སོང་ངམ།</string>
-	<string name="dates.dates_shift_due_date_card_description">སེམས་ཁྲལ་མ་བྱེད། ང་ཚོས་འཆར་གཞི་བཀོད་པའི་དུས་ཚོད་རེའུ་མིག་དེ་སྒྱུར་བཅོས་བྱས་ནས་དུས་བཅད་ནང་ཚར་དགོས་པའི་ལས་འགན་རྣམས་ཚར་བར་བྱེད་ཆོག དེ་ལྟར་བྱས་ན་ཁྱེད་ཀྱི་སྦྱང་འབྲས་གང་ཡང་མི་བརླག</string>
-	<string name="dates.dates_shift_due_date">དུས་བཀག་བརྗེ་སྤོ་བྱོས།</string>
+	<string name="downloads.downloads">ཕབ་ལེན།</string>
+	<string name="downloads.downloads_download_course">སློབ་ཚན་ཕབ་ལེན།</string>
+	<string name="downloads.downloads_remove_course_downloads">སློབ་ཚན་གྱི་ཕབ་ལེན་བཏོན་གཏང་།</string>
+	<string name="downloads.downloads_cancel_download">ཕབ་ལེན་ཕྱིར་འཐེན།</string>
+	<string name="downloads.downloads_empty_state_title">ད་ལྟོ་སློབ་ཚན་ཡོད་པའི་སློབ་ཚན་མེད།</string>
+	<string name="downloads.downloads_empty_state_description">ཁྱེད་རང་ལ་ད་ལྟ་སློབ་ཚན་གྱི་ནང་དུ་ཕབ་ལེན་གྱི་དོན་ལུགས་ཀྱི་སློབ་ཚན་མེད།.</string>
+	<string name="downloads.downloaded_downloaded_size">%1$s ཕབ་ལེན་འབད་ཡོད་པས།</string>
+	<string name="downloads.downloaded_available_size">%1$s ཐོབ་ཐང་།</string>
+	<string name="downloads.downloads_accessibility_stop_downloading_course">སློབ་ཚན་ཕབ་ལེན་བརྡར་བཞག</string>
+	<string name="downloads.downloads_loading_course_structure">སློབ་ཚན་གྱི་གཞི་རིམ་འདྲེན་བྱེད་དོ་…</string>
 
 	<string name="discovery.discovery_Discovery">གསལ་སྟོན།</string>
 	<string name="discovery.discovery_lets_find">གསར་པ་རྣམས་འཚོལ།</string>
@@ -392,55 +446,4 @@
     </plurals>
 	<!-- Accessibility -->
 	<string name="discovery.discovery_accessibility_play_video">བརྙན་གཏོང་།</string>
-
-	<string name="whatsnew.whats_new_title">གསར་བ་གང་བྱུང་།</string>
-	<string name="whatsnew.whats_new_navigation_previous">སྔོན་མ།</string>
-	<string name="whatsnew.whats_new_navigation_next">རྗེས་མ།</string>
-	<string name="whatsnew.whats_new_navigation_done">བྱས་ཟིན།</string>
-
-	<string name="discussion.discussion_all_posts">རྩོམ་ཡིག་ཆ་ཚང་།</string>
-	<string name="discussion.discussion_unread">བཀླགས་མེད་པ།</string>
-	<string name="discussion.discussion_unanswered">ལན་བཏབ་མེད་པ།</string>
-	<string name="discussion.discussion_posts_following">ངས་རྗེས་འཇུག་བྱེད་བཞིན་པའི་རྩོམ་ཡིག་ཁག</string>
-	<string name="discussion.discussion_recent_activity">ཉེ་ཆར་གྱི་བྱེད་སྒོ།</string>
-	<string name="discussion.discussion_most_activity">མང་ཤོས་ཀྱི་བྱེད་སྒོ།</string>
-	<string name="discussion.discussion_most_votes">འོས་མང་ཤོས།</string>
-	<string name="discussion.discussion_create_post">བགྲོ་གླེང་གསར་བཟོ།</string>
-	<string name="discussion.discussion_create_question">དྲི་བ་གསར་བཟོ།</string>
-	<string name="discussion.discussion_last_post">རྩོམ་སྤེལ་གསར་ཤོས་ནི་ %1$s</string>
-	<string name="discussion.discussion_follow">རྗེས་འཇུག</string>
-	<string name="discussion.discussion_report">སྙན་བསྡོམས།</string>
-	<string name="discussion.discussion_unreport">ཡར་ཞུ་མི་བྱེད།</string>
-	<string name="discussion.discussion_comments_title">མཆན།</string>
-	<string name="discussion.discussion_comment_added">མཆན་བཏབ་ཟིན།</string>
-	<string name="discussion.discussion_discussion">བགྲོ་གླེང་།</string>
-	<string name="discussion.discussion_question">དྲི་བ།</string>
-	<string name="discussion.discussion_title">མཚན་བྱང་།</string>
-	<string name="discussion.discussion_follow_discussion">བགྲོ་གླེང་འདིར་རྗེས་འཇུག་བྱེད།</string>
-	<string name="discussion.discussion_follow_question">དྲི་བ་འདིར་རྗེས་འཇུག་བྱོས།</string>
-	<string name="discussion.discussion_search_all_posts">རྩོམ་ཡིག་ཆ་ཚང་འཚོལ།</string>
-	<string name="discussion.discussion_main_categories">རྩ་བའི་རིགས་དབྱེ་ཁག</string>
-	<string name="discussion.discussion_select_post_type">རྩོམ་ཡིག་གི་རིགས་དབྱེ་འདེམས།</string>
-	<string name="discussion.discussion_topic">བརྗོད་གཞི།</string>
-	<string name="discussion.discussion_search_results">བཙལ་འབྲས།</string>
-	<string name="discussion.discussion_start_typing_to_find">འབྲེལ་ཡོད་བགྲོ་གླེང་དེ་འཚོལ་བྱེད་ཀྱི་མིང་ཕྲིས།</string>
-	<string name="discussion.discussion_anonymous">ངོས་འཛིན་མེད་པ།</string>
-	<string name="discussion.discussion_no_yet">ད་སྔ་བགྲོ་གླེང་མི་འདུག</string>
-	<string name="discussion.discussion_click_button_create_discussion">ཁྱེད་ཀྱི་ཆེས་ཐོག་མའི་བགྲོ་གླེང་གསར་བཟོ་དགོས་ན་གཤམ་གྱི་གནོན་ཐེབས་སྣུན།</string>
-	<string name="discussion.discussion_unnamed_subcategory">མིང་བཏགས་མེད་པའི་ནང་གསེས་རིགས་དབྱེ།</string>
-	<plurals name="discussion.discussion_votes">
-        <item quantity="other">%1$d འོས།</item>
-    </plurals>
-	<plurals name="discussion.discussion_missed_posts">
-        <item quantity="other">ཤོར་ཟིན་པའི་རྩོམ་ཡིག %1$d</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses">
-        <item quantity="other">%1$d ལན་འདེབས།</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses_capitalized">
-        <item quantity="other">%1$d ལན་འདེབས་རྣམས།</item>
-    </plurals>
-	<plurals name="discussion.discussion_found_threads">
-        <item quantity="other">རྙེད་ཟིན་པའི་ %s རྩོམ་ཡིག</item>
-    </plurals>
 </resources>

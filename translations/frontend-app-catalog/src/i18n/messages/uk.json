@@ -30,12 +30,12 @@
   "generic.course-card.start-date": "Починається: {startDate}",
   "category.generic.loading": "Завантаження...",
   "catalog.home-page.video-modal-title": "Відео модальне вікно",
-  "catalog.home-page.video-iframe-title": "",
+  "catalog.home-page.video-iframe-title": "Програвач відео YouTube",
   "category.course-about.course-intro.course-media.play-course-introduction-video": "Відтворити вступне відео курсу",
   "catalog.course-about.sidebar-details.course-number": "Номер курсу",
   "catalog.course-about.sidebar-details.classes-start": "Початок занять",
   "catalog.course-about.sidebar-details.classes-end": "Заняття закінчуються",
-  "catalog.course-about.sidebar-details.estimated-effort": "",
+  "catalog.course-about.sidebar-details.estimated-effort": "Оцінка зусиль",
   "catalog.course-about.sidebar-details.price": "Ціна",
   "catalog.course-about.sidebar-details.requirements": "Вимоги",
   "catalog.course-about.sidebar-details.prerequisites": "Необхідні умови для запису на курс",
@@ -53,5 +53,8 @@
   "catalog.home-page.subtitle": "Це працює! На базі платформи Open edX®",
   "catalog.home-page.search-placeholder": "Знайти курс",
   "catalog.home-page.video-button": "Переглянути промо-відео",
-  "catalog.home-page.video-button-alt": "кнопка пошуку"
+  "catalog.home-page.video-button-alt": "кнопка пошуку",
+  "courseAbout.page.title": "{courseName} | {siteName}",
+  "courses.page.title": "Курси | {siteName}",
+  "home.page.title": "Каталог | {siteName}"
 }

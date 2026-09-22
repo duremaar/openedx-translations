@@ -106,6 +106,7 @@ en:
   Dashboard ID: Ідентифікатор приладової панелі
   Dashboard Status: Стан приладової панелі
   Dashboard Title: Заголовок інформаційної панелі
+  Datasource ID: ID даних
   Datasource Name: Назва джерела даних
   Datasource Type: Тип джерела даних
   Date: Дата
@@ -127,6 +128,7 @@ en:
   Enrollment: Запис
   Enrollment Counts: Кількість записів підраховується
   Enrollment Date: Дата запису
+  Enrollment Dates: Дати запису на курс
   Enrollment End: Кінець запису
   Enrollment Mode: Режим запису
   Enrollment Start: Початок запису
@@ -134,11 +136,13 @@ en:
   Enrollment Track: Трек запису
   Enrollment status: Статус запису
   Enrollment track: Запис трек
+  Enrollments: Записи на курс
   Event Activity: Активність подій
   Event ID: ID події
   Event String: Рядок події
   Event Time: Час події
   Events Cnt: Події Cnt
+  Fail Login Count: Кількість невдалих спроб входу
   Final Response Results: Остаточні результати відповіді
   First Name: Ім'я
   Full Views: Повні перегляди
@@ -225,9 +229,12 @@ en:
   Problem Location and Name: Місцеположення задачі та назва
   Problem Name: Назва завдання
   Problem Name Location: Задача Назва Місцеположення
+  Problem Name With Location: Назва задачи з місцеположенням
   Problem Number: Задача Номер
+  Problem Part: Частина задачі
   Problem Results: Результати задачі
   Problem Results Table: Таблиця результатів задачі
+  Problems: Задачі
   Query: Запит
   Query Duration Ms: Тривалість запиту Ms
   Query performance: Продуктивність запиту
@@ -243,6 +250,8 @@ en:
   Rewatched Time: Переглянутий час
   Rownum: Rownum
   Run Metrics: Показники виконання
+  Run Name: Назва запуску
+  Scaled Score: Перерахований бал
   Score Range: Діапазон оцінок
   Section Location and Name: Місцеположення та назва Розділу
   Section Name: Розділ Ім'я

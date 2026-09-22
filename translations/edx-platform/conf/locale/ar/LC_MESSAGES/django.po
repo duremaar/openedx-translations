@@ -8,8 +8,9 @@
 # edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2024
 # Menna Mamdouh <menna.mamdouh@notionwave.com>, 2024
 # Omar Al-Ithawi <i@omardo.com>, 2025
-# Sulaiman Muthanna, 2025
 # Brian Smith, 2026
+# Michelle Philbrick, 2026
+# Sulaiman Muthanna, 2026
 # 
 msgid ""
 msgstr ""
@@ -17,7 +18,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
 "PO-Revision-Date: 2023-11-20 11:35+0000\n"
-"Last-Translator: Brian Smith, 2026\n"
+"Last-Translator: Sulaiman Muthanna, 2026\n"
 "Language-Team: Arabic (https://app.transifex.com/open-edx/teams/6205/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2666,9 +2667,9 @@ msgid ""
 "engaging, high-quality %(platform_name)s courses. Note that you will not be "
 "able to log back into your account until you have activated it."
 msgstr ""
-"أوشكت على الوصول! استخدِم الرابط أدناه لتنشيط حسابك للوصول إلى مُقَرَّرات "
-"مُمتعة عالية الجودة من %(platform_name)s. اعلَم أنّك لن تتمكن من الدخول إلى "
-"حسابك إلى حين تفعيله."
+"أوشكت على الوصول! استخدِم الرابط أدناه لتنشيط حسابك للوصول إلى مساقات "
+"تعليمية ممتعة عالية الجودة من %(platform_name)s. اعلَم أنّك لن تتمكن من "
+"الدخول إلى حسابك إلى حين تفعيله."
 
 #: common/templates/student/edx_ace/accountactivation/email/body.html:33
 msgid "Activate your account"
@@ -2710,9 +2711,9 @@ msgid ""
 "engaging, high-quality %(platform_name)s courses. Note that you will not be "
 "able to log back into your account until you have activated it."
 msgstr ""
-"أوشكت على الوصول! استخدِم الرابط أدناه لتنشيط حسابك للوصول إلى مُقَرَّرات "
-"مُمتعة عالية الجودة من %(platform_name)s. اعلَم أنّك لن تتمكن من الدخول إلى "
-"حسابك إلى حين تفعيله."
+"أوشكت على الوصول! استخدِم الرابط أدناه لتنشيط حسابك للوصول إلى مساقات "
+"تعليمية ممتعة عالية الجودة من %(platform_name)s. اعلَم أنّك لن تتمكن من "
+"الدخول إلى حسابك إلى حين تفعيله."
 
 #: common/templates/student/edx_ace/accountactivation/email/body.txt:8
 #, python-format
@@ -3396,8 +3397,8 @@ msgid ""
 "required tasks for this course under its guidelines."
 msgstr ""
 "تُشير الشهادة الـ {cert_type} إلى أنّ المتعلم قد وافق على الالتزام بميثاق "
-"الشرف الذي حدَّدته منصة {platform_name} وأنه قد أكمل جميع المهام المطلوبة "
-"لهذا المساق وفقاً للإرشادات."
+"الشرف الذي حددته منصة {platform_name} وأنه قد أكمل جميع المهام المطلوبة لهذا"
+" المساق وفقاً للإرشادات."
 
 #. Translators:  This text describes the 'ID Verified' course certificate
 #. type, which is a higher level of
@@ -3896,11 +3897,11 @@ msgid ""
 "more specific context overrides the more general context."
 msgstr ""
 "هذه تُحدِّد السياق لتعطيل صفحة التقدم في frontend-app-learning. إذا لم "
-"تُحدَّد أيّ قِيَم، فستُطَبَّق الإعدادات على الكل. إذا حُدِّدَت قيمة واحدة، "
-"فستُطَبَّق الإعدادات على جميع المساقات في هذا السياق. يمكن تحديد قيمة واحدة "
-"كحد أقصى في كل مرة.<br> إذا تم تطبيق عِدّة سياقات على مساق ما (على سبيل "
-"المثال، إذا حُدِّدَ إعداد لمساق مُعين، وآخَر للمؤسسة التي يوجد بها المساق، "
-"فإن السياق الأكثر تخصيصاً سيُطَبَّق عِوضاً عن السياق الأعم."
+"تُحدّد أيّ قِيَم، فستُطبَّق الإعدادات على الكل. إذا حُدّدت قيمة واحدة، "
+"فستُطبَّق الإعدادات على جميع المساقات في هذا السياق. يمكن تحديد قيمة واحدة "
+"كحد أقصى في كل مرة.<br> إذا تم تطبيق عدة سياقات على مساق ما (على سبيل "
+"المثال، إذا حُدّد إعداد لمساق معين، وآخر للمؤسسة التي يوجد بها المساق، فإن "
+"السياق الأكثر تخصيصاً سيُطبَّق عِوضاً عن السياق الأعم."
 
 #: lms/djangoapps/course_home_api/admin.py:33
 #: openedx/features/discounts/admin.py:34
@@ -4513,10 +4514,10 @@ msgid ""
 "2. Complete this application. \n"
 "3. Check your email, please allow 4 weeks for your application to be processed."
 msgstr ""
-"نحن نُخطط لاستخدام هذه المعلومات لتقييم طلبك للحصول على المساعدة المالية ولمواصلة تطوير برنامج المساعدة المالية الخاص بنا. يُرجى ملاحظة أنّه رغم توفر المساعدة في معظم المساقات التي تقدم شهادات مُوثّقة، إلّا أنّ بعض المساقات والبرامج غير مؤهلة. ينبغي عليك إرسال طلب منفصل لكل مساق تأخذه. يُسمَح لك بالحصول على مساعدة مالية خمس (5) مرات كل عام (على أساس مدة 12 شهراً من تاريخ موافقتك الأولى). لتقديم طلب المساعدة المالية: \n"
-"1. سجل كمُستمِع في مساق يتيح الحصول على شهادة مُوثّقة\n"
+"نحن نُخطط لاستخدام هذه المعلومات لتقييم طلبك للحصول على المساعدة المالية ولمواصلة تطوير برنامج المساعدة المالية الخاص بنا. يُرجى ملاحظة أنّه رغم توفر المساعدة في معظم المساقات التي تقدم شهادات موثّقة، إلّا أنّ بعض المساقات والبرامج غير مؤهلة. ينبغي عليك إرسال طلب منفصل لكل مساق تأخذه. يُسمَح لك بالحصول على مساعدة مالية خمس (5) مرات كل عام (على أساس مدة 12 شهراً من تاريخ موافقتك الأولى). لتقديم طلب المساعدة المالية: \n"
+"1. سجِّل كمُستمِع في مساق يتيح الحصول على شهادة موثّقة\n"
 "2. أتِمَّ هذا الطلب \n"
-" 3. تحقَّق من بريدك الإلكتروني، من فضلك انتَظِر أربعة أسابيع حتى تتم معالجة طلبك."
+" 3. تحقَّق من بريدك الإلكتروني، من فضلك انتظِر أربعة أسابيع حتى تتم معالجة طلبك."
 
 #: lms/djangoapps/courseware/views/views.py:2257
 msgid ""
@@ -5370,9 +5371,9 @@ msgid ""
 "{course}. Please remove them from the Certificate Exception list before "
 "attempting to invalidate their certificate."
 msgstr ""
-"يظهر الطالب {student} في قائمة الطلاب الذين تم استثناءهم من نَيل الشهادة في "
-"المساق {course}. من فضلك قم بإزالتهم من هذه القائمة قبل محاولة إبطال "
-"شهادتهم."
+"يظهر الطالب {student} في قائمة الطلاب الذين تم استثناءهم من الحصول على "
+"الشهادة في مساق {course}. من فضلك قم بإزالتهم من هذه القائمة قبل محاولة "
+"إبطال شهادتهم. "
 
 #: lms/djangoapps/instructor/views/api.py:4191
 #, python-brace-format
@@ -5588,6 +5589,10 @@ msgstr "عمليات التسجيل"
 #: lms/djangoapps/instructor/views/serializers_v2.py:118
 msgid "Grading"
 msgstr "التقييم"
+
+#: lms/djangoapps/instructor/views/serializers_v2.py:133
+msgid "Bulk Email"
+msgstr "البريد الإلكتروني الجماعي"
 
 #: lms/djangoapps/instructor/views/tools.py:79
 #, python-brace-format
@@ -6369,7 +6374,7 @@ msgid ""
 "          "
 msgstr ""
 "\n"
-"أُرسِل هذا البريد الإلكتروني تلقائياً من %(platform_name)s.\n"
+"            أُرسل هذا البريد الإلكتروني تلقائياً من %(platform_name)s.\n"
 "          "
 
 #: lms/templates/bulk_email/edx_ace/bulkemail/email/body.html:24
@@ -6380,7 +6385,7 @@ msgid ""
 "          "
 msgstr ""
 "\n"
-"أنت تتلقى هذه الرسالة على عُنوان البَريد الإلِكتروني %(email)s لأنَّك مُنضَمّاً إلى\n"
+"            أنت تتلقى هذه الرسالة على عنوان البريد الإلكتروني %(email)s لأنك مسجّل في\n"
 "          "
 
 #: lms/templates/bulk_email/edx_ace/bulkemail/email/body.html:30
@@ -6412,7 +6417,7 @@ msgid ""
 "You are receiving this email at address %(email)s because you are enrolled "
 "in %(course_title)s."
 msgstr ""
-"أنت تتلقى هذا البريد الإلكتروني على العنوان %(email)s لأنك مسجل في "
+"أنت تتلقى هذه الرسالة على عنوان البريد الإلكتروني %(email)s لأنك مسجّل في "
 "%(course_title)s."
 
 #: lms/templates/bulk_email/edx_ace/bulkemail/email/body.txt:9
@@ -6605,7 +6610,8 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"لقد تمت دعوتك لتكون أحد مختبري الإصدار التجريبي ل%(course_name)sفي%(site_name)s"
+"                    لقد دُعِيت لتكون مُختبِراً للإصدار التجريبي لـ %(course_name)s td%(site_name)s\n"
+"                "
 
 #: lms/templates/instructor/edx_ace/addbetatester/email/body.html:20
 msgid "The invitation has been sent by a member of the course staff."
@@ -6661,8 +6667,8 @@ msgid ""
 "You have been invited to be a beta tester for %(course_name)s at "
 "%(site_name)s by a member of the course staff."
 msgstr ""
-"قد تمت دعوتك من قِبل أحد أعضاء طاقم المساق لتكون أحد مختبري الإصدار التجريبي"
-" لـ %(course_name)s في %(site_name)s ."
+"لقد دُعِيت من قبل أحد أعضاء طاقم المساق لتكون مُختبِراً للإصدار التجريبي لـ "
+"%(course_name)s في %(site_name)s."
 
 #: lms/templates/instructor/edx_ace/addbetatester/email/body.txt:5
 #: lms/templates/instructor/edx_ace/enrollenrolled/email/body.txt:5
@@ -6685,7 +6691,7 @@ msgstr "قم بزيارة %(site_name)s للالتحاق بالمساق والب
 #: lms/templates/instructor/edx_ace/addbetatester/email/subject.txt:3
 #, python-format
 msgid "You have been invited to a beta test for %(course_name)s"
-msgstr "لقد تمت دعوتك إلى اختبار تجريبي لـ %(course_name)s"
+msgstr "لقد دُعِيت لتختبر الإصدار التجريبي لـ %(course_name)s"
 
 #: lms/templates/instructor/edx_ace/addbetatester/push/body.txt:3
 #: lms/templates/instructor/edx_ace/enrolledunenroll/push/body.txt:3
@@ -6701,18 +6707,20 @@ msgid ""
 "You have been invited to be a beta tester for %(course_name)s at "
 "%(site_name)s."
 msgstr ""
-"لقد دُعِيت لتصبح مُختَبِراً تجريبياً لـ%(course_name)s في %(site_name)s."
+"لقد دُعِيت لتكون مُختبِراً للإصدار التجريبي لـ %(course_name)s في "
+"%(site_name)s."
 
 #: lms/templates/instructor/edx_ace/addbetatester/push/title.txt:3
 #, python-format
 msgid ""
 "You have been invited to a beta test for %(course_name)s at %(site_name)s."
-msgstr "لقد دُعِيت إلى اختبار تجريبي لـ%(course_name)s في %(site_name)s."
+msgstr ""
+"لقد دُعِيت لتختبر الإصدار التجريبي لـ%(course_name)s في %(site_name)s."
 
 #: lms/templates/instructor/edx_ace/allowedenroll/email/body.html:12
 #, python-format
 msgid "You have been invited to %(course_name)s"
-msgstr "لقد تمت دعوتك إلى %(course_name)s"
+msgstr "لقد دُعِيت إلى %(course_name)s"
 
 #: lms/templates/instructor/edx_ace/allowedenroll/email/body.html:19
 #: lms/templates/instructor/edx_ace/allowedenroll/email/body.txt:3
@@ -6721,8 +6729,8 @@ msgid ""
 "You have been invited to join %(course_name)s at %(site_name)s by a member "
 "of the course staff."
 msgstr ""
-"تمت دعوتك للانضمام إلى %(course_name)s في %(site_name)s بواسطة أحد أعضاء "
-"فريق عمل المساق."
+"لقد دُعِيت من قِبل أحد أعضاء طاقم المساق لتنضم إلى %(course_name)s في "
+"%(site_name)s."
 
 #: lms/templates/instructor/edx_ace/allowedenroll/email/body.html:28
 msgid "To access this course click on the button below and login:"
@@ -6818,7 +6826,7 @@ msgstr ""
 #: lms/templates/instructor/edx_ace/allowedenroll/push/title.txt:3
 #, python-format
 msgid "You have been invited to register for %(course_name)s."
-msgstr "لقد دُعِيت لتُسجِّل في %(course_name)s."
+msgstr "لقد دُعيت للتسجيل في %(course_name)s."
 
 #: lms/templates/instructor/edx_ace/allowedunenroll/email/body.html:12
 #: lms/templates/instructor/edx_ace/allowedunenroll/email/subject.txt:3
@@ -6849,8 +6857,8 @@ msgid ""
 "You have been unenrolled from the course %(course_name)s. Please disregard "
 "the invitation previously sent."
 msgstr ""
-"لقد أُلغِي تسجيلك في مساق %(course_name)s. لذلك يُرجى تجاهل الدعوة المرسلة "
-"مسبقاً"
+"لقد أُلغي تسجيلك في مساق %(course_name)s. لذلك يُرجى تجاهل الدعوة المرسلة "
+"مسبقاً."
 
 #: lms/templates/instructor/edx_ace/enrolledunenroll/email/body.html:12
 #, python-format
@@ -6926,7 +6934,7 @@ msgstr "احصل على حق الدخول إلى مواد المساق الآن"
 #: lms/templates/instructor/edx_ace/enrollenrolled/push/body.txt:4
 #, python-format
 msgid "You have been invited to join %(course_name)s at %(site_name)s."
-msgstr "لقد دُعِيت للانضمام إلى %(course_name)s في %(site_name)s."
+msgstr "لقد دُعيت لتنضم إلى %(course_name)s في %(site_name)s."
 
 #: lms/templates/instructor/edx_ace/removebetatester/email/body.html:12
 #, python-format
@@ -7116,7 +7124,7 @@ msgstr "مرحبا %(full_name)s."
 
 #: lms/templates/verify_student/edx_ace/verificationapproved/email/body.html:10
 msgid "ID Verification Approved"
-msgstr "تمّت الموافقة على توثيق الهوية."
+msgstr "تمّت الموافقة على توثيق الهوية"
 
 #: lms/templates/verify_student/edx_ace/verificationapproved/email/body.html:19
 #: lms/templates/verify_student/edx_ace/verificationapproved/email/body.txt:3
@@ -8235,6 +8243,10 @@ msgstr "يجب أن تكون هناك شُعبة واحدة يمكن توزيع 
 msgid "Content Groups"
 msgstr "مجموعات المحتوى"
 
+#: openedx/core/djangoapps/course_groups/constants.py:12
+msgid "Use this group configuration to control access to content."
+msgstr "استخدم ضبط المجموعة هذا للتحكم في الوصول إلى المحتوى."
+
 #: openedx/core/djangoapps/course_groups/views.py:204
 msgid "A cohort with the same name already exists."
 msgstr "توجد شعبة تحمل الاسم ذاته."
@@ -8476,8 +8488,7 @@ msgstr "الدعم الفني"
 #, python-brace-format
 msgid "Comma-separated list of providers to allow, eg: {choices}"
 msgstr ""
-"قائمة المُزوِّدين الذين سيُسمح لهم والتي تكون مفصولة بفواصل، على سبيل "
-"المثال: {choices}"
+"قائمة مفصولة بفواصل، بالمزوّدين الذين سيُسمح لهم، على سبيل المثال: {choices}"
 
 #: openedx/core/djangoapps/discussions/models.py:342
 msgid "Allow List"
@@ -8487,8 +8498,7 @@ msgstr "قائمة السماح"
 #, python-brace-format
 msgid "Comma-separated list of providers to deny, eg: {choices}"
 msgstr ""
-"قائمة المُزوِّدين الذين سيُمنعون والتي تكون مفصولة بفواصل، على سبيل المثال: "
-"{choices}"
+"قائمة مفصولة بفواصل، بالمزوّدين الذين سيُمنعون، على سبيل المثال: {choices}"
 
 #: openedx/core/djangoapps/discussions/models.py:361
 msgid "Deny List"
@@ -8779,7 +8789,7 @@ msgid ""
 "<{p}><{strong}>{replier_name}'s</{strong}> response has been endorsed in "
 "your post <{strong}>{post_title}</{strong}></{p}>"
 msgstr ""
-"<{p}><{strong}>{replier_name}'s</{strong}> هناك رد قد أُعتُمِد في منشورك "
+"<{p}><{strong}>{replier_name}'s</{strong}> هناك رد قد اعتُمِد في منشورك "
 "<{strong}>{post_title}</{strong}></{p}>"
 
 #: openedx/core/djangoapps/notifications/base_notification.py:213
@@ -8945,6 +8955,11 @@ msgstr "التقرير الأسبوعي للإشعارات"
 msgid "Daily Notifications Digest"
 msgstr "التقرير اليومي للإشعارات "
 
+#: openedx/core/djangoapps/notifications/templates/notifications/edx_ace/batched_email/email/body.txt:3
+#: openedx/core/djangoapps/notifications/templates/notifications/edx_ace/batched_email/email/subject.txt:3
+msgid "Recent activity on"
+msgstr "النشاط الأخير على"
+
 #: openedx/core/djangoapps/notifications/templates/notifications/edx_ace/email_digest/email/body.txt:4
 #: openedx/core/djangoapps/notifications/templates/notifications/edx_ace/email_digest/email/subject.txt:4
 msgid "Weekly Notifications Digest for the Week of"
@@ -8988,13 +9003,13 @@ msgstr "app_name أو notification_id غير صالح."
 msgid ""
 "Comma-separated list of scopes that this application will be allowed to "
 "request."
-msgstr "قائمة نطاقات مفصولة بفواصل والتي سيسمح لهذا التطبيق بطلبها."
+msgstr "قائمة مفصولة بفواصل، بالنطاقات التي سيُسمح لهذا التطبيق بطلبها."
 
 #: openedx/core/djangoapps/oauth_dispatch/models.py:88
 msgid ""
 "Comma-separated list of filters that this application will be allowed to "
 "request."
-msgstr "قائمة مرشحات مفصولة بفواصل سيسمح لهذا التطبيق بطلبها."
+msgstr "قائمة مفصولة بفواصل، بالمُرشِّحات التي سيُسمح لهذا التطبيق بطلبها."
 
 #: openedx/core/djangoapps/oauth_dispatch/models.py:141
 msgid "Content Provider"
@@ -11243,6 +11258,10 @@ msgstr "لم تُقدَّم إجابة لأجل {input_type}"
 msgid "The Staff answer could not be interpreted as a number."
 msgstr "تعذّر تفسير إجابة الطاقم كرقم."
 
+#: xmodule/capa/responsetypes.py:3808
+msgid "Could not interpret '{html.escape(answer_value)}' as a number."
+msgstr "تعذر تفسير '{html.escape(answer_value)}' كرقم."
+
 #: xmodule/capa/safe_exec/remote_exec.py:120
 msgid ""
 "Codejail API Service is unavailable. Please try again in a few minutes."
@@ -11709,7 +11728,7 @@ msgstr "يجب إعادة ضبط المسألة قبل تقديم الحل مر�
 #: xmodule/capa_block.py:1794
 #, python-brace-format
 msgid "You must wait at least {wait} seconds between submissions."
-msgstr "يجب أن تنتظر ما لا يقلّ عن {wait} ثوانٍ بين كل إرسالَين مُتتاليَين."
+msgstr "يجب أن تنتظر ما لا يقل عن {wait} بين كل إرسالين متتاليين."
 
 #: xmodule/capa_block.py:1804
 #, python-brace-format
@@ -11717,8 +11736,8 @@ msgid ""
 "You must wait at least {wait_secs} between submissions. {remaining_secs} "
 "remaining."
 msgstr ""
-"يجب أن تنتظر ما لا يقلّ عن {wait_secs} ثوانٍ بين كل إرسالَين مُتتاليَين. "
-"بقيت {remaining_secs} ثوانٍ."
+"يجب أن تنتظر ما لا يقل عن {wait_secs} بين كل إرسالين متتاليين. بقيت "
+"{remaining_secs}."
 
 #: xmodule/capa_block.py:1977
 #, python-brace-format
@@ -11850,8 +11869,8 @@ msgid ""
 "'You must complete {link} before you can access this unit'."
 msgstr ""
 "الرسالة التي تظهر للمتعلمين في حالة عدم استيفاء جميع الشروط لإظهار محتوى هذه"
-" الكُتلة الشرطية. ضَمِّن {link} في نص رسالتك لمَنح المتعلمين رابطاً مباشراً "
-"للوحدات المطلوبة. على سبيل المثال، \"يجب أن تُكمِل {link} قبل أن تتمكن من "
+" الكتلة الشرطية. ضَمِّن {link} في نص رسالتك لمنح المتعلمين رابطاً مباشراً "
+"للوحدات المطلوبة. على سبيل المثال، \"يجب أن تُكمل {link} قبل أن تتمكن من "
 "الوصول إلى هذه الوحدة\"."
 
 #: xmodule/conditional_block.py:131
@@ -12178,10 +12197,9 @@ msgid ""
 "manage Custom Courses on {platform_name}. When false, Custom Courses cannot "
 "be created, but existing Custom Courses will be preserved."
 msgstr ""
-"اسمَح لمعلمي المساق بتعيين أدوار مُدرِّب CCX، واسمَح للمُدرِّبين بإدارة "
-"المساقات المُخصّصة على {platform_name}. في حال تم تعطيل هذا الخِيار، لن "
-"تتمكن من إنشاء مساقات مُخصّصة جديدة، ولكن ستبقى المساقات المُخصّصة الحالية "
-"موجودة."
+"اسمح لمعلمي المساق بتعيين أدوار مدرب CCX، واسمح للمدربين بإدارة المساقات "
+"المخصصة على {platform_name}. في حال عُطِّل هذا الخيار، لن تتمكن من إنشاء "
+"مساقات مخصصة جديدة، ولكن ستبقى المساقات المخصصة الحالية موجودة."
 
 #. Translators: Custom Courses for edX (CCX) is an edX feature for re-using
 #. course content.
@@ -12596,8 +12614,8 @@ msgid ""
 "href=\"https://docs.openedx.org/en/latest/educators/references/advanced_features/teams_configuration_options.html>teams"
 " configuration documentation</a> for help and examples."
 msgstr ""
-"اضبِط مجموعات الفِرَق، وحَدِّد عدد أعضائها، واضبِط إعدادات الظهور باستخدام "
-"JSON. اطَّلِع على <a target=\"&#95;blank\" "
+"اضبط مجموعات الفِرَق، وحدِّد عدد أعضائها، واضبط إعدادات الظهور باستخدام "
+"JSON. اطّلِع على <a target=\"&#95;blank\" "
 "href=\"https://docs.openedx.org/en/latest/educators/references/advanced_features/teams_configuration_options.html>وثائق"
 " إعدادات الفِرَق</a>للحصول على المساعدة والأمثلة. "
 
@@ -12996,8 +13014,8 @@ msgid ""
 "The problem bank has been configured to show {count} problems. Please "
 "specify a positive number of problems, or specify -1 to show all problems."
 msgstr ""
-"لقد أُعِدَّ بنك المسائل لعرض {count} مسألة. من فضلك حَدِّد عدداً موجباً من "
-"المسائل، أو حَدِّد 1- لعرض جميع المسائل."
+"لقد أُعِدَّ بنك المسائل لعرض {count} مسألة. من فضلك حدِّد عدداً موجباً من "
+"المسائل، أو حدِّد 1- لعرض جميع المسائل."
 
 #: xmodule/item_bank_block.py:484 xmodule/item_bank_block.py:496
 msgid "Edit the problem bank configuration."
@@ -13192,10 +13210,10 @@ msgid ""
 "component.{break_tag}See {docs_anchor_open}the edX LTI "
 "documentation{anchor_close} for more details on this setting."
 msgstr ""
-"أضِف زوجاً من المفاتيح أو القِيَم لأي متغيرات مُخصّصة، مثل الصفحة التي ينبغي"
-" أن يُفتَح عليها كتابك الإلكتروني أو لون الخلفية لهذا المُكوّن. {break_tag} "
-"اطَّلِع على {docs_anchor_open} وثائق LTI الخاصة بـ edX {anchor_close} لمزيدٍ"
-" من التفاصيل حول هذا الإعداد."
+"أضِف زوجاً من المفاتيح أو القِيَم لأيّ متغيرات مخصصة، مثل الصفحة التي ينبغي "
+"أن يُفتح عليها كتابك الإلكتروني أو لون الخلفية لهذا المكون. {break_tag} "
+"اطّلع على {docs_anchor_open} وثائق LTI الخاصة بإدكس {anchor_close} للمزيد من"
+" التفاصيل حول هذا الإعداد."
 
 #: xmodule/lti_block.py:180
 msgid "Open in New Page"
@@ -13879,7 +13897,7 @@ msgid ""
 "Press {link_start}Edit{link_end} to configure how many will be shown and "
 "other settings."
 msgstr ""
-"اضغَط على {link_start}تعديل{link_end} لضبط عدد ما سيُعرَض والإعدادات الأخرى."
+"اضغط على {link_start}تعديل{link_end} لضبط عدد ما سيُعرَض والإعدادات الأخرى."
 
 #: xmodule/templates/item_bank/author_view.html:44
 msgid "You have not selected any components yet."
@@ -13929,6 +13947,11 @@ msgstr ""
 #: xmodule/video_block/video_block.py:842
 msgid "Default Video URL"
 msgstr "الرابط الافتراضي للفيديو "
+
+#: xmodule/video_block/video_handlers.py:469
+#: xmodule/video_block/video_handlers.py:510
+msgid "Runtime does not support transcripts."
+msgstr "لا يدعم وقت التشغيل نصوصًا مكتوبة."
 
 #: xmodule/video_block/video_handlers.py:528
 msgid "Language is required."

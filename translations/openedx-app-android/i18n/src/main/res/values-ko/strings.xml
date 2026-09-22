@@ -22,27 +22,11 @@
         <item quantity="other">%1$d 연체 과제</item>
     </plurals>
 
-	<string name="downloads.downloads">다운로드</string>
-	<string name="downloads.downloads_download_course">코스 다운로드</string>
-	<string name="downloads.downloads_remove_course_downloads">코스 다운로드 제거</string>
-	<string name="downloads.downloads_cancel_download">다운로드 취소</string>
-	<string name="downloads.downloads_empty_state_title">다운로드 가능한 콘텐츠가 있는 코스 없음</string>
-	<string name="downloads.downloads_empty_state_description">현재 다운로드 가능한 콘텐츠가 있는 과정이 없습니다.</string>
-	<string name="downloads.downloaded_downloaded_size">%1$s 다운로드됨</string>
-	<string name="downloads.downloaded_available_size">%1$s 사용 가능</string>
-	<string name="downloads.downloads_accessibility_stop_downloading_course">과정 다운로드 중지</string>
-	<string name="downloads.downloads_loading_course_structure">과정 구조를 로딩 중입니다…</string>
-
-	<string name="app.app_navigation_discovery">발견하다</string>
-	<string name="app.app_navigation_learn">배우다</string>
-	<string name="app.app_navigation_profile">프로필</string>
-	<string name="app.app_navigation_dates">날짜</string>
-	<string name="app.app_navigation_downloads">다운로드</string>
-
 	<string name="auth.auth_forgot_password">비밀번호를 잊으셨나요\?</string>
 	<string name="auth.auth_email">이메일</string>
 	<string name="auth.auth_invalid_email">잘못된 이메일입니다</string>
 	<string name="auth.auth_invalid_password">비밀번호가 너무 짧습니다</string>
+	<string name="auth.auth_social_account_not_registered">이 %1$s 계정은 어떤 %2$s 계정과도 연결되어 있지 않습니다. 등록해 주세요.</string>
 	<string name="auth.auth_welcome_back">환영합니다! 코스에 액세스하려면 로그인하세요.</string>
 	<string name="auth.auth_show_optional_fields">선택 필드 표시</string>
 	<string name="auth.auth_hide_optional_fields">선택 필드 숨기기</string>
@@ -60,6 +44,13 @@
 	<string name="auth.auth_agreement_signin_in">이 앱에 로그인함으로써 귀하는 %1$s 및 %2$s 에 동의하며, %3$s 및 각 회원이 %4$s 에 따라 귀하의 개인 데이터를 처리한다는 것을 확인합니다.</string>
 	<string name="auth.auth_accessibility_show_password">비밀번호 표시</string>
 	<string name="auth.auth_accessibility_hide_password">비밀번호 숨기기</string>
+
+	<string name="dates.dates_title">날짜</string>
+	<string name="dates.dates_empty_state_title">날짜 없음</string>
+	<string name="dates.dates_empty_state_description">현재 예정된 이벤트가 있는 활성 코스가 없습니다. 중요한 날짜와 마감일을 확인하려면 코스에 등록하세요.</string>
+	<string name="dates.dates_shift_due_date_card_title">마감일을 놓치셨나요\?</string>
+	<string name="dates.dates_shift_due_date_card_description">걱정하지 마세요. 제안된 일정을 변경하여 진행 상황을 잃지 않고 기한이 지난 과제를 완료하세요.</string>
+	<string name="dates.dates_shift_due_date">기한 변경</string>
 
 	<string name="profile.profile_full_profile">전체 프로필</string>
 	<string name="profile.profile_limited_profile">제한된 프로필</string>
@@ -140,6 +131,67 @@
 	<string name="profile.profile_no_google_calendars">사용 가능한 Google 캘린더가 없습니다</string>
 	<string name="profile.profile_select_calendar">캘린더 선택</string>
 	<string name="profile.profile_local_calendar_option">로컬 캘린더</string>
+
+	<string name="app.app_navigation_discovery">발견하다</string>
+	<string name="app.app_navigation_learn">배우다</string>
+	<string name="app.app_navigation_profile">프로필</string>
+	<string name="app.app_navigation_dates">날짜</string>
+	<string name="app.app_navigation_downloads">다운로드</string>
+
+	<string name="discussion.discussion_all_posts">모든 게시물</string>
+	<string name="discussion.discussion_unread">읽지 않음</string>
+	<string name="discussion.discussion_unanswered">답변하지 않음</string>
+	<string name="discussion.discussion_posts_following">내가 팔로우하는 게시물</string>
+	<string name="discussion.discussion_recent_activity">최근 활동</string>
+	<string name="discussion.discussion_most_activity">가장 많은 활동</string>
+	<string name="discussion.discussion_most_votes">가장 많은 투표</string>
+	<string name="discussion.discussion_create_post">토론 만들기</string>
+	<string name="discussion.discussion_create_question">질문 만들기</string>
+	<string name="discussion.discussion_add_response">응답 추가</string>
+	<string name="discussion.discussion_last_post">마지막 게시물: %1$s</string>
+	<string name="discussion.discussion_report">보고서</string>
+	<string name="discussion.discussion_unreport">신고 취소</string>
+	<string name="discussion.discussion_add_comment">댓글 추가</string>
+	<string name="discussion.discussion_comments_title">논평</string>
+	<string name="discussion.discussion_comment_added">댓글이 성공적으로 추가되었습니다.</string>
+	<string name="discussion.discussion_discussion">논의</string>
+	<string name="discussion.discussion_question">질문</string>
+	<string name="discussion.discussion_title">제목</string>
+	<string name="discussion.discussion_follow_discussion">이 토론을 따르세요</string>
+	<string name="discussion.discussion_follow_question">이 질문을 따르세요</string>
+	<string name="discussion.discussion_search_all_posts">모든 게시물 검색</string>
+	<string name="discussion.discussion_main_categories">주요 카테고리</string>
+	<string name="discussion.discussion_select_post_type">게시물 유형을 선택하세요</string>
+	<string name="discussion.discussion_topic">주제</string>
+	<string name="discussion.discussion_search_results">검색 결과</string>
+	<string name="discussion.discussion_start_typing_to_find">스레드를 찾으려면 입력을 시작하세요</string>
+	<string name="discussion.discussion_anonymous">익명</string>
+	<string name="discussion.discussion_no_yet">아직 토론이 없습니다</string>
+	<string name="discussion.discussion_click_button_create_discussion">아래 버튼을 클릭하여 첫 번째 토론을 시작하세요.</string>
+	<string name="discussion.discussion_unnamed_subcategory">이름 없는 하위 카테고리</string>
+	<plurals name="discussion.discussion_votes">
+        <item quantity="other">%1$d 투표</item>
+    </plurals>
+	<plurals name="discussion.discussion_comments">
+        <item quantity="other">%1$d 댓글</item>
+    </plurals>
+	<plurals name="discussion.discussion_missed_posts">
+        <item quantity="other">%1$d 놓친 게시물</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses">
+        <item quantity="other">%1$d 응답</item>
+    </plurals>
+	<plurals name="discussion.discussion_responses_capitalized">
+        <item quantity="other">%1$d 응답</item>
+    </plurals>
+	<plurals name="discussion.discussion_found_threads">
+        <item quantity="other">%s 게시물을 찾았습니다</item>
+    </plurals>
+
+	<string name="whatsnew.whats_new_title">새로운 소식</string>
+	<string name="whatsnew.whats_new_navigation_previous">이전</string>
+	<string name="whatsnew.whats_new_navigation_next">다음</string>
+	<string name="whatsnew.whats_new_navigation_done">완료</string>
 
 	<string name="core.core_error_invalid_grant">잘못된 자격 증명</string>
 	<string name="core.core_error_no_connection">인터넷 연결이 느리거나 안 됨</string>
@@ -276,6 +328,10 @@
 	<string name="core.core_explore_other_parts_when_reconnect_or_download">이 과정의 다른 부분을 탐색하거나 다시 연결되면 이 내용을 다운로드하세요.</string>
 	<string name="core.core_authorization">권한 부여</string>
 	<string name="core.core_authorization_request">수업 등록을 계속하려면 시스템에 들어가세요.</string>
+	<string name="core.core_sso_sign_in">SSO로 로그인</string>
+	<string name="core.core_sign_in_sso_heading">오늘부터 자신감을 가지고 경력을 쌓으세요</string>
+	<string name="core.core_sign_in_sso_login_title">로그인</string>
+	<string name="core.core_sign_in_sso_login_subtitle">국가통합로그인 서비스를 통해 로그인하세요.</string>
 
 	<string name="course.course_you_earned_certificate">축하합니다. \"%s\" 과정 수료증을 취득하셨습니다.</string>
 	<string name="course.course_view_certificate">인증서 보기</string>
@@ -378,12 +434,16 @@
 	<string name="course.course_videos_caught_up">동영상 시청을 모두 완료했습니다!</string>
 	<string name="course.course_assignments_caught_up">과제를 모두 완료했습니다!</string>
 
-	<string name="dates.dates_title">날짜</string>
-	<string name="dates.dates_empty_state_title">날짜 없음</string>
-	<string name="dates.dates_empty_state_description">현재 예정된 이벤트가 있는 활성 코스가 없습니다. 중요한 날짜와 마감일을 확인하려면 코스에 등록하세요.</string>
-	<string name="dates.dates_shift_due_date_card_title">마감일을 놓치셨나요\?</string>
-	<string name="dates.dates_shift_due_date_card_description">걱정하지 마세요. 제안된 일정을 변경하여 진행 상황을 잃지 않고 기한이 지난 과제를 완료하세요.</string>
-	<string name="dates.dates_shift_due_date">기한 변경</string>
+	<string name="downloads.downloads">다운로드</string>
+	<string name="downloads.downloads_download_course">코스 다운로드</string>
+	<string name="downloads.downloads_remove_course_downloads">코스 다운로드 제거</string>
+	<string name="downloads.downloads_cancel_download">다운로드 취소</string>
+	<string name="downloads.downloads_empty_state_title">다운로드 가능한 콘텐츠가 있는 코스 없음</string>
+	<string name="downloads.downloads_empty_state_description">현재 다운로드 가능한 콘텐츠가 있는 과정이 없습니다.</string>
+	<string name="downloads.downloaded_downloaded_size">%1$s 다운로드됨</string>
+	<string name="downloads.downloaded_available_size">%1$s 사용 가능</string>
+	<string name="downloads.downloads_accessibility_stop_downloading_course">과정 다운로드 중지</string>
+	<string name="downloads.downloads_loading_course_structure">과정 구조를 로딩 중입니다…</string>
 
 	<string name="discovery.discovery_Discovery">발견하다</string>
 	<string name="discovery.discovery_discovery_new">새로운 것을 발견하세요</string>
@@ -402,59 +462,4 @@
     </plurals>
 	<!-- Accessibility -->
 	<string name="discovery.discovery_accessibility_play_video">비디오 재생</string>
-
-	<string name="whatsnew.whats_new_title">새로운 소식</string>
-	<string name="whatsnew.whats_new_navigation_previous">이전</string>
-	<string name="whatsnew.whats_new_navigation_next">다음</string>
-	<string name="whatsnew.whats_new_navigation_done">완료</string>
-
-	<string name="discussion.discussion_all_posts">모든 게시물</string>
-	<string name="discussion.discussion_unread">읽지 않음</string>
-	<string name="discussion.discussion_unanswered">답변하지 않음</string>
-	<string name="discussion.discussion_posts_following">내가 팔로우하는 게시물</string>
-	<string name="discussion.discussion_recent_activity">최근 활동</string>
-	<string name="discussion.discussion_most_activity">가장 많은 활동</string>
-	<string name="discussion.discussion_most_votes">가장 많은 투표</string>
-	<string name="discussion.discussion_create_post">토론 만들기</string>
-	<string name="discussion.discussion_create_question">질문 만들기</string>
-	<string name="discussion.discussion_add_response">응답 추가</string>
-	<string name="discussion.discussion_last_post">마지막 게시물: %1$s</string>
-	<string name="discussion.discussion_report">보고서</string>
-	<string name="discussion.discussion_unreport">신고 취소</string>
-	<string name="discussion.discussion_add_comment">댓글 추가</string>
-	<string name="discussion.discussion_comments_title">논평</string>
-	<string name="discussion.discussion_comment_added">댓글이 성공적으로 추가되었습니다.</string>
-	<string name="discussion.discussion_discussion">논의</string>
-	<string name="discussion.discussion_question">질문</string>
-	<string name="discussion.discussion_title">제목</string>
-	<string name="discussion.discussion_follow_discussion">이 토론을 따르세요</string>
-	<string name="discussion.discussion_follow_question">이 질문을 따르세요</string>
-	<string name="discussion.discussion_search_all_posts">모든 게시물 검색</string>
-	<string name="discussion.discussion_main_categories">주요 카테고리</string>
-	<string name="discussion.discussion_select_post_type">게시물 유형을 선택하세요</string>
-	<string name="discussion.discussion_topic">주제</string>
-	<string name="discussion.discussion_search_results">검색 결과</string>
-	<string name="discussion.discussion_start_typing_to_find">스레드를 찾으려면 입력을 시작하세요</string>
-	<string name="discussion.discussion_anonymous">익명</string>
-	<string name="discussion.discussion_no_yet">아직 토론이 없습니다</string>
-	<string name="discussion.discussion_click_button_create_discussion">아래 버튼을 클릭하여 첫 번째 토론을 시작하세요.</string>
-	<string name="discussion.discussion_unnamed_subcategory">이름 없는 하위 카테고리</string>
-	<plurals name="discussion.discussion_votes">
-        <item quantity="other">%1$d 투표</item>
-    </plurals>
-	<plurals name="discussion.discussion_comments">
-        <item quantity="other">%1$d 댓글</item>
-    </plurals>
-	<plurals name="discussion.discussion_missed_posts">
-        <item quantity="other">%1$d 놓친 게시물</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses">
-        <item quantity="other">%1$d 응답</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses_capitalized">
-        <item quantity="other">%1$d 응답</item>
-    </plurals>
-	<plurals name="discussion.discussion_found_threads">
-        <item quantity="other">%s 게시물을 찾았습니다</item>
-    </plurals>
 </resources>

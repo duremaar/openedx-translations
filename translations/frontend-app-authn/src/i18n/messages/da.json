@@ -141,6 +141,7 @@
   "email.invalid.format.error": "Indtast en gyldig email addresse",
   "username.validation.message": "username skal være mellem 2 og 30 characters",
   "name.validation.message": "Indtast et gyldigt navn",
+  "registration.name.validation.length.message": "Fulde navn må ikke være længere end {limit} tegn",
   "username.format.validation.message": "Brugernavne kan kun indeholde bogstaver (AZ, az), tal (0-9), understregninger (_) og bindestreger (-). Brugernavne må ikke indeholde mellemrum",
   "registration.request.failure.header": "Vi kunne ikke oprette din konto.",
   "registration.empty.form.submission.error": "Tjek venligst dine svar og prøv igen.",
@@ -178,5 +179,6 @@
   "complete.your.profile.2": "din profile",
   "register.page.terms.of.service.and.honor.code": "Ved at oprette en konto accepterer du {tosAndHonorCode} , og du anerkender, at {platformName} og hvert medlem behandler dine personlige data i overensstemmelse med {privacyPolicy} .",
   "register.page.honor.code": "Jeg accepterer {platformName} {tosAndHonorCode}",
-  "register.page.terms.of.service": "Jeg accepterer {platformName} {termsOfService}"
+  "register.page.terms.of.service": "Jeg accepterer {platformName} {termsOfService}",
+  "error.notfound.page.title": "Side ikke fundet | {siteName}"
 }
